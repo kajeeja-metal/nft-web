@@ -421,7 +421,7 @@ const StepCustomizeStyle = () => {
                 <span className={paging.totalLbl}>490 Assets</span>
               </div>
               <ul className={`pagination justify-content-end my-4`+ ' ' + paging.pagination}>
-                <li className={`page-item`+ ' ' + paging.disabled} ><a class="page-link" href="#">Previous</a></li>
+                <li className={`page-item`+ ' ' + paging.disabled} ><a className="page-link" href="#">Previous</a></li>
                 <li className="page-item"><a className="page-link" href="#">1</a></li>
                 <li className="page-item"><span className="page-link"> .. </span></li>
                 <li className="page-item"><a className="page-link" href="#">10</a></li>
