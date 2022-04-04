@@ -1,0 +1,22 @@
+
+
+.progress {
+    width: 100%; margin: 0 15px;
+    height: 9px; background: #F8F5FF;
+    border: 1px solid #ABABBA;
+    border-radius: 4px; overflow: hidden;
+}
+.progressbar {
+    background: #FAFAFC; padding: 15px 0;
+    margin-bottom: 2rem;
+    
+}
+.progressBarbg {
+    background-color: #00CCA9 !important; 
+    transition: all 0.5s ease-in-out;
+}   
+.progressInner {
+    display: flex; align-items: center;
+    justify-content: space-between;
+
+}

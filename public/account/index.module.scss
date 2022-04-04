@@ -1,0 +1,125 @@
+@import './variables/mixin';
+@import './variables/colors';
+@import './variables/text_link';
+//@import './variables/forms';
+// Header 
+
+.userHeaderWrap {
+     @include box_shadow(1);
+    padding: 1rem;
+    margin-bottom: 32px;
+}
+
+.userHeader {
+    @include flex;
+    @include align-items(center);
+    @include justify-content(space-between);
+} 
+.headerLeft {
+    span {
+        margin-left: 2rem;
+    }
+}
+.userImg {
+    margin-right: 8px;
+    .profileImg {
+        border-radius: 12px;
+    }
+}
+.userLogged {
+    @include flex;
+    margin-right: 2rem;
+}
+
+.headerRight {
+    @include flex;
+}
+.menuWrap {
+    list-style: none;
+    margin: 0; padding: 0;
+}
+.menuItem {
+    display: block;
+    a {
+        padding: 15px;
+        color: $black;
+        display: block;
+        &:hover {
+            color: #4400CD !important;
+            font-weight: 600;
+        }
+    }
+}
+
+
+.menuHead {
+    display: block;
+    font-size: $font-medium;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.accHead {
+   font-size: $font-xlarge; 
+}
+
+.headDesc {
+    font-size: $font-small;
+    margin-bottom: 24px;
+} 
+.socialText {
+    margin-left: 14px;
+}
+
+.profileImgWrap {
+    @include flex;
+    @include align-items(center);
+}
+.profileImg {
+    border-radius: 12px;
+}
+
+.fileupload {
+	position: relative;
+	overflow: hidden;
+	@include inline-flex;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+    margin-left: 60px;
+	input[type="file"] {
+	  position: absolute;
+	  opacity: 0;
+	  width: 100%;
+	  line-height: 60px;
+	}
+	.lableFile, .btnBorder {
+	  cursor: pointer;
+	  padding: 17px 31px;
+	  border-radius: 16px;
+	  margin-bottom: 1rem;
+	}
+	&:hover {
+		.lable-file, .btnBorder {
+			background-color: $gray-900;
+		}
+	}
+}
+
+.btnBorder {
+	border: 1px solid #EAEAED;
+	&:hover {
+		background-color: $gray-900;
+	}
+}
+.uploadText {
+    text-transform: uppercase;
+    font-size: $font-mini;
+}
+
+.charCount {
+    text-align: right;
+    margin-top: 5px;
+    font-size: $font-mini;
+    margin-bottom: 1rem;
+}
+

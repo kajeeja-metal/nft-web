@@ -1,0 +1,155 @@
+// @import '../../main_theme/component/groupvariable';
+// @import '../../main_theme/component/mixin';
+
+.collectionWrap {
+    background: linear-gradient(0deg, rgba(53, 79, 102, 0.82), rgba(53, 79, 102, 0.82)), #FFFFFF;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.collectionTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headWrap {
+    display: flex;
+    align-items: center;
+    h1 {
+        font-weight: bold;
+    }
+    span {
+        margin-left: 32px;
+     }
+}
+.collectionContent {
+    padding-top: 48px;
+    padding-bottom: 100px;
+}
+
+.assetsAll {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    article {
+        transition: all 0.5s;
+        border-radius: 4px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #5F5F6D;
+        border: 2px solid #000000;
+        a {
+            padding: 8px;
+            display: inline-block
+        }
+        img {
+            border-radius: 4px;
+        }
+        p {
+            transition: all 0.5s;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #5F5F6D;
+        }
+        &:hover {
+            background: linear-gradient(0deg, rgba(53, 79, 102, 0.82), rgba(53, 79, 102, 0.82)), #FFFFFF;
+            p {
+                background: linear-gradient(0deg, rgba(53, 79, 102, 0.82), rgba(53, 79, 102, 0.82)), #FFFFFF;
+            } 
+        }
+    }
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 80px;
+    }
+}
+.thumbsItem {
+    display: inline-block;
+    img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+
+    }
+}
+.thumbsWrap {
+    background-color: #FFFFFF;
+    //@include box_shadow(1);
+    text-align: center;
+}
+.thumbsContent {
+    text-align: center;
+    p {
+        padding: 12px;
+        margin-bottom: 0;
+        background-color: #FFFFFF;
+        font-size: 0.875rem;
+    }
+}
+
+
+.arrowIcons {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 0 10px;
+    display: inline-block;
+    &:first-child {
+        margin-right: 32px;
+    }
+    &:hover {
+        border-color: #000000;
+        color: #FFFFFF;
+        background: linear-gradient(0deg, rgba(53, 79, 102, 0.82), rgba(53, 79, 102, 0.82)), #FFFFFF;
+    }
+}
+.seeMore {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #000000;
+    &:hover {
+        color: #354F66;
+    }
+}
+
+.profileWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.userImg {
+    margin-right: 8px;
+    .profileImg {
+        border-radius: 12px;
+    }
+}
+.userLogged {
+    display: flex;
+}
+.likesCount {
+    text-align: center;
+}
+.userInfo {
+    display: flex;
+    align-items: center;
+    h4 {
+        font-size: 14px;
+        margin: 0;
+        font-weight: bold;
+    }
+    .textMini {
+        font-size: 13px;
+    }
+}
+
+.profileLike {
+    margin-top: 89px;
+    margin-bottom: 137px;
+}

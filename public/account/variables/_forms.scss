@@ -1,0 +1,97 @@
+@import '../variables/colors';
+@import '../variables/text_link';
+
+$input-elements	 : 			$primary;
+//$border:					#CECECE;
+$border-width:                1px;
+$enable-rounded:              true;
+$border-radius:               1rem;
+$border-radius-lg:            .3rem;
+$border-radius-sm:            .2rem;
+
+// Form Label
+$form-label-font-size:	  $font-normal;
+$form-label-text-color:	  $default;
+
+// On and Off Style
+$onoffheight: 30 / 16 * 1em;
+$onoffwidth: 72 / 16 * 1em;
+$transition-default: 0.25s ease-out 0.10s;
+
+// Form elements Except buttons
+$input-border-color:		  #EAEAED;
+$input-color:				  $default;
+$input-bg:                    #FFF;
+$input-bg-grey:               #E2E2E2;
+$input-disabled-bg:           #e9ecef;
+$input-disabled-color:        #495057;
+$input-disabled-border-color: #ced4da;
+$inputon-bg:				  #4257BA;
+$inputoff-bg:				  #CFCECE;
+$input-error-border-color:	  $danger;
+$input-error-color:			  $danger;
+
+// Input variables
+$input-focus-color:			  #929292;
+$input-focus-border-color:	  #EAEAED;
+$input-focus-bg:			  #F8F5FF;
+$input-font-weight:			  500;
+$input-text-color:			  #495057;
+$input-placeholder-text-color:$placeholder_color;
+$input-validation-text-color:$red;
+
+$input-padding-y:            0.9rem;
+$input-padding-x:            1.8rem;
+$input-font-size:            $font-normal;
+$input-font-weight:          400;
+$input-line-height:          1.5;
+
+$input-padding-y-xsm:        .5rem;
+$input-padding-x-xsm:        .5rem;
+$input-font-size-xsm:        $font-size-xsm;
+$input-line-height-xsm:      $line-height-xsm;
+
+$input-padding-y-sm:         .25rem;
+$input-padding-x-sm:         .5rem;
+$input-font-size-sm:         $font-size-sm;
+$input-line-height-sm:       $line-height-sm;
+
+$input-padding-y-lg:         .5rem;
+$input-padding-x-lg:         1rem;
+$input-font-size-lg:         $font-size-lg;
+$input-line-height-lg:       $line-height-lg;
+
+$input-border-radius:        $border-radius;
+$input-border-radius-lg:     .3rem;
+$input-border-radius-sm:     .2rem;
+$input-border-radius-xsm:    .1rem;
+
+$input-bg-transition: 		 all 0.4s ease-in-out 0s;
+
+$input-transition:           border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+$input-box-shadow:           inset 0 1px 1px rgba($black, .075);
+$login-box-shadow:           0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+$input-border-width:         1.5px;
+$input-height-border:        $input-border-width * 2;
+
+$input-height-inner:         ($input-font-size * $input-line-height) + ($input-padding-y * 2);
+$input-height:               calc(#{$input-height-inner} + #{$input-height-border});
+
+$input-height-inner-sm:      ($input-font-size-sm * $input-line-height-sm) + ($input-padding-y-sm * 2);
+$input-height-sm:            calc(#{$input-height-inner-sm} + #{$input-height-border});
+
+$input-height-inner-lg:      ($input-font-size-lg * $input-line-height-lg) + ($input-padding-y-lg * 2);
+$input-height-lg:            calc(#{$input-height-inner-lg} + #{$input-height-border});
+
+$input-height-inner-sm:      ($input-font-size-sm * $input-line-height-sm) + ($input-padding-y-sm * 2);
+$input-height-sm:            calc(#{$input-height-inner-sm} + #{$input-height-border});
+$input-height-inner-lg:      ($input-font-size-lg * $input-line-height-lg) + ($input-padding-y-lg * 2);
+$input-height-lg:            calc(#{$input-height-inner-lg} + #{$input-height-border});
+$error-msg-mt:				 .25rem;
+$error-msg-font-size: 		 ($font-size-base - 0.125);
+$inputgroup-icon-bg: 		 $white;
+$inputgroup-icon-width: 	  35px;
+$inputgroup-icon-width-lg: 	 $inputgroup-icon-width + 5;
+$inputgroup-border-color:	 $border;
+

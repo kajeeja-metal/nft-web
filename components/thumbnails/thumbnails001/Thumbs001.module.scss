@@ -1,0 +1,85 @@
+@import '../../profile/variables';
+
+// Tabs Dssign
+.collectionTabsWrapper {
+    text-align: center;
+}
+// Tabs
+.tabsWrapper {
+	text-align: center;
+    ul {
+		margin-bottom: 32px !important;
+		border-bottom: none !important;
+	}
+	li {
+		padding: 0.5rem 1rem !important;
+		bottom: 0 !important;
+		font-size: $TabsFontSize !important;
+		border: 2px solid #000000 !important;
+        display: inline-block;
+		border-radius: 4px !important;
+		&:not(:last-child) {
+			margin-right: 32px;
+		}
+        &:focus {
+            background-color: #FFD400 !important;
+            font-weight: 700;
+            border-color: #FFD400;
+            &:after {
+                height: 0;
+            }
+        }
+	}
+    li[aria-selected|="true"] {
+        background-color: $textBgColor !important;
+        font-weight: 700;
+        border-color: $textBgColor;
+        &:after {
+            height: 0;
+        }
+    }
+}
+
+.paginationWrap {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    ul {
+        list-style: none;
+        margin: 0; padding: 0;
+    }
+    li {
+        border: none !important;
+        padding: 0 !important;
+        display: inline-block;
+        text-align: center;
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+        &:active, &.active {
+            a {
+                background-color:  $PaginationActiveBGColor;
+            }
+        }
+        &:hover, &.hover {
+            a {
+                background-color: $PaginationActiveBGColor;
+            }
+        }
+        a {
+            display: inline-block;
+            width: 41px; height: 41px;
+            border-radius: 4px;
+            border: 2px solid $PaginationColor;
+            color: $PaginationColor;
+            background-color: $PaginationBgColor;
+            font-size: $PaginationFontSize;
+        }
+        [aria-selected="true"] {
+            background-color: $PaginationActiveBGColor;
+            a {
+                background-color: $PaginationActiveBGColor;
+            }
+        }
+    } 
+}

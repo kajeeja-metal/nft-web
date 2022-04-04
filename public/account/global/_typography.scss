@@ -1,0 +1,224 @@
+@import "../component/groupvariable";
+
+// Typograph Start
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: $primaryfonts;
+ }
+
+body {
+    font-size: $font-normal;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $default;
+    background-color: $body-bg;
+    font-family: $primaryfonts !important;
+}
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+// HTML5 display-role reset for older browsers
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+blockquote, q {
+    quotes:none;
+    border-left: solid 2px #5E35B1;
+    margin-left: 0;
+    padding-left: 5px;
+    color: #5E35B1;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+  text-decoration: none;color: $default;
+  @include transition(all 0.5s ease-in-out 0s);
+   &:hover, &:active, &.active {
+        text-decoration: none;
+        color: lighten($default, 50%) !important;
+    }
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid $border;
+    margin:1em 0;
+    padding:0;
+}
+
+img {
+  line-height: 1; vertical-align: top;
+  max-width: 100%;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template, .hide {
+  display: none !important;
+}
+
+h1, .h1 {
+    font-size: $h1-font-size;
+    margin-bottom: $headings-margin-bottom;
+}
+h2, .h2 {
+    font-size: $h2-font-size;
+    margin-bottom: $headings-margin-bottom;
+    //text-transform: uppercase;
+}
+h3, .h3{
+    font-size: $h3-font-size;
+    margin-bottom: $headings-margin-bottom;
+    //text-transform: uppercase;
+}
+h4, .h4 {
+    font-size: $h4-font-size;
+    margin-bottom: $headings-margin-bottom;
+}
+h5, .h5 {
+    font-size: $h5-font-size;
+    margin-bottom: $headings-margin-bottom;
+}
+
+h1, h2, h3, h4, h5 {
+    //overflow: hidden;
+    //text-overflow: ellipsis;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: $paragraph-margin-bottom;
+    line-height: 1.5;
+    &:empty {
+        margin:0;
+    }
+}
+iframe {
+    max-width: 100%;
+}
+
+address {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.full {
+    width: 100%;
+}
+.half {
+    width: 50%;
+}
+
+// Fonts Weight Style
+.fontweight_400 {
+    font-weight: 400;
+}
+.fontweight_500 {
+    font-weight: 500;
+}
+.fontweight_bold {
+    font-weight: bold;
+}
+.w_break {
+    word-break: break-word;
+}
+
+// Title Description
+
+
+//==============================
+// Start Text color Style 
+.text-mini {
+    font-size: $text-mini-font-size;
+    color: $text-mini-text-color;
+    font-family: $text-mini-font-family;
+}
+.text-small {
+    font-size: $text-small-font-size;
+    color: $text-small-text-color;
+    font-family: $text-small-font-family;
+}
+.text-normal {
+    font-size: $text-normal-font-size;
+    color: $text-normal-text-color;
+    font-family: $text-normal-font-family;
+}
+.text-large {
+    font-size: $text-large-font-size;
+    color: $text-large-text-color;
+    font-family: $text-large-font-family;
+}
+.text-xlarge {
+    font-size: $text-xlarge-font-size;
+    color: $text-xlarge-text-color;
+    font-family: $text-xlarge-font-family;
+}
+.text-xxlarge {
+    font-size: $text-xxlarge-font-size;
+    color: $text-xxlarge-text-color;
+    font-family: $text-xxlarge-font-family;
+}
+
+// End Link color Style 
+//==========================
+
+// Start Label
+//==========================
+.label-default {@include label-variant($text-default-text-color);}
+.label-primary {@include label-variant($text-primary-text-color);}
+.label-success {@include label-variant($text-success-text-color);}
+.label-info {@include label-variant($text-info-text-color);}
+.label-warning {@include label-variant($text-warning-text-color);}
+.label-danger {@include label-variant($text-warning-text-color);}
+// End Label
+//==========================
+
+// Line Setting
+//==========================
+.line-default {border-bottom: 1px solid $border;display: block;}
+.line-primary {border-bottom: 1px solid $primary;display: block;}
+.line-secondary {border-bottom: 1px solid $secondary;display: block;}
+// End Label
+//==========================
+
+// Fonts Family
+.primary-font {font-family: $primaryfonts;}
+
+.emphasis-default {font-weight: 700;}
+
+.text_right {
+    text-align: right;
+}
+
+.font_400 {
+    font-weight: 400;
+}
+.font_600 {
+    font-weight: 600;
+}
+.font_900 {
+    font-weight: bold;
+}
+
+.font_18 {
+    font-size: $font-medium;
+}

@@ -1,0 +1,56 @@
+
+
+@import 'variables/text_link';
+@import 'variables/colors';
+
+
+$border-color :#ABABBA;
+
+
+.colorElement {
+    margin-top: 1.25rem;
+    input {
+        border-radius: 5px !important;
+    }
+}
+.colorBg {
+    display: inline-block; margin-right: .5rem;
+    max-width: 40px; background: #008F76;
+    border-radius: 5px !important;
+    padding: 0.375rem 0.75rem; line-height: 1.5;
+    min-height: 38px;
+}
+
+
+
+.navLink {
+    padding: 9px 16px; border-radius: 4px 4px 0px 0px;
+    display: inline-block;
+    color: $tab-color;
+    border-bottom: 5px solid transparent;
+    margin-bottom: -1px; margin-right: 4px;
+    font-size: 18px;
+    &:hover, &.active {
+        color: $tab-active-color;
+        background: $tab-active-bg;
+        border-bottom: 5px solid $tab-border-active-color;
+    }
+    &.active {
+        font-weight: 700;
+    }
+
+}
+
+/**/
+.colorpickertab {
+    border-top: 1px solid $border-color;
+    padding-top: 10px; padding-left: 10px;
+}
+
+@media all and (max-width: 767px) {
+
+    .navLink {
+        padding: 9px 8px; margin-right: 1px;
+    }
+
+}

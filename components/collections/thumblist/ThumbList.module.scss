@@ -1,0 +1,167 @@
+
+@import '../variables';
+
+
+.thumblist {
+    border-radius: 16px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2.5rem;
+
+    &:hover {
+        .thumbImg { 
+            >a img {
+                /*transform: scale(1.05);*/
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.thumbImg {
+    position: relative;
+    > a {
+        display: block; line-height: 1;
+        overflow: hidden;
+    }
+    a {
+        img {
+            border-radius: 16px 16px 0 0;
+            transition: all 0.4s ease-in-out;
+        }
+    }
+} 
+
+.status {
+    position: absolute; left: 15px;
+    top: -20px;
+    .lbl {
+        background: $publish-lbl-bg-color;
+        font-size: $publish-lbl-size;
+        color: $publish-lbl-color;  line-height: 1;
+        opacity: 0.8; padding:9px 10px;
+        border-radius: 8px; display: block;
+        margin-bottom: 12px;
+        &:after {
+            position: absolute; content: "";
+            left: 8px; bottom: 25px;
+            width: 0; height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid $publish-lbl-bg-color;
+        }
+    }
+    .circle {
+        width: 18px; height: 18px;
+        border: 2px solid $circle-border-color;
+        display: inline-block; border-radius: 50%;
+        margin-left: 7px;
+
+        &.publish {
+            background: $publish-bg-color;
+        }
+        &.unpublish {
+            background: $unpublish-bg-color;
+        }
+        &.draft {
+            background: $draft-bg-color;
+        }
+    }
+
+}
+
+.thumbInfo {
+    padding:1.15rem 1.25rem 1.25rem 1.25rem;
+    p {
+        color: $thumb-desc-color; font-size: $thumb-desc-size;
+        line-height: 1.35; margin-bottom: .5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.thumbTitlewrap {
+    display: flex; align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    h3 {
+        color: $thumb-title-color;
+        font-size:  $thumb-title-size;
+        a { 
+            color: $thumb-title-color; font-weight: 700;
+            &:hover {
+                color: $link-hover-color;
+            }
+        }
+    }    
+    .assetNum {
+        color: $thumb-asset-color; margin-bottom: .25rem;
+        font-size:  $thumb-asset-size;
+    }
+}
+
+.dateWish {
+    display: flex; align-items: center;
+    justify-content: space-between;
+    .date {
+        color: $thumb-date-color;
+        font-size:  $thumb-date-size;
+    }
+    .wish {
+        color: $thumb-wish-color;
+        font-size:  $thumb-wish-size;
+        .num {
+            font-size: $thumb-wish-count-size;
+            color: $thumb-wish-count-color;
+            font-weight: 700; margin-right: .25rem;
+        }
+        .wishicon {
+            font-weight: 300; 
+        }
+    }
+}
+
+
+@media all and (max-width: 767px) {
+
+    .status {
+        .lbl {
+            font-size: 12px;
+        }
+    }
+    .thumbInfo { 
+        padding:.7rem .75rem;
+        p {
+            margin-bottom: .2rem;
+        }
+    }
+    .thumbTitlewrap {
+        flex-wrap: wrap; margin-bottom: .25rem;
+        h3 {
+            font-size:16px; white-space: nowrap;
+            overflow: hidden; text-overflow: ellipsis;
+            margin-bottom: .1rem;
+        }    
+        .assetNum {
+            font-size:14px; margin-bottom: 0;
+        }
+    }
+    .dateWish {
+        .date {
+            font-size:12px;
+        }
+        .wish {
+            font-size:  $thumb-wish-size;
+            .num {
+                font-size:12px;
+            }
+            .wishicon {
+                font-size: 10px;
+            }
+        }
+    }
+
+}
+

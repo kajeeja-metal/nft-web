@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+ }
+
+body {
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+// HTML5 display-role reset for older browsers
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+blockquote, q {
+    quotes:none;
+    border-left: solid 2px #5E35B1;
+    margin-left: 0;
+    padding-left: 5px;
+    color: #5E35B1;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    text-decoration: none;
+    transition: all 0.5s ease-in-out 0s;
+   &:hover, &:active, &.active {
+        //opacity: 0.6;
+    }
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid 3A3A43;
+    margin:1em 0;
+    padding:0;
+}
+
+img {
+  line-height: 1; vertical-align: top;
+  max-width: 100%;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template, .hide {
+  display: none !important;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    &:empty {
+        margin:0;
+    }
+}
+iframe {
+    max-width: 100%;
+}
+
+address {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.contentwrap {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile3 {
+    color: #FFFFFF;
+    background: #000000 url(../public/profile/profile002/images/body.svg);
+    font-family: 'VT323', monospace !important;
+    a {
+      color: #FFFFFF;
+    }
+  }
+  
+  .collectionOne {
+    // background-image: url(../assets/images/thumbsfull.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

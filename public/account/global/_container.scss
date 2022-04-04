@@ -1,0 +1,31 @@
+// Container Width
+//==========================
+.container {
+    @include container-fixed;
+    @media (min-width: $screen-xs-min) {
+        max-width: $container-xs;
+    }
+    @media (min-width: $screen-sm-min) {
+        max-width: $container-sm;
+    }
+    @media (min-width: $screen-md-min) {
+        max-width: $container-md;
+    }
+    @media (min-width: $screen-lg-min) {
+        max-width: $container-lg;
+    }
+}
+
+.container-fluid {
+    @include container-fixed;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+@media all and (max-width: 1300px) {
+    .container {
+        max-width: 100% !important;
+    }
+}
+// End Container Width
+//==========================

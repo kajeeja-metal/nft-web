@@ -1,0 +1,63 @@
+/*
+@import './component/groupvariable';
+@import './component/layout/header';
+@import './component/layout/footer';
+@import './global/container';
+@import './global/typography';
+@import './global/form';
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+// Start grid view
+
+.contentwrap {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+
+.themeBg {
+  background-color: $black;
+  color: $white;
+  background-image: url(../../public/profile_theme/theme002/images/body.svg);
+  font-family: 'VT323', monospace !important;
+  a {
+    color: $white;
+  }
+}
+
+.collectionOne {
+  background-image: url(../assets/images/thumbsfull.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.userBg {
+  background-color: $white;
+}
+*/
+
+
+@media all and (min-width: 768px) {
+
+}
+@media all and (min-width:1550px) {
+
+}
+
+@media all and (max-width:992px) { 
+
+
+}
+
+@media all and (max-width:768px) {
+
+}
+@media all and (max-width:420px) {
+
+
+}
+

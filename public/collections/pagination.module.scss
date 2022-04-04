@@ -1,0 +1,44 @@
+
+
+@import 'variables/text_link';
+@import 'variables/colors';
+
+$default-color : #5F5F6D;
+$link-hover-color:#4400CD;
+
+
+.pagination {
+    li {
+        margin-left: 2px;
+        a, span {
+            border: none;
+            color: $default-color;
+            border-radius: 6px; font-size: 12px;
+
+            &:hover {
+                
+                color: $link-hover-color;
+            }
+            &.active {
+                background-color: $link-hover-color;
+                color: #fff;
+            }
+
+        }
+    }
+    .disabled {
+        display: none;
+    }
+}
+
+
+.totalPaging {
+    display: flex; flex-wrap: wrap;
+    justify-content: space-between;
+}
+.total {
+    display: flex; align-items: center;
+    .totalLbl {
+        white-space: nowrap; margin-left: .5rem;
+    }
+}

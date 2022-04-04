@@ -1,0 +1,253 @@
+// @import '../../main_theme/component/groupvariable';
+// @import '../../main_theme/component/mixin';
+@import '../variables';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+
+$LibreFranklin: 'Libre Franklin', sans-serif;
+
+
+.bannerImg {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 360px;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.walletConnect {
+    position: absolute;
+    top: 24px; right: 24px;
+}
+.userWrap {
+    text-align: center;
+    //max-width: 508px;
+    margin: -80px auto 0 auto;
+    .userName {
+        font-size: $profileH1FontSize;
+        color: $profileH1FontColor;
+    }
+    .userMore {
+        font-size: $profileH2FontSize;
+        color: $profileH2FontColor;
+    }
+    .userDesc {
+        display: flex;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: $profileH4FontSize;
+        color: $profileH4FontColor;
+        max-width: 508px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.btnGroups {
+	.btn {
+
+		font-size: 1.5rem;
+		&:not(:last-child) {
+			margin-right: 32px;
+		}
+	}
+}
+.statusWrap {
+    font-size: $statusWrapFontSize;
+    color: $statusWrapColor;
+    margin-bottom: 1rem;
+    span {
+        font-weight: 600;
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+        span {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+    }
+}
+.socialList {
+    margin-top: 23px;
+    margin-bottom: 75px;
+    display: inline-flex;
+    align-items: center;
+	span {
+		margin-right: 1rem;
+	}
+	a {
+        color: $socialIconsColor;
+		&:not(:last-child) {
+			margin-right: 35px;
+		}
+	}
+}
+.userId {
+    transition: all 0.3s;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 8px;
+    font-size: $profileH4FontSize;
+    color: $profileH4FontColor;
+}
+.copyTxt {
+    margin-left: 1rem;
+}
+.btnPrimary {
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border: 2px solid $boderColor;;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+    &:hover, &:active {
+        background-color: $btnActiveBgColor;
+        color: $btnActiveColor;
+    }
+    &.active {
+        background-color: $btnActiveBgColor;
+        color: $btnActiveColor;
+    }
+}
+
+// Tabs Dssign
+.collectionTabsWrapper {
+    text-align: center;
+}
+// Tabs
+.tabsWrapper {
+	text-align: center;
+    ul {
+		margin-bottom: 32px !important;
+		border-bottom: none !important;
+	}
+	li {
+		padding: 0.5rem 1rem !important;
+		bottom: 0 !important;
+		font-size: $TabsFontSize !important;
+		border: 2px solid #000000 !important;
+        display: inline-block;
+		border-radius: 4px !important;
+		&:not(:last-child) {
+			margin-right: 32px;
+		}
+        &:focus {
+            background-color: #FFD400 !important;
+            font-weight: 700;
+            border-color: #FFD400;
+            &:after {
+                height: 0;
+            }
+        }
+	}
+    li[aria-selected|="true"] {
+        background-color: $textBgColor !important;
+        font-weight: 700;
+        border-color: $textBgColor;
+        &:after {
+            height: 0;
+        }
+    }
+}
+
+.paginationWrap {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    ul {
+        list-style: none;
+        margin: 0; padding: 0;
+    }
+    li {
+        border: none !important;
+        padding: 0 !important;
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+        &:active, &.active {
+            a {
+                background-color: #FFD400;
+            }
+        }
+        &:hover, &.hover {
+            a {
+                background-color: #FFD400;
+            }
+        }
+        a {
+            display: inline-block;
+            width: 41px; height: 41px;
+            border-radius: 4px;
+            border: 2px solid $PaginationColor;
+            color: $PaginationColor;
+            background-color: $PaginationBgColor;
+            font-size: $PaginationFontSize;
+        }
+        [aria-selected="true"] {
+            background-color: $PaginationActiveBGColor;
+            a {
+                background-color: $PaginationActiveBGColor;
+            }
+        }
+    } 
+}
+
+
+// Footer 
+.footer {
+	padding-top: 18.5px;
+	padding-bottom: 18.5px;
+}
+.footerRow {
+    display: flex;
+    justify-content: space-between
+}
+.socialContainer{
+    list-style: none;
+    margin: 0; padding: 0;
+    display: inline-flex;
+    align-items: center;
+    li {
+        &:not(:last-child) {
+            border-right: 1px solid $textColor;
+            margin-right: 1rem;
+            padding-right: 1rem;
+        }
+    }
+ 	span {
+		margin-right: 1rem;
+	}
+	a {
+        color: $textColor;
+		&:not(:last-child) {
+			margin-right: 35px;
+		}
+	}
+}
+.copyright {
+    display: flex;
+    align-items: center
+}
+
+@media all and (max-width:767px) {
+    .tabsWrapper {
+        ul {
+            margin-bottom: 1rem !important;
+        }
+        li {
+            padding: 0.5rem 1rem !important;
+            &:not(:last-child) {
+                margin: 10px;
+            }
+        }
+    }
+}

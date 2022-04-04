@@ -1,0 +1,55 @@
+@import '../../../profile/variables';
+
+.assetsAll {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(14rem,1fr));
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    article {
+        border: 2px solid $textColor;
+        border-radius: 4px;
+        background-color: $assetsBgColor;
+        a {
+            padding: 8px;
+            display: inline-block
+        }
+        img {
+            border-radius: 4px;
+        }
+    }
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 80px;
+    }
+}
+.thumbsItem {
+    display: inline-block;
+    img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+
+    }
+}
+.thumbsWrap {
+    background-color: #FFFF;
+    //@include box_shadow(1);
+    text-align: center;
+}
+.thumbsContent {
+    text-align: center;
+    h3 {
+        font-size: 24px;
+    }
+    p {
+        padding: 12px;
+        margin-bottom: 0;
+        background-color: #FFFF;
+        font-size: 0.875rem;
+    }
+}

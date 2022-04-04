@@ -1,0 +1,76 @@
+
+@import '../variables';
+
+
+.title {
+    color: $default-color; font-weight: normal;
+    font-size: 2rem;
+}
+.titleWrap {
+    margin-bottom: 2.5rem; text-align: center;
+    p {
+        font-size: 14px;
+    }
+}
+.tab, .nav  {
+	margin-bottom: 1.5rem;
+}
+.formGroup {
+	margin-bottom: 1rem;
+}
+
+/* Theme thumb  */
+
+.thumblist {
+	margin-bottom: 2.25rem;
+	border-radius: 16px;
+	border: 2px solid transparent;
+	transition: all 0.4s ease-in-out;
+	&.active, &:hover {
+		border-color: $active-theme-border-color;
+	}
+	&:hover {
+		.thumbImg {
+			img {
+				opacity: .8;
+			}
+		}
+	}
+}
+.thumbImg {
+	a {
+		img {
+			border-radius: 16px 16px 0px 0px;
+			transition: all 0.4s ease-in-out;
+		}
+	}
+}
+.thumbInfo {
+	padding: .5rem .75rem;
+}
+.thumbTitle {
+	font-size: $theme-thumb-title-size;
+	color: $theme-thumb-title-color;
+	margin-bottom: .75rem;
+	a {
+		color: $theme-thumb-title-color;
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
+}
+.btnGroup {
+	display: flex; flex-wrap: wrap;
+	justify-content: space-between;
+	.btn {
+		min-width: 46%; position: relative;
+		input[type="radio"] {
+			position: absolute; opacity: 0;
+		}
+	}
+	.faeye {
+		margin-right: .2rem;
+	}
+}
+
+
