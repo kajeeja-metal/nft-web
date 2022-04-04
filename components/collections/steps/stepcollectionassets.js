@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faAngleRight, faSortAmountDown, faSearch, faArrows, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 import User from '../../../public/collections/create/images/user.png';
-import User2 from '../../../public/collections/create/images/User2.png';
+import User2 from '../../../public/collections/create/images/user2.png';
 import User3 from '../../../public/collections/create/images/user3.png';
 import User4 from '../../../public/collections/create/images/user4.png';
 
