@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from "next/image"
-import nav from '../../../public/collections/tabnav.module.scss';
+//import nav from '../../../public/collections/tabnav.module.scss';
 import paging from '../../../public/collections/pagination.module.scss';
 import classes from '../../../components/collections/steps/steptheme.module.scss';
 

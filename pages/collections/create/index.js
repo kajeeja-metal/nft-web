@@ -11,7 +11,7 @@ import classes from '../../../public/collections/create/create.module.scss';
 import React, { useState } from "react";
 
 export default function Index() {
-  const [page, setPage] = useState(3);
+  const [page, setPage] = useState(0);
   const FormTitles = ["step 1", "step 2", "step 3", "step 4", "step 5"]
   const StepDisplay = () => {
     if (page === 0) {

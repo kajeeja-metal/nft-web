@@ -20,7 +20,7 @@ import User4 from '../../../public/collections/create/images/user4.png';
 import AssetImg from '../../../public/collections/create/images/assetimg.png';
 
 const StepCollectionAssets = () => {
-  const [modalShow, ModalSetShow] = useState(true);
+  const [modalShow, ModalSetShow] = useState(false);
 
   const handleClose = () => ModalSetShow(false);
   const handleShow = () => ModalSetShow(true);
