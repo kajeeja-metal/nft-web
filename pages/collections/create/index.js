@@ -1,10 +1,10 @@
 
-import StepSidebar from '../../../components/collections/steps/stepsidebar';
-import StepTheme from '../../../components/collections/steps/steptheme';
-import StepCollectionInfo from '../../../components/collections/steps/stepcollectioninfo';
-import StepCollectionThumbnail from '../../../components/collections/steps/stepcollectionthumbnail';
-import StepCollectionAssets from '../../../components/collections/steps/stepcollectionassets';
-import StepCustomizeStyle from '../../../components/collections/steps/stepcustomizestyle';
+import StepSidebar from '../../../components/collections/create/sidebar';
+import StepTheme from '../../../components/collections/create/theme';
+import StepCollectionInfo from '../../../components/collections/create/collectioninfo';
+import StepCollectionThumbnail from '../../../components/collections/create/collectionthumbnail';
+import StepCollectionAssets from '../../../components/collections/create/collectionassets';
+import StepCustomizeStyle from '../../../components/collections/create/customizestyle';
 import classes from '../../../public/collections/create/create.module.scss';
 
 

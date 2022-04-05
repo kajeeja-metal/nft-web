@@ -1,0 +1,50 @@
+
+@import '../variables';
+
+
+$leftnum-color :#5F5F6D;
+$leftnum-font-size :12px;
+$imglist-border-color :#ABABBA;
+$imglist-active-border-color :#00CCA9;
+$imglist-active-bg-color :#E9F6F7;
+
+$border-color:#EAEAED;
+$form-border-radius:5px;
+
+.formGroup {
+	margin-bottom: 1rem;
+}
+.formControl {
+	border: 1px solid $border-color;
+	padding: .75rem; border-radius: $form-border-radius;
+}
+
+.title {
+    color: $default-color; font-weight: normal;
+    font-size: 2rem;
+}
+.titleWrap {
+    margin-bottom: 2.5rem; text-align: center;
+    p {
+        font-size: 14px;
+    }
+}
+
+.selectedItemImg{
+	background: $imglist-active-bg-color;
+	border: 2px solid $imglist-active-border-color;
+	border-radius: 8px; padding: 5px; display: inline-block;
+}
+
+
+.leftnumber{
+	font-size: $leftnum-font-size; color: $leftnum-color;
+	text-align: right; margin-top: .25rem;
+}
+
+.imageStyleSelect {
+	border-top: 1px solid $border-color;
+    padding-top: 10px; padding-left: 10px;
+    padding-bottom: 5px;
+    align-items: center;
+}

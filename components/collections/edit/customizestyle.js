@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import nav from '../../../public/collections/tabnav.module.scss';
 import paging from '../../../public/collections/pagination.module.scss';
-import classes from '../steps/stepcustomizestyle.module.scss';
+import classes from '../create/customizestyle.module.scss';
 
 import {Button, Modal} from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -216,10 +216,6 @@ const StepCustomizeStyle = () => {
         <div className={classes.formGroup}>
           <div className='d-flex justify-content-between'>
             <a className='btn text-danger'><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
-            <div>
-              <button type="button" className="btn btn-default"> Cancel</button>
-	            <button type="button" className="btn btn-primary">Save Draft</button>
-            </div>
           </div>
         </div>
 

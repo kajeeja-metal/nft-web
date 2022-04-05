@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from 'next/link';
 
 import paging from '../../../public/collections/pagination.module.scss';
-import classes from '../steps/stepcollectionassets.module.scss';
+import classes from '../create/collectionassets.module.scss';
 
 import {Button, Modal} from 'react-bootstrap';
 

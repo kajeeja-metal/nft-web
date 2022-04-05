@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
-import classes from '../steps/stepcollectioninfo.module.scss';
+import classes from '../create/collectioninfo.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faPlus } from '@fortawesome/free-regular-svg-icons';

@@ -9,7 +9,7 @@ import style from '../../public/collections/index.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faAngleLeft, faArrowRightFromBracket,faThLarge, faCheck, faClone } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faArrowRightFromBracket,faThLarge  } from '@fortawesome/free-solid-svg-icons';
 
 import MyAccountLefftSidebar from '../../components/account/lefftsidebar';
 import ThumbList from '../../components/collections/thumblist';
@@ -97,8 +97,7 @@ export default function Index() {
                         </div>
                     </div>
 
-
-
+ 
 				</div>
 			</div>
 		</div>

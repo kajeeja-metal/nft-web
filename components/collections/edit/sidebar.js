@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import classes from './stepsidebar.module.scss';
-
-
+import classes from './sidebar.module.scss';
 
 
 const StepSidebar = () => {

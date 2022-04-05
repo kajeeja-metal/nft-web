@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from "next/image"
-//import nav from '../../../public/collections/tabnav.module.scss';
+import nav from '../../../public/collections/tabnav.module.scss';
 import paging from '../../../public/collections/pagination.module.scss';
-import classes from '../../../components/collections/steps/steptheme.module.scss';
+import classes from '../../../components/collections/create/theme.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from '@fortawesome/free-regular-svg-icons';
@@ -29,7 +29,7 @@ const StepTheme = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
-      {/* <ul className={`nav nav-tabs `+ classes.tab}>
+      <ul className={`nav nav-tabs `+ classes.tab}>
         <li className="nav-item">
           <a className={nav.navLink + ' ' + nav.active}  data-bs-toggle="tab" href="#category1">Category A</a>
         </li>
@@ -39,7 +39,7 @@ const StepTheme = () => {
         <li className="nav-item">
           <a className={nav.navLink} data-bs-toggle="tab" href="#category3">Category C</a>
         </li>
-      </ul> */}
+      </ul>
 
       <div className="tab-content">
 
@@ -246,6 +246,13 @@ const StepTheme = () => {
             <li className="page-item"><a className="page-link" href="#">26</a></li>
             <li className="page-item"><a className="page-link" href="#">Next</a></li>
           </ul>
+
+          <div className='text-right'>
+            <div className='btns-group mb-3' style={{ "textAlign":"right"}}>
+                <button className='btn btn-default mr-2'>Cancel</button>
+                <button className='btn btn-primary'>Save</button>
+            </div>
+          </div>
 
         </div>
 
