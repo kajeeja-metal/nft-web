@@ -13,7 +13,7 @@ import { faAngleLeft, faEye, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from "react";
 
 export default function Index() {
-  const [page, setPage] = useState(4);
+  const [page, setPage] = useState(2);
   const FormTitles = ["My Theme", "Collections Info", "Collection thumbnail", "Collection Assets", "Customize collection style"]
   const StepDisplay = () => {
     if (page === 0) {

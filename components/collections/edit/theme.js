@@ -3,10 +3,11 @@ import Link from 'next/link';
 import Image from "next/image"
 import nav from '../../../public/collections/tabnav.module.scss';
 import paging from '../../../public/collections/pagination.module.scss';
-import classes from '../../../components/collections/create/theme.module.scss';
+import classes from '../../../components/collections/edit/theme.module.scss';
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from '@fortawesome/free-regular-svg-icons';
+import { faEye, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import Theme1 from '../../../public/collections/create/theme1.png';
 import Theme2 from '../../../public/collections/create/theme2.png';
 import Theme3 from '../../../public/collections/create/theme3.png';
@@ -58,6 +59,12 @@ const StepTheme = () => {
                       />
                     </a>							
                   </Link>
+                  <div className={classes.checkitem}>
+                    <input type="checkbox"/>
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </div>
                 </div>
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
@@ -69,7 +76,7 @@ const StepTheme = () => {
                       Preview
                     </button>
                     <button className={`btn btn-default `+ classes.btn}>
-                      <input type="radio" name="themeselect" checked />
+                      <input type="radio" name="themeselect" />
                       Current Template
                     </button>
                   </div>
