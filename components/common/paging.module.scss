@@ -1,0 +1,28 @@
+
+@import '../variables';
+
+/*$sidebarlink-color : ;
+$sidebarlink-hover-color : ;*/
+
+.sidebarTitle {
+    font-size: 18px;
+}
+
+.menuLinkWrap {
+    list-style: none;
+    padding-left: 0;
+    li {
+        a {
+            padding: 10px 0; display: block;
+            color: $default-color;
+            font-size: 18px;
+            &:hover, &.active {
+                color: $link-hover-color;
+            }
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+}
+

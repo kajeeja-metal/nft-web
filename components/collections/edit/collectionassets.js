@@ -3,10 +3,13 @@ import Image from "next/image";
 import Link from 'next/link';
 
 import paging from '../../../public/collections/pagination.module.scss';
+import button from '../../../public/account/Buttons.module.scss';
+
+
 import classes from '../create/collectionassets.module.scss';
 
 import {Button, Modal} from 'react-bootstrap';
-
+import Paging from '../../../components/common/pagination.js';
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -37,9 +40,9 @@ const StepCollectionAssets = () => {
       </div> */}
 
       <div className='text-right mb-3' style={{textAlign:"Right"}}>
-        <Button variant="primary" onClick={handleShow}>
+        <button className={`btn ${button.btnPrimary}`} onClick={handleShow}>
           Add Assert to collection
-        </Button>
+        </button>
       </div>
 
       <div className='classes.collectionFilter'>
@@ -426,24 +429,16 @@ const StepCollectionAssets = () => {
           </select>
           <span className={paging.totalLbl}>490 Assets</span>
         </div>
-        <ul className={`pagination justify-content-end my-4`+ ' ' + paging.pagination}>
-          <li className={`page-item` + ' ' + paging.disabled} ><a className="page-link" href="#">Previous</a></li>
-          <li className="page-item"><a className="page-link" href="#">1</a></li>
-          <li className="page-item"><span className="page-link"> .. </span></li>
-          <li className="page-item"><a className="page-link" href="#">10</a></li>
-          <li className="page-item"><a className="page-link" href="#">11</a></li>
-          <li className="page-item"><a className={`page-link`+ ' ' + paging.active} href="#">12</a></li>
-          <li className="page-item"><a className="page-link" href="#">16</a></li>
-          <li className="page-item"><span className="page-link"> .. </span></li>
-          <li className="page-item"><a className="page-link" href="#">26</a></li>
-          <li className="page-item"><a className="page-link" href="#">Next</a></li>
-        </ul>
+         <Paging />
       </div>
 
       <div className={classes.formGroup}>
         <div className='d-flex justify-content-between'>
-          <a className='btn text-danger'><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
-          
+          <a className={`btn ${button.btnTextDanger}`}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
+          <div>
+            <button className={`btn ${button.btnOutlinePrimary}`} style={{"margin-right":8}}>Cancel</button>
+            <button className={`btn ${button.btnPrimary}`}>Save Draft</button>
+          </div>
         </div>
       </div>
 
@@ -677,26 +672,16 @@ const StepCollectionAssets = () => {
               </select>
               <span className={paging.totalLbl}>490 Assets</span>
             </div>
-            <ul className={`pagination justify-content-end my-4` + ' ' + paging.pagination}>
-              <li className={`page-item`+ ' ' + paging.disabled} ><a className="page-link" href="#">Previous</a></li>
-              <li className="page-item"><a className="page-link" href="#">1</a></li>
-              <li className="page-item"><span className="page-link"> .. </span></li>
-              <li className="page-item"><a className="page-link" href="#">10</a></li>
-              <li className="page-item"><a className="page-link" href="#">11</a></li>
-              <li className="page-item"><a className={`page-link`+ ' ' + paging.active} href="#">12</a></li>
-              <li className="page-item"><a className="page-link" href="#">16</a></li>
-              <li className="page-item"><span className="page-link"> .. </span></li>
-              <li className="page-item"><a className="page-link" href="#">26</a></li>
-              <li className="page-item"><a className="page-link" href="#">Next</a></li>
-            </ul>
+            <Paging />
           </div>
           <div className={classes.assetBtnGroup}>
-            <Button variant="default" onClick={handleClose}>
+            <Button className={`btn ${button.btnOutlinePrimary}`} onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary" className={classes.primaryBtn} onClick={handleClose} type="submit">
+            <Button className={`btn ${button.btnPrimary}`}  onClick={handleClose} type="submit">
               Add Assert
             </Button>
+            
           </div>
         </Modal.Body>
 

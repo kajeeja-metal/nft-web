@@ -1,0 +1,54 @@
+@import '../../../public/account/variables/mixin';
+@import '../../../public/account/variables/colors';
+@import '../../../public/account/variables/text_link';
+
+
+.userHeaderWrap {
+    @include box_shadow(1);
+   padding: 1rem;
+   margin-bottom: 32px;
+}
+
+.userHeader {
+   @include flex;
+   @include align-items(center);
+   @include justify-content(space-between);
+} 
+.headerLeft {
+   span {
+       margin-left: 2rem;
+       font-size: $font-large;
+   }
+}
+.userImg {
+   margin-right: 8px;
+   .profileImg {
+       border-radius: 12px;
+   }
+}
+.userLogged {
+   @include flex;
+   margin-right: 2rem;
+   align-items: center;
+}
+.userTitle {
+   font-size: $font-medium;
+   margin-bottom: 4px;
+}
+.userId {
+   font-size: $font-mini;
+}
+
+.headerRight {
+   @include flex;
+}
+
+.btnBorder {
+    padding: 22px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #EAEAED;
+	&:hover {
+		background-color: $gray-900;
+	}
+}

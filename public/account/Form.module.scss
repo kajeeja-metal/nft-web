@@ -1,0 +1,367 @@
+@import './variables/colors';
+@import './variables/forms';
+@import './variables/mixin';
+@import './variables/text_link';
+
+// All Form elements
+
+.formElements {
+	width: 100%;	
+	padding: $input-padding-y $input-padding-x; 
+	//font-weight: $input-font-weight;
+	line-height: $input-line-height;
+	background-color: $white;
+	border: $input-border-width solid $input-border-color;
+	border-radius: $input-border-radius;
+	// color: $input-text-color;
+	font-weight: $input-font-weight;
+	@include box-shadow($input-box-shadow);
+	@include transition($input-transition);
+	&:disabled, &.disabled {
+		background-color: $default;
+		opacity: 1;
+		/*pointer-events: none;*/
+		cursor: not-allowed;
+		&::placeholder {
+		    color: $input-placeholder-text-color;
+		}	
+	}
+	&:not(:disabled):not(.disabled) {
+		&:focus, &.focus, &:hover, &.hover, &:active, &.active {
+			color: $input-focus-color;
+			background-color: $input-focus-bg;
+			border-color: $input-focus-border-color;
+			outline: 0;
+			//box-shadow: 0 0 0 0.2rem rgba(197,197,197,.25);
+		}
+	}
+	&.error, &.is-invalid {
+		border-color: $error;
+		~ .error-msg {
+			display: block;
+		}
+	}
+	&::placeholder {
+	    color: $input-placeholder-text-color;
+  	}
+  	// Small Size elements
+  	&.small { 
+		padding: $input-padding-y-sm $input-padding-x-sm;
+		font-size: $font-size-sm;
+		line-height: $input-line-height-sm;
+		@include border-radius($input-border-radius-sm);
+  	}
+  	// Large Size elements
+  	&.large {
+		padding: $input-padding-y-lg $input-padding-x-lg;
+		font-size: $font-size-lg;
+		line-height: $input-line-height-lg;
+		@include border-radius($input-border-radius-lg);
+  	}
+}
+
+select.small {
+  &:not([size]):not([multiple]) {
+    height: $input-height-sm;
+  }
+}
+
+select.large {
+  &:not([size]):not([multiple]) {
+    height: $input-height-lg;
+  }
+}
+
+// Lable if inline in Form
+.col-form-label {
+  padding-top: calc(#{$input-padding-y} + #{$input-border-width});
+  padding-bottom: calc(#{$input-padding-y} + #{$input-border-width});
+  margin-bottom: 0 !important; 
+  font-size: inherit;
+  line-height: $input-line-height;
+}
+
+.inputGroup {
+	position: relative;
+	.inputGroupText {
+		border-top-left-radius: 1rem;
+		border-bottom-left-radius: 1rem;
+		background-color: transparent;
+		padding-left: 1.5rem;
+	}
+	.formElements {
+		position: relative;
+		flex: 1 1 auto;
+		width: 1%;
+		min-width: 0;
+		border-left: none;
+		padding-left: 0.5rem;
+		border-top-left-radius: 0 !important;
+		border-bottom-left-radius: 0 !important;
+	}
+	svg {
+		color: $grayLight;
+	}
+}
+
+.selectDrop {
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik05LjE0NzE5IDAuMzc2ODkySDEuMTQwODdDMC43NDE0OCAwLjM3Njg5MiAwLjUyNjMzOCAwLjg0NzkyNCAwLjc4Njc1NyAxLjE1MjE5TDQuNDM1OCA1LjQxNTY0QzQuODA4NTEgNS44NTExIDUuNDc5NTUgNS44NTExIDUuODUyMjYgNS40MTU2NEw5LjUwMTMgMS4xNTIxOUM5Ljc2MTcyIDAuODQ3OTI0IDkuNTQ2NTggMC4zNzY4OTIgOS4xNDcxOSAwLjM3Njg5MloiIGZpbGw9IiNBN0FCQzMiLz4KPC9zdmc+Cg==");
+	border-radius: 4px;
+	border-color: $gray100;
+	color: $grayLight;
+	padding: 0.75rem 2.25rem 0.75rem 0.75rem;
+	background-size: 11px;
+}
+.selectDrops {
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik05LjE0NzE5IDAuMzc2ODkySDEuMTQwODdDMC43NDE0OCAwLjM3Njg5MiAwLjUyNjMzOCAwLjg0NzkyNCAwLjc4Njc1NyAxLjE1MjE5TDQuNDM1OCA1LjQxNTY0QzQuODA4NTEgNS44NTExIDUuNDc5NTUgNS44NTExIDUuODUyMjYgNS40MTU2NEw5LjUwMTMgMS4xNTIxOUM5Ljc2MTcyIDAuODQ3OTI0IDkuNTQ2NTggMC4zNzY4OTIgOS4xNDcxOSAwLjM3Njg5MloiIGZpbGw9IiNBN0FCQzMiLz4KPC9zdmc+Cg==");
+	border-radius: 1rem;
+	border-color: $gray100;
+	color: $grayLight;
+	padding: 0.75rem 2.25rem 0.75rem 0.75rem;
+	background-size: 11px;
+}
+
+.selectDropArrow {
+	border-radius: 4px;
+	border-color: $gray100;
+	color: $grayLight;
+	padding: 0.75rem 2.25rem 0.75rem 0.75rem;
+	background-size: 11px;
+	border-radius: 4px !important;
+}
+
+
+
+// file Upload
+.fileupload {
+	position: relative;
+	overflow: hidden;
+	@include inline-flex;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+	input[type="file"] {
+	  position: absolute;
+	  opacity: 0;
+	  width: 100%;
+	  line-height: 60px;
+	}
+	.lable-file {
+	  cursor: pointer;
+	  padding: 17px 31px;
+	  border-radius: 16px;
+	  margin-bottom: 1rem;
+	}
+	&.leftSpace {
+		margin-left: 60px;
+	}
+	&:hover {
+		.lable-file {
+			background-color: $gray-900;
+		}
+	}
+
+
+}
+.faClone {
+    font-weight: 400;
+}
+
+.input-group {
+	.form-control {
+		border-right: none;
+	}
+}
+.input-group-text {
+	border-color: $input-border-color;
+	background-color: transparent;
+	border-top-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+}
+
+.checkTrue {
+	color: $success;
+}
+
+
+.form-rows {
+	margin-bottom: 12px;
+	clear: both;
+}
+.form-row, .form-group {
+	label {
+		margin-bottom: .5rem;
+		display: inline-block;
+		//font-size: $form-label-font-size;
+		//color: $form-label-text-color;
+	}
+}
+.formGroup {
+	margin-bottom: 1rem;
+	label {
+		margin-bottom: .5rem;
+		display: inline-block;
+	}	
+}
+
+// Checkbox Radio
+.chk-group, .radio-group, .custom-radio-group {
+	.chk-wrap, .custom-radio {
+		margin-right: 10px; @include inline-flex;
+	}
+	.radio-wrap {
+		margin-right: 10px;
+	}
+}
+.chk-groupd, .radio-groupd {
+	margin-right: 10px;
+	display: inline-flex !important;
+}
+
+// Checkbox Style
+.chkWrap {
+	padding-bottom: 0;
+	input[type="checkbox"] {
+		position: absolute; opacity: 0;
+	}	
+	.chkmark {
+		position: relative; display: block; cursor: pointer; line-height: 28px;
+		transition:all 0.5s ease-in-out 0s; -webkit-transition:all 0.5s ease-in-out 0s;
+		&:before{
+			border:1px solid $grayLight; display: inline-block; width: 20px; height: 20px; background: $white;
+			content:""; margin:2px 10px 0 0; float: left; cursor: pointer; @include border-radius(3px);
+		}
+	}
+	
+	input[type="checkbox"]:checked + .chkmark::after {
+		content: "\2714"; font-family: 'Font Awesome 6 Pro';
+		color: $primary; position: absolute; left: 4px; top: 0;
+	}
+}
+
+// Radio Style
+// .radio-wrap {
+// 	input[type="radio"] {
+// 		position: absolute; opacity: 0;
+// 	}
+// 	.radio-label {
+// 		position: relative; padding-left: 26px; cursor: pointer;
+// 		padding-top: 2px;
+// 		&:before {
+// 			position:absolute; left: 0; top: 0; content: "";
+// 			border:1px solid $border; width: 20px; height: 20px;
+// 			cursor: pointer; @include border-radius(50%);
+// 			background: $white;
+// 		}
+// 		i {
+// 			display: none;
+// 		}
+// 	}
+// 	input[type="radio"]:checked +.radio-label {
+// 		&:after {
+// 			position:absolute; left: 4px; top: 4px; content: "";
+// 			width: 12px; height: 12px; background: $primary;
+// 			@include border-radius(50%);
+// 		}
+// 	}
+// }
+
+// Start Date Time Design
+.date-pickers {
+	display: block;
+	width: 100%;
+	padding: $input-padding-y $input-padding-x;
+	font-size: $input-font-size;
+	font-weight: $input-font-weight;
+	line-height: $input-line-height;
+	color: $black;
+	background-color: $white;
+	background-clip: padding-box;
+	border: $input-border-width solid $border;
+	border-radius: $input-border-radius;
+	@include box-shadow($input-box-shadow);
+	@include transition($input-transition);
+}	
+// End Date Time Design
+
+// Start increament decrement
+.qty-box {
+    .product-label {
+        padding-right: 10px;
+        display: none;
+    }
+}
+
+
+.lte8 {
+	.tooltipwrap {
+		.tooltip {
+			display: none;
+		}
+		&:hover {
+			.tooltip {
+				display: block;
+			}
+		}
+	}
+}
+
+
+.form-groups {
+	margin-bottom: 10px;
+}
+.btns-group {
+	@include flex;
+	margin-top: 1rem;
+	.first-btn {
+		margin-right: 1rem;
+	}
+	.last-btn {
+		margin-left: 1rem;
+	}
+}
+
+.btnsWrap {
+	&.text_right {
+		text-align: right;
+	}
+	.btn {
+		border-radius: 16px;
+		padding: 17px 38px;
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+}
+
+.btnBorder {
+	border: 1px solid #EAEAED;
+	&:hover {
+		background-color: $gray-900;
+	}
+}
+.btnDeactivate {
+	padding: 17px 31px;
+	border-radius: 16px;
+}
+.btn-icons {
+	padding: 17px 31px;
+	border-radius: 16px;
+	border: 1px solid #EAEAED;
+	&:hover {
+		background-color: $gray-900;
+	}
+}
+
+.form-group {
+	margin-bottom: 1rem;
+}
+
+.totalFilter {
+	display: flex;
+	align-items: center;
+}
+.statusCount {
+	margin-left: 1rem;
+	white-space: nowrap
+}

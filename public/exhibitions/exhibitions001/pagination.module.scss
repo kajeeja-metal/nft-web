@@ -1,0 +1,37 @@
+
+@import 'variable';
+
+.pagination {
+    margin: 1.75rem 0;
+    li {
+        margin-left: 2px;
+        a, span {
+            border: none;
+            color: $paging-default-color;
+            border-radius: $paging-border-radius; font-size: $paging-font-size;
+
+            &:hover {                
+                color: $paging-hover-color;
+                background-color: $paging-hover-bgcolor;
+            }
+            &.active {
+                background-color: $paging-active-bgcolor;
+                color: $paging-active-color;
+            }
+        }
+    }
+    .disabled {
+        display: none;
+    }
+}
+
+.totalPaging {
+    @include flexbox;
+    justify-content: space-between;
+}
+.total {
+     @include flex; align-items: center;
+    .totalLbl {
+        white-space: nowrap; margin-left: .5rem;
+    }
+}

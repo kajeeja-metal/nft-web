@@ -1,4 +1,4 @@
-
+import button from '../../../public/account/Buttons.module.scss';
 import StepSidebar from '../../../components/collections/create/sidebar';
 import StepTheme from '../../../components/collections/view/theme';
 import StepCollectionInfo from '../../../components/collections/view/collectioninfo';
@@ -39,7 +39,7 @@ export default function Index() {
           <div className='container'>
             <div className={classes.progressInner}>
               <div className={classes.backThemename}>
-                <button className='btn btn-default'
+                <button className={`btn ${button.btnOutlinePrimary}`}
                   disabled={page == 0}
                   onClick={() => {
                     setPage((currPage) => currPage - 1);
@@ -52,7 +52,7 @@ export default function Index() {
              <div className={classes.headerBtnGroup}>
                 <div className={classes.statusButton}>
                   <span>Status:</span>
-                  <button className='btn btn-danger'>
+                  <button className={`btn ${button.btnOutlineDanger}`}>
                     <FontAwesomeIcon icon={faGlobe} className={classes.faGlobe} />
                     Unpublish  
                   </button>
@@ -61,14 +61,14 @@ export default function Index() {
                     Publishing  
                   </button> */}
                 </div>
-                <button className='btn btn-default'>
+                <button className={`btn ${button.btnOutlinePrimary}`}>
                 <FontAwesomeIcon icon={faEye} className={classes.faeye} /> Preview  
                 </button>
-                <button className='btn btn-default'>
+                <button className={`btn ${button.btnOutlinePrimary}`}>
                   <FontAwesomeIcon icon={faPen} className={classes.faPen} />  
                    Edit  
                 </button>
-                <button className='btn btn-primary'
+                <button className={`btn ${button.btnPrimary}`} 
                   onClick={() => {
                     if (page === FormTitles.length - 1) {
                       alert("Finished");
@@ -78,7 +78,7 @@ export default function Index() {
                     }
                   }}
                 > <FontAwesomeIcon icon={faGlobe} className={classes.faGlobe} /> 
-                  {page === FormTitles.length - 1 ? "Submit" : "Publish"}
+                  {page === FormTitles.length - 1 ? "Save" : "Publish"}
                 </button>
                 {/* <button className='btn btn-danger'>
                    <FontAwesomeIcon icon={faGlobe} className={classes.faGlobe} />

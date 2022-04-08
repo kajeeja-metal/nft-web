@@ -1,0 +1,1918 @@
+@import '../account/variables/colors';
+
+.btnPrimary {
+    background-color: $btnPrimaryNormalBG;
+    color: $btnPrimaryNormalColor;
+    border: 1px solid $lightModeprimaryMain;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnPrimaryHoverBG;
+        color: $btnPrimaryHoverColor;
+        border-color: $btnPrimaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnPrimaryClickedBG;
+        color: $btnPrimaryClickedColor;
+        border-color: $btnPrimaryClickedBorder;
+    }
+}
+
+.btnPrimaryHover {
+    background-color: $btnPrimaryHoverBG;
+    color: $btnPrimaryHoverColor;
+    border-color: $btnPrimaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnPrimaryHoverBG;
+        color: $btnPrimaryHoverColor;
+        border-color: $btnPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnPrimaryClickedBG;
+        color: $btnPrimaryClickedColor;
+        border-color: $btnPrimaryClickedBorder;
+    }
+}
+.btnPrimaryClicked {
+    background-color: $btnPrimaryClickedBG;
+    color: $btnPrimaryClickedColor;
+    border-color: $btnPrimaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnPrimaryHoverBG;
+        color: $btnPrimaryHoverColor;
+        border-color: $btnPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnPrimaryClickedBG;
+        color: $btnPrimaryClickedColor;
+        border-color: $btnPrimaryClickedBorder;
+    }
+}
+
+.btnPrimaryDesaibled {
+    background-color: $btnPrimaryDesaibleBG;
+    color: $btnPrimaryDesaibleColor;
+    border-color: $btnPrimaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnPrimaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnPrimaryDesaibleColor;
+    }
+}
+// Primary OutLine Style
+.btnOutlinePrimary {
+    background-color: $btnOutlinePrimaryNormalBG;
+    color: $btnOutlinePrimaryNormalColor;
+    border: 1px solid $btnOutlinePrimaryNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnOutlinePrimaryHoverBG;
+        color: $btnOutlinePrimaryHoverColor;
+        border-color: $btnOutlinePrimaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnOutlinePrimaryClickedBG;
+        color: $btnOutlinePrimaryClickedColor;
+        border-color: $btnOutlinePrimaryClickedBorder;
+    }
+}
+
+.btnOutlinePrimaryHover {
+    background-color: $btnOutlinePrimaryHoverBG;
+    color: $btnOutlinePrimaryHoverColor;
+    border-color: $btnOutlinePrimaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnOutlinePrimaryHoverBG;
+        color: $btnOutlinePrimaryHoverColor;
+        border-color: $btnOutlinePrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnOutlinePrimaryClickedBG;
+        color: $btnOutlinePrimaryClickedColor;
+        border-color: $btnOutlinePrimaryClickedBorder;
+    }
+}
+.btnOutlinePrimaryClicked {
+    background-color: $btnOutlinePrimaryClickedBG;
+    color: $btnOutlinePrimaryClickedColor;
+    border-color: $btnOutlinePrimaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnOutlinePrimaryHoverBG;
+        color: $btnOutlinePrimaryClickedColor;
+        border-color: $btnOutlinePrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnOutlinePrimaryClickedBG;
+        color: $btnOutlinePrimaryClickedColor;
+        border-color: $btnOutlinePrimaryClickedBorder;
+    }
+}
+
+.btnOutlinePrimaryDesaibled {
+    background-color: $btnOutlinePrimaryDesaibleBG;
+    color: $btnOutlinePrimaryDesaibleColor;
+    border-color: $btnOutlinePrimaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnOutlinePrimaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnOutlinePrimaryDesaibleColor;
+    }
+}
+// BTN Text Primary Button
+.btnTextPrimary {
+    background-color: $btnTextPrimaryNormalBG;
+    color: $btnTextPrimaryNormalColor;
+    border: 1px solid $btnTextPrimaryNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnTextPrimaryHoverBG;
+        color: $btnTextPrimaryHoverColor;
+        border-color: $btnTextPrimaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnTextPrimaryClickedBG;
+        color: $btnTextPrimaryClickedColor;
+        border-color: $btnTextPrimaryClickedBorder;
+    }
+}
+
+.btnTextPrimaryHover {
+    background-color: $btnTextPrimaryHoverBG;
+    color: $btnTextPrimaryHoverColor;
+    border-color: $btnTextPrimaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnTextPrimaryHoverBG;
+        color: $btnTextPrimaryHoverColor;
+        border-color: $btnTextPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnTextPrimaryClickedBG;
+        color: $btnTextPrimaryClickedColor;
+        border-color: $btnTextPrimaryClickedBorder;
+    }
+}
+.btnTextPrimaryClicked {
+    background-color: $btnTextPrimaryClickedBG;
+    color: $btnTextPrimaryClickedColor;
+    border-color: $btnTextPrimaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnTextPrimaryHoverBG;
+        color: $btnTextPrimaryHoverColor;
+        border-color: $btnTextPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnTextPrimaryClickedBG;
+        color: $btnTextPrimaryClickedColor;
+        border-color: $btnTextPrimaryClickedBorder;
+    }
+}
+
+.btnTextPrimaryDesaibled {
+    background-color: $btnTextPrimaryDesaibleBG;
+    color: $btnTextPrimaryDesaibleColor;
+    border-color: $btnTextPrimaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnTextPrimaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnTextPrimaryDesaibleColor;
+    }
+}
+
+// BTN Primary with Icons Prefix
+.btnIconPrefixPrimary {
+    background-color: $btnIconPrefixPrimaryNormalBG;
+    color: $btnIconPrefixPrimaryNormalColor;
+    border: 1px solid $lightModeprimaryMain;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixPrimaryHoverBG;
+        color: $btnIconPrefixPrimaryHoverColor;
+        border-color: $btnIconPrefixPrimaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconPrefixPrimaryClickedBG;
+        color: $btnIconPrefixPrimaryClickedColor;
+        border-color: $btnIconPrefixPrimaryClickedBorder;
+    }
+}
+
+.btnIconPrefixPrimaryHover {
+    background-color: $btnIconPrefixPrimaryHoverBG;
+    color: $btnIconPrefixPrimaryHoverColor;
+    border-color: $btnIconPrefixPrimaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixPrimaryHoverBG;
+        color: $btnIconPrefixPrimaryHoverColor;
+        border-color: $btnIconPrefixPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixPrimaryClickedBG;
+        color: $btnIconPrefixPrimaryClickedColor;
+        border-color: $btnIconPrefixPrimaryClickedBorder;
+    }
+}
+.btnIconPrefixPrimaryClicked {
+    background-color: $btnIconPrefixPrimaryClickedBG;
+    color: $btnIconPrefixPrimaryClickedColor;
+    border-color: $btnIconPrefixPrimaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixPrimaryHoverBG;
+        color: $btnIconPrefixPrimaryHoverColor;
+        border-color: $btnIconPrefixPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixPrimaryClickedBG;
+        color: $btnIconPrefixPrimaryClickedColor;
+        border-color: $btnIconPrefixPrimaryClickedBorder;
+    }
+}
+
+.btnIconPrefixPrimarysDesaibled {
+    background-color: $btnIconPrefixPrimaryDesaibleBG;
+    color: $btnIconPrefixPrimaryDesaibleColor;
+    border-color: $btnIconPrefixPrimaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconPrefixPrimaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconPrefixPrimaryDesaibleColor;
+    }
+}
+
+// BTN Primary Outline Prefix Icons
+.btnIconPrefixOutlinePrimary {
+    background-color: $btnIconPrefixOutlinePrimaryNormalBG;
+    color: $btnIconPrefixOutlinePrimaryNormalColor;
+    border: 1px solid $lightModeprimaryMain;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixOutlinePrimaryHoverBG;
+        color: $btnIconPrefixOutlinePrimaryHoverColor;
+        border-color: $btnIconPrefixOutlinePrimaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconPrefixOutlinePrimaryClickedBG;
+        color: $btnIconPrefixOutlinePrimaryClickedColor;
+        border-color: $btnIconPrefixOutlinePrimaryClickedBorder;
+    }
+}
+
+.btnIconPrefixOutlinePrimaryHover {
+    background-color: $btnIconPrefixOutlinePrimaryHoverBG;
+    color: $btnIconPrefixOutlinePrimaryHoverColor;
+    border-color: $btnIconPrefixOutlinePrimaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixOutlinePrimaryHoverBG;
+        color: $btnIconPrefixOutlinePrimaryHoverColor;
+        border-color: $btnIconPrefixOutlinePrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixOutlinePrimaryClickedBG;
+        color: $btnIconPrefixOutlinePrimaryClickedColor;
+        border-color: $btnIconPrefixOutlinePrimaryClickedBorder;
+    }
+}
+.btnIconPrefixOutlinePrimaryClicked {
+    background-color: $btnIconPrefixOutlinePrimaryClickedBG;
+    color: $btnIconPrefixOutlinePrimaryClickedColor;
+    border-color: $btnIconPrefixOutlinePrimaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixOutlinePrimaryHoverBG;
+        color: $btnIconPrefixOutlinePrimaryHoverColor;
+        border-color: $btnIconPrefixOutlinePrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixOutlinePrimaryClickedBG;
+        color: $btnIconPrefixOutlinePrimaryClickedColor;
+        border-color: $btnIconPrefixOutlinePrimaryClickedBorder;
+    }
+}
+
+.btnIconPrefixOutlinePrimarysDesaibled {
+    background-color: $btnIconPrefixOutlinePrimaryDesaibleBG;
+    color: $btnIconPrefixOutlinePrimaryDesaibleColor;
+    border-color: $btnIconPrefixOutlinePrimaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconPrefixOutlinePrimaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconPrefixOutlinePrimaryDesaibleColor;
+    }
+}
+
+// BTN Primary text Icons
+.btnIconPrefixTextPrimary {
+    background-color: $btnIconPrefixTextPrimaryNormalBG;
+    color: $btnIconPrefixTextPrimaryNormalColor;
+    border: 1px solid $btnIconPrefixTextPrimaryNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixTextPrimaryHoverBG;
+        color: $btnIconPrefixTextPrimaryHoverColor;
+        border-color: $btnIconPrefixTextPrimaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconPrefixTextPrimaryClickedBG;
+        color: $btnIconPrefixTextPrimaryClickedColor;
+        border-color: $btnIconPrefixTextPrimaryClickedBorder;
+    }
+}
+
+.btnIconPrefixTextPrimaryHover {
+    background-color: $btnIconPrefixTextPrimaryHoverBG;
+    color: $btnIconPrefixTextPrimaryHoverColor;
+    border-color: $btnIconPrefixTextPrimaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixTextPrimaryHoverBG;
+        color: $btnIconPrefixTextPrimaryHoverColor;
+        border-color: $btnIconPrefixTextPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixTextPrimaryClickedBG;
+        color: $btnIconPrefixTextPrimaryClickedColor;
+        border-color: $btnIconPrefixTextPrimaryClickedBorder;
+    }
+}
+.btnIconPrefixTextPrimaryClicked {
+    background-color: $btnIconPrefixTextPrimaryClickedBG;
+    color: $btnIconPrefixTextPrimaryClickedColor;
+    border-color: $btnIconPrefixTextPrimaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixTextPrimaryHoverBG;
+        color: $btnIconPrefixTextPrimaryHoverColor;
+        border-color: $btnIconPrefixTextPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixTextPrimaryClickedBG;
+        color: $btnIconPrefixTextPrimaryClickedColor;
+        border-color: $btnIconPrefixTextPrimaryClickedBorder;
+    }
+}
+
+.btnIconPrefixTextPrimarysDesaibled {
+    background-color: $btnIconPrefixTextPrimaryDesaibleBG;
+    color: $btnIconPrefixTextPrimaryDesaibleColor;
+    border-color: $btnIconPrefixTextPrimaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconPrefixTextPrimaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconPrefixTextPrimaryDesaibleColor;
+    }
+}
+
+// BTN Primary Icons Suffix
+.btnIconSuffixPrimary {
+    background-color: $btnIconSuffixPrimaryNormalBG;
+    color: $btnIconSuffixPrimaryNormalColor;
+    border: 1px solid $lightModeprimaryMain;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixPrimaryHoverBG;
+        color: $btnIconSuffixPrimaryHoverColor;
+        border-color: $btnIconSuffixPrimaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconSuffixPrimaryClickedBG;
+        color: $btnIconSuffixPrimaryClickedColor;
+        border-color: $btnIconSuffixPrimaryClickedBorder;
+    }
+}
+
+.btnIconSuffixPrimaryHover {
+    background-color: $btnIconSuffixPrimaryHoverBG;
+    color: $btnIconSuffixPrimaryHoverColor;
+    border-color: $btnIconSuffixPrimaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixPrimaryHoverBG;
+        color: $btnIconSuffixPrimaryHoverColor;
+        border-color: $btnIconSuffixPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixPrimaryClickedBG;
+        color: $btnIconSuffixPrimaryClickedColor;
+        border-color: $btnIconSuffixPrimaryClickedBorder;
+    }
+}
+.btnIconSuffixPrimaryClicked {
+    background-color: $btnIconSuffixPrimaryClickedBG;
+    color: $btnIconSuffixPrimaryClickedColor;
+    border-color: $btnIconSuffixPrimaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixPrimaryHoverBG;
+        color: $btnIconSuffixPrimaryHoverColor;
+        border-color: $btnIconSuffixPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixPrimaryClickedBG;
+        color: $btnIconSuffixPrimaryClickedColor;
+        border-color: $btnIconSuffixPrimaryClickedBorder;
+    }
+}
+
+.btnIconSuffixPrimarysDesaibled {
+    background-color: $btnIconSuffixPrimaryDesaibleBG;
+    color: $btnIconSuffixPrimaryDesaibleColor;
+    border-color: $btnIconSuffixPrimaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconSuffixPrimaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconSuffixPrimaryDesaibleColor;
+    }
+}
+
+// BTN Primary Outline Suffix Icons
+.btnIconSuffixOutlinePrimary {
+    background-color: $btnIconSuffixOutlinePrimaryNormalBG;
+    color: $btnIconSuffixOutlinePrimaryNormalColor;
+    border: 1px solid $btnIconSuffixOutlinePrimaryNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixOutlinePrimaryHoverBG;
+        color: $btnIconSuffixOutlinePrimaryHoverColor;
+        border-color: $btnIconSuffixOutlinePrimaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconSuffixOutlinePrimaryClickedBG;
+        color: $btnIconSuffixOutlinePrimaryClickedColor;
+        border-color: $btnIconSuffixOutlinePrimaryClickedBorder;
+    }
+}
+
+.btnIconSuffixOutlinePrimaryHover {
+    background-color: $btnIconSuffixOutlinePrimaryHoverBG;
+    color: $btnIconSuffixOutlinePrimaryHoverColor;
+    border-color: $btnIconSuffixOutlinePrimaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixOutlinePrimaryHoverBG;
+        color: $btnIconSuffixOutlinePrimaryHoverColor;
+        border-color: $btnIconSuffixOutlinePrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixOutlinePrimaryClickedBG;
+        color: $btnIconSuffixOutlinePrimaryClickedColor;
+        border-color: $btnIconSuffixOutlinePrimaryClickedBorder;
+    }
+}
+.btnIconSuffixOutlinePrimaryClicked {
+    background-color: $btnIconSuffixOutlinePrimaryClickedBG;
+    color: $btnIconSuffixOutlinePrimaryClickedColor;
+    border-color: $btnIconSuffixOutlinePrimaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixOutlinePrimaryHoverBG;
+        color: $btnIconSuffixOutlinePrimaryHoverColor;
+        border-color: $btnIconSuffixOutlinePrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixOutlinePrimaryClickedBG;
+        color: $btnIconSuffixOutlinePrimaryClickedColor;
+        border-color: $btnIconSuffixOutlinePrimaryClickedBorder;
+    }
+}
+
+.btnIconSuffixOutlinePrimarysDesaibled {
+    background-color: $btnIconSuffixOutlinePrimaryDesaibleBG;
+    color: $btnIconSuffixOutlinePrimaryDesaibleColor;
+    border-color: $btnIconSuffixOutlinePrimaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconSuffixOutlinePrimaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconSuffixOutlinePrimaryDesaibleColor;
+    }
+}
+
+// BTN Primary text Icons
+.btnIconSuffixTextPrimary {
+    background-color: $btnIconSuffixTextPrimaryNormalBG;
+    color: $btnIconSuffixTextPrimaryNormalColor;
+    border: 1px solid $btnIconSuffixTextPrimaryNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixTextPrimaryHoverBG;
+        color: $btnIconSuffixTextPrimaryHoverColor;
+        border-color: $btnIconSuffixTextPrimaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconSuffixTextPrimaryClickedBG;
+        color: $btnIconSuffixTextPrimaryClickedColor;
+        border-color: $btnIconSuffixTextPrimaryClickedBorder;
+    }
+}
+
+.btnIconSuffixTextPrimaryHover {
+    background-color: $btnIconSuffixTextPrimaryHoverBG;
+    color: $btnIconSuffixTextPrimaryHoverColor;
+    border-color: $btnIconSuffixTextPrimaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixTextPrimaryHoverBG;
+        color: $btnIconSuffixTextPrimaryHoverColor;
+        border-color: $btnIconSuffixTextPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixTextPrimaryClickedBG;
+        color: $btnIconSuffixTextPrimaryClickedColor;
+        border-color: $btnIconSuffixTextPrimaryClickedBorder;
+    }
+}
+.btnIconSuffixTextPrimaryClicked {
+    background-color: $btnIconSuffixTextPrimaryClickedBG;
+    color: $btnIconSuffixTextPrimaryClickedColor;
+    border-color: $btnIconSuffixTextPrimaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixTextPrimaryHoverBG;
+        color: $btnIconSuffixTextPrimaryHoverColor;
+        border-color: $btnIconSuffixTextPrimaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixTextPrimaryClickedBG;
+        color: $btnIconSuffixTextPrimaryClickedColor;
+        border-color: $btnIconSuffixTextPrimaryClickedBorder;
+    }
+}
+
+.btnIconSuffixTextPrimarysDesaibled {
+    background-color: $btnIconSuffixTextPrimaryDesaibleBG;
+    color: $btnIconSuffixTextPrimaryDesaibleColor;
+    border-color: $btnIconSuffixTextPrimaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconSuffixTextPrimaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconSuffixTextPrimaryDesaibleColor;
+    }
+}
+
+
+////// BTNs Secondary Styles
+.btnSecondary {
+    background-color: $btnSecondaryNormalBG;
+    color: $btnSecondaryNormalColor;
+    border: 1px solid $lightModesecondaryMain;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnSecondaryHoverBG;
+        color: $btnSecondaryHoverColor;
+        border-color: $btnSecondaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnSecondaryClickedBG;
+        color: $btnSecondaryClickedColor;
+        border-color: $btnSecondaryClickedBorder;
+    }
+}
+
+.btnSecondaryHover {
+    background-color: $btnSecondaryHoverBG;
+    color: $btnSecondaryHoverColor;
+    border-color: $btnSecondaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnSecondaryHoverBG;
+        color: $btnSecondaryHoverColor;
+        border-color: $btnSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnSecondaryClickedBG;
+        color: $btnSecondaryClickedColor;
+        border-color: $btnSecondaryClickedBorder;
+    }
+}
+.btnSecondaryClicked {
+    background-color: $btnSecondaryClickedBG;
+    color: $btnSecondaryClickedColor;
+    border-color: $btnSecondaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnSecondaryHoverBG;
+        color: $btnSecondaryHoverColor;
+        border-color: $btnSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnSecondaryClickedBG;
+        color: $btnSecondaryClickedColor;
+        border-color: $btnSecondaryClickedBorder;
+    }
+}
+
+.btnSecondarysDesaibled {
+    background-color: $btnSecondaryDesaibleBG;
+    color: $btnSecondaryDesaibleColor;
+    border-color: $btnSecondaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnSecondaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnSecondaryDesaibleColor;
+    }
+}
+// Secondary OutLine Style
+.btnOutlineSecondary {
+    background-color: $btnOutlineSecondaryNormalBG;
+    color: $btnOutlineSecondaryNormalColor;
+    border: 1px solid $btnOutlineSecondaryNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnOutlineSecondaryHoverBG;
+        color: $btnOutlineSecondaryHoverColor;
+        border-color: $btnOutlineSecondaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnOutlineSecondaryClickedBG;
+        color: $btnOutlineSecondaryClickedColor;
+        border-color: $btnOutlineSecondaryClickedBorder;
+    }
+}
+
+.btnOutlineSecondaryHover {
+    background-color: $btnOutlineSecondaryHoverBG;
+    color: $btnOutlineSecondaryHoverColor;
+    border-color: $btnOutlineSecondaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnOutlineSecondaryHoverBG;
+        color: $btnOutlineSecondaryHoverColor;
+        border-color: $btnOutlineSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnOutlineSecondaryClickedBG;
+        color: $btnOutlineSecondaryClickedColor;
+        border-color: $btnOutlineSecondaryClickedBorder;
+    }
+}
+.btnOutlineSecondaryClicked {
+    background-color: $btnOutlineSecondaryClickedBG;
+    color: $btnOutlineSecondaryClickedColor;
+    border-color: $btnOutlineSecondaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnOutlineSecondaryHoverBG;
+        color: $btnOutlineSecondaryClickedColor;
+        border-color: $btnOutlineSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnOutlineSecondaryClickedBG;
+        color: $btnOutlineSecondaryClickedColor;
+        border-color: $btnOutlineSecondaryClickedBorder;
+    }
+}
+
+.btnOutlineSecondaryDesaibled {
+    background-color: $btnOutlineSecondaryDesaibleBG;
+    color: $btnOutlineSecondaryDesaibleColor;
+    border-color: $btnOutlineSecondaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnOutlineSecondaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnOutlineSecondaryDesaibleColor;
+    }
+}
+// BTN Text Secondary Button
+.btnTextSecondary {
+    background-color: $btnTextSecondaryNormalBG;
+    color: $btnTextSecondaryNormalColor;
+    border: 1px solid $btnTextSecondaryNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnTextSecondaryHoverBG;
+        color: $btnTextSecondaryHoverColor;
+        border-color: $btnTextSecondaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnTextSecondaryClickedBG;
+        color: $btnTextSecondaryClickedColor;
+        border-color: $btnTextSecondaryClickedBorder;
+    }
+}
+
+.btnTextSecondaryHover {
+    background-color: $btnTextSecondaryHoverBG;
+    color: $btnTextSecondaryHoverColor;
+    border-color: $btnTextSecondaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnTextSecondaryHoverBG;
+        color: $btnTextSecondaryHoverColor;
+        border-color: $btnTextSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnTextSecondaryClickedBG;
+        color: $btnTextSecondaryClickedColor;
+        border-color: $btnTextSecondaryClickedBorder;
+    }
+}
+.btnTextSecondaryClicked {
+    background-color: $btnTextSecondaryClickedBG;
+    color: $btnTextSecondaryClickedColor;
+    border-color: $btnTextSecondaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnTextSecondaryHoverBG;
+        color: $btnTextSecondaryHoverColor;
+        border-color: $btnTextSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnTextSecondaryClickedBG;
+        color: $btnTextSecondaryClickedColor;
+        border-color: $btnTextSecondaryClickedBorder;
+    }
+}
+
+.btnTextSecondaryDesaibled {
+    background-color: $btnTextSecondaryDesaibleBG;
+    color: $btnTextSecondaryDesaibleColor;
+    border-color: $btnTextSecondaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnTextSecondaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnTextSecondaryDesaibleColor;
+    }
+}
+
+// BTN Secondary with Icons Prefix
+.btnIconPrefixSecondary {
+    background-color: $btnIconPrefixSecondaryNormalBG;
+    color: $btnIconPrefixSecondaryNormalColor;
+    border: 1px solid $lightModesecondaryMain;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixSecondaryHoverBG;
+        color: $btnIconPrefixSecondaryHoverColor;
+        border-color: $btnIconPrefixSecondaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconPrefixSecondaryClickedBG;
+        color: $btnIconPrefixSecondaryClickedColor;
+        border-color: $btnIconPrefixSecondaryClickedBorder;
+    }
+}
+
+.btnIconPrefixSecondaryHover {
+    background-color: $btnIconPrefixSecondaryHoverBG;
+    color: $btnIconPrefixSecondaryHoverColor;
+    border-color: $btnIconPrefixSecondaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixSecondaryHoverBG;
+        color: $btnIconPrefixSecondaryHoverColor;
+        border-color: $btnIconPrefixSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixSecondaryClickedBG;
+        color: $btnIconPrefixSecondaryClickedColor;
+        border-color: $btnIconPrefixSecondaryClickedBorder;
+    }
+}
+.btnIconPrefixSecondaryClicked {
+    background-color: $btnIconPrefixSecondaryClickedBG;
+    color: $btnIconPrefixSecondaryClickedColor;
+    border-color: $btnIconPrefixSecondaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixSecondaryHoverBG;
+        color: $btnIconPrefixSecondaryHoverColor;
+        border-color: $btnIconPrefixSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixSecondaryClickedBG;
+        color: $btnIconPrefixSecondaryClickedColor;
+        border-color: $btnIconPrefixSecondaryClickedBorder;
+    }
+}
+
+.btnIconPrefixSecondarysDesaibled {
+    background-color: $btnIconPrefixSecondaryDesaibleBG;
+    color: $btnIconPrefixSecondaryDesaibleColor;
+    border-color: $btnIconPrefixSecondaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconPrefixSecondaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconPrefixSecondaryDesaibleColor;
+    }
+}
+
+// BTN Secondary Outline Prefix Icons
+.btnIconPrefixOutlineSecondary {
+    background-color: $btnIconPrefixOutlineSecondaryNormalBG;
+    color: $btnIconPrefixOutlineSecondaryNormalColor;
+    border: 1px solid $btnIconPrefixOutlineSecondaryNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixOutlineSecondaryHoverBG;
+        color: $btnIconPrefixOutlineSecondaryHoverColor;
+        border-color: $btnIconPrefixOutlineSecondaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconPrefixOutlineSecondaryClickedBG;
+        color: $btnIconPrefixOutlineSecondaryClickedColor;
+        border-color: $btnIconPrefixOutlineSecondaryClickedBorder;
+    }
+}
+
+.btnIconPrefixOutlineSecondaryHover {
+    background-color: $btnIconPrefixOutlineSecondaryHoverBG;
+    color: $btnIconPrefixOutlineSecondaryHoverColor;
+    border-color: $btnIconPrefixOutlineSecondaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixOutlineSecondaryHoverBG;
+        color: $btnIconPrefixOutlineSecondaryHoverColor;
+        border-color: $btnIconPrefixOutlineSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixOutlineSecondaryClickedBG;
+        color: $btnIconPrefixOutlineSecondaryClickedColor;
+        border-color: $btnIconPrefixOutlineSecondaryClickedBorder;
+    }
+}
+.btnIconPrefixOutlineSecondaryClicked {
+    background-color: $btnIconPrefixOutlineSecondaryClickedBG;
+    color: $btnIconPrefixOutlineSecondaryClickedColor;
+    border-color: $btnIconPrefixOutlineSecondaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixOutlineSecondaryHoverBG;
+        color: $btnIconPrefixOutlineSecondaryHoverColor;
+        border-color: $btnIconPrefixOutlineSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixOutlineSecondaryClickedBG;
+        color: $btnIconPrefixOutlineSecondaryClickedColor;
+        border-color: $btnIconPrefixOutlineSecondaryClickedBorder;
+    }
+}
+
+.btnIconPrefixOutlineSecondarysDesaibled {
+    background-color: $btnIconPrefixOutlineSecondaryDesaibleBG;
+    color: $btnIconPrefixOutlineSecondaryDesaibleColor;
+    border-color: $btnIconPrefixOutlineSecondaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        background-color: $btnIconPrefixOutlineSecondaryClickedBG;
+        color: $btnIconPrefixOutlineSecondaryDesaibleColor;
+        border-color: $btnIconPrefixOutlineSecondaryClickedBorder;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        background-color: $btnIconPrefixOutlineSecondaryClickedBG;
+        color: $btnIconPrefixOutlineSecondaryDesaibleColor;
+        border-color: $btnIconPrefixOutlineSecondaryClickedBorder;
+    }
+}
+
+// BTN Secondary text Icons
+.btnIconPrefixTextSecondary {
+    background-color: $btnIconPrefixTextSecondaryNormalBG;
+    color: $btnIconPrefixTextSecondaryNormalColor;
+    border: 1px solid $btnIconPrefixTextSecondaryNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixTextSecondaryHoverBG;
+        color: $btnIconPrefixTextSecondaryHoverColor;
+        border-color: $btnIconPrefixTextSecondaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconPrefixTextSecondaryClickedBG;
+        color: $btnIconPrefixTextSecondaryClickedColor;
+        border-color: $btnIconPrefixTextSecondaryClickedBorder;
+    }
+}
+
+.btnIconPrefixTextSecondaryHover {
+    background-color: $btnIconPrefixTextSecondaryHoverBG;
+    color: $btnIconPrefixTextSecondaryHoverColor;
+    border-color: $btnIconPrefixTextSecondaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixTextSecondaryHoverBG;
+        color: $btnIconPrefixTextSecondaryHoverColor;
+        border-color: $btnIconPrefixTextSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixTextSecondaryClickedBG;
+        color: $btnIconPrefixTextSecondaryClickedColor;
+        border-color: $btnIconPrefixTextSecondaryClickedBorder;
+    }
+}
+.btnIconPrefixTextSecondaryClicked {
+    background-color: $btnIconPrefixTextSecondaryClickedBG;
+    color: $btnIconPrefixTextSecondaryClickedColor;
+    border-color: $btnIconPrefixTextSecondaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixTextSecondaryHoverBG;
+        color: $btnIconPrefixTextSecondaryHoverColor;
+        border-color: $btnIconPrefixTextSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixTextSecondaryClickedBG;
+        color: $btnIconPrefixTextSecondaryClickedColor;
+        border-color: $btnIconPrefixTextSecondaryClickedBorder;
+    }
+}
+
+.btnIconPrefixTextSecondarysDesaibled {
+    background-color: $btnIconPrefixTextSecondaryDesaibleBG;
+    color: $btnIconPrefixTextSecondaryDesaibleColor;
+    border-color: $btnIconPrefixTextSecondaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconPrefixTextSecondaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconPrefixTextSecondaryDesaibleColor;
+    }
+}
+
+// BTN Secondary Icons Suffix
+.btnIconSuffixSecondary {
+    background-color: $btnIconSuffixSecondaryNormalBG;
+    color: $btnIconSuffixSecondaryNormalColor;
+    border: 1px solid $lightModesecondaryMain;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixSecondaryHoverBG;
+        color: $btnIconSuffixSecondaryHoverColor;
+        border-color: $btnIconSuffixSecondaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconSuffixSecondaryClickedBG;
+        color: $btnIconSuffixSecondaryClickedColor;
+        border-color: $btnIconSuffixSecondaryClickedBorder;
+    }
+}
+
+.btnIconSuffixSecondaryHover {
+    background-color: $btnIconSuffixSecondaryHoverBG;
+    color: $btnIconSuffixSecondaryHoverColor;
+    border-color: $btnIconSuffixSecondaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixSecondaryHoverBG;
+        color: $btnIconSuffixSecondaryHoverColor;
+        border-color: $btnIconSuffixSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixSecondaryClickedBG;
+        color: $btnIconSuffixSecondaryClickedColor;
+        border-color: $btnIconSuffixSecondaryClickedBorder;
+    }
+}
+.btnIconSuffixSecondaryClicked {
+    background-color: $btnIconSuffixSecondaryClickedBG;
+    color: $btnIconSuffixSecondaryClickedColor;
+    border-color: $btnIconSuffixSecondaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixSecondaryHoverBG;
+        color: $btnIconSuffixSecondaryHoverColor;
+        border-color: $btnIconSuffixSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixSecondaryClickedBG;
+        color: $btnIconSuffixSecondaryClickedColor;
+        border-color: $btnIconSuffixSecondaryClickedBorder;
+    }
+}
+
+.btnIconSuffixSecondarysDesaibled {
+    background-color: $btnIconSuffixSecondaryDesaibleBG;
+    color: $btnIconSuffixSecondaryDesaibleColor;
+    border-color: $btnIconSuffixSecondaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconSuffixSecondaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconSuffixSecondaryDesaibleColor;
+    }
+}
+
+// BTN Secondary Outline Suffix Icons
+.btnIconSuffixOutlineSecondary {
+    background-color: $btnIconSuffixOutlineSecondaryNormalBG;
+    color: $btnIconSuffixOutlineSecondaryNormalColor;
+    border: 1px solid $btnIconSuffixOutlineSecondaryNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixOutlineSecondaryHoverBG;
+        color: $btnIconSuffixOutlineSecondaryHoverColor;
+        border-color: $btnIconSuffixOutlineSecondaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconSuffixOutlineSecondaryClickedBG;
+        color: $btnIconSuffixOutlineSecondaryClickedColor;
+        border-color: $btnIconSuffixOutlineSecondaryClickedBorder;
+    }
+}
+
+.btnIconSuffixOutlineSecondaryHover {
+    background-color: $btnIconSuffixOutlineSecondaryHoverBG;
+    color: $btnIconSuffixOutlineSecondaryHoverColor;
+    border-color: $btnIconSuffixOutlineSecondaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixOutlineSecondaryHoverBG;
+        color: $btnIconSuffixOutlineSecondaryHoverColor;
+        border-color: $btnIconSuffixOutlineSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixOutlineSecondaryClickedBG;
+        color: $btnIconSuffixOutlineSecondaryClickedColor;
+        border-color: $btnIconSuffixOutlineSecondaryClickedBorder;
+    }
+}
+.btnIconSuffixOutlineSecondaryClicked {
+    background-color: $btnIconSuffixOutlineSecondaryClickedBG;
+    color: $btnIconSuffixOutlineSecondaryClickedColor;
+    border-color: $btnIconSuffixOutlineSecondaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixOutlineSecondaryHoverBG;
+        color: $btnIconSuffixOutlineSecondaryHoverColor;
+        border-color: $btnIconSuffixOutlineSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixOutlineSecondaryClickedBG;
+        color: $btnIconSuffixOutlineSecondaryClickedColor;
+        border-color: $btnIconSuffixOutlineSecondaryClickedBorder;
+    }
+}
+
+.btnIconSuffixOutlineSecondarysDesaibled {
+    background-color: $btnIconSuffixOutlineSecondaryDesaibleBG;
+    color: $btnIconSuffixOutlineSecondaryDesaibleColor;
+    border-color: $btnIconSuffixOutlineSecondaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconSuffixOutlineSecondaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconSuffixOutlineSecondaryDesaibleColor;
+    }
+}
+
+// BTN Secondary text Icons
+.btnIconSuffixTextSecondary {
+    background-color: $btnIconSuffixTextSecondaryNormalBG;
+    color: $btnIconSuffixTextSecondaryNormalColor;
+    border: 1px solid $btnIconSuffixTextSecondaryNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixTextSecondaryHoverBG;
+        color: $btnIconSuffixTextSecondaryHoverColor;
+        border-color: $btnIconSuffixTextSecondaryHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconSuffixTextSecondaryClickedBG;
+        color: $btnIconSuffixTextSecondaryClickedColor;
+        border-color: $btnIconSuffixTextSecondaryClickedBorder;
+    }
+}
+
+.btnIconSuffixTextSecondaryHover {
+    background-color: $btnIconSuffixTextSecondaryHoverBG;
+    color: $btnIconSuffixTextSecondaryHoverColor;
+    border-color: $btnIconSuffixTextSecondaryHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixTextSecondaryHoverBG;
+        color: $btnIconSuffixTextSecondaryHoverColor;
+        border-color: $btnIconSuffixTextSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixTextSecondaryClickedBG;
+        color: $btnIconSuffixTextSecondaryClickedColor;
+        border-color: $btnIconSuffixTextSecondaryClickedBorder;
+    }
+}
+.btnIconSuffixTextSecondaryClicked {
+    background-color: $btnIconSuffixTextSecondaryClickedBG;
+    color: $btnIconSuffixTextSecondaryClickedColor;
+    border-color: $btnIconSuffixTextSecondaryClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixTextSecondaryHoverBG;
+        color: $btnIconSuffixTextSecondaryHoverColor;
+        border-color: $btnIconSuffixTextSecondaryHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixTextSecondaryClickedBG;
+        color: $btnIconSuffixTextSecondaryClickedColor;
+        border-color: $btnIconSuffixTextSecondaryClickedBorder;
+    }
+}
+
+.btnIconSuffixTextSecondarysDesaibled {
+    background-color: $btnIconSuffixTextSecondaryDesaibleBG;
+    color: $btnIconSuffixTextSecondaryDesaibleColor;
+    border-color: $btnIconSuffixTextSecondaryDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconSuffixTextSecondaryDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconSuffixTextSecondaryDesaibleColor;
+    }
+}
+
+
+////// BTNs Danger Styles
+.btnDanger {
+    background-color: $btnDangerNormalBG;
+    color: $btnDangerNormalColor;
+    border: 1px solid $btnDangerNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnDangerHoverBG;
+        color: $btnDangerHoverColor;
+        border-color: $btnDangerHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnDangerClickedBG;
+        color: $btnDangerClickedColor;
+        border-color: $btnDangerClickedBorder;
+    }
+}
+
+.btnDangerHover {
+    background-color: $btnDangerHoverBG;
+    color: $btnDangerHoverColor;
+    border-color: $btnDangerHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnDangerHoverBG;
+        color: $btnDangerHoverColor;
+        border-color: $btnDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnDangerClickedBG;
+        color: $btnDangerClickedColor;
+        border-color: $btnDangerClickedBorder;
+    }
+}
+.btnDangerClicked {
+    background-color: $btnDangerClickedBG;
+    color: $btnDangerClickedColor;
+    border-color: $btnDangerClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnDangerHoverBG;
+        color: $btnDangerHoverColor;
+        border-color: $btnDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnDangerClickedBG;
+        color: $btnDangerClickedColor;
+        border-color: $btnDangerClickedBorder;
+    }
+}
+
+.btnDangerDesaibled {
+    background-color: $btnDangerDesaibleBG;
+    color: $btnDangerDesaibleColor;
+    border-color: $btnDangerDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnDangerDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnDangerDesaibleColor;
+    }
+}
+// Danger OutLine Style
+.btnOutlineDanger {
+    background-color: $btnOutlineDangerNormalBG;
+    color: $btnOutlineDangerNormalColor;
+    border: 1px solid $btnOutlineDangerNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnOutlineDangerHoverBG;
+        color: $btnOutlineDangerHoverColor;
+        border-color: $btnOutlineDangerHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnOutlineDangerClickedBG;
+        color: $btnOutlineDangerClickedColor;
+        border-color: $btnOutlineDangerClickedBorder;
+    }
+}
+
+.btnOutlineDangerHover {
+    background-color: $btnOutlineDangerHoverBG;
+    color: $btnOutlineDangerHoverColor;
+    border-color: $btnOutlineDangerHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnOutlineDangerHoverBG;
+        color: $btnOutlineDangerHoverColor;
+        border-color: $btnOutlineDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnOutlineDangerClickedBG;
+        color: $btnOutlineDangerClickedColor;
+        border-color: $btnOutlineDangerClickedBorder;
+    }
+}
+.btnOutlineDangerClicked {
+    background-color: $btnOutlineDangerClickedBG;
+    color: $btnOutlineDangerClickedColor;
+    border-color: $btnOutlineDangerClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnOutlineDangerHoverBG;
+        color: $btnOutlineDangerClickedColor;
+        border-color: $btnOutlineDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnOutlineDangerClickedBG;
+        color: $btnOutlineDangerClickedColor;
+        border-color: $btnOutlineDangerClickedBorder;
+    }
+}
+
+.btnOutlineDangerDesaibled {
+    background-color: $btnOutlineDangerDesaibleBG;
+    color: $btnOutlineDangerDesaibleColor;
+    border-color: $btnOutlineDangerDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnOutlineDangerDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnOutlineDangerDesaibleColor;
+    }
+}
+// BTN Text Danger Button
+.btnTextDanger {
+    background-color: $btnTextDangerNormalBG;
+    color: $btnTextDangerNormalColor;
+    border: 1px solid $btnTextDangerNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnTextDangerHoverBG;
+        color: $btnTextDangerHoverColor;
+        border-color: $btnTextDangerHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnTextDangerClickedBG;
+        color: $btnTextDangerClickedColor;
+        border-color: $btnTextDangerClickedBorder;
+    }
+}
+
+.btnTextDangerHover {
+    background-color: $btnTextDangerHoverBG;
+    color: $btnTextDangerHoverColor;
+    border-color: $btnTextDangerHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnTextDangerHoverBG;
+        color: $btnTextDangerHoverColor;
+        border-color: $btnTextDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnTextDangerClickedBG;
+        color: $btnTextDangerClickedColor;
+        border-color: $btnTextDangerClickedBorder;
+    }
+}
+.btnTextDangerClicked {
+    background-color: $btnTextDangerClickedBG;
+    color: $btnTextDangerClickedColor;
+    border-color: $btnTextDangerClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnTextDangerHoverBG;
+        color: $btnTextDangerHoverColor;
+        border-color: $btnTextDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnTextDangerClickedBG;
+        color: $btnTextDangerClickedColor;
+        border-color: $btnTextDangerClickedBorder;
+    }
+}
+
+.btnTextDangerDesaibled {
+    background-color: $btnTextDangerDesaibleBG;
+    color: $btnTextDangerDesaibleColor;
+    border-color: $btnTextDangerDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnTextDangerDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnTextDangerDesaibleColor;
+    }
+}
+
+// BTN Danger with Icons Prefix
+.btnIconPrefixDanger {
+    background-color: $btnIconPrefixDangerNormalBG;
+    color: $btnIconPrefixDangerNormalColor;
+    border: 1px solid $btnIconPrefixDangerNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixDangerHoverBG;
+        color: $btnIconPrefixDangerHoverColor;
+        border-color: $btnIconPrefixDangerHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconPrefixDangerClickedBG;
+        color: $btnIconPrefixDangerClickedColor;
+        border-color: $btnIconPrefixDangerClickedBorder;
+    }
+}
+
+.btnIconPrefixDangerHover {
+    background-color: $btnIconPrefixDangerHoverBG;
+    color: $btnIconPrefixDangerHoverColor;
+    border-color: $btnIconPrefixDangerHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixDangerHoverBG;
+        color: $btnIconPrefixDangerHoverColor;
+        border-color: $btnIconPrefixDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixDangerClickedBG;
+        color: $btnIconPrefixDangerClickedColor;
+        border-color: $btnIconPrefixDangerClickedBorder;
+    }
+}
+.btnIconPrefixDangerClicked {
+    background-color: $btnIconPrefixDangerClickedBG;
+    color: $btnIconPrefixDangerClickedColor;
+    border-color: $btnIconPrefixDangerClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixDangerHoverBG;
+        color: $btnIconPrefixDangerHoverColor;
+        border-color: $btnIconPrefixDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixDangerClickedBG;
+        color: $btnIconPrefixDangerClickedColor;
+        border-color: $btnIconPrefixDangerClickedBorder;
+    }
+}
+
+.btnIconPrefixDangersDesaibled {
+    background-color: $btnIconPrefixDangerDesaibleBG;
+    color: $btnIconPrefixDangerDesaibleColor;
+    border-color: $btnIconPrefixDangerDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconPrefixDangerDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconPrefixDangerDesaibleColor;
+    }
+}
+
+// BTN Danger Outline Prefix Icons
+.btnIconPrefixOutlineDanger {
+    background-color: $btnIconPrefixOutlineDangerNormalBG;
+    color: $btnIconPrefixOutlineDangerNormalColor;
+    border: 1px solid $btnIconPrefixOutlineDangerNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixOutlineDangerHoverBG;
+        color: $btnIconPrefixOutlineDangerHoverColor;
+        border-color: $btnIconPrefixOutlineDangerHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconPrefixOutlineDangerClickedBG;
+        color: $btnIconPrefixOutlineDangerClickedColor;
+        border-color: $btnIconPrefixOutlineDangerClickedBorder;
+    }
+}
+
+.btnIconPrefixOutlineDangerHover {
+    background-color: $btnIconPrefixOutlineDangerHoverBG;
+    color: $btnIconPrefixOutlineDangerHoverColor;
+    border-color: $btnIconPrefixOutlineDangerHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixOutlineDangerHoverBG;
+        color: $btnIconPrefixOutlineDangerHoverColor;
+        border-color: $btnIconPrefixOutlineDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixOutlineDangerClickedBG;
+        color: $btnIconPrefixOutlineDangerClickedColor;
+        border-color: $btnIconPrefixOutlineDangerClickedBorder;
+    }
+}
+.btnIconPrefixOutlineDangerClicked {
+    background-color: $btnIconPrefixOutlineDangerClickedBG;
+    color: $btnIconPrefixOutlineDangerClickedColor;
+    border-color: $btnIconPrefixOutlineDangerClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixOutlineDangerHoverBG;
+        color: $btnIconPrefixOutlineDangerHoverColor;
+        border-color: $btnIconPrefixOutlineDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixOutlineDangerClickedBG;
+        color: $btnIconPrefixOutlineDangerClickedColor;
+        border-color: $btnIconPrefixOutlineDangerClickedBorder;
+    }
+}
+
+.btnIconPrefixOutlineDangersDesaibled {
+    background-color: $btnIconPrefixOutlineDangerDesaibleBG;
+    color: $btnIconPrefixOutlineDangerDesaibleColor;
+    border-color: $btnIconPrefixOutlineDangerDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        background-color: $btnIconPrefixOutlineDangerClickedBG;
+        color: $btnIconPrefixOutlineDangerDesaibleColor;
+        border-color: $btnIconPrefixOutlineDangerClickedBorder;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        background-color: $btnIconPrefixOutlineDangerClickedBG;
+        color: $btnIconPrefixOutlineDangerDesaibleColor;
+        border-color: $btnIconPrefixOutlineDangerClickedBorder;
+    }
+}
+
+// BTN Danger text Icons
+.btnIconPrefixTextDanger {
+    background-color: $btnIconPrefixTextDangerNormalBG;
+    color: $btnIconPrefixTextDangerNormalColor;
+    border: 1px solid $btnIconPrefixTextDangerNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixTextDangerHoverBG;
+        color: $btnIconPrefixTextDangerHoverColor;
+        border-color: $btnIconPrefixTextDangerHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconPrefixTextDangerClickedBG;
+        color: $btnIconPrefixTextDangerClickedColor;
+        border-color: $btnIconPrefixTextDangerClickedBorder;
+    }
+}
+
+.btnIconPrefixTextDangerHover {
+    background-color: $btnIconPrefixTextDangerHoverBG;
+    color: $btnIconPrefixTextDangerHoverColor;
+    border-color: $btnIconPrefixTextDangerHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixTextDangerHoverBG;
+        color: $btnIconPrefixTextDangerHoverColor;
+        border-color: $btnIconPrefixTextDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixTextDangerClickedBG;
+        color: $btnIconPrefixTextDangerClickedColor;
+        border-color: $btnIconPrefixTextDangerClickedBorder;
+    }
+}
+.btnIconPrefixTextDangerClicked {
+    background-color: $btnIconPrefixTextDangerClickedBG;
+    color: $btnIconPrefixTextDangerClickedColor;
+    border-color: $btnIconPrefixTextDangerClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconPrefixTextDangerHoverBG;
+        color: $btnIconPrefixTextDangerHoverColor;
+        border-color: $btnIconPrefixTextDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconPrefixTextDangerClickedBG;
+        color: $btnIconPrefixTextDangerClickedColor;
+        border-color: $btnIconPrefixTextDangerClickedBorder;
+    }
+}
+
+.btnIconPrefixTextDangersDesaibled {
+    background-color: $btnIconPrefixTextDangerDesaibleBG;
+    color: $btnIconPrefixTextDangerDesaibleColor;
+    border-color: $btnIconPrefixTextDangerDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconPrefixTextDangerDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconPrefixTextDangerDesaibleColor;
+    }
+}
+
+// BTN Danger Icons Suffix
+.btnIconSuffixDanger {
+    background-color: $btnIconSuffixDangerNormalBG;
+    color: $btnIconSuffixDangerNormalColor;
+    border: 1px solid $btnIconSuffixDangerNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixDangerHoverBG;
+        color: $btnIconSuffixDangerHoverColor;
+        border-color: $btnIconSuffixDangerHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconSuffixDangerClickedBG;
+        color: $btnIconSuffixDangerClickedColor;
+        border-color: $btnIconSuffixDangerClickedBorder;
+    }
+}
+
+.btnIconSuffixDangerHover {
+    background-color: $btnIconSuffixDangerHoverBG;
+    color: $btnIconSuffixDangerHoverColor;
+    border-color: $btnIconSuffixDangerHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixDangerHoverBG;
+        color: $btnIconSuffixDangerHoverColor;
+        border-color: $btnIconSuffixDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixDangerClickedBG;
+        color: $btnIconSuffixDangerClickedColor;
+        border-color: $btnIconSuffixDangerClickedBorder;
+    }
+}
+.btnIconSuffixDangerClicked {
+    background-color: $btnIconSuffixDangerClickedBG;
+    color: $btnIconSuffixDangerClickedColor;
+    border-color: $btnIconSuffixDangerClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixDangerHoverBG;
+        color: $btnIconSuffixDangerHoverColor;
+        border-color: $btnIconSuffixDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixDangerClickedBG;
+        color: $btnIconSuffixDangerClickedColor;
+        border-color: $btnIconSuffixDangerClickedBorder;
+    }
+}
+
+.btnIconSuffixDangersDesaibled {
+    background-color: $btnIconSuffixDangerDesaibleBG;
+    color: $btnIconSuffixDangerDesaibleColor;
+    border-color: $btnIconSuffixDangerDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconSuffixDangerDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconSuffixDangerDesaibleColor;
+    }
+}
+
+// BTN Danger Outline Suffix Icons
+.btnIconSuffixOutlineDanger {
+    background-color: $btnIconSuffixOutlineDangerNormalBG;
+    color: $btnIconSuffixOutlineDangerNormalColor;
+    border: 1px solid $btnIconSuffixOutlineDangerNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixOutlineDangerHoverBG;
+        color: $btnIconSuffixOutlineDangerHoverColor;
+        border-color: $btnIconSuffixOutlineDangerHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconSuffixOutlineDangerClickedBG;
+        color: $btnIconSuffixOutlineDangerClickedColor;
+        border-color: $btnIconSuffixOutlineDangerClickedBorder;
+    }
+}
+
+.btnIconSuffixOutlineDangerHover {
+    background-color: $btnIconSuffixOutlineDangerHoverBG;
+    color: $btnIconSuffixOutlineDangerHoverColor;
+    border-color: $btnIconSuffixOutlineDangerHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixOutlineDangerHoverBG;
+        color: $btnIconSuffixOutlineDangerHoverColor;
+        border-color: $btnIconSuffixOutlineDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixOutlineDangerClickedBG;
+        color: $btnIconSuffixOutlineDangerClickedColor;
+        border-color: $btnIconSuffixOutlineDangerClickedBorder;
+    }
+}
+.btnIconSuffixOutlineDangerClicked {
+    background-color: $btnIconSuffixOutlineDangerClickedBG;
+    color: $btnIconSuffixOutlineDangerClickedColor;
+    border-color: $btnIconSuffixOutlineDangerClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixOutlineDangerHoverBG;
+        color: $btnIconSuffixOutlineDangerHoverColor;
+        border-color: $btnIconSuffixOutlineDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixOutlineDangerClickedBG;
+        color: $btnIconSuffixOutlineDangerClickedColor;
+        border-color: $btnIconSuffixOutlineDangerClickedBorder;
+    }
+}
+
+.btnIconSuffixOutlineDangersDesaibled {
+    background-color: $btnIconSuffixOutlineDangerDesaibleBG;
+    color: $btnIconSuffixOutlineDangerDesaibleColor;
+    border-color: $btnIconSuffixOutlineDangerDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        color: $btnIconSuffixOutlineDangerDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        color: $btnIconSuffixOutlineDangerDesaibleColor;
+    }
+}
+
+// BTN Danger text Icons
+.btnIconSuffixTextDanger {
+    background-color: $btnIconSuffixTextDangerNormalBG;
+    color: $btnIconSuffixTextDangerNormalColor;
+    border: 1px solid $btnIconSuffixTextDangerNormalBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixTextDangerHoverBG;
+        color: $btnIconSuffixTextDangerHoverColor;
+        border-color: $btnIconSuffixTextDangerHoverBorder;
+    }
+    &:active, &.active {
+        background-color: $btnIconSuffixTextDangerClickedBG;
+        color: $btnIconSuffixTextDangerClickedColor;
+        border-color: $btnIconSuffixTextDangerClickedBorder;
+    }
+}
+
+.btnIconSuffixTextDangerHover {
+    background-color: $btnIconSuffixTextDangerHoverBG;
+    color: $btnIconSuffixTextDangerHoverColor;
+    border-color: $btnIconSuffixTextDangerHoverBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixTextDangerHoverBG;
+        color: $btnIconSuffixTextDangerHoverColor;
+        border-color: $btnIconSuffixTextDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixTextDangerClickedBG;
+        color: $btnIconSuffixTextDangerClickedColor;
+        border-color: $btnIconSuffixTextDangerClickedBorder;
+    }
+}
+.btnIconSuffixTextDangerClicked {
+    background-color: $btnIconSuffixTextDangerClickedBG;
+    color: $btnIconSuffixTextDangerClickedColor;
+    border-color: $btnIconSuffixTextDangerClickedBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: $btnIconSuffixTextDangerHoverBG;
+        color: $btnIconSuffixTextDangerHoverColor;
+        border-color: $btnIconSuffixTextDangerHoverBorder;
+        }
+    &:active, &.active {
+        background-color: $btnIconSuffixTextDangerClickedBG;
+        color: $btnIconSuffixTextDangerClickedColor;
+        border-color: $btnIconSuffixTextDangerClickedBorder;
+    }
+}
+
+.btnIconSuffixTextDangersDesaibled {
+    background-color: $btnIconSuffixTextDangerDesaibleBG;
+    color: $btnIconSuffixTextDangerDesaibleColor;
+    border-color: $btnIconSuffixTextDangerDesaibleBorder;
+    padding: 17px 19px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        cursor: not-allowed;
+        background-color: $btnIconSuffixTextDangerClickedBG;
+        color: $btnIconSuffixTextDangerDesaibleColor;
+        border-color: $btnIconSuffixTextDangerDesaibleColor;
+    }
+    &:active, &.active {
+        cursor: not-allowed;
+        background-color: $btnIconSuffixTextDangerClickedBG;
+        color: $btnIconSuffixTextDangerDesaibleColor;
+        border-color: $btnIconSuffixTextDangerDesaibleColor;
+    }
+}
+
+.btnsWrap {
+    button {
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}
+.btnWrap {
+    text-align: center;
+}
+
+.btnBorder {
+    padding: 17px 19px;
+    border-radius: 1rem;
+	border: 1px solid #EAEAED;
+	&:hover {
+		background-color: $gray-900;
+	}
+}

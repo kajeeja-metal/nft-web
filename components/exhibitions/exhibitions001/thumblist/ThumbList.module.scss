@@ -3,9 +3,10 @@
 
 
 .thumblist {
-    border-radius: 16px;
+    border-radius: $thumb-border-radius;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+    border: 2px solid $theme-border-color;
 
     &:hover {
         .status {
@@ -18,6 +19,9 @@
             }
         }
     }
+    &.active {
+        border-color: $active-theme-border-color;
+    }
 }
 
 .thumbImg {
@@ -28,7 +32,7 @@
     }
     a {
         img {
-            border-radius: 16px 16px 0 0;
+            border-radius: $thumb-img-border-radius;
             transition: all 0.4s ease-in-out;
         }
     }
@@ -43,7 +47,7 @@
         font-size: $publish-lbl-size;
         color: $publish-lbl-color;  line-height: 1;
         opacity: 0.8; padding:9px 10px;
-        border-radius: 8px; display: block;
+        border-radius: $circle-border-radius; display: block;
         margin-bottom: 12px;
         &:after {
             position: absolute; content: "";
@@ -92,7 +96,7 @@
     font-weight: 700;
     h3 {
         color: $thumb-title-color;
-        font-size:  $thumb-title-size;
+        font-size: $thumb-title-size;
         a { 
             color: $thumb-title-color; font-weight: 700;
             &:hover {
@@ -100,10 +104,12 @@
             }
         }
     }    
-    .assetNum {
-        color: $thumb-asset-color; margin-bottom: .25rem;
-        font-size:  $thumb-asset-size;
-    }
+    
+}
+.assetNum {
+    color: $thumb-asset-color; margin-bottom: .25rem;
+    font-size:  $thumb-asset-size; font-weight: 700;
+    margin-left: .5rem;
 }
 
 .dateWish {
@@ -132,7 +138,7 @@
 
     .status {
         .lbl {
-            font-size: 12px;
+            font-size: $font-mini;
         }
     }
     .thumbInfo { 
@@ -144,22 +150,22 @@
     .thumbTitlewrap {
         flex-wrap: wrap; margin-bottom: .25rem;
         h3 {
-            font-size:16px; white-space: nowrap;
+            font-size:$font-normal; white-space: nowrap;
             overflow: hidden; text-overflow: ellipsis;
             margin-bottom: .1rem;
         }    
         .assetNum {
-            font-size:14px; margin-bottom: 0;
+            font-size:$font-small; margin-bottom: 0;
         }
     }
     .dateWish {
         .date {
-            font-size:12px;
+            font-size:$font-mini;
         }
         .wish {
             font-size:  $thumb-wish-size;
             .num {
-                font-size:12px;
+                font-size:$font-mini;
             }
             .wishicon {
                 font-size: 10px;

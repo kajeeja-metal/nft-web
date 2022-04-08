@@ -1,0 +1,54 @@
+
+
+@import '../variables/mixin';
+
+$white         : #fff;
+
+$default-color :#3A3A43;
+$border        :#EAEAED;
+
+$title-font-size          : 2rem;
+$title-color              : $default-color;
+$title-desc-font-size     : 14px;
+$title-desc-color         : #5F5F6D;
+
+$create-link-color        : $default-color;
+$create-link-font-size    : 16px;
+$create-link-border-color : #EAEAED;
+$create-link-border-radius: 16px;
+$create-link-padding      : 12px 16px;
+
+/* 1)  Tab variable  */
+$tab-parent-border-color  : #EAEAED;
+$tab-font-size            : 18px;
+$tab-color                : #ABABBA;
+$tab-active-color         : #4400CD;
+$tab-active-bg            : #F8F5FF;
+$tab-border-active-color  : #4400CD;
+$tab-border-radius        : 4px 4px 0px 0px;
+$tab-padding              : 9px 16px 9px 16px;
+$tab-active-font-weight   : 700;
+
+$color-picker-default-bg  : #008F76;
+
+/* 2)  Pagination variable  */
+
+
+$paging-default-color      : #5F5F6D;
+$paging-hover-color        : #4400CD;
+$paging-hover-bgcolor      : #F5FAFF;
+$paging-border-color       : transparent;
+$paging-hover-border-color : #4400CD;
+$paging-active-bgcolor     : #4400CD;
+$paging-active-color       : #fff;
+$paging-border-radius      : 6px;
+$paging-font-size          : 12px;
+
+
+
+
+
+
+
+
+

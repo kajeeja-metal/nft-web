@@ -2,10 +2,12 @@ import React, {useEffect, useState} from 'react';
 import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
 import classes from '../create/collectionthumbnail.module.scss';
+import button from '../../../public/account/Buttons.module.scss';
+import form from '../../../public/account/Form.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faPlus } from '@fortawesome/free-regular-svg-icons';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faPray } from '@fortawesome/free-solid-svg-icons';
 import ThumbList from '../../../public/collections/thumblist/images/thumblist.png';
 
 const StepCollectionThumbnail = () => {
@@ -19,7 +21,6 @@ const StepCollectionThumbnail = () => {
   return (
     <>  
       
-       
       <div className={`text-center`+ ' ' + classes.titleWrap}>
         <h1 className={classes.title}>Please enter collection thumbnail info</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -31,8 +32,8 @@ const StepCollectionThumbnail = () => {
         </div>
         <div className='col-md-8'>
           <div className={`mb-2` + ' ' + classes.formControl }>
-            <label className={classes.toggleTitle} onClick={()=>setShow(!show)}>
-              <input type="checkbox" checked /> <span>Select Image</span>
+            <label className={form.chkWrap} onClick={()=>setShow(!show)}>
+              <input type="checkbox" checked /> <span className={form.chkmark}>Select Image</span>
             </label>
             {
               show && <div className={classes.toggleContent}>
@@ -123,8 +124,8 @@ const StepCollectionThumbnail = () => {
             
           </div>
           <div className={classes.formControl }>
-            <label className={classes.toggleTitle} onClick={()=>setShow2(!show2)}>
-              <input type="checkbox" /> <span>Color Fill</span>
+            <label className={form.chkWrap} onClick={()=>setShow2(!show2)}>
+              <input type="checkbox" /> <span className={form.chkmark}>Color Fill</span>
             </label>
             { 
               show2 &&
@@ -167,14 +168,14 @@ const StepCollectionThumbnail = () => {
           <label>Thumbnail Description</label>
         </div>
         <div className='col-md-8'>
-            <textarea type="text" className='form-control' placeholder='Optional ... ' rows="6" ></textarea>
+            <textarea type="text" className={form.formElements} placeholder='Optional ... ' rows="6" ></textarea>
             <p className={`text-right` + ' ' + classes.leftnumber}>15/80</p>
         </div>
       </div>
 
-      <div className={classes.textRight + ' ' + classes.formGroup}>
-        <button className='btn btn-default'>Cancel</button>
-        <button className='btn btn-primary'>Save Draft</button>
+      <div className={`btns-group mb-3 ${classes.textRight}` } style={{ "textAlign":"right"}}>
+          <button className={`btn ${button.btnOutlinePrimary}`} style={{"margin-right":8}}>Cancel</button>
+          <button className={`btn ${button.btnPrimary}`}>Save Draft</button>
       </div>
 
     </>

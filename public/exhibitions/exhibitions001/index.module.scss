@@ -1,0 +1,32 @@
+
+@import 'variable';
+
+.title {
+    color: $title-color; font-weight: normal;
+    font-size: $title-font-size ;
+}
+.titleWrap {
+    margin-bottom: 1.5rem; 
+    p {
+        font-size: $title-desc-font-size;
+        color: $title-desc-color;
+    }
+}
+.formGroup {
+	margin-bottom: 1rem;
+}
+
+.titleWrapCreate {
+	@include flexbox; justify-content: space-between;
+	align-items: center;
+}
+
+.createClink {
+	border: 1px solid $create-link-border-color;
+	font-size: $create-link-font-size ;
+	border-radius: $create-link-border-radius;
+	padding: $create-link-padding;
+	svg, i {
+		margin-right: .2rem;
+	}
+}

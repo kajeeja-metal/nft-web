@@ -1,10 +1,17 @@
 
+
+import button from '../../../public/account/Buttons.module.scss';
+
+
 import StepSidebar from '../../../components/collections/create/sidebar';
 import StepTheme from '../../../components/collections/create/theme';
 import StepCollectionInfo from '../../../components/collections/create/collectioninfo';
 import StepCollectionThumbnail from '../../../components/collections/create/collectionthumbnail';
 import StepCollectionAssets from '../../../components/collections/create/collectionassets';
 import StepCustomizeStyle from '../../../components/collections/create/customizestyle';
+
+
+
 import classes from '../../../public/collections/create/create.module.scss';
 
 
@@ -36,7 +43,7 @@ export default function Index() {
         <div className={classes.progressbar}>
           <div className='container'>
             <div className={classes.progressInner}>
-              <button className='btn btn-default'
+              <button className={`btn ${button.btnOutlinePrimary}`}
                 disabled={page == 0}
                 onClick={() => {
                   setPage((currPage) => currPage - 1);
@@ -50,7 +57,7 @@ export default function Index() {
                 
               </div>
 
-              <button className='btn btn-primary'
+              <button className={`btn ${button.btnSecondary}`}
                 onClick={() => {
                   if (page === FormTitles.length - 1) {
                     alert("Finished");
@@ -60,7 +67,7 @@ export default function Index() {
                   }
                 }}
               >
-                {page === FormTitles.length - 1 ? "Submit" : "Next"}
+                {page === FormTitles.length - 1 ? "Save" : "Next"}
               </button>
             </div>
           </div>          

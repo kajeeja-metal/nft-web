@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
 import classes from '../create/collectionthumbnail.module.scss';
+import button from '../../../public/account/Buttons.module.scss';
+import form from '../../../public/account/Form.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faPlus } from '@fortawesome/free-regular-svg-icons';
@@ -31,8 +33,8 @@ const StepCollectionThumbnail = () => {
         </div>
         <div className='col-md-8'>
           <div className={`mb-2` + ' ' + classes.formControl }>
-            <label className={classes.toggleTitle} onClick={()=>setShow(!show)}>
-              <input type="checkbox" checked /> <span>Select Image</span>
+            <label className={form.chkWrap} onClick={()=>setShow(!show)}>
+              <input type="checkbox"  /> <span className={form.chkmark}>Select Image</span>
             </label>
             {
               show && <div className={classes.toggleContent}>
@@ -43,7 +45,7 @@ const StepCollectionThumbnail = () => {
                         src={ThumbList}
                         height={90} width={90} alt="Thumbs"
                       />
-                      <input type="radio" name="selectcollectionbg" checked />
+                      <input type="radio" name="selectcollectionbg"  />
                     </label>
                   </li>
                   <li>
@@ -123,8 +125,8 @@ const StepCollectionThumbnail = () => {
             
           </div>
           <div className={classes.formControl }>
-            <label className={classes.toggleTitle} onClick={()=>setShow2(!show2)}>
-              <input type="checkbox" /> <span>Color Fill</span>
+            <label className={form.chkWrap} onClick={()=>setShow2(!show2)}>
+              <input type="checkbox" /> <span className={form.chkmark}>Color Fill</span>
             </label>
             { 
               show2 &&
@@ -168,13 +170,13 @@ const StepCollectionThumbnail = () => {
           <label>Thumbnail Description</label>
         </div>
         <div className='col-md-8'>
-            <textarea type="text" className='form-control' placeholder='Optional ... ' rows="6" ></textarea>
+            <textarea type="text" className={form.formElements} placeholder='Optional ... ' rows="6" ></textarea>
             <p className={`text-right` + ' ' + classes.leftnumber}>15/80</p>
         </div>
       </div>
 
       <div className={ classes.formGroup}>
-        <a className='btn text-danger'><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
+        <a className={`btn ${button.btnTextDanger}`}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
       </div>
 
     </>

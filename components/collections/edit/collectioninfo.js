@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
+import button from '../../../public/account/Buttons.module.scss';
+import form from '../../../public/account/Form.module.scss';
 import classes from '../create/collectioninfo.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,8 +38,8 @@ const StepCollectionInfo = () => {
         </div>
         <div className='col-md-8'>
             <div className={`mb-2`+ ' '  + classes.formControl}>
-              <label className={classes.toggleTitle} onClick={()=>setShow(!show)}>
-                <input type="checkbox"  /> <span>Image</span>
+              <label className={form.chkWrap} onClick={()=>setShow(!show)}>
+                <input type="checkbox" /> <span className={form.chkmark}>Image</span>
               </label>
               {
                 show && <div className={classes.toggleContent}>
@@ -125,8 +127,8 @@ const StepCollectionInfo = () => {
               
             </div>
             <div className={ classes.formControl}>
-              <label className={classes.toggleTitle} onClick={()=>setShow2(!show2)}>
-                <input type="checkbox" /> <span>Color</span>
+              <label className={form.chkWrap} onClick={()=>setShow2(!show2)}>
+                <input type="checkbox"/> <span className={form.chkmark}>Color</span>
               </label>
               {
                 show2 && <div className={classes.toggleContent}>
@@ -162,7 +164,7 @@ const StepCollectionInfo = () => {
           <label>Collection Name*</label>
         </div>
         <div className='col-md-8'>
-            <input type="text" className='form-control' placeholder='Name ...  ' />
+            <input type="text" className={form.formElements} placeholder='Name ...  ' />
             <p className={`text-right` + ' ' + classes.leftnumber}>15/80</p>
         </div>
       </div>
@@ -172,7 +174,7 @@ const StepCollectionInfo = () => {
           <label>Collection Description</label>
         </div>
         <div className='col-md-8'>
-            <textarea type="text" className='form-control' placeholder='Optional ... ' rows="6" ></textarea>
+            <textarea type="text" className={form.formElements}  placeholder='Optional ... ' rows="6" ></textarea>
             <p className={`text-right` + ' ' + classes.leftnumber}>15/80</p>
         </div>
       </div>
@@ -183,8 +185,8 @@ const StepCollectionInfo = () => {
         </div>
         <div className='col-md-8'>
           <div className={`mb-3`+ ' '  + classes.formControl}>
-            <label className={classes.toggleTitle} onClick={()=>setShow3(!show3)}>
-              <input type="checkbox" checked /> <span>Select Image</span>
+            <label className={form.chkWrap} onClick={()=>setShow3(!show3)}>
+                <input type="checkbox" checked/> <span className={form.chkmark}>Select Image</span>
             </label>
             {
               show3 &&
@@ -275,7 +277,7 @@ const StepCollectionInfo = () => {
                     Image Adjustment
                   </div>
                   <div className='col-md-6'>
-                    <select className='form-control'>
+                    <select className={form.formElements}>
                       <option value="">Image Style</option>
                       <option value="50px 100px">Fill the frame vertically</option>
                       <option value="10% 40%">Fill the frame horizontally</option>
@@ -294,9 +296,9 @@ const StepCollectionInfo = () => {
             
           </div>
           <div className={`mb-2`+ ' '  + classes.formControl}>
-            <label className={classes.toggleTitle} onClick={()=>setShow4(!show4)}>
-              <input type="checkbox" /> <span>Color Fill</span>
-            </label>
+            <label className={form.chkWrap} onClick={()=>setShow4(!show4)}>
+                <input type="checkbox"/> <span className={form.chkmark}>Color Fill</span>
+              </label>
             {
               show4 &&
               <div className={classes.toggleContent}>
@@ -332,7 +334,7 @@ const StepCollectionInfo = () => {
       </div>
 
       <div className={ classes.formGroup}>
-        <a className='btn text-danger'><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
+        <a className={`btn ${button.btnTextDanger}`}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
       </div>
 
         

@@ -1,4 +1,4 @@
-
+import button from '../../../public/account/Buttons.module.scss';
 import StepSidebar from '../../../components/collections/create/sidebar';
 import StepTheme from '../../../components/collections/edit/theme';
 import StepCollectionInfo from '../../../components/collections/edit/collectioninfo';
@@ -13,7 +13,7 @@ import { faAngleLeft, faEye, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from "react";
 
 export default function Index() {
-  const [page, setPage] = useState(2);
+  const [page, setPage] = useState(0);
   const FormTitles = ["My Theme", "Collections Info", "Collection thumbnail", "Collection Assets", "Customize collection style"]
   const StepDisplay = () => {
     if (page === 0) {
@@ -35,11 +35,11 @@ export default function Index() {
   return ( 
     <>  
        
-       <div className={classes.progressbar}>
+        <div className={classes.progressbar}>
           <div className='container'>
             <div className={classes.progressInner}>
               <div className={classes.backThemename}>
-                <button className='btn btn-default'
+                <button className={`btn ${button.btnOutlinePrimary}`}
                   disabled={page == 0}
                   onClick={() => {
                     setPage((currPage) => currPage - 1);
@@ -52,7 +52,7 @@ export default function Index() {
              <div className={classes.headerBtnGroup}>
                 <div className={classes.statusButton}>
                   <span>Status:</span>
-                  <button className='btn btn-outline-danger'>
+                  <button className={`btn ${button.btnOutlineDanger}`}>
                     Draft  
                   </button>
                   {/* <button className='btn btn-success'>
@@ -60,13 +60,13 @@ export default function Index() {
                     Publishing  
                   </button> */}
                 </div>
-                <button className='btn btn-default'>
+                <button className={`btn ${button.btnOutlinePrimary}`}>
                 <FontAwesomeIcon icon={faEye} className={classes.faeye} /> Preview  
                 </button>
-                <button className='btn btn-default'>
+                <button className={`btn ${button.btnOutlinePrimary}`}>
                   Save 
                 </button>
-                <button className='btn btn-primary'
+                <button className={`btn ${button.btnPrimary}`}
                   onClick={() => {
                     if (page === FormTitles.length - 1) {
                       alert("Finished");
@@ -105,11 +105,7 @@ export default function Index() {
                 
                 
               </div>
-              {/* <StepTheme /> */}
-               {/* <StepCollectionInfo /> 
-              <StepCollectionThumbnail />
-              <StepCollectionAssets />
-              <StepCustomizeStyle/> */}
+
             </div>
           </div>
         </div>

@@ -1,0 +1,104 @@
+
+@import '../variables';
+
+.tab, .nav  {
+	margin-bottom: 1.5rem;
+}
+
+/* Theme thumb  */
+
+.thumblist {
+    border-radius: $thumb-border-radius;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+    border: 2px solid $theme-border-color;
+
+    &:hover {
+        .status {
+            display: block;
+        }
+        .thumbImg { 
+            >a img {
+                /*transform: scale(1.05);*/
+                opacity: .8;
+            }
+        }
+    }
+    &.active {
+        border-color: $active-theme-border-color;
+    }
+}
+
+.thumbImg {
+    position: relative;
+    > a {
+        display: block; line-height: 1;
+        overflow: hidden;
+    }
+    a {
+        img {
+            border-radius: $thumb-img-border-radius;
+            transition: all 0.4s ease-in-out;
+        }
+    }
+} 
+
+.thumbInfo {
+    padding:1.15rem 1.25rem 1.25rem 1.25rem;
+    p {
+        color: $thumb-desc-color; font-size: $thumb-desc-size;
+        line-height: 1.35; margin-bottom: .5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.thumbTitle {
+	font-size: $theme-thumb-title-size;
+	color: $theme-thumb-title-color;
+	margin-bottom: .75rem;
+	a {
+		color: $theme-thumb-title-color;
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
+}
+
+
+.btnGroup {
+	@include flexbox();
+	.btn {
+		position: relative;
+		input[type="radio"] {
+			position: absolute; opacity: 0;
+		}
+	}
+	.faeye {
+		margin-right: .2rem;
+	}
+}
+.checkitem {
+	position: absolute; z-index: 1;
+
+	right: 45px; top:10px;
+	input[type="checkbox"] {
+		width: 100%; height: 100%;
+		opacity: 0;
+		&:checked + .checkicon {
+			opacity: 1;
+		}
+	}
+	.checkicon {
+		position: absolute; opacity: 1;
+		left: 10px; top: 10px; z-index: 2;
+	}
+	.faCheckCircle {
+		color: #00CCA9; background:#000; font-size: 22px;
+		border-radius: 50%;
+	}
+}
+

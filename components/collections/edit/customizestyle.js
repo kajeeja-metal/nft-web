@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 
 import nav from '../../../public/collections/tabnav.module.scss';
-import paging from '../../../public/collections/pagination.module.scss';
+import button from '../../../public/account/Buttons.module.scss';
 import classes from '../create/customizestyle.module.scss';
-
+import paging from '../../../public/collections/pagination.module.scss';
+import Paging from '../../../components/common/pagination.js';
 import {Button, Modal} from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faAngleRight, faEye, faSearch, faFont } from '@fortawesome/free-solid-svg-icons';
@@ -263,12 +264,12 @@ const StepCustomizeStyle = () => {
                   <div className={classes.fontBtnSelect}>
                     <h3 className={classes.fontName}>Open Sans</h3>
                     <div className={classes.btnsRow}>
-                    <Button variant="default" onClick={handleClose}>
-                      <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
-                    </Button>
-                      <Button variant="default" onClick={handleClose}>
-                      Selecting
-                      </Button>
+                      <Button className={`btn ${button.btnOutlinePrimary}`} onClick={handleClose}>
+                          <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
+                        </Button>
+                        <Button className={`btn ${button.btnTextPrimary}`} onClick={handleClose}>
+                          Current Select
+                        </Button>
                     </div>
                   </div>
                 </div>
@@ -289,10 +290,11 @@ const StepCustomizeStyle = () => {
                   <div className={classes.fontBtnSelect}>
                     <h3 className={classes.fontName}>Roboto</h3>
                     <div className={classes.btnsRow}>
-                    <Button variant="default" onClick={handleClose}>
-                      <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
-                    </Button>
-                      <Button variant="primary" onClick={handleClose}>
+                      
+                      <Button className={`btn ${button.btnOutlinePrimary}`} onClick={handleClose}>
+                        <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
+                      </Button>
+                      <Button className={`btn ${button.btnPrimary}`} onClick={handleClose}>
                         Select
                       </Button>
                     </div>
@@ -315,12 +317,12 @@ const StepCustomizeStyle = () => {
                   <div className={classes.fontBtnSelect}>
                     <h3 className={classes.fontName}>Roboto</h3>
                     <div className={classes.btnsRow}>
-                    <Button variant="default" onClick={handleClose}>
-                      <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
-                    </Button>
-                      <Button variant="primary" onClick={handleClose}>
-                        Select
-                      </Button>
+                      <Button className={`btn ${button.btnOutlinePrimary}`} onClick={handleClose}>
+                          <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
+                        </Button>
+                        <Button className={`btn ${button.btnPrimary}`} onClick={handleClose}>
+                          Select
+                        </Button>
                     </div>
                   </div>
                 </div>
@@ -341,12 +343,12 @@ const StepCustomizeStyle = () => {
                   <div className={classes.fontBtnSelect}>
                     <h3 className={classes.fontName}>Roboto</h3>
                     <div className={classes.btnsRow}>
-                    <Button variant="default" onClick={handleClose}>
-                      <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
-                    </Button>
-                      <Button variant="primary" onClick={handleClose}>
-                        Select
-                      </Button>
+                      <Button className={`btn ${button.btnOutlinePrimary}`} onClick={handleClose}>
+                          <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
+                        </Button>
+                        <Button className={`btn ${button.btnPrimary}`} onClick={handleClose}>
+                          Select
+                        </Button>
                     </div>
                   </div>
                 </div>
@@ -367,12 +369,12 @@ const StepCustomizeStyle = () => {
                   <div className={classes.fontBtnSelect}>
                     <h3 className={classes.fontName}>Roboto</h3>
                     <div className={classes.btnsRow}>
-                    <Button variant="default" onClick={handleClose}>
-                      <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
-                    </Button>
-                      <Button variant="primary" onClick={handleClose}>
-                        Select
-                      </Button>
+                      <Button className={`btn ${button.btnOutlinePrimary}`} onClick={handleClose}>
+                          <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
+                        </Button>
+                        <Button className={`btn ${button.btnPrimary}`} onClick={handleClose}>
+                          Select
+                        </Button>
                     </div>
                   </div>
                 </div>
@@ -393,12 +395,12 @@ const StepCustomizeStyle = () => {
                   <div className={classes.fontBtnSelect}>
                     <h3 className={classes.fontName}>Roboto</h3>
                     <div className={classes.btnsRow}>
-                    <Button variant="default" onClick={handleClose}>
-                      <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
-                    </Button>
-                      <Button variant="primary" onClick={handleClose}>
-                        Select
-                      </Button>
+                      <Button className={`btn ${button.btnOutlinePrimary}`} onClick={handleClose}>
+                          <FontAwesomeIcon icon={faEye} className={classes.faTrash} /> Preview
+                        </Button>
+                        <Button className={`btn ${button.btnPrimary}`} onClick={handleClose}>
+                          Select
+                        </Button>
                     </div>
                   </div>
                 </div>
@@ -416,18 +418,7 @@ const StepCustomizeStyle = () => {
                 </select>
                 <span className={paging.totalLbl}>490 Assets</span>
               </div>
-              <ul className={`pagination justify-content-end my-4`+ ' ' + paging.pagination}>
-                <li className={`page-item`+ ' ' + paging.disabled} ><a className="page-link" href="#">Previous</a></li>
-                <li className="page-item"><a className="page-link" href="#">1</a></li>
-                <li className="page-item"><span className="page-link"> .. </span></li>
-                <li className="page-item"><a className="page-link" href="#">10</a></li>
-                <li className="page-item"><a className="page-link" href="#">11</a></li>
-                <li className="page-item"><a className={`page-link`+ ' ' + paging.active} href="#">12</a></li>
-                <li className="page-item"><a className="page-link" href="#">16</a></li>
-                <li className="page-item"><span className="page-link"> .. </span></li>
-                <li className="page-item"><a className="page-link" href="#">26</a></li>
-                <li className="page-item"><a className="page-link" href="#">Next</a></li>
-              </ul>
+              <Paging />
             </div>
 
            

@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from "next/image"
+
+import Pagination from '../../../components/common/pagination.js';
 import nav from '../../../public/collections/tabnav.module.scss';
-import paging from '../../../public/collections/pagination.module.scss';
+import button from '../../../public/account/Buttons.module.scss';
+
 import classes from '../../../components/collections/create/theme.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -69,14 +72,15 @@ const StepTheme = () => {
                   <h3 className={classes.thumbTitle}>
                     <Link href="/"><a>Template Name (Default)</a></Link>
                   </h3>
+                  
                   <div className={classes.btnGroup}>
-                    <button className={`btn btn-default `+ classes.btn}>
+                    <button className={`btn ${button.btnOutlinePrimary + ' ' + classes.btn}`}>
                       <FontAwesomeIcon icon={faEye} className={classes.faeye} />
                       Preview
                     </button>
-                    <button className={`btn btn-default `+ classes.btn}>
-                      <input type="radio" name="themeselect" />
-                      Current Template
+                    <button className={`btn ${button.btnDefault + ' ' + classes.btn}`}>
+                     <input type="radio" name="themeselect" />
+                     Current Template
                     </button>
                   </div>
                 </div>
@@ -101,11 +105,11 @@ const StepTheme = () => {
                     <Link href="/"><a>Template Name</a></Link>
                   </h3>
                   <div className={classes.btnGroup}>
-                    <button className={`btn btn-default `+ classes.btn}>
+                    <button className={`btn ${button.btnOutlinePrimary + ' ' + classes.btn}`}>
                       <FontAwesomeIcon icon={faEye} className={classes.faeye} />
                       Preview
                     </button>
-                    <button className={`btn btn-primary `+ classes.btn}>
+                    <button className={`btn ${button.btnPrimary + ' ' + classes.btn}`}>
                      <input type="radio" name="themeselect" />
                       Select
                     </button>
@@ -132,12 +136,12 @@ const StepTheme = () => {
                     <Link href="/"><a>Template Name </a></Link>
                   </h3>
                   <div className={classes.btnGroup}>
-                    <button className={`btn btn-default `+ classes.btn}>
+                    <button className={`btn ${button.btnOutlinePrimary + ' ' + classes.btn}`}>
                       <FontAwesomeIcon icon={faEye} className={classes.faeye} />
                       Preview
                     </button>
-                    <button className={`btn btn-primary `+ classes.btn}>
-                      <input type="radio" name="themeselect" />
+                    <button className={`btn ${button.btnPrimary + ' ' + classes.btn}`}>
+                     <input type="radio" name="themeselect" />
                       Select
                     </button>
                   </div>
@@ -163,12 +167,12 @@ const StepTheme = () => {
                     <Link href="/"><a>Template Name </a></Link>
                   </h3>
                   <div className={classes.btnGroup}>
-                    <button className={`btn btn-default `+ classes.btn}>
+                    <button className={`btn ${button.btnOutlinePrimary + ' ' + classes.btn}`}>
                       <FontAwesomeIcon icon={faEye} className={classes.faeye} />
                       Preview
                     </button>
-                    <button className={`btn btn-primary `+ classes.btn}>
-                      <input type="radio" name="themeselect" />
+                    <button className={`btn ${button.btnPrimary + ' ' + classes.btn}`}>
+                     <input type="radio" name="themeselect" />
                       Select
                     </button>
                   </div>
@@ -194,12 +198,12 @@ const StepTheme = () => {
                     <Link href="/"><a>Template Name</a></Link>
                   </h3>
                   <div className={classes.btnGroup}>
-                    <button className={`btn btn-default `+ classes.btn}>
+                    <button className={`btn ${button.btnOutlinePrimary + ' ' + classes.btn}`}>
                       <FontAwesomeIcon icon={faEye} className={classes.faeye} />
                       Preview
                     </button>
-                    <button className={`btn btn-primary `+ classes.btn}>
-                      <input type="radio" name="themeselect" />
+                    <button className={`btn ${button.btnPrimary + ' ' + classes.btn}`}>
+                     <input type="radio" name="themeselect" />
                       Select
                     </button>
                   </div>
@@ -225,12 +229,12 @@ const StepTheme = () => {
                     <Link href="/"><a>Template Name </a></Link>
                   </h3>
                   <div className={classes.btnGroup}>
-                    <button className={`btn btn-default `+ classes.btn}>
+                    <button className={`btn ${button.btnOutlinePrimary + ' ' + classes.btn}`}>
                       <FontAwesomeIcon icon={faEye} className={classes.faeye} />
                       Preview
                     </button>
-                    <button className={`btn btn-primary `+ classes.btn}>
-                      <input type="radio" name="themeselect" />
+                    <button className={`btn ${button.btnPrimary + ' ' + classes.btn}`}>
+                     <input type="radio" name="themeselect" />
                       Select
                     </button>
                   </div>
@@ -240,23 +244,13 @@ const StepTheme = () => {
 
           </div>
 
-          <ul className={`pagination justify-content-end my-4`+ ' ' + paging.pagination}>
-            <li className={`page-item`+ ' ' + paging.disabled} ><a className="page-link" href="#">Previous</a></li>
-            <li className="page-item"><a className="page-link" href="#">1</a></li>
-            <li className="page-item"><span className="page-link"> .. </span></li>
-            <li className="page-item"><a className="page-link" href="#">10</a></li>
-            <li className="page-item"><a className="page-link" href="#">11</a></li>
-            <li className="page-item"><a className={`page-link`+ ' ' + paging.active} href="#">12</a></li>
-            <li className="page-item"><a className="page-link" href="#">16</a></li>
-            <li className="page-item"><span className="page-link"> .. </span></li>
-            <li className="page-item"><a className="page-link" href="#">26</a></li>
-            <li className="page-item"><a className="page-link" href="#">Next</a></li>
-          </ul>
+          <Pagination />
 
           <div className='text-right'>
+            
             <div className='btns-group mb-3' style={{ "textAlign":"right"}}>
-                <button className='btn btn-default mr-2'>Cancel</button>
-                <button className='btn btn-primary'>Save</button>
+                <button className={`btn ${button.btnOutlinePrimary}`} style={{"margin-right":8}}>Cancel</button>
+                <button className={`btn ${button.btnPrimary}`}>Save</button>
             </div>
           </div>
 

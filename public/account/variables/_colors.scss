@@ -1,3 +1,115 @@
+// Light Mode variable 
+
+//Neutral
+$lightModebackground:		#FFFFFF;
+$lightModeforegroud:		#FAFAFC;
+$lightModedisabled: 		#EAEAED;
+$lightModetextSecondary: 	#A7AAC3;
+$lightModetextPrimary:		#3A3A43;
+
+//Primary
+$lightModeprimaryLight:		#F8F5FF;
+$lightModeprimaryMain:		#4400CD;
+$lightModeprimaryDark:		#3E2178;
+
+//Decoration
+$lightModeaccentRed:		#D63257;
+$lightModeaccentBlue:		#55B6FA;
+$lightModeaccentYellow:		#FFC40C;
+$lightModeaccentOrange:		#F05D27;
+
+//Secondary
+$lightModesecondaryLight:	#E9F6F7;
+$lightModesecondaryMain:	#00CCA9;
+$lightModesecondaryDark:	#008F76;
+
+//Ancent
+$lightModeaccentLight:		#E9F6F7;
+$lightModeaccentMain:		#00CCA9;
+$lightModeaccentDark:		#55B6FA;
+
+//Semantic
+$lightModeinfoBg:			#E8F4FF;
+$lightModeinfoMain:			#1990FF;
+$lightModeinfoContent:		#0F5699;
+
+//Success
+$lightModesuccessBg:		#F5FDF7;
+$lightModesuccessMain:		#30CD60;
+$lightModesuccessContent:	#26A44D;
+
+//Warning
+$lightModewarningBg:		#FFFBF5;
+$lightModewarningMain:		#FFA940;
+$lightModewarningDark:		#CC8733;
+
+//Error
+$lightModeerrorBg:			#FDF6F6;
+$lightModeerrorMain:		#DA4343;
+$lightModeerrorContent:		#AE3636;
+
+//Dark Mode variable 
+
+//Neutral
+$darkModebackground:		#1B1B21;
+$darkModeforegroud:			#292A32;
+$darkModedisabled: 			#5C5E70;
+$darkModetextSecondary: 	#ABABBA;
+$darkModetextPrimary:		#FBFBFB;
+
+//Primary
+$darkModeprimaryLight:		#292442;
+$darkModeprimaryMain:		#4726D9;
+$darkModeprimaryDark:		#2F1F7A;
+
+//Decoration
+$darkModeaccentRed:			#D63257;
+$darkModeaccentBlue:		#55B6FA;
+$darkModeaccentYellow:		#FFC40C;
+$darkModeaccentRedLight:    #F05D27;
+
+//Secondary
+$darkModesecondaryLight:	#E9F6F7;
+$darkModesecondaryMain:		#DB2BED;
+$darkModesecondaryDark:		#008F76;
+
+//Ancent
+$darkModeaccentLight:		#E9F6F7;
+$darkModeaccentMain:		#00CCA9;
+$darkModeaccentDark:		#008F76;
+
+//Semantic
+$darkModeinfoBg:			#E8F4FF;
+$darkModeinfoMain:			#1990FF;
+$darkModeinfoContent:		#0F5699;
+
+//Success
+//Info
+$darkModesuccessBg:			#202B36;
+$darkModesuccessMain:		#6A8DAF;
+$darkModesuccessContent:	#B3CDE5;
+
+//Warning
+$darkModewarningBg:			#362920;
+$darkModewarningMain:		#AF916A;
+$darkModewarningDark:		#D1B694;
+
+//Error
+$darkModeerrorBg:			#362022;
+$darkModeerrorMain:			#B06D74;
+$darkModeerrorContent:		#D9A7AC;
+
+//Border 
+$border:                    #EAEAED;
+
+$gray: 			            #ABABBA;
+$grayLight: 	            #5F5F6D;
+
+$gray005:   	            #FAFAFC;
+$gray100:   	            #C9CCDE;
+
+////////////////////////////////
+
 // Utility Color
 
 $default		  :#3A3A43;
@@ -15,7 +127,6 @@ $gray_dark        :#D8D8D8;
 $placeholder_color:#D8D8D8;
 
 
-
 $white        :#fff; 
 $black        :#000; 
 $blue         :#0d2d7f;
@@ -27,84 +138,473 @@ $green        :#3B8036;
 $green-light  :#00C16B;
 
 
-
-
 $primaryLight:   #F5FAFF;
-
-$gray: 			#ABABBA;
-$grayLight: 	#5F5F6D;
-$gray100:   	#C9CCDE;
+$primary100:     #F8F5FF;
+$gray-900: 		 #f5f5f5;
 
 
+// BTN Primary Style 
+$btnPrimaryNormalBG:        $lightModeprimaryMain;
+$btnPrimaryNormalColor:     $white;
+$btnPrimaryNormalBorder:    $lightModeprimaryMain;
+
+$btnPrimaryHoverBG:            $lightModeprimaryDark;
+$btnPrimaryHoverColor:        $white;
+$btnPrimaryHoverBorder:       $lightModeprimaryDark;
+
+$btnPrimaryClickedBG:         $lightModeprimaryDark;
+$btnPrimaryClickedColor:      $white;
+$btnPrimaryClickedBorder:     $lightModeprimaryDark;
+
+$btnPrimaryDesaibleBG:            $lightModeprimaryLight;
+$btnPrimaryDesaibleColor:       $lightModedisabled;
+$btnPrimaryDesaibleBorder:        $lightModeprimaryLight;
+
+// BTN Outline Primary
+$btnOutlinePrimaryNormalBG:        $white;
+$btnOutlinePrimaryNormalColor:     $default;
+$btnOutlinePrimaryNormalBorder:    $lightModedisabled;
+
+$btnOutlinePrimaryHoverBG:            $white;
+$btnOutlinePrimaryHoverColor:        $default;
+$btnOutlinePrimaryHoverBorder:       $lightModeprimaryMain;
+
+$btnOutlinePrimaryClickedBG:         $white;
+$btnOutlinePrimaryClickedColor:      $default;
+$btnOutlinePrimaryClickedBorder:     $lightModedisabled;
+
+$btnOutlinePrimaryDesaibleBG:            $white;
+$btnOutlinePrimaryDesaibleColor:       $lightModedisabled;
+$btnOutlinePrimaryDesaibleBorder:        $lightModedisabled;
+
+// BTN text Outline Primary
+$btnTextPrimaryNormalBG:        $white;
+$btnTextPrimaryNormalColor:     $default;
+$btnTextPrimaryNormalBorder:    transparent;
+
+$btnTextPrimaryHoverBG:            $white;
+$btnTextPrimaryHoverColor:        $grayLight;
+$btnTextPrimaryHoverBorder:       transparent;
+
+$btnTextPrimaryClickedBG:         $white;
+$btnTextPrimaryClickedColor:      $default;
+$btnTextPrimaryClickedBorder:     transparent;
+
+$btnTextPrimaryDesaibleBG:            $white;
+$btnTextPrimaryDesaibleColor:       $lightModedisabled;
+$btnTextPrimaryDesaibleBorder:        transparent;
+
+// BTN Primary with Icons Prefix
+$btnIconPrefixPrimaryNormalBG:        $lightModeprimaryMain;
+$btnIconPrefixPrimaryNormalColor:     $white;
+$btnIconPrefixPrimaryNormalBorder:    $lightModeprimaryMain;
+
+$btnIconPrefixPrimaryHoverBG:            $lightModeprimaryDark;
+$btnIconPrefixPrimaryHoverColor:        $white;
+$btnIconPrefixPrimaryHoverBorder:       $lightModeprimaryDark;
+
+$btnIconPrefixPrimaryClickedBG:         $lightModeprimaryDark;
+$btnIconPrefixPrimaryClickedColor:      $white;
+$btnIconPrefixPrimaryClickedBorder:     $lightModeprimaryDark;
+
+$btnIconPrefixPrimaryDesaibleBG:            $lightModeprimaryLight;
+$btnIconPrefixPrimaryDesaibleColor:       $lightModedisabled;
+$btnIconPrefixPrimaryDesaibleBorder:        $lightModeprimaryLight;
+
+// BTN Primary Outline Prefix Icons
+$btnIconPrefixOutlinePrimaryNormalBG:        $lightModeprimaryMain;
+$btnIconPrefixOutlinePrimaryNormalColor:     $white;
+$btnIconPrefixOutlinePrimaryNormalBorder:    $lightModeprimaryMain;
+
+$btnIconPrefixOutlinePrimaryHoverBG:            $lightModeprimaryDark;
+$btnIconPrefixOutlinePrimaryHoverColor:        $white;
+$btnIconPrefixOutlinePrimaryHoverBorder:       $lightModeprimaryDark;
+
+$btnIconPrefixOutlinePrimaryClickedBG:         $lightModeprimaryDark;
+$btnIconPrefixOutlinePrimaryClickedColor:      $white;
+$btnIconPrefixOutlinePrimaryClickedBorder:     $lightModeprimaryDark;
+
+$btnIconPrefixOutlinePrimaryDesaibleBG:            $lightModeprimaryLight;
+$btnIconPrefixOutlinePrimaryDesaibleColor:       $lightModedisabled;
+$btnIconPrefixOutlinePrimaryDesaibleBorder:        $lightModeprimaryLight;
+
+// BTN Primary text Icons
+$btnIconPrefixTextPrimaryNormalBG:        $white;
+$btnIconPrefixTextPrimaryNormalColor:     $default;
+$btnIconPrefixTextPrimaryNormalBorder:    transparent;
+
+$btnIconPrefixTextPrimaryHoverBG:            $white;
+$btnIconPrefixTextPrimaryHoverColor:        $default;
+$btnIconPrefixTextPrimaryHoverBorder:       transparent;
+
+$btnIconPrefixTextPrimaryClickedBG:         $white;
+$btnIconPrefixTextPrimaryClickedColor:      $default;
+$btnIconPrefixTextPrimaryClickedBorder:     transparent;
+
+$btnIconPrefixTextPrimaryDesaibleBG:            $white;
+$btnIconPrefixTextPrimaryDesaibleColor:       $lightModedisabled;
+$btnIconPrefixTextPrimaryDesaibleBorder:        transparent;
+
+// BTN Primary with Icons Suffix
+$btnIconSuffixPrimaryNormalBG:        $lightModeprimaryMain;
+$btnIconSuffixPrimaryNormalColor:     $white;
+$btnIconSuffixPrimaryNormalBorder:    $lightModeprimaryMain;
+
+$btnIconSuffixPrimaryHoverBG:            $lightModeprimaryDark;
+$btnIconSuffixPrimaryHoverColor:        $white;
+$btnIconSuffixPrimaryHoverBorder:       $lightModeprimaryDark;
+
+$btnIconSuffixPrimaryClickedBG:         $lightModeprimaryDark;
+$btnIconSuffixPrimaryClickedColor:      $white;
+$btnIconSuffixPrimaryClickedBorder:     $lightModeprimaryDark;
+
+$btnIconSuffixPrimaryDesaibleBG:            $lightModeprimaryLight;
+$btnIconSuffixPrimaryDesaibleColor:       $lightModedisabled;
+$btnIconSuffixPrimaryDesaibleBorder:        $lightModeprimaryLight;
+
+// BTN Primary Outline Suffix Icons
+$btnIconSuffixOutlinePrimaryNormalBG:        $white;
+$btnIconSuffixOutlinePrimaryNormalColor:     $default;
+$btnIconSuffixOutlinePrimaryNormalBorder:    $lightModedisabled;
+
+$btnIconSuffixOutlinePrimaryHoverBG:            $white;
+$btnIconSuffixOutlinePrimaryHoverColor:        $default;
+$btnIconSuffixOutlinePrimaryHoverBorder:       $grayLight;
+
+$btnIconSuffixOutlinePrimaryClickedBG:         $white;
+$btnIconSuffixOutlinePrimaryClickedColor:      $default;
+$btnIconSuffixOutlinePrimaryClickedBorder:     $lightModedisabled;
+
+$btnIconSuffixOutlinePrimaryDesaibleBG:            $white;
+$btnIconSuffixOutlinePrimaryDesaibleColor:       $lightModedisabled;
+$btnIconSuffixOutlinePrimaryDesaibleBorder:        $lightModedisabled;
+
+// BTN Primary text Suffix Icons
+$btnIconSuffixTextPrimaryNormalBG:        $white;
+$btnIconSuffixTextPrimaryNormalColor:     $default;
+$btnIconSuffixTextPrimaryNormalBorder:    transparent;
+
+$btnIconSuffixTextPrimaryHoverBG:            $white;
+$btnIconSuffixTextPrimaryHoverColor:        $default;
+$btnIconSuffixTextPrimaryHoverBorder:       transparent;
+
+$btnIconSuffixTextPrimaryClickedBG:         $white;
+$btnIconSuffixTextPrimaryClickedColor:      $default;
+$btnIconSuffixTextPrimaryClickedBorder:     transparent;
+
+$btnIconSuffixTextPrimaryDesaibleBG:            $white;
+$btnIconSuffixTextPrimaryDesaibleColor:       $lightModedisabled;
+$btnIconSuffixTextPrimaryDesaibleBorder:        transparent;
+
+/////////////////////////// Secondary Butttttttttons Styles //////////////
+// BTN Secondary Style 
+$btnSecondaryNormalBG:        $lightModesecondaryMain;
+$btnSecondaryNormalColor:     $white;
+$btnSecondaryNormalBorder:    $lightModesecondaryMain;
+
+$btnSecondaryHoverBG:            $lightModesecondaryDark;
+$btnSecondaryHoverColor:        $white;
+$btnSecondaryHoverBorder:       $lightModesecondaryDark;
+
+$btnSecondaryClickedBG:         $lightModesecondaryDark;
+$btnSecondaryClickedColor:      $white;
+$btnSecondaryClickedBorder:     $lightModesecondaryDark;
+
+$btnSecondaryDesaibleBG:            $lightModeprimaryLight;
+$btnSecondaryDesaibleColor:       $lightModedisabled;
+$btnSecondaryDesaibleBorder:        $lightModeprimaryLight;
+
+// BTN Outline Secondary
+$btnOutlineSecondaryNormalBG:        $white;
+$btnOutlineSecondaryNormalColor:     $default;
+$btnOutlineSecondaryNormalBorder:    $lightModedisabled;
+
+$btnOutlineSecondaryHoverBG:            $white;
+$btnOutlineSecondaryHoverColor:        $default;
+$btnOutlineSecondaryHoverBorder:       $lightModesecondaryMain;
+
+$btnOutlineSecondaryClickedBG:         $white;
+$btnOutlineSecondaryClickedColor:      $default;
+$btnOutlineSecondaryClickedBorder:     $lightModedisabled;
+
+$btnOutlineSecondaryDesaibleBG:            $white;
+$btnOutlineSecondaryDesaibleColor:       $lightModedisabled;
+$btnOutlineSecondaryDesaibleBorder:        $lightModedisabled;
+
+// BTN text Outline Secondary
+$btnTextSecondaryNormalBG:        $white;
+$btnTextSecondaryNormalColor:     $default;
+$btnTextSecondaryNormalBorder:    transparent;
+
+$btnTextSecondaryHoverBG:            $white;
+$btnTextSecondaryHoverColor:        $grayLight;
+$btnTextSecondaryHoverBorder:       transparent;
+
+$btnTextSecondaryClickedBG:         $white;
+$btnTextSecondaryClickedColor:      $default;
+$btnTextSecondaryClickedBorder:     transparent;
+
+$btnTextSecondaryDesaibleBG:            $white;
+$btnTextSecondaryDesaibleColor:       $lightModedisabled;
+$btnTextSecondaryDesaibleBorder:        transparent;
+
+// BTN Secondary with Icons Prefix
+$btnIconPrefixSecondaryNormalBG:        $lightModesecondaryMain;
+$btnIconPrefixSecondaryNormalColor:     $white;
+$btnIconPrefixSecondaryNormalBorder:    $lightModesecondaryMain;
+
+$btnIconPrefixSecondaryHoverBG:            $lightModesecondaryDark;
+$btnIconPrefixSecondaryHoverColor:        $white;
+$btnIconPrefixSecondaryHoverBorder:       $lightModesecondaryDark;
+
+$btnIconPrefixSecondaryClickedBG:         $lightModesecondaryDark;
+$btnIconPrefixSecondaryClickedColor:      $white;
+$btnIconPrefixSecondaryClickedBorder:     $lightModesecondaryDark;
+
+$btnIconPrefixSecondaryDesaibleBG:            $lightModeprimaryLight;
+$btnIconPrefixSecondaryDesaibleColor:       $lightModedisabled;
+$btnIconPrefixSecondaryDesaibleBorder:        $lightModesecondaryLight;
+
+// BTN Secondary Outline Prefix Icons
+$btnIconPrefixOutlineSecondaryNormalBG:        $white;
+$btnIconPrefixOutlineSecondaryNormalColor:     $default;
+$btnIconPrefixOutlineSecondaryNormalBorder:    $lightModedisabled;
+
+$btnIconPrefixOutlineSecondaryHoverBG:            $white;
+$btnIconPrefixOutlineSecondaryHoverColor:        $default;
+$btnIconPrefixOutlineSecondaryHoverBorder:       $lightModesecondaryDark;
+
+$btnIconPrefixOutlineSecondaryClickedBG:         $white;
+$btnIconPrefixOutlineSecondaryClickedColor:      $default;
+$btnIconPrefixOutlineSecondaryClickedBorder:     $lightModedisabled;
+
+$btnIconPrefixOutlineSecondaryDesaibleBG:            $lightModeprimaryLight;
+$btnIconPrefixOutlineSecondaryDesaibleColor:       $lightModedisabled;
+$btnIconPrefixOutlineSecondaryDesaibleBorder:        $lightModedisabled;
+
+// BTN Secondary text Icons
+$btnIconPrefixTextSecondaryNormalBG:        $white;
+$btnIconPrefixTextSecondaryNormalColor:     $default;
+$btnIconPrefixTextSecondaryNormalBorder:    transparent;
+
+$btnIconPrefixTextSecondaryHoverBG:            $white;
+$btnIconPrefixTextSecondaryHoverColor:        $default;
+$btnIconPrefixTextSecondaryHoverBorder:       transparent;
+
+$btnIconPrefixTextSecondaryClickedBG:         $white;
+$btnIconPrefixTextSecondaryClickedColor:      $default;
+$btnIconPrefixTextSecondaryClickedBorder:     transparent;
+
+$btnIconPrefixTextSecondaryDesaibleBG:            $white;
+$btnIconPrefixTextSecondaryDesaibleColor:       $lightModedisabled;
+$btnIconPrefixTextSecondaryDesaibleBorder:        transparent;
+
+// BTN Secondary with Icons Suffix
+$btnIconSuffixSecondaryNormalBG:        $lightModesecondaryMain;
+$btnIconSuffixSecondaryNormalColor:     $white;
+$btnIconSuffixSecondaryNormalBorder:    $lightModesecondaryMain;
+
+$btnIconSuffixSecondaryHoverBG:            $lightModesecondaryDark;
+$btnIconSuffixSecondaryHoverColor:        $white;
+$btnIconSuffixSecondaryHoverBorder:       $lightModesecondaryDark;
+
+$btnIconSuffixSecondaryClickedBG:         $lightModesecondaryDark;
+$btnIconSuffixSecondaryClickedColor:      $white;
+$btnIconSuffixSecondaryClickedBorder:     $lightModesecondaryDark;
+
+$btnIconSuffixSecondaryDesaibleBG:            $lightModeprimaryLight;
+$btnIconSuffixSecondaryDesaibleColor:       $lightModedisabled;
+$btnIconSuffixSecondaryDesaibleBorder:        $lightModeprimaryLight;
+
+// BTN Secondary Outline Suffix Icons
+$btnIconSuffixOutlineSecondaryNormalBG:        $white;
+$btnIconSuffixOutlineSecondaryNormalColor:     $default;
+$btnIconSuffixOutlineSecondaryNormalBorder:    $lightModedisabled;
+
+$btnIconSuffixOutlineSecondaryHoverBG:            $white;
+$btnIconSuffixOutlineSecondaryHoverColor:        $default;
+$btnIconSuffixOutlineSecondaryHoverBorder:       $lightModesecondaryDark;
+
+$btnIconSuffixOutlineSecondaryClickedBG:         $white;
+$btnIconSuffixOutlineSecondaryClickedColor:      $default;
+$btnIconSuffixOutlineSecondaryClickedBorder:     $lightModedisabled;
+
+$btnIconSuffixOutlineSecondaryDesaibleBG:            $white;
+$btnIconSuffixOutlineSecondaryDesaibleColor:       $lightModedisabled;
+$btnIconSuffixOutlineSecondaryDesaibleBorder:        $lightModedisabled;
+
+// BTN Secondary text Suffix Icons
+$btnIconSuffixTextSecondaryNormalBG:        $white;
+$btnIconSuffixTextSecondaryNormalColor:     $default;
+$btnIconSuffixTextSecondaryNormalBorder:    transparent;
+
+$btnIconSuffixTextSecondaryHoverBG:            $white;
+$btnIconSuffixTextSecondaryHoverColor:        $default;
+$btnIconSuffixTextSecondaryHoverBorder:       transparent;
+
+$btnIconSuffixTextSecondaryClickedBG:         $white;
+$btnIconSuffixTextSecondaryClickedColor:      $default;
+$btnIconSuffixTextSecondaryClickedBorder:     transparent;
+
+$btnIconSuffixTextSecondaryDesaibleBG:            $white;
+$btnIconSuffixTextSecondaryDesaibleColor:       $lightModedisabled;
+$btnIconSuffixTextSecondaryDesaibleBorder:        transparent;
 
 
 
 
-$gray-10: 		#F1F1F1;
-$gray-20: 		#DDDBDB;
-$gray-25: 		#EEEEEE;
-$gray-40: 		#BBB7B7;
-$gray-50: 		#E6E6E6;
-$gray-100: 		#929292;
-$gray-150: 		#B4B4B4;
-$gray-200: 		#6c757d;
-$gray-300: 		#B7B7B7;
-$gray-400: 		#757575;
-$gray-500: 		#494949;
-$gray-600: 		#707070;
-$gray-650: 		#5F5F5F;
-$gray-670: 		#606060;
-$gray-700: 		#A7A7A7;
-$gray-800: 		#efefef;
-$gray-900: 		#f5f5f5;
-$gray-950: 		#F8F8F8;
-$gray-960: 		#CFCFCF;
-$gray-970: 		#C2C2C2;
-$gray-980: 		#E5E6FF;
+/////////////////////////// Danger Butttttttttons Styles //////////////
+// BTN Danger Style 
+$btnDangerNormalBG:        $lightModeerrorMain;
+$btnDangerNormalColor:     $white;
+$btnDangerNormalBorder:    $lightModeerrorMain;
 
-//$gray-light:    #F6F6F6;
+$btnDangerHoverBG:            $lightModeerrorContent;
+$btnDangerHoverColor:        $white;
+$btnDangerHoverBorder:       $lightModeerrorContent;
 
-$green-50:		#C9F3DE;
-$green-100:		#15B45A;
-$green-200:		#2abe00;
+$btnDangerClickedBG:         $lightModeerrorContent;
+$btnDangerClickedColor:      $white;
+$btnDangerClickedBorder:     $lightModeerrorContent;
+
+$btnDangerDesaibleBG:            $lightModeprimaryLight;
+$btnDangerDesaibleColor:       $lightModedisabled;
+$btnDangerDesaibleBorder:        $lightModeprimaryLight;
+
+// BTN Outline Danger
+$btnOutlineDangerNormalBG:        $white;
+$btnOutlineDangerNormalColor:     $lightModeerrorMain;
+$btnOutlineDangerNormalBorder:    $lightModedisabled;
+
+$btnOutlineDangerHoverBG:            $white;
+$btnOutlineDangerHoverColor:        $lightModeerrorMain;
+$btnOutlineDangerHoverBorder:       $lightModeerrorMain;
+
+$btnOutlineDangerClickedBG:         $white;
+$btnOutlineDangerClickedColor:      $lightModeerrorMain;
+$btnOutlineDangerClickedBorder:     $lightModedisabled;
+
+$btnOutlineDangerDesaibleBG:           $white;
+$btnOutlineDangerDesaibleColor:       $lightModedisabled;
+$btnOutlineDangerDesaibleBorder:       $lightModedisabled;
+
+// BTN text Outline Danger
+$btnTextDangerNormalBG:        $white;
+$btnTextDangerNormalColor:     $lightModeerrorMain;
+$btnTextDangerNormalBorder:    transparent;
+
+$btnTextDangerHoverBG:            $white;
+$btnTextDangerHoverColor:        $lightModeerrorMain;
+$btnTextDangerHoverBorder:       transparent;
+
+$btnTextDangerClickedBG:         $white;
+$btnTextDangerClickedColor:      $lightModeerrorMain;
+$btnTextDangerClickedBorder:     transparent;
+
+$btnTextDangerDesaibleBG:            $white;
+$btnTextDangerDesaibleColor:       $lightModedisabled;
+$btnTextDangerDesaibleBorder:        transparent;
+
+// BTN Danger with Icons Prefix
+$btnIconPrefixDangerNormalBG:        $lightModeerrorMain;
+$btnIconPrefixDangerNormalColor:     $white;
+$btnIconPrefixDangerNormalBorder:    $lightModeerrorMain;
+
+$btnIconPrefixDangerHoverBG:            $lightModeerrorContent;
+$btnIconPrefixDangerHoverColor:        $white;
+$btnIconPrefixDangerHoverBorder:       $lightModeerrorContent;
+
+$btnIconPrefixDangerClickedBG:         $lightModeerrorContent;
+$btnIconPrefixDangerClickedColor:      $white;
+$btnIconPrefixDangerClickedBorder:     $lightModeerrorContent;
+
+$btnIconPrefixDangerDesaibleBG:            $lightModeprimaryLight;
+$btnIconPrefixDangerDesaibleColor:       $lightModedisabled;
+$btnIconPrefixDangerDesaibleBorder:        $lightModeprimaryLight;
+
+// BTN Danger Outline Prefix Icons
+$btnIconPrefixOutlineDangerNormalBG:        $white;
+$btnIconPrefixOutlineDangerNormalColor:     $lightModeerrorMain;
+$btnIconPrefixOutlineDangerNormalBorder:    $lightModedisabled;
+
+$btnIconPrefixOutlineDangerHoverBG:            $white;
+$btnIconPrefixOutlineDangerHoverColor:        $lightModeerrorMain;
+$btnIconPrefixOutlineDangerHoverBorder:       $lightModeerrorMain;
+
+$btnIconPrefixOutlineDangerClickedBG:         $white;
+$btnIconPrefixOutlineDangerClickedColor:      $lightModeerrorMain;
+$btnIconPrefixOutlineDangerClickedBorder:     $lightModedisabled;
+
+$btnIconPrefixOutlineDangerDesaibleBG:            $white;
+$btnIconPrefixOutlineDangerDesaibleColor:       $lightModedisabled;
+$btnIconPrefixOutlineDangerDesaibleBorder:        $lightModeprimaryLight;
+
+// BTN Danger text Icons
+$btnIconPrefixTextDangerNormalBG:        $white;
+$btnIconPrefixTextDangerNormalColor:     $lightModeerrorMain;
+$btnIconPrefixTextDangerNormalBorder:    transparent;
+
+$btnIconPrefixTextDangerHoverBG:            $white;
+$btnIconPrefixTextDangerHoverColor:        $lightModeerrorMain;
+$btnIconPrefixTextDangerHoverBorder:       transparent;
+
+$btnIconPrefixTextDangerClickedBG:         $white;
+$btnIconPrefixTextDangerClickedColor:      $lightModeerrorMain;
+$btnIconPrefixTextDangerClickedBorder:     transparent;
+
+$btnIconPrefixTextDangerDesaibleBG:            $white;
+$btnIconPrefixTextDangerDesaibleColor:       $lightModedisabled;
+$btnIconPrefixTextDangerDesaibleBorder:        transparent;
+
+// BTN Danger with Icons Suffix
+$btnIconSuffixDangerNormalBG:        $lightModeerrorMain;
+$btnIconSuffixDangerNormalColor:     $white;
+$btnIconSuffixDangerNormalBorder:    $lightModeerrorMain;
+
+$btnIconSuffixDangerHoverBG:            $lightModeerrorContent;
+$btnIconSuffixDangerHoverColor:        $white;
+$btnIconSuffixDangerHoverBorder:       $lightModeerrorContent;
+
+$btnIconSuffixDangerClickedBG:         $lightModeerrorContent;
+$btnIconSuffixDangerClickedColor:      $white;
+$btnIconSuffixDangerClickedBorder:     $lightModeerrorContent;
+
+$btnIconSuffixDangerDesaibleBG:            $lightModeprimaryLight;
+$btnIconSuffixDangerDesaibleColor:       $lightModedisabled;
+$btnIconSuffixDangerDesaibleBorder:        $lightModeprimaryLight;
+
+// BTN Danger Outline Suffix Icons
+$btnIconSuffixOutlineDangerNormalBG:        $white;
+$btnIconSuffixOutlineDangerNormalColor:     $lightModeerrorMain;
+$btnIconSuffixOutlineDangerNormalBorder:    $lightModedisabled;
+
+$btnIconSuffixOutlineDangerHoverBG:            $white;
+$btnIconSuffixOutlineDangerHoverColor:        $lightModeerrorMain;
+$btnIconSuffixOutlineDangerHoverBorder:       $lightModeerrorMain;
+
+$btnIconSuffixOutlineDangerClickedBG:         $white;
+$btnIconSuffixOutlineDangerClickedColor:      $lightModeerrorMain;
+$btnIconSuffixOutlineDangerClickedBorder:     $lightModedisabled;
+
+$btnIconSuffixOutlineDangerDesaibleBG:            $white;
+$btnIconSuffixOutlineDangerDesaibleColor:       $lightModedisabled;
+$btnIconSuffixOutlineDangerDesaibleBorder:        $lightModedisabled;
+
+// BTN Danger text Suffix Icons
+$btnIconSuffixTextDangerNormalBG:        $white;
+$btnIconSuffixTextDangerNormalColor:     $lightModeerrorMain;
+$btnIconSuffixTextDangerNormalBorder:    transparent;
+
+$btnIconSuffixTextDangerHoverBG:            $white;
+$btnIconSuffixTextDangerHoverColor:        $lightModeerrorMain;
+$btnIconSuffixTextDangerHoverBorder:       transparent;
+
+$btnIconSuffixTextDangerClickedBG:         $white;
+$btnIconSuffixTextDangerClickedColor:      $lightModeerrorMain;
+$btnIconSuffixTextDangerClickedBorder:     transparent;
+
+$btnIconSuffixTextDangerDesaibleBG:            $white;
+$btnIconSuffixTextDangerDesaibleColor:       $lightModedisabled;
+$btnIconSuffixTextDangerDesaibleBorder:        transparent;
 
 
-
-$yellow-100:	 #ffdbbd;
-$yellow-200:	 #FFF5FA;
-$orange:		 #fef2e8;
-$orange-100:	 #FF9100;
-
-$blue-200:    		#4e71a4;
-$blue-400:    		#2B73D1;
-$blue-light:		#231f20;
-
-
-
-// Overlay Color
-$overlay-default	:#6c757d;
-$overlay-light 		:#495057;
-$overlay-dark  		:#212529;
-
-// BG Color
-$body-bg:           $white !default;
-$body-color:        $gray-900 !default;
-
-//$gray-bg			:#E6E6E6;
-//$border-light      	:#f2f2f2;
-// End common colors name
-
-
-//==============================================
-// Typo BG color 
-$bg-default-color:       $white;
-$bg-primary-color:       $primary;
-$bg-secondary-color:     $secondary;
-$bg-success-color:       $success;
-$bg-danger-color:        $danger;
-$bg-warning-color:       $warning;
-$bg-info-color:          $info;
-$bg-light-color:         $light;
-$bg-dark-color:          $dark;
-$bg-muted-color:         $secondary;
-$bg-white-color:         $white;
