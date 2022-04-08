@@ -1,7 +1,6 @@
-
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight  } from '@fortawesome/free-solid-svg-icons';
 import button from '../../../public/account/Buttons.module.scss';
-
 
 import StepSidebar from '../../../components/collections/create/sidebar';
 import StepTheme from '../../../components/collections/create/theme';
@@ -11,9 +10,7 @@ import StepCollectionAssets from '../../../components/collections/create/collect
 import StepCustomizeStyle from '../../../components/collections/create/customizestyle';
 
 
-
 import classes from '../../../public/collections/create/create.module.scss';
-
 
 import React, { useState } from "react";
 
@@ -68,6 +65,8 @@ export default function Index() {
                 }}
               >
                 {page === FormTitles.length - 1 ? "Save" : "Next"}
+                &nbsp;
+                <FontAwesomeIcon icon={faAngleRight} className="faAngleRight" />
               </button>
             </div>
           </div>          

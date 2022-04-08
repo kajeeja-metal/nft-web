@@ -6,14 +6,15 @@ import Pagination from '../../../components/common/pagination.js';
 import nav from '../../../public/collections/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
 
+import main from '../../../public/collections/index.module.scss';
 import classes from '../../../components/collections/create/theme.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faCheckCircle } from '@fortawesome/free-regular-svg-icons';
+
 import Theme1 from '../../../public/collections/create/theme1.png';
 import Theme2 from '../../../public/collections/create/theme2.png';
 import Theme3 from '../../../public/collections/create/theme3.png';
-
 
 const StepTheme = () => {
   useEffect(() => {
@@ -27,8 +28,8 @@ const StepTheme = () => {
   // });
   return (
     <>  
-      <div className={classes.titleWrap}>
-        <h1 className={classes.title}>Please select collection theme</h1>
+      <div className={main.titleWrap + ' ' + main.textCenter}>
+        <h1 className={main.title}>Please select collection theme</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
@@ -71,8 +72,7 @@ const StepTheme = () => {
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
                     <Link href="/"><a>Template Name (Default)</a></Link>
-                  </h3>
-                  
+                  </h3>                  
                   <div className={classes.btnGroup}>
                     <button className={`btn ${button.btnOutlinePrimary + ' ' + classes.btn}`}>
                       <FontAwesomeIcon icon={faEye} className={classes.faeye} />

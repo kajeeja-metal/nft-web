@@ -1,17 +1,6 @@
 
 @import '../variables';
 
-
-.title {
-    color: $default-color; font-weight: normal;
-    font-size: 2rem;
-}
-.titleWrap {
-    margin-bottom: 2.5rem; text-align: center;
-    p {
-        font-size: 14px;
-    }
-}
 .tab, .nav  {
 	margin-bottom: 1.5rem;
 }
@@ -89,7 +78,7 @@
 		left: 10px; top: 10px; z-index: 2;
 	}
 	.faCheckCircle {
-		color: #00CCA9; background:#000; font-size: 22px;
+		color: $checkitem-color; background:$checkitem-bg-color; font-size: 22px;
 		border-radius: 50%;
 	}
 }

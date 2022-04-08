@@ -10,7 +10,9 @@
 .progressbar {
     background: #FAFAFC; padding: 15px 0;
     margin-bottom: 2rem; margin-top: -30px;
-    
+    button {
+        white-space: nowrap;
+    }
 }
 .progressBarbg {
     background-color: #00CCA9 !important; 

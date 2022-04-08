@@ -1,7 +1,6 @@
 import React from 'react';
 
-import paging from '../../public/collections/pagination.module.scss';
-// import nav from '../../public/collections/tabnav.module.scss';
+import paging from './pagination.module.scss';
 
 const Pagination = () => {
   return (

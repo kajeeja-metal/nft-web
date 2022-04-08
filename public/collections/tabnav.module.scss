@@ -1,35 +1,14 @@
 
-
-@import 'variables/text_link';
-@import 'variables/colors';
-
-
-$border-color :#ABABBA;
-
-
-.colorElement {
-    margin-top: 1.25rem;
-    input {
-        border-radius: 5px !important;
-    }
-}
-.colorBg {
-    display: inline-block; margin-right: .5rem;
-    max-width: 40px; background: #008F76;
-    border-radius: 5px !important;
-    padding: 0.375rem 0.75rem; line-height: 1.5;
-    min-height: 38px;
-}
-
-
+@import 'variable';
 
 .navLink {
-    padding: 9px 16px; border-radius: 4px 4px 0px 0px;
+    padding: $tab-padding; border-radius: $tab-border-radius;
     display: inline-block;
     color: $tab-color;
     border-bottom: 5px solid transparent;
-    margin-bottom: -1px; margin-right: 4px;
-    font-size: 18px;
+    margin-bottom: -1px; margin-right: 2px;
+    font-size: $tab-font-size;
+    min-width: 90px; text-align: center;
     &:hover, &.active {
         color: $tab-active-color;
         background: $tab-active-bg;
@@ -38,13 +17,26 @@ $border-color :#ABABBA;
     &.active {
         font-weight: 700;
     }
-
 }
 
-/**/
+/* for color tab  */
+.colorElement {
+    margin-top: 1.25rem;
+    input {
+        border-radius: 5px !important;
+        max-width: 300px;
+    }
+}
+.colorBg {
+    display: inline-block; margin-right: .5rem;
+    max-width: 40px; background: $color-picker-default-bg;
+    border-radius: 5px !important;
+    padding: 0.375rem 0.75rem; line-height: 1.5;
+    min-height: 38px;
+}
 .colorpickertab {
-    border-top: 1px solid $border-color;
-    padding-top: 10px; padding-left: 10px;
+    border-top: 1px solid $border; margin-top: 10px;
+    padding-top: .75rem; padding-left: 10px;
 }
 
 @media all and (max-width: 767px) {

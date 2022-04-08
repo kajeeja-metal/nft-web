@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import React, { useEffect } from "react";
 
@@ -56,7 +55,6 @@ export default function Index() {
                         <a className={`btn ${button.btnOutlinePrimary + ' ' + style.createClink}`}>                      
                         <FontAwesomeIcon icon={faThLarge} className="faThLarge" size="lg" /> Create New Colllection</a></Link> 
                     </div>
-
                        
                     <div className="tab-content">
                         <div className="tab-pane show active" id="allAssetTab">
@@ -72,7 +70,6 @@ export default function Index() {
                             <h1>Draft tab</h1>
                         </div>
                     </div>
-
  
 				</div>
 			</div>

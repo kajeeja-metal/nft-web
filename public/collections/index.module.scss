@@ -1,53 +1,38 @@
 
-
-@import 'variables/text_link';
-@import 'variables/colors';
+@import 'variable';
 
 .title {
-    color: $default; font-weight: normal;
-    font-size: 2rem;
+    color: $title-color; font-weight: $title-font-weight;
+    font-size: $title-font-size;
 }
 .titleWrap {
     margin-bottom: 2.5rem;
     p {
-        font-size: 14px;
+        font-size: $title-desc-font-size; color: $title-desc-color ;
     }
 }
-
+.textCenter {
+    text-align: center;
+}
 .navCreateWrap {
-    display: flex; align-items: center;
-    justify-content: space-between;
+    @include flex; align-items: center;
+    @include justify-content(space-between);
     margin-bottom: 1.5rem;
     ul {
         width: 100%; align-items: center;
     }
 }
 
-.navLink {
-    padding: 9px 16px; border-radius: 4px 4px 0px 0px;
-    display: inline-block;
-    color: $tab-color;
-    border-bottom: 5px solid transparent;
-    margin-bottom: -1px; margin-right: 4px;
-    &:hover, &.active {
-        color: $tab-active-color;
-        background: $tab-active-bg;
-        border-bottom: 5px solid $tab-border-active-color;
-    }
-
-}
 
 .createClink {
     white-space: nowrap;
     margin-left: .5rem; 
 }
 
-.create-collection-link {
+/*.create-collection-link {
     border: 1px solid $border;
-}
-.btn {
-    border-radius: 6px; 
-}
+}*/
+
 
 
 @media all and (max-width: 767px) {
