@@ -1,4 +1,4 @@
-@import '../../../profile/variables';
+@import '../../../../components/profile/profile001/variables';
 
 .assetsAll {
     display: grid;
@@ -11,7 +11,7 @@
         border-radius: $assetsItemBorderRadius;
         background-color: $assetsItemBorderBgColor;
         img {
-            border-radius: #assetsItemBorderRadius;
+            border-radius: $assetsItemBorderRadius;
         }
     }
     p {

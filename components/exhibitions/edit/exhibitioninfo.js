@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
 import Image from "next/image"
 
 import nav from '../../../public/exhibitions/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
 import form from '../../../public/account/Form.module.scss';
-// import Pagination from '../../../components/common/pagination.js';
 import style from '../../../public/exhibitions/index.module.scss'; 
 import classes from '../../../components/exhibitions/edit/exhibitioninfo.module.scss';
 
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faCheckCircle, faPlus, faTrash } from '@fortawesome/free-regular-svg-icons';
+import { faPlus, faTrash } from '@fortawesome/free-regular-svg-icons';
 
 import ThumbList from '../../../public/exhibitions/images/thumb.png';
 import CoverList from '../../../public/exhibitions/images/covercrop.png';
