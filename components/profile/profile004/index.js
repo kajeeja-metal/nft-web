@@ -2,17 +2,16 @@ import React, { useState, useEffect } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Image from "next/image";
 import Link from "next/link";
-import classes from "../../../public/profile/profile002/Index.module.scss";
+import classes from "../../../public/profile/profile004/Index.module.scss";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClone, faImage, faFlag } from "@fortawesome/free-regular-svg-icons";
-import Thumbs002 from "../../../components/thumbnails/thumbnails002";
+import Thumbs004 from "../../../components/thumbnails/thumbnails004";
 
 import downArrow from '../../../public/profile/profile001/images/down-arrow.svg';
 
 import profileBG from "../../../public/profile/profile002/images/profilebg.png";
 import profileLogo from "../../../public/profile/profile002/images/profile.png";
-
 
 library.add(faClone, faImage);
 
@@ -39,10 +38,11 @@ export default function Profile002() {
     }, 1000);
   };
   const codeSnitted = `0xceB945...Bd3c8D5D`;
+  const[index,setIndex] = useState(0);
   return (
     <>
       <div className={classes.bannerWrap}>
-        <div className={classes.bannerImg}>
+        <div className={`d-none` + ' ' + classes.bannerImg}>
           <Image src={profileBG} alt="Banner Image" width={2000} height={360} />
           <div className={classes.walletConnect}>
             <button type="button" className="btn btn-success btn-lg">
@@ -54,7 +54,7 @@ export default function Profile002() {
           <div className="row">
             <div className="col-sm-4">
               <div className={classes.userWrap}>
-                  <div className={classes.profileImg}>
+                <div className={classes.profileImg}>
                   <Image
                   className={classes.profilePicture}
                   src={profileLogo}
@@ -64,15 +64,15 @@ export default function Profile002() {
                   />
                 </div>
                 <div className={classes.userInfo}>
-                  <h1 className={classes.userName}>Little Monkey 🍌</h1>
-                  <h2 className={classes.userMore}>@Deekaykwon</h2>
+                  <h1 className={classes.userName}>SoundMint</h1>
+                  <h2 className={classes.userMore}>@username</h2>
                   <div className={classes.userId}>
                     <CopyToClipboard text={codeSnitted} onCopy={onCopyText}>
                       <div className={classes.copyWrap}>
                         {codeSnitted}
                         <span className={classes.copyTxt}>
                           {isCopied ? (
-                            <span>Copied!</span>
+                            <span>0xcf9144523f1a...!</span>
                           ) : (
                             <FontAwesomeIcon icon={faClone} />
                           )}
@@ -80,28 +80,37 @@ export default function Profile002() {
                       </div>
                     </CopyToClipboard>
                   </div>
-				<div className={classes.likeWrap }>
-					<p className={classes.statusWrap}>
-						<span><span className={classes.num}>99</span> Collections</span>
-						<span><span className={classes.num}>99</span> Spaces</span>
-						<span><span className={classes.num}>99K</span> Likes</span>
-					</p>
-					<p className={classes.userDesc}>
-						Lorem Ipsum is simply dummy text of the printing and
-						typesetting dvvindustry. Lorem Ipsum is simply dummy text of
-						the printing and typesetting dvvindustry. Lorem Ipsum has
-						been dummy text of the printing and typesetting dvvindustry.
-						Lorem Ipsum has been
-					</p>
-				  </div>
+                  <p className={classes.userDesc}>
+                    SoundMint curated NFTs are generative music collectibles that combine generative visuals with generative music by pairing stems to visual layers; allowing ... 
+                  </p>
+                  <p className={classes.socialList}>
+                    <Link href="/"><a>
+                      <FontAwesomeIcon icon={faTwitter} size="lg" />
+                    </a>
+                    </Link>
+                    <Link href="/"><a>
+                      <FontAwesomeIcon icon={faInstagram} size="lg" />
+                    </a>
+                    </Link>
+                    <Link href="/"><a>
+                      <FontAwesomeIcon icon={faFacebook} size="lg" />
+                    </a>
+                    </Link>
+                  </p>
+                  <div className={classes.likeWrap }>
+                    <p className={classes.statusWrap}>
+                      <span><span className={classes.num}>400</span> Collection Likes</span>
+                      <span><span className={classes.num}>400</span> Exhibition Likes</span>
+                      {/* <span><span className={classes.num}>99K</span> Likes</span> */}
+                    </p>
+                    
+                  </div>
                 </div>
               </div>
-              <div
-                className="nav flex-column" role="tablist"
-                aria-orientation="vertical"
-              >
-                <button
-                  className="nav-link active"
+              <div className="nav flex-column" role="tablist"
+                aria-orientation="vertical">
+                <button onClick={()=>{setIndex(0)}} 
+                  className={`nav-link ${index===0?'active':''}`}
                   data-bs-toggle="pill"
                   data-bs-target="#collectionWrap"
                   type="button"
@@ -111,8 +120,7 @@ export default function Profile002() {
                 >
                  99 Collections
                 </button>
-                <button
-                  className="nav-link"
+                <button onClick={()=>{setIndex(1)}} className={`nav-link ${index===1?'active':''}`}
                   data-bs-toggle="pill"
                   data-bs-target="#spacesWrap"
                   type="button"
@@ -122,8 +130,8 @@ export default function Profile002() {
                 >
                  99 Exhibitions
                 </button>
-                <button
-                  className="nav-link"
+                <button onClick={()=>{setIndex(2)}}
+                  className={`nav-link ${index===2?'active':''}`}
                   data-bs-toggle="pill"
                   data-bs-target="#assetsAll"
                   type="button"
@@ -136,11 +144,13 @@ export default function Profile002() {
               </div>
             </div>
             <div className="col-sm-7 offset-md-1">
-				<Thumbs002 />
+				      <Thumbs004 />
             </div>
           </div>
         </div>
       </div>
+
+
 	  <footer className={classes.footer}>
 			<div className='container'>
 				<div className={classes.footerRow}>

@@ -1,14 +1,14 @@
 
-@import 'variables';
 
-/* @import '../../thumbnails/thumb002/thumb002.scss';*/
+
+@import '../../../components/profile/profile004/variables';
 
 
 .bannerImg {
     display: flex;
     justify-content: center;
     position: relative;
-    height: $profile-banner-height;
+    height: 360px;
     text-align: center;
     img {
         width: 100%;
@@ -43,7 +43,7 @@
         text-overflow: ellipsis;
         font-size: $profileH4FontSize;
         color: $profileH4FontColor;
-        text-align: center;
+        text-align: left;
     }
 }
 .btnGroups {
@@ -55,33 +55,34 @@
 		}
 	}
 }
+
+.likeWrap {
+    border-top: 1px dashed #FFFFFF;
+    border-bottom: 1px dashed #FFFFFF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 .statusWrap {
     font-size: $statusWrapFontSize;
     color: $statusWrapColor;
-    margin-bottom: 1rem;
     text-align: center;
-    span {
+    display: flex;
+    flex-wrap: wrap;
+    > span {
         font-weight: 600;
-        &:not(:last-child) {
-            margin-right: 2rem;
-        }
+        flex: 0 0 50%;
+        font-size: 18px;
+        max-width: 50%;
+    }
+    .num {
+        margin: 0 auto 5px auto;
+        display: block;
+        font-size: 2rem;
     }
 }
-.socialList {
-    margin-top: 23px;
-    margin-bottom: 75px;
-    display: inline-flex;
-    align-items: center
-	span {
-		margin-right: 1rem;
-	}
-	a {
-        color: $textColor;
-		&:not(:last-child) {
-			margin-right: 10px;
-		}
-	}
-}
+
 
 .userId {
     transition: all 0.3s;
@@ -161,15 +162,15 @@
             display: inline-block;
             width: 41px; height: 41px;
             border-radius: 4px;
-            border: 2px solid $PaginationColor;
-            color: $PaginationColor;
-            background-color: $PaginationBgColor;
-            font-size: $PaginationFontSize;
+            border: 2px solid $paginationColor;
+            color: $paginationColor;
+            background-color: $paginationBgColor;
+            font-size: $paginationFontSize;
         }
         [aria-selected="true"] {
-            background-color: $PaginationActiveBGColor;
+            background-color: $paginationActiveBgColor;
             a {
-                background-color: $PaginationActiveBGColor;
+                background-color: $paginationActiveBgColor;
             }
         }
     } 
@@ -184,7 +185,7 @@
     display: flex;
     justify-content: space-between
 }
-.socialContainer{
+.socialContainer {
     list-style: none;
     margin: 0; padding: 0;
     display: inline-flex;
@@ -200,7 +201,7 @@
 		margin-right: 1rem;
 	}
 	a {
-        color: $textColor;
+        color: #FFFFFF;
 		&:not(:last-child) {
 			margin-right: 35px;
 		}

@@ -4,32 +4,47 @@
 @import '../../../public/account/variables/mixin';
 @import '../../../public/account/variables/text_link';
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+$fontArchivo:              'Archivo Black', sans-serif;
+
+$color-primary-main:        #FF4755;
+$color-secondary-main:      #ECE8E1;
+$color-Button:              #FF4755;
+$color-title-main:          $white;
+$color-secondary-main:      #FBFBFB;
+
 
 $textColor:                 $default;
 $textBgColor:               #FFD400;
+
+
 
 $boderColor:                $textColor;
 $btnActiveColor:            $textColor;
 $btnActiveBgColor:          $textBgColor;
 
-$profileH1FontSize:         38px;
+$profileH1FontSize:         48px;
 $profileH1FontColor:        $white;
 
-$profileH2FontSize:         21px;
+$profileH2FontSize:         36px;
 $profileH2FontColor:        $white;
 
-$profileH3FontSize:         23px;
+$profileH3FontSize:         32px;
 $profileH3FontColor:        $white;
 
-$profileH4FontSize:         14px;
+$profileH4FontSize:         24px;
 $profileH4FontColor:        $white;
+
+$buttonLFontSize:           16px;
+$buttonSFontSize:           14px;            
 
 $socialListMarginBottom:    75px;     
 $socialIconsColor:          $textColor;
 $socialIconsFontSize:       $font-largeM;
 
 $statusWrapFontSize:        23px;
-$statusWrapColor:           $textColor;
+$statusWrapColor:           $white;
 
 /*  Profile banner variable   */
 
