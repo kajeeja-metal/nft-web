@@ -10,8 +10,8 @@ import Pagination from '../../components/common/pagination.js';
 import style from '../../public/exhibitions/index.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faArrowRightFromBracket,faThLarge  } from '@fortawesome/free-solid-svg-icons';
-import { Form } from 'react-bootstrap';
+import { faThLarge  } from '@fortawesome/free-solid-svg-icons';
+
 
 const exhibitions = () => {
   return (
