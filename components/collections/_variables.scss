@@ -1,3 +1,14 @@
+
+
+@import '../../public/variables/colors';
+@import '../../public/variables/text_link';
+@import '../../public/variables/mixin';
+
+$default       : #3A3A43;
+$default-color : $default;
+$border        : #EAEAED;
+
+
 $textColor:                 #3A3A43;
 $textBgColor:               #FFD400;
 
@@ -34,10 +45,9 @@ $btnActiveColor:            $textColor;
 $btnActiveBgColor:          $textBgColor;
 
 
+/*Thumbs Style assets */
 
-// Thumbs Style assets
 $assetsBgColor:             #F5F5F5;
-
 
 // Thumb list in collection 
 
@@ -67,11 +77,31 @@ $unpublish-bg-color:#fff;
 $draft-bg-color:#FFA940;
 
 
-/**/
-$theme-thumb-title-color   :$default-color;
-$theme-thumb-title-size    :20px;
-$active-theme-border-color :#00CCA9;
+/* Theme variable */
+$theme-thumb-title-color   : $default-color;
+$theme-thumb-title-size    : 20px;
+$theme-img-border-radius   : 16px 16px 0px 0px;
+$theme-border-color        : #fff;
+$active-theme-border-color : #00CCA9;
 
-$checkitem-bg-color        :#00CCA9;
-$checkitem-color           :#000;
+$checkitem-bg-color        : #fff;
+$checkitem-color           : #00CCA9;
 
+/* collection info variable  */
+
+$leftnum-color             : #5F5F6D;
+$leftnum-font-size         : 12px;
+$imglist-border-color      : $border;
+$imglist-active-border-color :#00CCA9;
+$imglist-active-bg-color   : #E9F6F7;
+
+$form-border-radius        : 5px;
+$border                    : #EAEAED;
+
+
+/*  Table  */
+$default-color             : $default;
+$td-color                  : $default;
+$thead-bgcolor             : #F8F5FF;
+$td-link-color             : #4726D9;
+$tr-row-bg-color           : #FAFAFC;

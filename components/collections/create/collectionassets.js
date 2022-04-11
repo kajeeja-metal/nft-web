@@ -2,22 +2,21 @@ import React, {useState} from 'react';
 import Image from "next/image";
 import Link from 'next/link';
 
-import paging from '../../../public/collections/pagination.module.scss';
-import classes from '../create/collectionassets.module.scss';
-import Paging from '../../../components/common/pagination.js';
-import {Button, Modal} from 'react-bootstrap';
-
 import button from '../../../public/account/Buttons.module.scss';
+import form from '../../../public/account/Form.module.scss';
+import Pagination from '../../../components/common/paginationtotal.js';
+import style from '../../../public/collections/index.module.scss';
+import classes from '../create/collectionassets.module.scss';
 
+import {Button, Modal} from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faAngleRight, faSortAmountDown, faSearch, faArrows, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
-import User from '../../../public/collections/create/images/user.png';
-import User2 from '../../../public/collections/create/images/user2.png';
-import User3 from '../../../public/collections/create/images/user3.png';
-import User4 from '../../../public/collections/create/images/user4.png';
-
-import AssetImg from '../../../public/collections/create/images/assetimg.png';
+import User from '../../../public/collections/images/user.png';
+import User2 from '../../../public/collections/images/user2.png';
+import User3 from '../../../public/collections/images/user3.png';
+import User4 from '../../../public/collections/images/user4.png';
+import AssetImg from '../../../public/collections/images/assetimg.png';
 
 const StepCollectionAssets = () => {
   const [modalShow, ModalSetShow] = useState(false);
@@ -26,8 +25,8 @@ const StepCollectionAssets = () => {
   const handleShow = () => ModalSetShow(true);
   return (
     <>  
-      <div className={`text-center`+ ' ' + classes.titleWrap}>
-        <h1 className={classes.title}>Please connect your wallet to select your assert</h1>
+      <div className={`text-center`+ ' ' + style.titleWrap}>
+        <h1 className={style.title}>Please connect your wallet to select your assert</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
@@ -117,7 +116,7 @@ const StepCollectionAssets = () => {
                   BITKUB
               </td>
               <td>
-                  <select className='form-control'>
+                  <select className={`form-select` + ' ' + form.selectDropArrow}>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>
@@ -157,9 +156,9 @@ const StepCollectionAssets = () => {
               BIT
               </td>
               <td>
-                  <select className='form-control'>
+                  <select className={`form-select` + ' ' + form.selectDropArrow}>
                     <option value={1}>1</option>
-                    <option value={2} selected>2</option>
+                    <option value={2}>2</option>
                     <option value={3}>3</option>
                     <option value={4}>4</option>
                     <option value={5}>5</option>
@@ -197,10 +196,10 @@ const StepCollectionAssets = () => {
                 OPENSES
               </td>
               <td>
-              <select className='form-control'>
+              <select className={`form-select` + ' ' + form.selectDropArrow}>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
-                    <option value={3} selected>3</option>
+                    <option value={3}>3</option>
                     <option value={4}>4</option>
                     <option value={5}>5</option>
                     <option value={6}>6</option>
@@ -237,11 +236,11 @@ const StepCollectionAssets = () => {
               Chain
               </td>
               <td>
-                  <select className='form-control'>
+                  <select className={`form-select` + ' ' + form.selectDropArrow}>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>
-                    <option value={4} selected>4</option>
+                    <option value={4}>4</option>
                     <option value={5}>5</option>
                     <option value={6}>6</option>
                     <option value={7}>7</option>
@@ -277,7 +276,7 @@ const StepCollectionAssets = () => {
                   BITKUB
               </td>
               <td>
-                  <select className='form-control'>
+                  <select className={`form-select` + ' ' + form.selectDropArrow}>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>
@@ -317,9 +316,9 @@ const StepCollectionAssets = () => {
               BIT
               </td>
               <td>
-                  <select className='form-control'>
+                  <select className={`form-select` + ' ' + form.selectDropArrow}>
                     <option value={1}>1</option>
-                    <option value={2} selected>2</option>
+                    <option value={2} >2</option>
                     <option value={3}>3</option>
                     <option value={4}>4</option>
                     <option value={5}>5</option>
@@ -357,10 +356,10 @@ const StepCollectionAssets = () => {
                 OPENSES
               </td>
               <td>
-              <select className='form-control'>
+              <select className={`form-select` + ' ' + form.selectDropArrow}>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
-                    <option value={3} selected>3</option>
+                    <option value={3} >3</option>
                     <option value={4}>4</option>
                     <option value={5}>5</option>
                     <option value={6}>6</option>
@@ -397,11 +396,11 @@ const StepCollectionAssets = () => {
               Chain
               </td>
               <td>
-                  <select className='form-control'>
+                  <select className={`form-select` + ' ' + form.selectDropArrow}>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>
-                    <option value={4} selected>4</option>
+                    <option value={4} >4</option>
                     <option value={5}>5</option>
                     <option value={6}>6</option>
                     <option value={7}>7</option>
@@ -416,18 +415,9 @@ const StepCollectionAssets = () => {
         </table>
       </div>
 
-      <div className={paging.totalPaging}>
-        <div className={paging.total}>
-          <select className='form-control'>
-            <option>20</option>
-            <option>40</option>
-            <option>60</option>
-            <option>80</option>
-          </select>
-          <span className={paging.totalLbl}>490 Assets</span>
-        </div>
-         <Paging />
-      </div>
+      
+
+      <Pagination />
 
       <div className={classes.formGroup}>
         <div className='d-flex justify-content-between'>
@@ -492,7 +482,7 @@ const StepCollectionAssets = () => {
             <div className='col-md-4'>
               <div className={classes.assetPopupItem + ' ' + classes.active}>
                 <div className={classes.checkitem}>
-                  <input type="checkbox" checked/>
+                  <input type="checkbox" />
                   <span className={classes.checkicon}>                   
                   <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
                   </span>
@@ -659,18 +649,7 @@ const StepCollectionAssets = () => {
             </div>
             
           </div>
-          <div className={paging.totalPaging}>
-            <div className={paging.total}>
-              <select className='form-control'>
-                <option>20</option>
-                <option>40</option>
-                <option>60</option>
-                <option>80</option>
-              </select>
-              <span className={paging.totalLbl}>490 Assets</span>
-            </div>
-            <Paging />
-          </div>
+          <Pagination />
           <div className={classes.assetBtnGroup}>
             <Button className={`btn ${button.btnOutlinePrimary}`} onClick={handleClose}>
               Close

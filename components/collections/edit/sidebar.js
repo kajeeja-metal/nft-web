@@ -3,6 +3,8 @@ import Link from 'next/link';
 import classes from './sidebar.module.scss';
 
 
+
+
 const StepSidebar = () => {
   const [page, setPage] = useState(0);
   return (

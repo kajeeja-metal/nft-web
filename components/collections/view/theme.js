@@ -2,13 +2,12 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from "next/image"
 
+import style from '../../../public/collections/index.module.scss';
 import classes from '../../../components/collections/view/theme.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-
-import Theme1 from '../../../public/collections/create/theme1.png';
-
+import Theme1 from '../../../public/collections/images/theme1.png';
 
 
 const StepTheme = () => {
@@ -23,8 +22,8 @@ const StepTheme = () => {
   // });
   return (
     <>  
-      <div className={classes.titleWrap}>
-        <h1 className={classes.title}>Theme</h1>
+      <div className={style.titleWrap}>
+        <h1 className={style.title}>Theme</h1>
         <p>Personalise your colllection’s layout, colour and background</p>
       </div>
 
@@ -37,15 +36,12 @@ const StepTheme = () => {
             <div className='col-md-4'> 
               <div className={classes.thumblist + ' ' + classes.thumblistView}>
                 <div className={classes.thumbImg}>
-                  <Link className={classes.thumbsItem} href="/">
-                    <a><Image
+                  <Image
                       src={Theme1}
                       height={376}
                       width={376}
                       alt="Thumbs"
                       />
-                    </a>							
-                  </Link>
                   <div className={classes.checkitem}>
                     <input type="checkbox"/>
                     <span className={classes.checkicon}>                   

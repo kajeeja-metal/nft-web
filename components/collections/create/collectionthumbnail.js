@@ -1,14 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
-import classes from '../create/collectionthumbnail.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
 import form from '../../../public/account/Form.module.scss';
+import style from '../../../public/collections/index.module.scss';
+import classes from '../create/collectionthumbnail.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faPlus } from '@fortawesome/free-regular-svg-icons';
 import { faPlus, faPray } from '@fortawesome/free-solid-svg-icons';
-import ThumbList from '../../../public/collections/thumblist/images/thumblist.png';
+import ThumbList from '../../../public/collections/images/thumblist.png';
 
 const StepCollectionThumbnail = () => {
   useEffect(() => {
@@ -21,19 +22,19 @@ const StepCollectionThumbnail = () => {
   return (
     <>  
       
-      <div className={`text-center`+ ' ' + classes.titleWrap}>
-        <h1 className={classes.title}>Please enter collection thumbnail info</h1>
+      <div className={style.titleWrap + ' ' + style.textCenter}>
+        <h1 className={style.title}>Please enter collection thumbnail info</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>     
 
-      <div className={`row` + ' ' + classes.formGroup}>
+      <div className={`row` + ' ' + style.formGroup}>
         <div className='col-md-4'>
           <label>Thumbnail image\</label>
         </div>
         <div className='col-md-8'>
-          <div className={`mb-2` + ' ' + classes.formControl }>
+          <div className={`mb-2` + ' ' + style.formControl }>
             <label className={form.chkWrap} onClick={()=>setShow(!show)}>
-              <input type="checkbox" checked /> <span className={form.chkmark}>Select Image</span>
+              <input type="checkbox"  /> <span className={form.chkmark}>Select Image</span>
             </label>
             {
               show && <div className={classes.toggleContent}>
@@ -44,7 +45,7 @@ const StepCollectionThumbnail = () => {
                         src={ThumbList}
                         height={90} width={90} alt="Thumbs"
                       />
-                      <input type="radio" name="selectcollectionbg" checked />
+                      <input type="radio" name="selectcollectionbg" />
                     </label>
                   </li>
                   <li>
@@ -112,7 +113,7 @@ const StepCollectionThumbnail = () => {
                   </li>
                   <li>
                   
-                    <label className={classes.Addimg}>
+                    <label className={classes.addImg}>
                       <FontAwesomeIcon icon={faPlus}  />
                     </label>
                   
@@ -123,7 +124,7 @@ const StepCollectionThumbnail = () => {
             }
             
           </div>
-          <div className={classes.formControl }>
+          <div className={classes.style }>
             <label className={form.chkWrap} onClick={()=>setShow2(!show2)}>
               <input type="checkbox" /> <span className={form.chkmark}>Color Fill</span>
             </label>
@@ -132,7 +133,7 @@ const StepCollectionThumbnail = () => {
               <div className={classes.toggleContent}>
                 <div className={nav.colorpickertab}  >
             
-                  <div className={classes.formControl}>
+                  <div className={style.formControl}>
                     <ul className="nav nav-tabs">
                       <li className="nav-item">
                           <a className={nav.navLink + ' ' + nav.active} data-bs-toggle="tab" href="#solid31">Soild</a>
@@ -163,7 +164,7 @@ const StepCollectionThumbnail = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + classes.formGroup}>
+      <div className={`row` + ' ' + style.formGroup}>
         <div className='col-md-4'>
           <label>Thumbnail Description</label>
         </div>

@@ -1,13 +1,18 @@
 
-@import 'variables/text_link';
-@import 'variables/mixin';
+
+@import '../variables/colors';
+@import '../variables/text_link';
+@import '../variables/mixin';
+
+$default       : #3A3A43;
+$default-color : $default;
+$border        : #EAEAED;
+$form-border-radius:5px;
 
 
-$white         : #fff;
 
-$default-color :#3A3A43;
-$default       :#3A3A43;
-$border        :#EAEAED;
+
+/* main title and title Link */
 
 $title-font-size          : 2rem;
 $title-font-weight        : normal;
@@ -22,11 +27,14 @@ $create-link-border-radius: 16px;
 $create-link-padding      : 12px 16px;
 
 /* 1)  Tab variable  */
+
 $tab-parent-border-color  : #EAEAED;
 $tab-font-size            : 18px;
 $tab-color                : #ABABBA;
 $tab-active-color         : #4400CD;
+$tab-bg-color             : #fff;
 $tab-active-bg            : #F8F5FF;
+$tab-border-color         : #EAEAED;
 $tab-border-active-color  : #4400CD;
 $tab-border-radius        : 4px 4px 0px 0px;
 $tab-padding              : 9px 16px 9px 16px;
@@ -35,7 +43,6 @@ $tab-active-font-weight   : 700;
 $color-picker-default-bg  : #008F76;
 
 /* 2)  Pagination variable  */
-
 
 $paging-default-color      : #5F5F6D;
 $paging-hover-color        : #4400CD;
@@ -48,9 +55,13 @@ $paging-border-radius      : 6px;
 $paging-font-size          : 12px;
 
 
+/* 3) Progress bar variable */
 
-
-
+$progress-wrap-border-color: #ABABBA;
+$progress-wrap-bg-color    : #F8F5FF;
+$progrss-color             : #000;
+$progress-bg-color         : #FAFAFC;
+$progress-default-bg-color : #00CCA9;
 
 
 

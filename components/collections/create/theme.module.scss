@@ -1,13 +1,8 @@
-
 @import '../variables';
 
-.tab, .nav  {
+.tab   {
 	margin-bottom: 1.5rem;
 }
-.formGroup {
-	margin-bottom: 1rem;
-}
-
 /* Theme thumb  */
 
 .thumblist {
@@ -30,7 +25,7 @@
 	position: relative;
 	a {
 		img {
-			border-radius: 16px 16px 0px 0px;
+			border-radius: $theme-img-border-radius;
 			transition: all 0.4s ease-in-out;
 		}
 	}
@@ -64,8 +59,7 @@
 }
 .checkitem {
 	position: absolute; z-index: 1;
-
-	right: 45px; top:10px;
+	right: 45px; top:15px;
 	input[type="checkbox"] {
 		width: 100%; height: 100%;
 		opacity: 0;
@@ -75,10 +69,11 @@
 	}
 	.checkicon {
 		position: absolute; opacity: 1;
-		left: 10px; top: 10px; z-index: 2;
+		left: 10px; top: 0px; z-index: 2;
 	}
 	.faCheckCircle {
-		color: $checkitem-color; background:$checkitem-bg-color; font-size: 22px;
+		color: $checkitem-color; 
+		font-size: $font-large;
 		border-radius: 50%;
 	}
 }

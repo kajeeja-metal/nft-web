@@ -33,6 +33,14 @@
     border: 1px solid $border;
 }*/
 
+.formGroup {
+    margin-bottom: 1rem;
+}
+.formControl {
+    border: 1px solid $border;
+    padding: .75rem; border-radius: $form-border-radius;
+}
+
 
 
 @media all and (max-width: 767px) {

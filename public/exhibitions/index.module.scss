@@ -1,0 +1,44 @@
+
+@import 'variable';
+
+.title {
+    color: $title-color; font-weight: normal;
+    font-size: $title-font-size ;
+}
+.titleWrap {
+    margin-bottom: 1.5rem; 
+    p {
+        font-size: $title-desc-font-size;
+        color: $title-desc-color;
+    }
+}
+.textCenter {
+    text-align: center;
+}
+.formGroup {
+    margin-bottom: 1rem;
+}
+.formControl {
+    border: 1px solid $border;
+    padding: .75rem; border-radius: $form-border-radius;
+}
+.titleWrapCreate {
+	@include flexbox; justify-content: space-between;
+	align-items: center;
+}
+.createClink {
+	/*border: 1px solid $create-link-border-color;
+	font-size: $create-link-font-size ;
+	border-radius: $create-link-border-radius;*/
+	/*padding: $create-link-padding;*/
+	svg, i {
+		margin-right: .2rem;
+	}
+}
+.btnGroup {
+	.btn {
+		&:not(:last-child) {
+			margin-right: .5rem;
+		}
+	}
+}

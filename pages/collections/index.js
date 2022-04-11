@@ -1,15 +1,17 @@
 import Link from 'next/link';
 import React, { useEffect } from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThLarge  } from '@fortawesome/free-solid-svg-icons';
+import LeftSidebar from '../../components/account/layout/leftsidebar.js';
+import ThumbList from '../../components/collections/thumblist';
 
 import button from '../../public/account/Buttons.module.scss';
 import nav from '../../public/collections/tabnav.module.scss';
 import style from '../../public/collections/index.module.scss';
 
-import LeftSidebar from '../../components/account/layout/leftsidebar.js';
-import ThumbList from '../../components/collections/thumblist';
+//import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThLarge  } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Index() {
@@ -35,7 +37,6 @@ export default function Index() {
                         <h1 className={style.title}>My Collections</h1>
                         <p>Personalise your profile’s colour, background, and theme.</p>
                     </div>
-
                     <div className={style.navCreateWrap}>
                         <ul className="nav nav-tabs">
                             <li className="nav-item">
@@ -55,7 +56,7 @@ export default function Index() {
                         <a className={`btn ${button.btnOutlinePrimary + ' ' + style.createClink}`}>                      
                         <FontAwesomeIcon icon={faThLarge} className="faThLarge" size="lg" /> Create New Colllection</a></Link> 
                     </div>
-                       
+
                     <div className="tab-content">
                         <div className="tab-pane show active" id="allAssetTab">
                             <ThumbList />
@@ -70,7 +71,7 @@ export default function Index() {
                             <h1>Draft tab</h1>
                         </div>
                     </div>
- 
+                     
 				</div>
 			</div>
 		</div>

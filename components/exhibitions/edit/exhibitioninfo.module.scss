@@ -1,0 +1,83 @@
+
+@import '../variables';
+
+
+
+
+.toggleContent {
+	/*display: none;*/ margin-top: .5rem;
+}
+
+.imgLIst {
+	list-style: none; padding-left: 10px;
+	padding-top: 5px;
+	display: flex; flex-wrap: wrap;
+	border-top: 1px solid #ABABBA;
+	li {
+		position: relative; margin: 7px;
+		border: 2px solid $imglist-border-color;
+		border-radius: 8px; padding: 5px;
+		input[type="radio"] {
+			position: absolute; left: 0;
+			opacity: 0;
+		}
+		label {
+			display: block;
+		}
+		&.active, &:hover {
+			background: $imglist-active-bg-color;
+			border-color: $imglist-active-border-color;
+		}
+	}
+	.Addimg {
+		font-size: 40px; line-height: 90px; font-weight: 100;
+		min-width: 80px; text-align: center;
+	}
+}
+
+.cropStyleImgWrap {
+	@include flexbox();
+	justify-content: space-between;
+}
+.cropStyleImg {
+	border: 1px solid $imglist-border-color; border-radius: 8px;
+	text-align: center;
+	padding: 10px; width: 140px;
+	margin: 1px;
+	&.active {
+		border-color: $imglist-border-active-color;
+	}
+}
+.cropImg {
+	position: relative;
+	border: 2px solid $imglist-border-color;
+	border-radius: 8px; padding: 5px;
+	display: block; width: 100px; height: 100px;
+	line-height: 100px; margin: 0 auto;
+	svg, img {
+		line-height: 100px;
+	}
+}
+.crop {
+	font-size: $imgCrop-title-font-size;
+	color: $imgCrop-title-color;
+	font-weight: normal; margin-top: .75rem;
+}
+
+.leftnumber{
+	font-size: $leftnum-font-size; color: $leftnum-color;
+	text-align: right; margin-top: .25rem;
+}
+
+.imageStyleSelect {
+	border-top: 1px solid $border-color;
+    padding-top: 10px; padding-left: 10px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+
+.decideLbl {
+	font-size: $font-medium; color: $default-color;
+	font-weight: normal; margin-bottom: .75rem;
+}

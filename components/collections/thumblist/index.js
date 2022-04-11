@@ -5,10 +5,10 @@ import thumbclass from './ThumbList.module.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
-import Thumbs from '../../../public/collections/thumblist/images/thumblist.png';
-import Thumbs2 from '../../../public/collections/thumblist/images/thumblist2.png';
-import Thumbs3 from '../../../public/collections/thumblist/images/thumblist3.png';
-import Thumbs4 from '../../../public/collections/thumblist/images/thumblist4.png';
+import Thumbs from '../../../public/collections/images/thumblist.png';
+import Thumbs2 from '../../../public/collections/images/thumblist2.png';
+import Thumbs3 from '../../../public/collections/images/thumblist3.png';
+import Thumbs4 from '../../../public/collections/images/thumblist4.png';
 
 export default function ThumbList() {
       return (

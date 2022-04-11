@@ -1,15 +1,15 @@
 import React, {useEffect, useState} from 'react';
 
-import nav from '../../../public/collections/tabnav.module.scss';
-import paging from '../../../public/collections/pagination.module.scss';
+// import form from '../../../public/account/Form.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
+import nav from '../../../public/collections/tabnav.module.scss';
+import Pagination from '../../../components/common/paginationtotal.js';
+import style from '../../../public/exhibitions/index.module.scss';
 import classes from '../create/customizestyle.module.scss';
-
-import Paging from '../../../components/common/pagination.js';
 
 import {Button, Modal} from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash, faAngleRight, faEye, faSearch, faFont } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faAngleRight, faEye, faSearch, faFont, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
   
 
 const StepCustomizeStyle = () => {
@@ -25,43 +25,43 @@ const StepCustomizeStyle = () => {
 
   return (
     <>  
-        <div className={`text-center`+ ' ' + classes.titleWrap}>
-          <h1 className={classes.title}>Customize collection style</h1>
+        <div className={`text-center`+ ' ' + style.titleWrap}>
+          <h1 className={style.title}>Customize collection style</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
 
-        <div className={`row` + ' ' + classes.formGroup}>
+        <div className={`row` + ' ' + style.formGroup}>
           <div className='col-md-4'>
             <label>Font Family : Heading</label>
           </div>
           <div className='col-md-4'>
-              <div className={classes.formControl} variant="primary" onClick={handleShow}>
+              <div className={style.formControl} variant="primary" onClick={handleShow}>
                 <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}>
                    Select font Family <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
                 </label>
               </div>
           </div>
         </div>
-        <div className={`row` + ' ' + classes.formGroup}>
+        <div className={`row` + ' ' + style.formGroup}>
           <div className='col-md-4'>
             <label>Font Family : Text Body</label>
           </div>
           <div className='col-md-4'>
-            <div className={classes.formControl} variant="primary" onClick={handleShow}>
+            <div className={style.formControl} variant="primary" onClick={handleShow}>
               <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}>
                   Select font Family <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
               </label>
             </div>
           </div>
         </div>
-        <div className={`row` + ' ' + classes.formGroup}>
+        <div className={`row` + ' ' + style.formGroup}>
           <div className='col-md-4'>
             <label>Title text color</label>
           </div>
           <div className='col-md-4'>
              
-                <div className={classes.formControl}>
+                <div className={style.formControl}>
                   <ul className="nav nav-tabs">
                     <li className="nav-item">
                         <a className={nav.navLink + ' ' + nav.active} data-bs-toggle="tab" href="#solid">Soild</a>
@@ -87,13 +87,13 @@ const StepCustomizeStyle = () => {
               
           </div>
         </div>
-        <div className={`row` + ' ' + classes.formGroup}>
+        <div className={`row` + ' ' + style.formGroup}>
           <div className='col-md-4'>
             <label>Body text Color</label>
           </div>
           <div className='col-md-4'>
         
-              <div className={classes.formControl}>
+              <div className={style.formControl}>
                 <ul className="nav nav-tabs">
                   <li className="nav-item">
                       <a className={nav.navLink + ' ' + nav.active} data-bs-toggle="tab" href="#solid2">Soild</a>
@@ -119,13 +119,13 @@ const StepCustomizeStyle = () => {
           
           </div>
         </div>
-        <div className={`row` + ' ' + classes.formGroup}>
+        <div className={`row` + ' ' + style.formGroup}>
           <div className='col-md-4'>
             <label>Button Background Color</label>
           </div>
           <div className='col-md-4'>
            
-            <div className={classes.formControl}>
+            <div className={style.formControl}>
               <ul className="nav nav-tabs">
                 <li className="nav-item">
                     <a className={nav.navLink } data-bs-toggle="tab" href="#solid3">Soild</a>
@@ -151,13 +151,13 @@ const StepCustomizeStyle = () => {
             
           </div>
         </div>
-        <div className={`row` + ' ' + classes.formGroup}>
+        <div className={`row` + ' ' + style.formGroup}>
           <div className='col-md-4'>
             <label>Button Border Color</label>
           </div>
           <div className='col-md-4'>
       
-              <div className={classes.formControl}>
+              <div className={style.formControl}>
                 <ul className="nav nav-tabs">
                   <li className="nav-item">
                       <a className={nav.navLink } data-bs-toggle="tab" href="#solid4">Soild</a>
@@ -183,13 +183,13 @@ const StepCustomizeStyle = () => {
            
           </div>
         </div>
-        <div className={`row` + ' ' + classes.formGroup}>
+        <div className={`row` + ' ' + style.formGroup}>
           <div className='col-md-4'>
             <label>Slide Button Color</label>
           </div>
           <div className='col-md-4'>
-            <div className={classes.formGroup}> 
-              <div className={classes.formControl}>
+            <div className={style.formGroup}> 
+              <div className={style.formControl}>
                 <ul className="nav nav-tabs">
                   <li className="nav-item">
                       <a className={nav.navLink } data-bs-toggle="tab" href="#solid5">Soild</a>
@@ -216,7 +216,7 @@ const StepCustomizeStyle = () => {
           </div>
         </div>
 
-        <div className={classes.formGroup}>
+        <div className={style.formGroup}>
           <div className='d-flex justify-content-between'>
             <a className={`btn ${button.btnTextDanger}`}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
             <div>
@@ -235,18 +235,18 @@ const StepCustomizeStyle = () => {
             <Modal.Title>&nbsp;</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <div className={classes.titleWrap} style={{textAlign:"left"}}>
-              <h1 className={classes.title}>Selelct Typography</h1>
+            <div className={style.titleWrap} style={{textAlign:"left"}}>
+              <h2 className={style.title}>Selelct Typography</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div className={`row`+ ' ' + classes.formGroup}>
-              <div className={`col-md-6`+ ' ' + classes.formGroup + ' ' + classes.search}>
+            <div className={`row`+ ' ' + style.formGroup}>
+              <div className={`col-md-6`+ ' ' + style.formGroup + ' ' + classes.search}>
                 <div className={classes.searchModal}>
                   <button className='btn'><FontAwesomeIcon icon={faSearch} className={classes.faSearch} /></button>
                   <input placeholder='Search... ' className='form-control'/>
                 </div>
               </div>
-              <div className={`col-md-4`+ ' ' + classes.formGroup}>
+              <div className={`col-md-4`+ ' ' + style.formGroup}>
                 <div className={classes.searchModal}>
                   <button className='btn'><FontAwesomeIcon icon={faFont} className={classes.faFont} /></button>
                   <input placeholder='Font Type' className='form-control'/>
@@ -256,7 +256,12 @@ const StepCustomizeStyle = () => {
             <div className='row'>
               <div className='col-md-4'>
                 <div className={classes.fontItemList + ' ' + classes.active}>
-                  <input type="radio" />
+                  <div className={classes.checkitem}>
+                    <input type="checkbox" />
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </div>
                   <div className={classes.fontNamePreview}>
                     <div className={classes.topFontStyle}>
                       <div className={classes.fLeft}>
@@ -282,7 +287,12 @@ const StepCustomizeStyle = () => {
               </div>
               <div className='col-md-4'>
                 <div className={classes.fontItemList}>
-                  <input type="radio" />
+                  <div className={classes.checkitem}>
+                    <input type="checkbox" />
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </div>
                   <div className={classes.fontNamePreview}>
                     <div className={classes.topFontStyle}>
                       <div className={classes.fLeft}>
@@ -309,7 +319,12 @@ const StepCustomizeStyle = () => {
               </div>
               <div className='col-md-4'>
                 <div className={classes.fontItemList}>
-                  <input type="radio" />
+                  <div className={classes.checkitem}>
+                    <input type="checkbox" />
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </div>
                   <div className={classes.fontNamePreview}>
                     <div className={classes.topFontStyle}>
                       <div className={classes.fLeft}>
@@ -335,7 +350,12 @@ const StepCustomizeStyle = () => {
               </div>
               <div className='col-md-4'>
                 <div className={classes.fontItemList}>
-                  <input type="radio" />
+                  <div className={classes.checkitem}>
+                    <input type="checkbox" />
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </div>
                   <div className={classes.fontNamePreview}>
                     <div className={classes.topFontStyle}>
                       <div className={classes.fLeft}>
@@ -361,7 +381,12 @@ const StepCustomizeStyle = () => {
               </div>
               <div className='col-md-4'>
                 <div className={classes.fontItemList}>
-                  <input type="radio" />
+                  <div className={classes.checkitem}>
+                    <input type="checkbox" />
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </div>
                   <div className={classes.fontNamePreview}>
                     <div className={classes.topFontStyle}>
                       <div className={classes.fLeft}>
@@ -387,7 +412,12 @@ const StepCustomizeStyle = () => {
               </div>
               <div className='col-md-4'>
                 <div className={classes.fontItemList}>
-                  <input type="radio" />
+                  <div className={classes.checkitem}>
+                    <input type="checkbox" />
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </div>
                   <div className={classes.fontNamePreview}>
                     <div className={classes.topFontStyle}>
                       <div className={classes.fLeft}>
@@ -414,18 +444,7 @@ const StepCustomizeStyle = () => {
               
             </div>
 
-            <div className={paging.totalPaging}>
-              <div className={paging.total}>
-                <select className='form-control'>
-                  <option>20</option>
-                  <option>40</option>
-                  <option>60</option>
-                  <option>80</option>
-                </select>
-                <span className={paging.totalLbl}>490 Assets</span>
-              </div>
-              <Paging />
-            </div>
+          <Pagination />
 
            
           </Modal.Body>

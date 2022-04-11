@@ -29,6 +29,9 @@ $form-border-radius:5px;
     }
 }
 
+.toggleTitle {
+
+}
 .toggleContent {
 	/*display: none;*/ margin-top: .5rem;
 }
@@ -215,13 +218,15 @@ $preview-btn-color : #3A3A43;
 	}
 	.checkicon {
 		position: absolute; opacity: 0;
-		left: 10px; top: 10px; z-index: 2;
+		right: 10px; top: 10px; z-index: 2;
 	}
 	.faCheckCircle {
-		color: green; background:#fff; font-size: 22px;
+		color: $checkitem-color; 
+		font-size: $font-large;
 		border-radius: 50%;
 	}
 }
+
 .assetPopupItemInfo {
 	position: absolute; left:0; bottom: 0;
 	height: 100%; padding: 1rem;

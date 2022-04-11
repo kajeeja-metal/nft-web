@@ -2,43 +2,14 @@
 @import '../variables';
 
 
-$leftnum-color :#5F5F6D;
-$leftnum-font-size :12px;
-$imglist-border-color :#ABABBA;
-$imglist-active-border-color :#00CCA9;
-$imglist-active-bg-color :#E9F6F7;
-
-$border-color:#EAEAED;
-$form-border-radius:5px;
-
-.formGroup {
-	margin-bottom: 1rem;
-}
-.formControl {
-	border: 1px solid $border-color;
-	padding: .75rem; border-radius: $form-border-radius;
-}
-.title {
-    color: $default-color; font-weight: normal;
-    font-size: 2rem;
-}
-.titleWrap {
-    margin-bottom: 2.5rem; text-align: center;
-    p {
-        font-size: 14px;
-    }
-}
-
-
 .toggleContent {
 	/*display: none;*/ margin-top: .5rem;
 }
-
 .imgLIst {
 	list-style: none; padding-left: 10px;
 	padding-top: 5px;
 	display: flex; flex-wrap: wrap;
-	border-top: 1px solid #ABABBA;
+	border-top: 1px solid $border;
 	li {
 		position: relative; margin: 7px;
 		border: 2px solid $imglist-border-color;
@@ -70,7 +41,7 @@ $form-border-radius:5px;
 	text-align: right; margin-top: .25rem;
 }
 .imageStyleSelect {
-	border-top: 1px solid $border-color;
+	border-top: 1px solid $border;
     padding-top: 10px; padding-left: 10px;
     padding-bottom: 5px;
     align-items: center;
@@ -83,12 +54,6 @@ $form-border-radius:5px;
 	margin-bottom: 1.5rem;
 }
 
-
-$default-color :#3A3A43;
-$td-color      :$default-color;
-$thead-bgcolor   :#F8F5FF;
-$td-link-color :#4726D9;
-$tr-row-bg-color  :#FAFAFC;
 
 /* table  */
 
@@ -147,99 +112,3 @@ $tr-row-bg-color  :#FAFAFC;
 }
 
 
-/* Modal  */
-
-$icon-color : #5F5F6D;
-$border-active-color : #00CCA9;
-$preview-btn-color : #3A3A43;
-
-
-.modalLg {
-	> div {
-		max-width: 990px;
-	}
-}
-
-.assetBtnGroup {
-	text-align: center;
-	button {
-		margin-right: 10px; 
-		& + button {
-			min-width: 200px; margin-right: 0;
-		}
-	}
-}
-.searchModal {
-	position: relative;
-	input {
-		padding-left: 45px;
-	}
-	button {
-		position: absolute; color: $icon-color;
-		height: 100%;
-	}
-}
-
-.assetPopupItem {
-	border: 2px solid $border-color;
-	margin-bottom: 1.75rem;
-	border-radius: 12px;
-	transition: all 0.4s ease-in-out;
-	position: relative; overflow: hidden;
-	&.active, &:hover {
-		border-color: $active-theme-border-color;
-	}
-	&:hover {
-		.assetPopupItemImg {
-			img {
-				opacity: .8;
-			}
-		}
-	}
-}
-.assetPopupItemImg {
-	border-radius: 12px;
-	img {
-		display: block; line-height: 1;
-	}
-}
-
-.checkitem {
-	position: absolute; z-index: 1;
-	width: 100%; height: 100%;
-	input[type="checkbox"] {
-		width: 100%; height: 100%;
-		opacity: 0;
-		&:checked + .checkicon {
-			opacity: 1;
-		}
-	}
-	.checkicon {
-		position: absolute; opacity: 0;
-		left: 10px; top: 10px; z-index: 2;
-	}
-	.faCheckCircle {
-		color: green; background:#fff; font-size: 22px;
-		border-radius: 50%;
-	}
-}
-.assetPopupItemInfo {
-	position: absolute; left:0; bottom: 0;
-	height: 100%; padding: 1rem;
-	background-color: rgba(0,0,0,.6);
-	color: #fff; display: flex;
-	align-items: flex-end;
-	h3 {
-		a {
-			color: #fff; font-size: 16px;
-		}
-	}
-	.assetItemDesc{
-		font-size: 14px;
-	}
-
-}
-
-.assetPopupItemInfoInner {
-
-}

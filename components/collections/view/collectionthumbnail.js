@@ -3,7 +3,7 @@ import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
 import classes from '../view/collectionthumbnail.module.scss';
 
-import ThumbList from '../../../public/collections/thumblist/images/thumblist.png';
+import ThumbList from '../../../public/collections/images/thumblist.png';
 
 const StepCollectionThumbnail = () => {
 

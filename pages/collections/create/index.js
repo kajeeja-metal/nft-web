@@ -89,11 +89,7 @@ export default function Index() {
                 
                 
               </div>
-              {/* <StepTheme /> */}
-               {/* <StepCollectionInfo /> 
-              <StepCollectionThumbnail />
-              <StepCollectionAssets />
-              <StepCustomizeStyle/> */}
+
             </div>
           </div>
         </div>

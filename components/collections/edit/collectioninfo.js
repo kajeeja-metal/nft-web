@@ -3,12 +3,14 @@ import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
 import form from '../../../public/account/Form.module.scss';
+import style from '../../../public/collections/index.module.scss';
 import classes from '../create/collectioninfo.module.scss';
 
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faPlus } from '@fortawesome/free-regular-svg-icons';
 import { faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
-import ThumbList from '../../../public/collections/create/images/thumb.png';
+import ThumbList from '../../../public/collections/images/thumb.png';
+
 
 const StepCollectionInfo = () => {
   useEffect(() => {
@@ -20,24 +22,22 @@ const StepCollectionInfo = () => {
   const [show,setShow] = useState(false);
   const [show2,setShow2] = useState(false);
   const [show3,setShow3] = useState(true);
-  const [show4,setShow4] = useState(false);
+  const [show4,setShow4] = useState(true);
 
   return (
     <>  
 
-       
-      <div className={classes.titleWrap}>
-        <h1 className={classes.title}>Please enter collection info</h1>
-        <p>Personalise your profile’s colour, background, and theme.</p>
+      <div className={style.titleWrap + ' ' + style.textCenter}>
+        <h1 className={style.title}>Please enter collection info</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-       
 
-      <div className={`row` + ' ' + classes.formGroup}>
+      <div className={`row` + ' ' + style.formGroup}>
         <div className='col-md-4'>
           <label>Collection Cover</label>
         </div>
         <div className='col-md-8'>
-            <div className={`mb-2`+ ' '  + classes.formControl}>
+            <div className={`mb-2`+ ' '  + style.formControl}>
               <label className={form.chkWrap} onClick={()=>setShow(!show)}>
                 <input type="checkbox" /> <span className={form.chkmark}>Image</span>
               </label>
@@ -50,7 +50,7 @@ const StepCollectionInfo = () => {
                         src={ThumbList}
                         height={90} width={90} alt="Thumbs"
                       />
-                      <input type="radio" name="selectcollectionbg" checked />
+                      <input type="radio" name="selectcollectionbg"  />
                     </label>
                   </li>
                   <li>
@@ -117,7 +117,7 @@ const StepCollectionInfo = () => {
                     </label>
                   </li>
                   <li>
-                    <label className={classes.Addimg}>
+                    <label className={classes.addImg}>
                       <FontAwesomeIcon icon={faPlus}  />
                     </label>
                   </li>
@@ -126,9 +126,9 @@ const StepCollectionInfo = () => {
               }
               
             </div>
-            <div className={ classes.formControl}>
+            <div className={ style.formControl}>
               <label className={form.chkWrap} onClick={()=>setShow2(!show2)}>
-                <input type="checkbox"/> <span className={form.chkmark}>Color</span>
+                <input type="checkbox" /> <span className={form.chkmark}>Color</span>
               </label>
               {
                 show2 && <div className={classes.toggleContent}>
@@ -144,7 +144,7 @@ const StepCollectionInfo = () => {
                     <div className="tab-pane show active " id="solid21">
                       <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                           <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                          <input type="text" value="#05FF44" className="form-control" />                            
+                          <input type="text"  className="form-control" />                            
                       </div>
                     </div>
                     <div className="tab-pane fade" id="gredient21">
@@ -159,7 +159,7 @@ const StepCollectionInfo = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + classes.formGroup}>
+      <div className={`row` + ' ' + style.formGroup}>
         <div className='col-md-4'>
           <label>Collection Name*</label>
         </div>
@@ -169,7 +169,7 @@ const StepCollectionInfo = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + classes.formGroup}>
+      <div className={`row` + ' ' + style.formGroup}>
         <div className='col-md-4'>
           <label>Collection Description</label>
         </div>
@@ -179,14 +179,14 @@ const StepCollectionInfo = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + classes.formGroup}>
+      <div className={`row` + ' ' + style.formGroup}>
         <div className='col-md-4'>
-          <label>Collection Background Image</label>
+          <label>Background Image</label>
         </div>
         <div className='col-md-8'>
-          <div className={`mb-3`+ ' '  + classes.formControl}>
+          <div className={`mb-3`+ ' '  + style.formControl}>
             <label className={form.chkWrap} onClick={()=>setShow3(!show3)}>
-                <input type="checkbox" checked/> <span className={form.chkmark}>Select Image</span>
+                <input type="checkbox" /> <span className={form.chkmark}>Select Image</span>
             </label>
             {
               show3 &&
@@ -198,15 +198,6 @@ const StepCollectionInfo = () => {
                         src={ThumbList}
                         height={90} width={90} alt="Thumbs"
                       />
-                      <input type="radio" name="selectcollectionbg" checked />
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <Image
-                        src={ThumbList}
-                        height={90} width={90} alt="Thumbs"
-                      />
                       <input type="radio" name="selectcollectionbg" />
                     </label>
                   </li>
@@ -265,11 +256,18 @@ const StepCollectionInfo = () => {
                     </label>
                   </li>
                   <li>
-                  
-                    <label className={classes.Addimg}>
+                    <label>
+                      <Image
+                        src={ThumbList}
+                        height={90} width={90} alt="Thumbs"
+                      />
+                      <input type="radio" name="selectcollectionbg" />
+                    </label>
+                  </li>
+                  <li>                  
+                    <label className={classes.addImg}>
                       <FontAwesomeIcon icon={faPlus}  />
-                    </label>
-                  
+                    </label>                  
                   </li>
                 </ul>
                 <div className={`row` + ' ' + classes.imageStyleSelect}>
@@ -277,7 +275,7 @@ const StepCollectionInfo = () => {
                     Image Adjustment
                   </div>
                   <div className='col-md-6'>
-                    <select className={form.formElements}>
+                    <select className={`form-select` + ' ' +form.selectDropArrow}>
                       <option value="">Image Style</option>
                       <option value="50px 100px">Fill the frame vertically</option>
                       <option value="10% 40%">Fill the frame horizontally</option>
@@ -295,7 +293,7 @@ const StepCollectionInfo = () => {
             }
             
           </div>
-          <div className={`mb-2`+ ' '  + classes.formControl}>
+          <div className={`mb-2`+ ' '  + style.formControl}>
             <label className={form.chkWrap} onClick={()=>setShow4(!show4)}>
                 <input type="checkbox"/> <span className={form.chkmark}>Color Fill</span>
               </label>
@@ -314,8 +312,8 @@ const StepCollectionInfo = () => {
                       <div className="tab-content">
                         <div className="tab-pane show active " id="solid22">
                           <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
-                              <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                              <input type="text" value="#05FF44" className="form-control" />                            
+                              <span className={`form-control` + ' ' + nav.colorBg} style={{background:"#2A&C6F"}}></span>
+                              <input type="text" value={`#2A&C6F`}  className="form-control" />                            
                           </div>
                         </div>
                         <div className="tab-pane fade" id="gredient22">
@@ -332,6 +330,7 @@ const StepCollectionInfo = () => {
           </div>
         </div>
       </div>
+
 
       <div className={ classes.formGroup}>
         <a className={`btn ${button.btnTextDanger}`}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>

@@ -6,14 +6,15 @@ import Pagination from '../../../components/common/pagination.js';
 import nav from '../../../public/collections/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
 
-import classes from '../../../components/collections/create/theme.module.scss';
+import style from '../../../public/collections/index.module.scss';
+import classes from '../../../components/collections/edit/theme.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faCheckCircle } from '@fortawesome/free-regular-svg-icons';
-import Theme1 from '../../../public/collections/create/theme1.png';
-import Theme2 from '../../../public/collections/create/theme2.png';
-import Theme3 from '../../../public/collections/create/theme3.png';
+import { faEye, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
+import Theme1 from '../../../public/collections/images/theme1.png';
+import Theme2 from '../../../public/collections/images/theme2.png';
+import Theme3 from '../../../public/collections/images/theme3.png';
 
 const StepTheme = () => {
   useEffect(() => {
@@ -27,8 +28,8 @@ const StepTheme = () => {
   // });
   return (
     <>  
-      <div className={classes.titleWrap}>
-        <h1 className={classes.title}>Please select collection theme</h1>
+      <div className={style.titleWrap + ' ' + style.textCenter}>
+        <h1 className={style.title}>Please select collection theme</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
@@ -52,27 +53,23 @@ const StepTheme = () => {
             <div className='col-6 col-md-4'> 
               <div className={classes.thumblist + ' ' + classes.active}>
                 <div className={classes.thumbImg}>
-                  <Link className={classes.thumbsItem} href="/">
-                    <a><Image
+                    <Image
                       src={Theme1}
                       height={376}
                       width={376}
                       alt="Thumbs"
-                      />
-                    </a>							
-                  </Link>
-                  <div className={classes.checkitem}>
+                    />
+                  <label className={classes.checkitem + ' ' + style.customChk }>
                     <input type="checkbox"/>
                     <span className={classes.checkicon}>                   
                     <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
                     </span>
-                  </div>
+                  </label>
                 </div>
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
                     <Link href="/"><a>Template Name (Default)</a></Link>
-                  </h3>
-                  
+                  </h3>                  
                   <div className={classes.btnGroup}>
                     <button className={`btn ${button.btnOutlinePrimary + ' ' + classes.btn}`}>
                       <FontAwesomeIcon icon={faEye} className={classes.faeye} />
@@ -90,15 +87,12 @@ const StepTheme = () => {
             <div className='col-6 col-md-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
-                  <Link className={classes.thumbsItem} href="/">
-                    <a><Image
+                    <Image
                       src={Theme2}
                       height={376}
                       width={376}
                       alt="Thumbs"
-                      />
-                    </a>							
-                  </Link>
+                    />
                 </div>
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
@@ -121,46 +115,12 @@ const StepTheme = () => {
             <div className='col-6 col-md-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
-                  <Link className={classes.thumbsItem} href="/">
-                    <a><Image
-                      src={Theme1}
-                      height={376}
-                      width={376}
-                      alt="Thumbs"
-                      />
-                    </a>							
-                  </Link>
-                </div>
-                <div className={classes.thumbInfo}>                 
-                  <h3 className={classes.thumbTitle}>
-                    <Link href="/"><a>Template Name </a></Link>
-                  </h3>
-                  <div className={classes.btnGroup}>
-                    <button className={`btn ${button.btnOutlinePrimary + ' ' + classes.btn}`}>
-                      <FontAwesomeIcon icon={faEye} className={classes.faeye} />
-                      Preview
-                    </button>
-                    <button className={`btn ${button.btnPrimary + ' ' + classes.btn}`}>
-                     <input type="radio" name="themeselect" />
-                      Select
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className='col-6 col-md-4'>
-              <div className={classes.thumblist}>
-                <div className={classes.thumbImg}>
-                  <Link className={classes.thumbsItem} href="/">
-                    <a><Image
+                  <Image
                       src={Theme3}
                       height={376}
                       width={376}
                       alt="Thumbs"
                       />
-                    </a>							
-                  </Link>
                 </div>
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
@@ -183,15 +143,40 @@ const StepTheme = () => {
             <div className='col-6 col-md-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
-                  <Link className={classes.thumbsItem} href="/">
-                    <a><Image
+                  <Image
+                    src={Theme3}
+                    height={376}
+                    width={376}
+                    alt="Thumbs"
+                    />
+                </div>
+                <div className={classes.thumbInfo}>                 
+                  <h3 className={classes.thumbTitle}>
+                    <Link href="/"><a>Template Name </a></Link>
+                  </h3>
+                  <div className={classes.btnGroup}>
+                    <button className={`btn ${button.btnOutlinePrimary + ' ' + classes.btn}`}>
+                      <FontAwesomeIcon icon={faEye} className={classes.faeye} />
+                      Preview
+                    </button>
+                    <button className={`btn ${button.btnPrimary + ' ' + classes.btn}`}>
+                     <input type="radio" name="themeselect" />
+                      Select
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-6 col-md-4'>
+              <div className={classes.thumblist}>
+                <div className={classes.thumbImg}>
+                  <Image
                       src={Theme1}
                       height={376}
                       width={376}
                       alt="Thumbs"
-                      />
-                    </a>							
-                  </Link>
+                    />
                 </div>
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
@@ -214,15 +199,12 @@ const StepTheme = () => {
             <div className='col-6 col-md-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
-                  <Link className={classes.thumbsItem} href="/">
-                    <a><Image
-                      src={Theme3}
-                      height={376}
-                      width={376}
-                      alt="Thumbs"
-                      />
-                    </a>							
-                  </Link>
+                  <Image
+                    src={Theme3}
+                    height={376}
+                    width={376}
+                    alt="Thumbs"
+                    />
                 </div>
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
