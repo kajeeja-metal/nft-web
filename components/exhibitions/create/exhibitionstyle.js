@@ -29,8 +29,8 @@ const ExhibitionStyle = () => {
   const handleClose = () => ModalSetShow(false);
   const handleShow = () => ModalSetShow(true);
 
-  const [show3,setShow3] = useState(true);
-  const [show4,setShow4] = useState(true);
+  const [show,setShow] = useState(true);
+  const [show2,setShow2] = useState(false);
 
   return (
     <>  
@@ -135,11 +135,11 @@ const ExhibitionStyle = () => {
       </div>
       <div className='col-md-8'>
         <div className={`mb-3`+ ' '  + style.formControl}>
-          <label className={classes.toggleTitle} onClick={()=>setShow3(!show3)}>
-            <input type="checkbox"  /> <span>Select Image</span>
+          <label className={form.chkWrap} onChange={()=>setShow(!show)}>
+            <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}   > Select Image</span>
           </label>
           {
-            show3 &&
+            show &&
             <div className={classes.toggleContent}>
               <ul className={classes.imgLIst}>
                 <li className={classes.active}>
@@ -246,10 +246,11 @@ const ExhibitionStyle = () => {
           
         </div>
         <div className={`mb-2`+ ' '  + style.formControl}>
-          <label className={classes.toggleTitle}>
-             <span>Color Fill</span>
+          <label className={form.chkWrap} onChange={()=>setShow2(!show2)}>
+            <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}   > Color fill</span>
           </label>
-    
+          {
+            show2 &&
             <div className={classes.toggleContent}>
                 <div className={nav.colorpickertab}  >      
                     <ul className="nav nav-tabs">
@@ -277,6 +278,7 @@ const ExhibitionStyle = () => {
                 
               
             </div>
+          }
        
         </div>
       </div>

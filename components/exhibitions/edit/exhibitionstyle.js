@@ -3,6 +3,7 @@ import Image from "next/image"
 
 import nav from '../../../public/exhibitions/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss'
+import Form from '../../../public/account/Form.module.scss';
 import Pagination from '../../../components/common/paginationtotal.js';
 import style from '../../../public/exhibitions/index.module.scss'; 
 import classes from '../edit/exhibitionstyle.module.scss';
@@ -26,8 +27,8 @@ const ExhibitionStyle = () => {
   const handleClose = () => ModalSetShow(false);
   const handleShow = () => ModalSetShow(true);
 
-  const [show3,setShow3] = useState(true);
-  const [show4,setShow4] = useState(true);
+   const [show,setShow] = useState(true);
+  const [show2,setShow2] = useState(true);
 
   return (
     <>  
@@ -132,11 +133,11 @@ const ExhibitionStyle = () => {
         </div>
         <div className='col-md-8'>
           <div className={`mb-3`+ ' '  + style.formControl}>
-            <label className={classes.toggleTitle} onClick={()=>setShow3(!show3)}>
-              <input type="checkbox" /> <span>Select Image</span>
+            <label className={Form.chkWrap} onChange={()=>setShow(!show)}>
+              <input type="checkbox" defaultChecked={true}/> <span className={Form.chkmark}   > Select Image</span>
             </label>
             {
-              show3 &&
+              show &&
               <div className={classes.toggleContent}>
                 <ul className={classes.imgLIst}>
                   <li className={classes.active}>
@@ -243,10 +244,11 @@ const ExhibitionStyle = () => {
             
           </div>
           <div className={`mb-2`+ ' '  + style.formControl}>
-            <label className={classes.toggleTitle}>
-              <span>Color Fill</span>
+            <label className={Form.chkWrap} onChange={()=>setShow2(!show2)}>
+              <input type="checkbox" defaultChecked={true}/> <span className={Form.chkmark}   > Color fill</span>
             </label>
-      
+            {
+              show2 &&
               <div className={classes.toggleContent}>
                   <div className={nav.colorpickertab}  >      
                       <ul className="nav nav-tabs">
@@ -274,7 +276,7 @@ const ExhibitionStyle = () => {
                   
                 
               </div>
-        
+            }
           </div>
         </div>
       </div>
@@ -283,7 +285,7 @@ const ExhibitionStyle = () => {
         <div className='d-flex justify-content-between'>
           <a className={'btn' + ' ' + button.btnTextDanger}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
           <div className={style.btnGroup}>
-            <button type="button" className={'btn' + ' ' + button.btnDanger}> Cancel</button>
+            <button type="button" className={'btn' + ' ' + button.btnDanger}> Cancel</button> &nbsp;
             <button type="button" className={'btn' + ' ' + button.btnPrimary}>Save Draft</button>
           </div>
         </div>

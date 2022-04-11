@@ -38,7 +38,7 @@ const StepCollectionInfo = () => {
         </div>
         <div className='col-md-8'>
             <div className={`mb-2`+ ' '  + style.formControl}>
-              <label className={form.chkWrap} onClick={()=>setShow(!show)}>
+              <label className={form.chkWrap} onChange={()=>setShow(!show)}>
                 <input type="checkbox" /> <span className={form.chkmark}>Image</span>
               </label>
               {
@@ -127,7 +127,7 @@ const StepCollectionInfo = () => {
               
             </div>
             <div className={ style.formControl}>
-              <label className={form.chkWrap} onClick={()=>setShow2(!show2)}>
+              <label className={form.chkWrap} onChange={()=>setShow2(!show2)}>
                 <input type="checkbox" /> <span className={form.chkmark}>Color</span>
               </label>
               {
@@ -185,8 +185,8 @@ const StepCollectionInfo = () => {
         </div>
         <div className='col-md-8'>
           <div className={`mb-3`+ ' '  + style.formControl}>
-            <label className={form.chkWrap} onClick={()=>setShow3(!show3)}>
-                <input type="checkbox" /> <span className={form.chkmark}>Select Image</span>
+            <label className={form.chkWrap} onChange={()=>setShow3(!show3)}>
+                <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}>Select Image</span>
             </label>
             {
               show3 &&
@@ -294,8 +294,8 @@ const StepCollectionInfo = () => {
             
           </div>
           <div className={`mb-2`+ ' '  + style.formControl}>
-            <label className={form.chkWrap} onClick={()=>setShow4(!show4)}>
-                <input type="checkbox"/> <span className={form.chkmark}>Color Fill</span>
+            <label className={form.chkWrap} onChange={()=>setShow4(!show4)}>
+                <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}>Color Fill</span>
               </label>
             {
               show4 &&
@@ -332,7 +332,7 @@ const StepCollectionInfo = () => {
       </div>
 
 
-      <div className={ classes.formGroup}>
+      <div className={ style.btnGroup}>
         <a className={`btn ${button.btnTextDanger}`}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
       </div>
 

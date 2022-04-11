@@ -231,7 +231,7 @@ const StepTheme = () => {
           <div className='text-right'>
             
             <div className='btns-group mb-3' style={{ "textAlign":"right"}}>
-                <button className={`btn ${button.btnOutlinePrimary}`} style={{"margin-right":8}}>Cancel</button>
+                <button className={`btn ${button.btnOutlinePrimary}`}>Cancel</button>
                 <button className={`btn ${button.btnPrimary}`}>Save</button>
             </div>
           </div>

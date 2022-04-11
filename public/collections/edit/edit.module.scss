@@ -47,3 +47,13 @@
     border-right: 1px solid $border;  
     padding-right: 1rem;  
 }
+
+
+.btnGroup {
+    .btn {
+        margin-right: .7rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

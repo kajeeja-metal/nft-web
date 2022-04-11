@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from "next/image"
 
@@ -30,7 +30,9 @@ const ExhibitionInfo = () => {
   // useEffect(() => {
   //     document.querySelector("body").classList.add("steptheme");
   // });
-
+  
+  const [show,setShow] = useState(true);
+  const [show2,setShow2] = useState(true);
 
 
   return (
@@ -46,10 +48,11 @@ const ExhibitionInfo = () => {
         </div>
         <div className='col-md-8'>
           <div className={`mb-2`+ ' '  + style.formControl}>
-            <label className={classes.toggleTitle + ' ' + form.chkWrap}>
-              <input type="checkbox" />  
-              <span className={ form.chkmark}> Select Image</span>
-            </label>
+             <label className={form.chkWrap} onChange={()=>setShow(!show)}>
+                <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}   >Select Image</span>
+              </label>
+            {
+              show &&
             <div className={classes.toggleContent}>
               <ul className={classes.imgLIst} style={{"marginBottom":0}}>
                 <li className={classes.active}>
@@ -177,14 +180,16 @@ const ExhibitionInfo = () => {
               
               </div>
             </div>
+            }
             
             
           </div>
           <div className={`mb-2`+ ' '  + style.formControl}>
-            <label className={classes.toggleTitle}>
-              <span>Color Fill</span>
+            <label className={form.chkWrap} onChange={()=>setShow2(!show2)}>
+              <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}   >Color fill</span>
             </label>
-    
+            {
+              show2 &&
             <div className={classes.toggleContent}>
               <div className={nav.colorpickertab}  >      
                 <ul className="nav nav-tabs">
@@ -210,6 +215,7 @@ const ExhibitionInfo = () => {
                 </div>
               </div>
             </div>
+            }
       
           </div>
             
@@ -233,7 +239,7 @@ KLOUD is the artistical embodiment of limitless creativity in anonymity. With th
         <div className='d-flex justify-content-between'>
           <a className={'btn' + ' ' + button.btnTextDanger}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
           <div className={style.btnGroup}>
-            <button type="button" className={'btn' + ' ' + button.btnDanger}> Cancel</button>
+            <button type="button" className={'btn' + ' ' + button.btnDanger}> Cancel</button> &nbsp; 
             <button type="button" className={'btn' + ' ' + button.btnPrimary}>Save Draft</button>
           </div>
         </div>

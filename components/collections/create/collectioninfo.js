@@ -37,8 +37,8 @@ const StepCollectionInfo = () => {
         </div>
         <div className='col-md-8'>
             <div className={`mb-2`+ ' '  + style.formControl}>
-              <label className={form.chkWrap} onClick={()=>setShow(!show)}>
-                <input type="checkbox" /> <span className={form.chkmark}>Image</span>
+              <label className={form.chkWrap} onChange={()=>setShow(!show)}>
+                <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}   >Image</span>
               </label>
               {
                 show && <div className={classes.toggleContent}>
@@ -126,7 +126,7 @@ const StepCollectionInfo = () => {
               
             </div>
             <div className={ style.formControl}>
-              <label className={form.chkWrap} onClick={()=>setShow2(!show2)}>
+              <label className={form.chkWrap} onChange={()=>setShow2(!show2)}>
                 <input type="checkbox" /> <span className={form.chkmark}>Color</span>
               </label>
               {
@@ -143,7 +143,7 @@ const StepCollectionInfo = () => {
                     <div className="tab-pane show active " id="solid21">
                       <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                           <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                          <input type="text" value="#05FF44" className="form-control" />                            
+                          <input type="text" placeholder='#05FF44' className="form-control" />                            
                       </div>
                     </div>
                     <div className="tab-pane fade" id="gredient21">
@@ -184,8 +184,8 @@ const StepCollectionInfo = () => {
         </div>
         <div className='col-md-8'>
           <div className={`mb-3`+ ' '  + style.formControl}>
-            <label className={form.chkWrap} onClick={()=>setShow3(!show3)}>
-                <input type="checkbox" /> <span className={form.chkmark}>Select Image</span>
+            <label className={form.chkWrap} onChange={()=>setShow3(!show3)}>
+                <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}>Select Image</span>
             </label>
             {
               show3 &&
@@ -293,7 +293,7 @@ const StepCollectionInfo = () => {
             
           </div>
           <div className={`mb-2`+ ' '  + style.formControl}>
-            <label className={form.chkWrap} onClick={()=>setShow4(!show4)}>
+            <label className={form.chkWrap} onChange={()=>setShow4(!show4)}>
                 <input type="checkbox"/> <span className={form.chkmark}>Color Fill</span>
               </label>
             {
@@ -312,7 +312,7 @@ const StepCollectionInfo = () => {
                         <div className="tab-pane show active " id="solid22">
                           <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                               <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                              <input type="text" value="#05FF44" className="form-control" />                            
+                              <input type="text" placeholder="#05FF44" className="form-control" />                            
                           </div>
                         </div>
                         <div className="tab-pane fade" id="gredient22">

@@ -33,8 +33,8 @@ const StepCollectionThumbnail = () => {
         </div>
         <div className='col-md-8'>
           <div className={`mb-2` + ' ' + style.formControl }>
-            <label className={form.chkWrap} onClick={()=>setShow(!show)}>
-              <input type="checkbox"  /> <span className={form.chkmark}>Select Image</span>
+            <label className={form.chkWrap} onChange={()=>setShow(!show)}>
+              <input type="checkbox"  defaultChecked={true}/> <span className={form.chkmark}>Select Image</span>
             </label>
             {
               show && <div className={classes.toggleContent}>
@@ -125,8 +125,8 @@ const StepCollectionThumbnail = () => {
             
           </div>
           <div className={style.formControl }>
-            <label className={form.chkWrap} onClick={()=>setShow2(!show2)}>
-              <input type="checkbox" /> <span className={form.chkmark}>Color Fill</span>
+            <label className={form.chkWrap} onChange={()=>setShow2(!show2)}>
+              <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}>Color Fill</span>
             </label>
             { 
               show2 &&

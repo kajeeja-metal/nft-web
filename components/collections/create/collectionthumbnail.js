@@ -37,8 +37,8 @@ const StepCollectionThumbnail = () => {
         </div>
         <div className='col-md-8'>
           <div className={`mb-2` + ' ' + style.formControl }>
-            <label className={form.chkWrap} onClick={()=>setShow(!show)}>
-              <input type="checkbox"  /> <span className={form.chkmark}>Select Image</span>
+            <label className={form.chkWrap} onChange={()=>setShow(!show)}>
+              <input type="checkbox" defaultChecked={true} /> <span className={form.chkmark}>Select Image</span>
             </label>
             {
               show && <div className={classes.toggleContent}>
@@ -174,7 +174,7 @@ const StepCollectionThumbnail = () => {
             
           </div>
           <div className={style.formControl }>
-            <label className={form.chkWrap} onClick={()=>setShow2(!show2)}>
+            <label className={form.chkWrap} onChange={()=>setShow2(!show2)}>
               <input type="checkbox" /> <span className={form.chkmark}>Color Fill</span>
             </label>
             { 
@@ -224,7 +224,7 @@ const StepCollectionThumbnail = () => {
       </div>
 
       <div className={`btns-group mb-3 ${classes.textRight}` } style={{ "textAlign":"right"}}>
-          <button className={`btn ${button.btnOutlinePrimary}`} style={{"margin-right":8}}>Cancel</button>
+          <button className={`btn ${button.btnOutlinePrimary}`} style={{"marginRight":8}}>Cancel</button>
           <button className={`btn ${button.btnPrimary}`}>Save Draft</button>
       </div>
 
