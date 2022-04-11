@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
-import Link from 'next/link';
+
 import Image from "next/image"
 
-import Form from '../../../public/account/form.module.scss';
+import Form from '../../../public/account/Form.module.scss';
 import style from '../../../public/exhibitions/index.module.scss';
 import classes from '../../../components/exhibitions/create/exhibitioninfo.module.scss';
 
 
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faCheckCircle, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 import ThumbList from '../../../public/exhibitions/images/thumb.png';
 import CoverList from '../../../public/exhibitions/images/covercrop.png';

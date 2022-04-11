@@ -10,6 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faPlus } from '@fortawesome/free-regular-svg-icons';
 import { faPlus, faPray } from '@fortawesome/free-solid-svg-icons';
 import ThumbList from '../../../public/collections/images/thumblist.png';
+import CoverList from '../../../public/collections/images/covercrop.png';
+import CoverList2 from '../../../public/collections/images/covercrop2.png';
+import CoverList3 from '../../../public/collections/images/covercrop3.png';
+import CoverList4 from '../../../public/collections/images/covercrop4.png';
 
 const StepCollectionThumbnail = () => {
   useEffect(() => {
@@ -120,11 +124,56 @@ const StepCollectionThumbnail = () => {
                   </li>
                 </ul>
                 <p className={classes.recomoensizeLbl}>Recommended image size: 1600 x 360px</p>
+                <hr/>
+                <h3 className={classes.decideLbl}>Decide how to crop your image</h3>
+                <div className={classes.cropStyleImgWrap}>
+              
+                  <div className={classes.cropStyleImg  + ' ' + classes.active} data-value="fillVertical">
+                    <span className={classes.cropImg}>
+                      <Image
+                        src={CoverList}
+                        height={52} width={52} alt="Thumbs"
+                      />
+                    </span>
+                    <h4 className={classes.crop}>Fill the frame vertically</h4>
+                  </div>               
+              
+                  <div className={classes.cropStyleImg} data-value="fillHorizontal">
+                    <span className={classes.cropImg}>
+                      <Image
+                        src={CoverList2}
+                        height={69} width={100} alt="Thumbs"
+                      />
+                    </span>
+                    <h4 className={classes.crop}>Fill the frame horizontally</h4>
+                  </div>
+                
+                  <div className={classes.cropStyleImg} data-value="fillCover">
+                    <span className={classes.cropImg}>
+                      <Image
+                        src={CoverList3}
+                        height={100} width={100} alt="Thumbs"
+                      />
+                    </span>
+                    <h4 className={classes.crop}>Cover the frame</h4>
+                  </div>
+              
+                  <div className={classes.cropStyleImg} data-value="fillOriginal">
+                    <span className={classes.cropImg}>
+                      <Image
+                        src={CoverList4}
+                        height={100} width={100} alt="Thumbs"
+                      />
+                    </span>
+                    <h4 className={classes.crop}>Original size</h4>
+                  </div>
+                
+                </div>
               </div>
             }
             
           </div>
-          <div className={classes.style }>
+          <div className={style.formControl }>
             <label className={form.chkWrap} onClick={()=>setShow2(!show2)}>
               <input type="checkbox" /> <span className={form.chkmark}>Color Fill</span>
             </label>
@@ -133,7 +182,7 @@ const StepCollectionThumbnail = () => {
               <div className={classes.toggleContent}>
                 <div className={nav.colorpickertab}  >
             
-                  <div className={style.formControl}>
+                  <div>
                     <ul className="nav nav-tabs">
                       <li className="nav-item">
                           <a className={nav.navLink + ' ' + nav.active} data-bs-toggle="tab" href="#solid31">Soild</a>

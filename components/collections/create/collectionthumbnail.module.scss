@@ -33,6 +33,38 @@
 		min-width: 80px; text-align: center;
 	}
 }
+.decideLbl {
+	font-size: $font-medium; color: $default-color;
+	font-weight: normal; margin-bottom: .75rem;
+}
+.cropStyleImgWrap {
+	@include flexbox();
+	justify-content: space-between;
+}
+.cropStyleImg {
+	border: 1px solid $imglist-border-color; border-radius: 8px;
+	text-align: center;
+	padding: 10px; width: 140px;
+	margin: 1px;
+	&.active {
+		border-color: $imglist-border-active-color;
+	}
+}
+.cropImg {
+	position: relative;
+	border: 2px solid $imglist-border-color;
+	border-radius: 8px; padding: 5px;
+	display: block; width: 100px; height: 100px;
+	line-height: 100px; margin: 0 auto;
+	svg, img {
+		line-height: 100px;
+	}
+}
+.crop {
+	font-size: $imgCrop-title-font-size;
+	color: $imgCrop-title-color;
+	font-weight: normal; margin-top: .75rem;
+}
 
 .recomoensizeLbl {
 	font-size: $leftnum-font-size; color: $leftnum-color;

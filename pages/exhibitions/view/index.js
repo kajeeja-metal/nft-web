@@ -13,7 +13,7 @@ import { faAngleLeft, faGlobe, faEye, faPen  } from '@fortawesome/free-solid-svg
 import React, { useState } from "react";
 
 export default function Index() {
-  const [page, setPage] = useState(2);
+  const [page, setPage] = useState(0);
   const FormTitles = ["Exhibition Room", "Exhibition Info", "Customize Exhibition Style"]
   const ExhibitionDisplay = () => {
     if (page === 0) {
