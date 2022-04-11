@@ -1,7 +1,5 @@
-// @import '../../main_theme/component/groupvariable';
-// @import '../../main_theme/component/mixin';
-@import '../variables';
 
+@import 'variables';
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
 
@@ -12,7 +10,7 @@ $LibreFranklin: 'Libre Franklin', sans-serif;
     display: flex;
     justify-content: center;
     position: relative;
-    height: 360px;
+    height: $profile-banner-height;
     img {
         width: 100%;
         object-fit: cover;
@@ -50,7 +48,6 @@ $LibreFranklin: 'Libre Franklin', sans-serif;
 }
 .btnGroups {
 	.btn {
-
 		font-size: 1.5rem;
 		&:not(:last-child) {
 			margin-right: 32px;
@@ -74,7 +71,7 @@ $LibreFranklin: 'Libre Franklin', sans-serif;
 }
 .socialList {
     margin-top: 23px;
-    margin-bottom: 75px;
+    margin-bottom: $socialListMarginBottom;
     display: inline-flex;
     align-items: center;
 	span {
@@ -82,6 +79,7 @@ $LibreFranklin: 'Libre Franklin', sans-serif;
 	}
 	a {
         color: $socialIconsColor;
+        font-size: $socialIconsFontSize;
 		&:not(:last-child) {
 			margin-right: 35px;
 		}
@@ -125,7 +123,7 @@ $LibreFranklin: 'Libre Franklin', sans-serif;
     text-align: center;
 }
 // Tabs
-.tabsWrapper {
+/*.tabsWrapper {
 	text-align: center;
     ul {
 		margin-bottom: 32px !important;
@@ -199,7 +197,7 @@ $LibreFranklin: 'Libre Franklin', sans-serif;
             }
         }
     } 
-}
+}*/
 
 
 // Footer 

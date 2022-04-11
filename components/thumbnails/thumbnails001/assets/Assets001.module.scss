@@ -3,19 +3,15 @@
 .assetsAll {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(14rem,1fr));
-    gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    gap: $assetsItemGap;
+    padding-top: $assetsPaddingT;
+    padding-bottom: $assetsPaddingB;
     article {
-        border: 2px solid $textColor;
-        border-radius: 4px;
-        background-color: $assetsBgColor;
-        a {
-            padding: 8px;
-            display: inline-block
-        }
+        border: 2px solid $assetsItemBorderColor;
+        border-radius: $assetsItemBorderRadius;
+        background-color: $assetsItemBorderBgColor;
         img {
-            border-radius: 4px;
+            border-radius: #assetsItemBorderRadius;
         }
     }
     p {
@@ -24,11 +20,12 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        height: 80px;
+        height: $assetItemDescHeight;
     }
 }
 .thumbsItem {
     display: inline-block;
+    padding: $assetItemImgPadding;
     img {
         display: block;
         width: 100%;
@@ -37,19 +34,20 @@
     }
 }
 .thumbsWrap {
-    background-color: #FFFF;
+    background-color: $assetItemBgColor;
     //@include box_shadow(1);
-    text-align: center;
+    text-align: $assetItemAlign;
 }
 .thumbsContent {
-    text-align: center;
+    text-align: $assetItemContentAlign;
     h3 {
-        font-size: 24px;
+        font-size: $assetItemTitleFontSize;
+        color: $assetItemTitleColor;
     }
     p {
-        padding: 12px;
-        margin-bottom: 0;
-        background-color: #FFFF;
-        font-size: 0.875rem;
+        padding: $assetItemDescPadding;
+        margin-bottom: 0; color: $assetItemColor;
+        background-color: $assetItemDescBgColor;
+        font-size: $font-small;
     }
 }

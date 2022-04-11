@@ -3,9 +3,9 @@
 .collectionWraps {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(22rem,1fr));
-    gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    gap: $collectionItemGap;
+    padding-top: $collectionPaddingT;
+    padding-bottom: $collectionPaddingB;
     .thumbsItem {
         display: inline-block;
         img {
@@ -19,7 +19,7 @@
         display: block
     }    
     .thumbsWrap {
-        text-align: center;
+        text-align: $collectionItemAlign;
         position: relative;
         overflow: hidden;
         &:before {
@@ -27,7 +27,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: rgba(0,107,205, 0.5);
+            background: $collectionItemHoverBg;
             z-index: 2;
             top: -100%;
             left: 0;
@@ -40,7 +40,7 @@
         }
     }
     .thumbsContent {
-        padding: 1rem;
+        padding: $collectionItemContentPadding;
         text-align: center;
         p {
             margin-bottom: 0;

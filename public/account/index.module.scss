@@ -1,65 +1,126 @@
-@import './variables/mixin';
 @import './variables/colors';
+@import './variables/mixin';
 @import './variables/text_link';
-//@import './variables/forms';
-// Header 
 
-.userHeaderWrap {
-     @include box_shadow(1);
+
+.uploadWrap {
+    border: 1px solid $border;
     padding: 1rem;
-    margin-bottom: 32px;
+    border-radius: 8px;
 }
 
-.userHeader {
-    @include flex;
-    @include align-items(center);
-    @include justify-content(space-between);
-} 
-.headerLeft {
-    span {
-        margin-left: 2rem;
-    }
+.labelHead {
+    margin-bottom: 1rem;
+    font-size: $font-medium;
 }
-.userImg {
-    margin-right: 8px;
+.thumbWrap {
+    border: 1px solid $border;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    position: relative;
+    min-height: 100px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .profileImg {
-        border-radius: 12px;
+        object-fit: contain;
     }
-}
-.userLogged {
-    @include flex;
-    margin-right: 2rem;
+
 }
 
-.headerRight {
-    @include flex;
+.verticallyImg {
+    object-fit: cover;
 }
-.menuWrap {
+.horizantalImg {
+    object-fit: cover;
+}
+.coverImg {
+    object-fit: cover;
+}
+.originalImg {
+    object-fit: none;
+}
+
+
+
+.uploadList {
     list-style: none;
-    margin: 0; padding: 0;
+    margin: 0 -8px; padding: 0;
+    @include flex;
+    flex-wrap: wrap;
+    li {
+        border: 2px solid $border;
+        border-radius: 8px;
+        margin: 8px;
+        padding: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 100px; max-width: 100px;
+        text-align: center; position: relative;
+        svg {
+            vertical-align: middle;
+            color: #ABABBA;
+        }
+        input[type="file"] {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+          }
+    }
 }
-.menuItem {
-    display: block;
-    a {
-        padding: 15px;
-        color: $black;
-        display: block;
-        &:hover {
-            color: #4400CD !important;
-            font-weight: 600;
+
+.listNote {
+    font-size: $font-normal;
+    margin-top: 8px;
+    color: $grayLight;
+}
+.lineHr {
+    border: 1px solid $border;
+}
+
+.btnsWrap {
+    button {
+        &:not(:last-child) {
+            margin-right: 1rem;
         }
     }
 }
 
 
-.menuHead {
-    display: block;
-    font-size: $font-medium;
-    font-weight: bold;
-    margin: 15px 0;
+.btnGroup {
+    display: flex;
+    justify-content: space-between;
 }
+
+.uploadThumb {
+    border: 2px solid $border;
+    border-radius: 8px;
+    padding: 1rem;
+    height: 100%;
+    text-align: center;
+    svg {
+        vertical-align: middle;
+        color: $gray;
+        height: 100%;
+        font-size: $font-large;
+    }
+}
+
+
+.captionName {
+    font-size: $font-medium;
+}
+
+
 .accHead {
-   font-size: $font-xlarge; 
+   font-size: $font-xlarge;
+   margin-bottom: 40px;
+   font-weight: 400;
+
 }
 
 .headDesc {
@@ -94,9 +155,6 @@
 	}
 	.lableFile, .btnBorder {
 	  cursor: pointer;
-	  padding: 17px 31px;
-	  border-radius: 16px;
-	  margin-bottom: 1rem;
 	}
 	&:hover {
 		.lable-file, .btnBorder {
@@ -105,12 +163,6 @@
 	}
 }
 
-.btnBorder {
-	border: 1px solid #EAEAED;
-	&:hover {
-		background-color: $gray-900;
-	}
-}
 .uploadText {
     text-transform: uppercase;
     font-size: $font-mini;
@@ -123,3 +175,6 @@
     margin-bottom: 1rem;
 }
 
+.headNote {
+    font-size: $font-small;
+}

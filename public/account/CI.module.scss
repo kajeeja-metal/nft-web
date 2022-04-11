@@ -1,0 +1,93 @@
+@import './variables/colors';
+@import './variables/text_link';
+
+
+.colWrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.cols {
+    text-align: center;
+    padding: 1rem;
+}
+
+.lightModebackground {
+    background-color: $lightModebackground;
+}
+.lightModeforegroud {
+    background-color: $lightModeforegroud;
+}
+.lightModedisabled {
+    background-color: $lightModedisabled;
+}
+.lightModetextSecondary {
+    background-color: $lightModetextSecondary;
+}
+.lightModetextPrimary {
+    background-color: $lightModetextPrimary;
+}
+
+.lightModeprimaryLight {
+    background-color: $lightModeprimaryLight;
+}
+.lightModeprimaryMain {
+    background-color: $lightModeprimaryMain;
+}
+.lightModeprimaryDark {
+    background-color: $lightModeprimaryDark;
+}
+.lightModesecondaryLight {
+    background-color: $lightModesecondaryLight;
+}
+.lightModesecondaryMain {
+    background-color: $lightModesecondaryMain;
+}
+.lightModesecondaryDark {
+    background-color: $lightModesecondaryDark;
+}
+.lightModeinfoBg {
+    background-color: $lightModeinfoBg;
+}
+.lightModeinfoMain {
+    background-color: $lightModeinfoMain;
+}
+.lightModeinfoContent {
+    background-color: $lightModeinfoContent;
+}
+
+.lightModesuccessBg {
+    background-color: $lightModesuccessBg;
+}
+.lightModesuccessMain {
+    background-color: $lightModesuccessMain;
+}
+.lightModesuccessContent {
+    background-color: $lightModesuccessContent;
+}
+.lightModewarningBg {
+    background-color: $lightModewarningBg;
+}
+.lightModewarningMain {
+    background-color: $lightModewarningMain;
+}
+.lightModewarningDark {
+    background-color: $lightModewarningDark;
+}
+.lightModeerrorBg {
+    background-color: $lightModeerrorBg;
+}
+.lightModeerrorMain {
+    background-color: $lightModeerrorMain;
+}
+.lightModeerrorContent {
+    background-color: $lightModeerrorContent;
+}
+.h1Head {
+    font-size: $font-large;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: $primary;
+}

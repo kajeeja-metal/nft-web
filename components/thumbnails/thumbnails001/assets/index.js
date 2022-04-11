@@ -11,8 +11,8 @@ export default function Assets001() {
 		<>
 			<div className={classes.assetsAll}>
 				<article className={classes.thumbsWrap}>
-				<Link className={classes.thumbsItem} href="/">
-					<a>
+				<Link href="/">
+					<a className={classes.thumbsItem}>
 					<Image
 						src={Thumbs}
 						height={512}
@@ -29,8 +29,8 @@ export default function Assets001() {
 				</div>
 				</article>
 				<article className={classes.thumbsWrap}>
-				<Link className={classes.thumbsItem} href="/">
-					<a>
+				<Link href="/">
+					<a className={classes.thumbsItem}>
 					<Image
 						src={Thumbs}
 						height={512}
@@ -47,8 +47,8 @@ export default function Assets001() {
 				</div>
 				</article>
 				<article className={classes.thumbsWrap}>
-				<Link className={classes.thumbsItem} href="/">
-					<a>
+				<Link href="/">
+					<a className={classes.thumbsItem}>
 					<Image
 						src={Thumbs}
 						height={512}
@@ -65,8 +65,8 @@ export default function Assets001() {
 				</div>
 				</article>
 				<article className={classes.thumbsWrap}>
-				<Link className={classes.thumbsItem} href="/">
-					<a>
+				<Link href="/">
+					<a className={classes.thumbsItem}>
 					<Image
 						src={Thumbs}
 						height={512}
@@ -83,8 +83,8 @@ export default function Assets001() {
 				</div>
 				</article>
 				<article className={classes.thumbsWrap}>
-				<Link className={classes.thumbsItem} href="/">
-					<a>
+				<Link href="/">
+					<a className={classes.thumbsItem}>
 					<Image
 						src={Thumbs}
 						height={512}
@@ -99,8 +99,8 @@ export default function Assets001() {
 				</div>
 				</article>
 				<article className={classes.thumbsWrap}>
-				<Link className={classes.thumbsItem} href="/">
-					<a>
+				<Link href="/">
+					<a className={classes.thumbsItem}>
 					<Image
 						src={Thumbs}
 						height={512}
@@ -115,8 +115,8 @@ export default function Assets001() {
 				</div>
 				</article>
 				<article className={classes.thumbsWrap}>
-				<Link className={classes.thumbsItem} href="/">
-					<a>
+				<Link href="/">
+					<a className={classes.thumbsItem}>
 					<Image
 						src={Thumbs}
 						height={512}
@@ -131,8 +131,8 @@ export default function Assets001() {
 				</div>
 				</article>
 				<article className={classes.thumbsWrap}>
-				<Link className={classes.thumbsItem} href="/">
-					<a>
+				<Link href="/">
+					<a className={classes.thumbsItem}>
 					<Image
 						src={Thumbs}
 						height={512}

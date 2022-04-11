@@ -1916,3 +1916,40 @@
 		background-color: $gray-900;
 	}
 }
+
+.btnLogin {
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid $border;
+    color: $white;
+    background-color: transparent;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    &:hover, &.hover {
+        background-color: transparent;
+        color: $white;
+        border-color: $primary;
+    }
+    &:active, &.active {
+        background-color: transparent;
+        color: $white;
+        border-color: $primary;
+    }
+}
+
+.btnGray {
+    background-color: $darkModebackground;
+    color: $white;
+    padding: 1rem;
+    min-width: 164px;
+    border-radius: 1rem;
+    &:hover, &.hover {
+        background-color: #070708;
+        color: $white;
+    }
+    &:active, &.active {
+        background-color: #070708;
+        color: $white;
+    }
+}

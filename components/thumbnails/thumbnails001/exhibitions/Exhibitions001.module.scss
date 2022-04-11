@@ -1,18 +1,18 @@
 @import '../../../profile/variables';
 
 .spacesWrap {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    article {
-        margin-bottom: 2rem;
+    padding-top: $exhibitionPaddingT;
+    padding-bottom: $exhibitionPaddingB;
+    .thumbsWrap {
+        margin-bottom: $exhibitionItemMarginB;
     }
     .thumbsContent {
-        padding: 1rem;
+        padding: $exhibitionItemTitlePadding;
         text-align: center;
-        background-color: $textBgColor;
-        color: #FFFFFF;
-        h2 {
-            font-size: 2rem;
+        background-color: $exhibitionItemTitleBgColor;
+        color: $exhibitionItemTitleColor;
+        .ItemTitle {
+            font-size: $exhibitionItemTitleFontsize;
         }
     }
 }

@@ -1,2 +1,44 @@
-@import './mixin';
-@import './text_link';
+@import './variables/mixin';
+@import './variables/colors';
+@import './variables/text_link';
+@import './variables/forms';
+
+
+.head {
+    font-size: $font-xlarge;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+.subHead {
+    font-size: $font-large;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    span {
+        font-size: $font-small;
+        margin-left: 1rem;
+        vertical-align: bottom;
+    }
+}
+ 
+ .headDesc {
+     font-size: $font-small;
+     margin-bottom: 24px;
+ }
+ .headNote {
+    font-size: $font-small;
+    margin-bottom: 28px;
+}
+
+.deleteWrap {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.headWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

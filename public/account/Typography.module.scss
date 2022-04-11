@@ -1,0 +1,50 @@
+@import '../../public/account/variables/colors';
+@import '../../public/account/variables/text_link';
+
+
+
+.h1 {
+    font-size: $font_title-large;
+	font-weight: bold;
+}
+.h2 {
+    font-size: $font-xllarge;
+}
+.h3 {
+    font-size: $font-xlarge;
+}
+.h4 {
+    font-size: $font-large;
+}
+.h5 {
+    font-size: $font-largeM;
+}
+.h6 {
+    font-size: $font-medium;
+}
+.subTitleBold {
+	font-size: $font-normal;
+	font-weight: 600;
+}
+.subTitleNormal {
+	font-size: $font-normal;
+	font-weight: normal;
+}
+.body {
+	font-size: $font-small;
+}
+.caption {
+	font-size: $font-small;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.overLine {
+	font-size: $font-mini;
+}
+.buttonL {
+	font-size: $font-normal;
+}
+.buttonS {
+	font-size: $font-small;
+}

@@ -4,14 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 import classes from './Profile001.module.scss';
-// import classes from '../../../public/profile/profile001/Index.module.scss';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClone, faImage, faFlag } from "@fortawesome/free-regular-svg-icons";
 import downArrow from '../../../public/profile/profile001/images/down-arrow.svg';
-import Thumbs001 from "../../../components/thumbnails/thumbnails001";
+import Thumbs001 from "../../../components/thumbnails/thumbnails001"; 
 // Layout Format
 
 // Images Included need to remove Later
@@ -30,6 +28,7 @@ import {
 
 
 export default function Profile001() {
+	
 	const [isCopied, setIsCopied] = useState(false);
 	const onCopyText = () => {
 		setIsCopied(true);
@@ -64,6 +63,7 @@ export default function Profile001() {
               <h1 className={classes.userName}>Deekay Kwon 💎</h1>
               <h2 className={classes.userMore}>@Deekaykwon</h2>
               <div className={classes.userId}>
+			 
                 <CopyToClipboard text={codeSnitted} onCopy={onCopyText}>
                   <div className={classes.copyWrap}>
                     {codeSnitted}
