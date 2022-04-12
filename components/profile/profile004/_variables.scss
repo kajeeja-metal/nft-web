@@ -4,47 +4,64 @@
 @import '../../../public/account/variables/mixin';
 @import '../../../public/account/variables/text_link';
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;700;900&display=swap');
 
-$fontArchivo:              'Archivo Black', sans-serif;
+$fontArchivo:              'Archivo', sans-serif;
+$fontArchivoBold:          'Archivo Black', sans-serif;
+
 
 $color-primary-main:        #FF4755;
 $color-secondary-main:      #ECE8E1;
 $color-Button:              #FF4755;
 $color-title-main:          $white;
 $color-secondary-main:      #FBFBFB;
+$default-color:             $default;
 
 
 $textColor:                 $default;
 $textBgColor:               #FFD400;
 
-
-
 $boderColor:                $textColor;
 $btnActiveColor:            $textColor;
 $btnActiveBgColor:          $textBgColor;
 
-$profileH1FontSize:         48px;
+$profileThumbMarginB:       1.35rem;
+
+$profileH1FontSize:         36px;
 $profileH1FontColor:        $white;
+$profileH1FontFamily:       $fontArchivoBold;
+$profileH1MarginB:          .5rem;
 
-$profileH2FontSize:         36px;
+$profileH2FontSize:         24px;
 $profileH2FontColor:        $white;
+$profileH3FontWeight:       600;
 
-$profileH3FontSize:         32px;
+$profileH3FontSize:         18px;
 $profileH3FontColor:        $white;
+$profileH3FontWeight:       300;
 
-$profileH4FontSize:         24px;
+$profileH4FontSize:         16px;
 $profileH4FontColor:        $white;
+
+$userIdFontSize:            16px;
+$userIdFontColor:           $white;
+
+$userDescFontSize:          14px;
+$userDescFontColor:         $white;
+$userDescMarginB:           1rem;
 
 $buttonLFontSize:           16px;
 $buttonSFontSize:           14px;            
+          
+$socialListMarginBottom:    50px;     
+$socialIconsColor:          $white;
+$socialIconsFontSize:       $font-medium;
 
-$socialListMarginBottom:    75px;     
-$socialIconsColor:          $textColor;
-$socialIconsFontSize:       $font-largeM;
-
-$statusWrapFontSize:        23px;
+$likeWrapMarginB:           55px;
+$statusWrapFontSize:        20px;
 $statusWrapColor:           $white;
+$likeLableFontSize:         12px;
+$likeNumFontWeight:         700;
 
 /*  Profile banner variable   */
 
@@ -52,17 +69,20 @@ $profile-banner-height       : 360px;
 
 /* Tab variables   */
 
-$TabsColor:                 $textColor;
-$TabsFontSize:              21px;
-$tabBorderColor:            $black;
+$tabItemColor:              $white;
+$tabItemFontSize:           20px;
+$tabItemBorderColor:        $color-primary-main;
+$tabItemBgColor:            transparent;
 $tabItemBorderRadius:       4px;
-$tabItemHoverColor:         #FFD400;
-$tabItemHoverBorderColor:   #FFD400;
-$tabItemHoverFontWeight:    #FFD400;
-$tabActiveColor:            $default;
-$tabActiveBgColor:          $textBgColor;
-$tabActiveBorderColor:      $textBgColor;
+$tabItemMarginB:            3rem;
+$tabItemHoverColor:         $white;
+$tabItemHoverBorderColor:   $color-primary-main;
+$tabItemHoverBgColor:       $color-primary-main;
+$tabActiveColor:            $white;
+$tabActiveBgColor:          $color-primary-main;
+$tabActiveBorderColor:      $color-primary-main;
 $tabActiveFontWeight:       700; 
+$TabOutlineColor:           $white;
 
 /* Pagination Variables  */ 
 
@@ -90,12 +110,23 @@ $exhibitionItemMarginB:      2rem;
 
 /* Collection Tab  Variables */
 
-$collectionPaddingT:          1rem;
-$collectionPaddingB:          1rem;
-$collectionItemGap:           1rem;
-$collectionItemAlign:         center;        
-$collectionItemContentPadding:1rem;
-$collectionItemHoverBg:       rgba(0,107,205, 0.5);
+$thumblistMarginB:            1rem;
+$thumbInfoPadding:            1rem;
+$thumbTitleColor:             $white;
+$thumbTitleSize:              2rem;
+$thumbTitleMarginB:           1.5rem;
+$thumbTitleFontWeight:        700;
+$thumbAssetColor:             $default-color;
+$thumbAssetSize:              16px;
+$thumbDescColor:              #fff;
+$thumbDescSize:               14px;
+$thumbDescMarginB:            1rem;
+$thumbDateColor:              $default-color;
+$thumbDateSize:               14px;
+$thumbWishCountColor:         $default-color;
+$thumbWishCountSize:          16px;
+$thumbWishColor:              $white;
+$thumbWishSize:               24px;
 
 /* Assets Tab  Variables */
 

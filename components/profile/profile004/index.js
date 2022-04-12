@@ -8,10 +8,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClone, faImage, faFlag } from "@fortawesome/free-regular-svg-icons";
 import Thumbs004 from "../../../components/thumbnails/thumbnails004";
 
-import downArrow from '../../../public/profile/profile001/images/down-arrow.svg';
+import downArrow from '../../../public/profile/profile004/images/down-arrow.svg';
 
-import profileBG from "../../../public/profile/profile002/images/profilebg.png";
-import profileLogo from "../../../public/profile/profile002/images/profile.png";
+import profileBG from "../../../public/profile/profile004/images/profilebg.png";
+import profileLogo from "../../../public/profile/profile004/images/profile.png";
 
 library.add(faClone, faImage);
 
@@ -21,14 +21,14 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function Profile002() {
+export default function Profile004() {
   useEffect(() => {
     if (typeof document !== undefined) {
       require("bootstrap/dist/js/bootstrap");
     }
   }, []);
   useEffect(() => {
-    document.querySelector("body").classList.add("profile3");
+    document.querySelector("body").classList.add("profile4");
   });
   const [isCopied, setIsCopied] = useState(false);
   const onCopyText = () => {
@@ -58,8 +58,8 @@ export default function Profile002() {
                   <Image
                   className={classes.profilePicture}
                   src={profileLogo}
-                  height={311}
-                  width={311}
+                  height={104}
+                  width={104}
                   alt="Thumbs"
                   />
                 </div>
@@ -84,15 +84,15 @@ export default function Profile002() {
                     SoundMint curated NFTs are generative music collectibles that combine generative visuals with generative music by pairing stems to visual layers; allowing ... 
                   </p>
                   <p className={classes.socialList}>
-                    <Link href="/"><a>
+                    <Link href="#"><a>
                       <FontAwesomeIcon icon={faTwitter} size="lg" />
                     </a>
                     </Link>
-                    <Link href="/"><a>
+                    <Link href="#"><a>
                       <FontAwesomeIcon icon={faInstagram} size="lg" />
                     </a>
                     </Link>
-                    <Link href="/"><a>
+                    <Link href="#"><a>
                       <FontAwesomeIcon icon={faFacebook} size="lg" />
                     </a>
                     </Link>
@@ -107,40 +107,41 @@ export default function Profile002() {
                   </div>
                 </div>
               </div>
-              <div className="nav flex-column" role="tablist"
-                aria-orientation="vertical">
-                <button onClick={()=>{setIndex(0)}} 
-                  className={`nav-link ${index===0?'active':''}`}
-                  data-bs-toggle="pill"
-                  data-bs-target="#collectionWrap"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-home"
-                  aria-selected="true"
-                >
-                 99 Collections
-                </button>
-                <button onClick={()=>{setIndex(1)}} className={`nav-link ${index===1?'active':''}`}
-                  data-bs-toggle="pill"
-                  data-bs-target="#spacesWrap"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-profile"
-                  aria-selected="false"
-                >
-                 99 Exhibitions
-                </button>
-                <button onClick={()=>{setIndex(2)}}
-                  className={`nav-link ${index===2?'active':''}`}
-                  data-bs-toggle="pill"
-                  data-bs-target="#assetsAll"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-messages"
-                  aria-selected="false"
-                >
-                 99 All Assets
-                </button>
+              <div className={`nav flex-column` + ' ' + classes.nav} 
+                role="tablist"
+                aria-orientation="vertical" >
+                <li className={`nav-link active`} data-bs-toggle="pill"
+                    data-bs-target="#collectionWrap"
+                    aria-controls="v-pills-messages"
+                    role="tab" 
+                    aria-selected="true">
+                    <button  
+                    className={`nav-link `}
+                    type="button">                  
+                    99 Collections
+                    </button>
+                </li>
+                <li data-bs-toggle="pill"
+                    data-bs-target="#spacesWrap"
+                    aria-controls="v-pills-messages"
+                    role="tab" 
+                    aria-selected="false"
+                    >
+                    <button className={`nav-link` }
+                    type="button">
+                    99 Exhibitions
+                    </button>
+                </li>
+                <li data-bs-toggle="pill"
+                    data-bs-target="#assetsAll"
+                    aria-controls="v-pills-messages"
+                    role="tab" 
+                    aria-selected="false">
+                    <button className={`nav-link` }                      
+                    type="button">
+                    99 All Assets
+                    </button>
+                </li>
               </div>
             </div>
             <div className="col-sm-7 offset-md-1">
@@ -154,7 +155,7 @@ export default function Profile002() {
 	  <footer className={classes.footer}>
 			<div className='container'>
 				<div className={classes.footerRow}>
-					<div className={classes.copyright}>Powered by NFTIFY <Image src={downArrow} alt='Down Logo' width={50} height={30} /> </div>
+					<div className={classes.copyright}>Copyright 2022 ©username. All rights reserved   | Powered by NFTIFY <Image src={downArrow} alt='Down Logo' width={50} height={30} /> </div>
 					<ul className={classes.socialContainer}>
 						<li>
 							Joined:  November 2021

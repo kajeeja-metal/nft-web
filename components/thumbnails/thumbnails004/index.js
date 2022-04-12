@@ -4,16 +4,14 @@ import Collections004 from './collections';
 import Exhibitions004 from './exhibitions';
 // import classes from './Thumbs004.module.scss'
 
-
-
-const Thumbs002 = () => {
+const Thumbs004 = () => {
   return (
 	<>
 		<div className="tab-content">
-			<div className="tab-pane fade show active" id="collectionWrap">
+			<div className="tab-pane fade " id="collectionWrap">
 				<Collections004/>
 			</div>
-			<div className="tab-pane fade" id="spacesWrap">
+			<div className="tab-pane fade show active" id="spacesWrap">
 				<Exhibitions004 />
 			</div>
 			<div className="tab-pane fade" id="assetsAll">
@@ -31,4 +29,4 @@ const Thumbs002 = () => {
   );
 }
 
-export default Thumbs002;
+export default Thumbs004;

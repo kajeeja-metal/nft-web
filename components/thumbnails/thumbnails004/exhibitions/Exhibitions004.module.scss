@@ -1,0 +1,36 @@
+@import '../../../../components/profile/profile004/variables';
+
+
+.collectionWraps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.thumblist {
+    position: relative;
+}
+.thumbImg {
+    position: relative;
+
+    .wishLike {
+        position: absolute; right: 16px; top: 15px;
+        font-size: $thumbWishSize; color: $thumbWishColor;
+    }
+}
+
+.thumbInfo { 
+    position: absolute; bottom: 0;
+    width: 100%; padding: 1rem;
+}
+.thumbTitlewrap {
+  h3 {
+    font-size: $thumbTitleSize; margin-bottom: $thumbTitleMarginB;
+    font-weight: $thumbTitleFontWeight;
+    a {
+      color: $thumbTitleColor; 
+    }
+  }
+}

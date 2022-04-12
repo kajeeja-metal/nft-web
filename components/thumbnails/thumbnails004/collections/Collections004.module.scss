@@ -1,0 +1,43 @@
+
+@import '../../../../components/profile/profile004/variables';
+
+
+.thumblist {
+   @include flexbox(); margin-bottom: $thumblistMarginB;
+}
+
+.thumbImg {
+  width: 55%;
+}
+.thumbInfo {
+  width: 45%; padding: $thumbInfoPadding;
+  position: relative; padding-bottom: 50px;
+}
+
+.wishLike {
+  font-size: $thumbWishSize; color: $thumbWishColor;
+  margin-bottom: 1rem; text-align: right;
+}
+.thumbTitlewrap {
+  h3 {
+    font-size: $thumbTitleSize; margin-bottom: $thumbTitleMarginB;
+    font-weight: $thumbTitleFontWeight;
+    a {
+      color: $thumbTitleColor; 
+    }
+  }
+}
+
+.thumbDesc {
+  font-size: $thumbDescSize; color: $thumbDescColor;
+  margin-bottom: $thumbDescMarginB; line-height: 1.5;
+}
+
+.dateWish {
+  @include flexbox; justify-content: space-between;
+  font-size: $thumbWishCountSize;
+  position: absolute; bottom: 10px; width: 100%;
+  .num {
+    font-weight: 700;
+  }
+}

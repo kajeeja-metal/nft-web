@@ -1,83 +1,83 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import classes from './Collections002.module.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
-import Thumbs from '../../../../public/profile/profile002/images/thumbs.png';
+import classes from './Collections004.module.scss';
+
+import Thumb from '../../../../public/profile/profile004/images/thumb.png';
+import Thumb2 from '../../../../public/profile/profile004/images/thumb2.png';
 
 
 export default function Collections004() {
       return (
 		<>
 		<div className={classes.collectionWraps}>
-			<article className={classes.thumbsWrap}>
-				<div className={classes.front}>
-					<Link className={classes.thumbsItem} href="/">
+			<div className={classes.thumblist}>
+				<div className={classes.thumbImg}>
+					<Link className={classes.thumbsItem} href="#">
 						<a>
 						<Image
-							src={Thumbs}
-							height={600}
-							width={600}
+							src={Thumb}
+							height={513}
+							width={513}
 							alt="Thumbs"
 						/>
-						</a>
+						</a>							
 					</Link>
 				</div>
-				<div className={classes.back}>
-					<h3>Name Description</h3>
+				<div className={classes.thumbInfo}>
+					<div className={classes.wishLike}>
+						<FontAwesomeIcon icon={faHeart} className="wishicon"/>
+					</div>
+					<div className={classes.thumbTitlewrap}>
+						<h3>
+						<Link href="/"><a>#3330</a></Link>
+						</h3>						
+					</div>
+					<p className={classes.thumbDesc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl malesuada id et a sed nulla. Dignissim augue venenatis non sed quis urna ac integer.</p>
+					<div className={classes.dateWish}>
+						<div className={classes.assetNum}><span className={classes.num}>32</span> Assets</div>
+						<div className={classes.wish}>
+							<span className={classes.num}>100 </span>
+							<FontAwesomeIcon icon={faHeart} className="wishicon"/>
+						</div>						
+					</div>	
 				</div>
-			</article>
-			<article className={classes.thumbsWrap}>
-			<div className={classes.front}>
-					<Link className={classes.thumbsItem} href="/">
+			</div>
+			<div className={classes.thumblist}>
+				<div className={classes.thumbImg}>
+					<Link className={classes.thumbsItem} href="#">
 						<a>
 						<Image
-							src={Thumbs}
-							height={600}
-							width={600}
+							src={Thumb2}
+							height={513}
+							width={513}
 							alt="Thumbs"
 						/>
-						</a>
+						</a>							
 					</Link>
 				</div>
-				<div className={classes.back}>
-					<h3>Name Description</h3>
+				<div className={classes.thumbInfo}>
+					<div className={classes.wishLike}>
+						<FontAwesomeIcon icon={faHeart} className="wishicon"/>
+					</div>
+					<div className={classes.thumbTitlewrap}>
+						<h3>
+						<Link href="/"><a>Collection Name</a></Link>
+						</h3>						
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl malesuada id et a sed nulla. Dignissim augue venenatis non sed quis urna ac integer.</p>
+					<div className={classes.dateWish}>
+						<div className={classes.assetNum}><span className={classes.num}>32</span> Assets</div>
+						<div className={classes.wish}>
+							<span className={classes.num}>100 </span>
+							<FontAwesomeIcon icon={faHeart} className="wishicon"/>
+						</div>						
+					</div>	
 				</div>
-			</article>
-			<article className={classes.thumbsWrap}>
-			<div className={classes.front}>
-					<Link className={classes.thumbsItem} href="/">
-						<a>
-						<Image
-							src={Thumbs}
-							height={600}
-							width={600}
-							alt="Thumbs"
-						/>
-						</a>
-					</Link>
-				</div>
-				<div className={classes.back}>
-					<h3>Name Description</h3>
-				</div>
-			</article>
-			<article className={classes.thumbsWrap}>
-			<div className={classes.front}>
-					<Link className={classes.thumbsItem} href="/">
-						<a>
-						<Image
-							src={Thumbs}
-							height={600}
-							width={600}
-							alt="Thumbs"
-						/>
-						</a>
-					</Link>
-				</div>
-				<div className={classes.back}>
-					<h3>Name Description</h3>
-				</div>
-			</article>
+			</div>
         </div>
 		</>
   );
