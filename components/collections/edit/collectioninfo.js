@@ -3,7 +3,6 @@ import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
 import form from '../../../public/account/Form.module.scss';
-import style from '../../../public/collections/edit/edit.module.scss';
 import classes from '../create/collectioninfo.module.scss';
 
 
@@ -27,17 +26,17 @@ const StepCollectionInfo = () => {
   return (
     <>  
 
-      <div className={style.titleWrap + ' ' + style.textCenter}>
-        <h1 className={style.title}>Please enter collection info</h1>
+      <div className={classes.titleWrap + ' ' + classes.textCenter}>
+        <h1 className={classes.title}>Please enter collection info</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Collection Cover</label>
         </div>
         <div className='col-md-8'>
-            <div className={`mb-2`+ ' '  + style.formControl}>
+            <div className={`mb-2`+ ' '  + classes.formControl}>
               <label className={form.chkWrap} onChange={()=>setShow(!show)}>
                 <input type="checkbox" /> <span className={form.chkmark}>Image</span>
               </label>
@@ -126,7 +125,7 @@ const StepCollectionInfo = () => {
               }
               
             </div>
-            <div className={ style.formControl}>
+            <div className={ classes.formControl}>
               <label className={form.chkWrap} onChange={()=>setShow2(!show2)}>
                 <input type="checkbox" /> <span className={form.chkmark}>Color</span>
               </label>
@@ -159,7 +158,7 @@ const StepCollectionInfo = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Collection Name*</label>
         </div>
@@ -169,7 +168,7 @@ const StepCollectionInfo = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Collection Description</label>
         </div>
@@ -179,12 +178,12 @@ const StepCollectionInfo = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Background Image</label>
         </div>
         <div className='col-md-8'>
-          <div className={`mb-3`+ ' '  + style.formControl}>
+          <div className={`mb-3`+ ' '  + classes.formControl}>
             <label className={form.chkWrap} onChange={()=>setShow3(!show3)}>
                 <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}>Select Image</span>
             </label>
@@ -293,7 +292,7 @@ const StepCollectionInfo = () => {
             }
             
           </div>
-          <div className={`mb-2`+ ' '  + style.formControl}>
+          <div className={`mb-2`+ ' '  + classes.formControl}>
             <label className={form.chkWrap} onChange={()=>setShow4(!show4)}>
                 <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}>Color Fill</span>
               </label>
@@ -332,7 +331,7 @@ const StepCollectionInfo = () => {
       </div>
 
 
-      <div className={ style.btnGroup}>
+      <div className={ classes.btnGroup}>
         <a className={`btn ${button.btnTextDanger}`}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
       </div>
 

@@ -6,7 +6,6 @@ import Pagination from '../../../components/common/pagination.js';
 import nav from '../../../public/collections/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
 
-import style from '../../../public/collections/create/create.module.scss';
 import classes from '../../../components/collections/create/theme.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,8 +27,8 @@ const StepTheme = () => {
   // });
   return (
     <>  
-      <div className={style.titleWrap + ' ' + style.textCenter}>
-        <h1 className={style.title}>Please select collection theme</h1>
+      <div className={classes.titleWrap + ' ' + classes.textCenter}>
+        <h1 className={classes.title}>Please select collection theme</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
@@ -59,7 +58,7 @@ const StepTheme = () => {
                       width={376}
                       alt="Thumbs"
                     />
-                  <label className={classes.checkitem + ' ' + style.customChk }>
+                  <label className={classes.checkitem + ' ' + classes.customChk }>
                     <input type="checkbox"/>
                     <span className={classes.checkicon}>                   
                     <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />

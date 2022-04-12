@@ -2,7 +2,6 @@ import React from 'react';
 import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
 import classes from '../view/collectionthumbnail.module.scss';
-import style from '../../../public/collections/view/view.module.scss';
 
 import ThumbList from '../../../public/collections/images/thumblist.png';
 
@@ -11,17 +10,17 @@ const StepCollectionThumbnail = () => {
   return (
     <>  
         
-      <div className={`text-center`+ ' ' + style.titleWrap}>
-        <h1 className={style.title}>Please enter collection thumbnail info</h1>
+      <div className={`text-center`+ ' ' + classes.titleWrap}>
+        <h1 className={classes.title}>Please enter collection thumbnail info</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>     
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Thumbnail image</label>
         </div>
         <div className='col-md-8'>
-          <div className={ style.formGroup}>
+          <div className={ classes.formGroup}>
             <label className={`mb-2` + ' ' + classes.toggleTitle}>
               Image 
             </label>
@@ -34,7 +33,7 @@ const StepCollectionThumbnail = () => {
               </span>
             </div>
           </div>
-          <div className={ style.formGroup}>
+          <div className={ classes.formGroup}>
             <label className={`mb-2` + ' ' + classes.toggleTitle}>
             Color 
             </label>
@@ -47,7 +46,7 @@ const StepCollectionThumbnail = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Thumbnail Description</label>
         </div>

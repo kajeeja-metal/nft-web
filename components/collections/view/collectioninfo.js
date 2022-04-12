@@ -1,7 +1,6 @@
 import React, {  } from 'react';
 import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
-import style from '../../../public/collections/view/view.module.scss';
 import classes from '../view/collectioninfo.module.scss';
 
 import ThumbList from '../../../public/collections/images/thumb.png';
@@ -11,17 +10,17 @@ const StepCollectionInfo = () => {
   return (
     <>  
 
-      <div className={style.titleWrap + ' ' + style.textCenter}>
-        <h1 className={style.title}>Please enter collection info</h1>
+      <div className={classes.titleWrap + ' ' + classes.textCenter}>
+        <h1 className={classes.title}>Please enter collection info</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
        
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Collection Cover</label>
         </div>
         <div className='col-md-8'>
-            <div className={ style.formGroup}>
+            <div className={ classes.formGroup}>
               <label className={`mb-2` + ' ' + classes.toggleTitle}>
                 Image 
               </label>
@@ -34,7 +33,7 @@ const StepCollectionInfo = () => {
                 </span>
               </div>
             </div>
-            <div className={ style.formGroup}>
+            <div className={ classes.formGroup}>
               <label className={`mb-2` + ' ' + classes.toggleTitle}>
               Color 
               </label>
@@ -47,7 +46,7 @@ const StepCollectionInfo = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Collection Name</label>
         </div>
@@ -56,7 +55,7 @@ const StepCollectionInfo = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Collection Description</label>
         </div>
@@ -65,12 +64,12 @@ const StepCollectionInfo = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Collection Background Image</label>
         </div>
         <div className='col-md-8'>
-          <div className={ style.formGroup}>
+          <div className={ classes.formGroup}>
             <label className={`mb-2` + ' ' + classes.toggleTitle}>
               Image 
             </label>
@@ -83,7 +82,7 @@ const StepCollectionInfo = () => {
               </span>
             </div>
           </div>
-          <div className={ style.formGroup}>
+          <div className={ classes.formGroup}>
             <label className={`mb-2` + ' ' + classes.toggleTitle}>
             Color 
             </label>

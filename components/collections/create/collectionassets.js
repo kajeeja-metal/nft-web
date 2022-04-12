@@ -5,7 +5,6 @@ import Link from 'next/link';
 import button from '../../../public/account/Buttons.module.scss';
 import form from '../../../public/account/Form.module.scss';
 import Pagination from '../../../components/common/paginationtotal.js';
-import style from '../../../public/collections/create/create.module.scss';
 import classes from '../create/collectionassets.module.scss';
 
 import {Button, Modal} from 'react-bootstrap';
@@ -25,8 +24,8 @@ const StepCollectionAssets = () => {
   const handleShow = () => ModalSetShow(true);
   return (
     <>  
-      <div className={`text-center`+ ' ' + style.titleWrap}>
-        <h1 className={style.title}>Please connect your wallet to select your assert</h1>
+      <div className={`text-center`+ ' ' + classes.titleWrap}>
+        <h1 className={classes.title}>Please connect your wallet to select your assert</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 

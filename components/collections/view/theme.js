@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from "next/image"
 
-import style from '../../../public/collections/view/view.module.scss';
 import classes from '../../../components/collections/view/theme.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,8 +21,8 @@ const StepTheme = () => {
   // });
   return (
     <>  
-      <div className={style.titleWrap}>
-        <h1 className={style.title}>Theme</h1>
+      <div className={classes.titleWrap}>
+        <h1 className={classes.title}>Theme</h1>
         <p>Personalise your colllection’s layout, colour and background</p>
       </div>
 

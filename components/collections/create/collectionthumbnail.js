@@ -3,7 +3,6 @@ import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
 import form from '../../../public/account/Form.module.scss';
-import style from '../../../public/collections/create/create.module.scss';
 import classes from '../create/collectionthumbnail.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,17 +25,17 @@ const StepCollectionThumbnail = () => {
   return (
     <>  
       
-      <div className={style.titleWrap + ' ' + style.textCenter}>
-        <h1 className={style.title}>Please enter collection thumbnail info</h1>
+      <div className={classes.titleWrap + ' ' + classes.textCenter}>
+        <h1 className={classes.title}>Please enter collection thumbnail info</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>     
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Thumbnail image\</label>
         </div>
         <div className='col-md-8'>
-          <div className={`mb-2` + ' ' + style.formControl }>
+          <div className={`mb-2` + ' ' + classes.formControl }>
             <label className={form.chkWrap} onChange={()=>setShow(!show)}>
               <input type="checkbox" defaultChecked={true} /> <span className={form.chkmark}>Select Image</span>
             </label>
@@ -173,7 +172,7 @@ const StepCollectionThumbnail = () => {
             }
             
           </div>
-          <div className={style.formControl }>
+          <div className={classes.formControl }>
             <label className={form.chkWrap} onChange={()=>setShow2(!show2)}>
               <input type="checkbox" /> <span className={form.chkmark}>Color Fill</span>
             </label>
@@ -213,7 +212,7 @@ const StepCollectionThumbnail = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Thumbnail Description</label>
         </div>

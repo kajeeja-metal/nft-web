@@ -9,6 +9,27 @@ $preview-btn-color : #3A3A43;
 .tab  {
 	margin-bottom: 1.5rem;
 }
+.title {
+    color: $title-color; font-weight: normal;
+    font-size: $title-font-size ;
+}
+.titleWrap {
+    margin-bottom: 1.5rem; 
+    p {
+        font-size: $title-desc-font-size;
+        color: $title-desc-color;
+    }
+}
+.textCenter {
+    text-align: center;
+}
+.formGroup {
+    margin-bottom: 1rem;
+}
+.formControl {
+    border: 1px solid $border;
+    padding: .75rem; border-radius: $form-border-radius;
+}
 
 
 /* Theme thumb  */
