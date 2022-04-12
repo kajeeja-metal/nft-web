@@ -2,7 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import Link from 'next/link';
 
-import style from '../../../public/collections/index.module.scss';
+import style from '../../../public/collections/create/create.module.scss';
 import Pagination from '../../../components/common/paginationtotal.js';
 import classes from '../view/collectionassets.module.scss';
 

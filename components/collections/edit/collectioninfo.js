@@ -3,7 +3,7 @@ import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
 import form from '../../../public/account/Form.module.scss';
-import style from '../../../public/collections/index.module.scss';
+import style from '../../../public/collections/create/create.module.scss';
 import classes from '../create/collectioninfo.module.scss';
 
 

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from "next/image"
 
-import style from '../../../public/collections/index.module.scss';
+import style from '../../../public/collections/create/create.module.scss';
 import classes from '../../../components/collections/view/theme.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

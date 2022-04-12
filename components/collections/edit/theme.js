@@ -6,7 +6,7 @@ import Pagination from '../../../components/common/pagination.js';
 import nav from '../../../public/collections/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
 
-import style from '../../../public/collections/index.module.scss';
+import style from '../../../public/collections/create/create.module.scss';
 import classes from '../../../components/collections/edit/theme.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

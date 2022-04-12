@@ -1,7 +1,7 @@
 import React, {  } from 'react';
 import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
-import style from '../../../public/collections/index.module.scss';
+import style from '../../../public/collections/create/create.module.scss';
 import classes from '../view/collectioninfo.module.scss';
 
 import ThumbList from '../../../public/collections/images/thumb.png';
