@@ -5,7 +5,6 @@ import nav from '../../../public/exhibitions/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss'
 import Form from '../../../public/account/Form.module.scss';
 import Pagination from '../../../components/common/paginationtotal.js';
-import style from '../../../public/exhibitions/index.module.scss'; 
 import classes from '../edit/exhibitionstyle.module.scss';
 
 
@@ -32,43 +31,43 @@ const ExhibitionStyle = () => {
 
   return (
     <>  
-      <div className={`text-center`+ ' ' + style.titleWrap}>
-        <h1 className={style.title}>Customize Exhibition Style</h1>
+      <div className={`text-center`+ ' ' + classes.titleWrap}>
+        <h1 className={classes.title}>Customize Exhibition Style</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Font Family : Heading</label>
         </div>
         <div className='col-md-7'>
-            <div className={style.formControl} variant="primary" onClick={handleShow}>
+            <div className={classes.formControl} variant="primary" onClick={handleShow}>
               <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}>
                   Select font Family <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
               </label>
             </div>
         </div>
       </div>
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Font Family : Text Body</label>
         </div>
         <div className='col-md-7'>
-          <div className={style.formControl} variant="primary" onClick={handleShow}>
+          <div className={classes.formControl} variant="primary" onClick={handleShow}>
             <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}>
                 Select font Family <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
             </label>
           </div>
         </div>
       </div>
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Title text color</label>
         </div>
         <div className='col-md-7'>
             
-              <div className={style.formControl}>
+              <div className={classes.formControl}>
                 <ul className="nav nav-tabs">
                   <li className="nav-item">
                       <a className={nav.navLink + ' ' + nav.active} data-bs-toggle="tab" href="#solid">Soild</a>
@@ -94,13 +93,13 @@ const ExhibitionStyle = () => {
             
         </div>
       </div>
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Body text Color</label>
         </div>
         <div className='col-md-7'>
       
-            <div className={style.formControl}>
+            <div className={classes.formControl}>
               <ul className="nav nav-tabs">
                 <li className="nav-item">
                     <a className={nav.navLink + ' ' + nav.active} data-bs-toggle="tab" href="#solid2">Soild</a>
@@ -127,12 +126,12 @@ const ExhibitionStyle = () => {
         </div>
       </div>
       
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Collection Background Image</label>
         </div>
         <div className='col-md-8'>
-          <div className={`mb-3`+ ' '  + style.formControl}>
+          <div className={`mb-3`+ ' '  + classes.formControl}>
             <label className={Form.chkWrap} onChange={()=>setShow(!show)}>
               <input type="checkbox" defaultChecked={true}/> <span className={Form.chkmark}   > Select Image</span>
             </label>
@@ -243,7 +242,7 @@ const ExhibitionStyle = () => {
             }
             
           </div>
-          <div className={`mb-2`+ ' '  + style.formControl}>
+          <div className={`mb-2`+ ' '  + classes.formControl}>
             <label className={Form.chkWrap} onChange={()=>setShow2(!show2)}>
               <input type="checkbox" defaultChecked={true}/> <span className={Form.chkmark}   > Color fill</span>
             </label>
@@ -281,10 +280,10 @@ const ExhibitionStyle = () => {
         </div>
       </div>
 
-      <div className={style.formGroup}>
+      <div className={classes.formGroup}>
         <div className='d-flex justify-content-between'>
           <a className={'btn' + ' ' + button.btnTextDanger}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
-          <div className={style.btnGroup}>
+          <div className={classes.btnGroup}>
             <button type="button" className={'btn' + ' ' + button.btnDanger}> Cancel</button> &nbsp;
             <button type="button" className={'btn' + ' ' + button.btnPrimary}>Save Draft</button>
           </div>
@@ -301,18 +300,18 @@ const ExhibitionStyle = () => {
           <Modal.Title>&nbsp;</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div className={style.titleWrap} style={{textAlign:"left"}}>
-            <h2 className={style.title}>Selelct Typography</h2>
+          <div className={classes.titleWrap} style={{textAlign:"left"}}>
+            <h2 className={classes.title}>Selelct Typography</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div className={`row`+ ' ' + style.formGroup}>
-            <div className={`col-md-6`+ ' ' + style.formGroup + ' ' + classes.search}>
+          <div className={`row`+ ' ' + classes.formGroup}>
+            <div className={`col-md-6`+ ' ' + classes.formGroup + ' ' + classes.search}>
               <div className={classes.searchModal}>
                 <button className='btn'><FontAwesomeIcon icon={faSearch} className={classes.faSearch} /></button>
                 <input placeholder='Search... ' className='form-control'/>
               </div>
             </div>
-            <div className={`col-md-4`+ ' ' + style.formGroup}>
+            <div className={`col-md-4`+ ' ' + classes.formGroup}>
               <div className={classes.searchModal}>
                 <button className='btn'><FontAwesomeIcon icon={faFont} className={classes.faFont} /></button>
                 <input placeholder='Font Type' className='form-control'/>

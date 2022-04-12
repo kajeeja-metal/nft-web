@@ -34,13 +34,13 @@ const ExhibitionStyle = () => {
 
   return (
     <>  
-      <div className={`text-center`+ ' ' + style.titleWrap}>
-        <h1 className={style.title}>Customize Exhibition Style</h1>
+      <div className={`text-center`+ ' ' + classes.titleWrap}>
+        <h1 className={classes.title}>Customize Exhibition classes</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Font Family : Heading</label>
         </div>
@@ -52,7 +52,7 @@ const ExhibitionStyle = () => {
             </div>
         </div>
       </div>
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Font Family : Text Body</label>
         </div>
@@ -64,7 +64,7 @@ const ExhibitionStyle = () => {
           </div>
         </div>
       </div>
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Title text color</label>
         </div>
@@ -96,7 +96,7 @@ const ExhibitionStyle = () => {
             
         </div>
       </div>
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Body text Color</label>
         </div>
@@ -129,12 +129,12 @@ const ExhibitionStyle = () => {
         </div>
       </div>
       
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
       <div className='col-md-4'>
         <label>Collection Background Image</label>
       </div>
       <div className='col-md-8'>
-        <div className={`mb-3`+ ' '  + style.formControl}>
+        <div className={`mb-3`+ ' '  + classes.formControl}>
           <label className={form.chkWrap} onChange={()=>setShow(!show)}>
             <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}   > Select Image</span>
           </label>
@@ -245,7 +245,7 @@ const ExhibitionStyle = () => {
           }
           
         </div>
-        <div className={`mb-2`+ ' '  + style.formControl}>
+        <div className={`mb-2`+ ' '  + classes.formControl}>
           <label className={form.chkWrap} onChange={()=>setShow2(!show2)}>
             <input type="checkbox" defaultChecked={true}/> <span className={form.chkmark}   > Color fill</span>
           </label>

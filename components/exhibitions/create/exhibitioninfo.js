@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import Image from "next/image"
 
 import Form from '../../../public/account/Form.module.scss';
-import style from '../../../public/exhibitions/index.module.scss';
 import classes from '../../../components/exhibitions/create/exhibitioninfo.module.scss';
 
 
@@ -34,17 +33,17 @@ const ExhibitionInfo = () => {
 
   return (
     <>  
-      <div className={style.titleWrap + ' ' + style.textCenter}>
-        <h1 className={style.title}>Exhibition Info</h1>
+      <div className={classes.titleWrap + ' ' + classes.textCenter}>
+        <h1 className={classes.title}>Exhibition Info</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Exhibition Thumbnail</label>
         </div>
         <div className='col-md-8'>
-            <div className={`mb-2`+ ' '  + style.formControl}>
+            <div className={`mb-2`+ ' '  + classes.formControl}>
               <label className={Form.chkWrap} onChange={()=>setShow(!show)}>
                 <input type="checkbox" defaultChecked={true}/> <span className={Form.chkmark}   > Select Image</span>
               </label>
@@ -185,7 +184,7 @@ const ExhibitionInfo = () => {
         </div>
       </div>
 
-      <div className={`row` + ' ' + style.formGroup}>
+      <div className={`row` + ' ' + classes.formGroup}>
         <div className='col-md-4'>
           <label>Exhibition Name</label>
         </div>

@@ -5,7 +5,6 @@ import Image from "next/image"
 import nav from '../../../public/exhibitions/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
 import Pagination from '../../../components/common/pagination.js';
-import style from '../../../public/exhibitions/index.module.scss'; 
 
 import classes from '../../../components/exhibitions/create/exhibitionroom.module.scss';
 
@@ -25,8 +24,8 @@ const ExhibitionRoom = () => {
   // });
   return (
     <>  
-      <div className={style.titleWrap}>
-        <h1 className={style.title}>Exhibition Room</h1>
+      <div className={classes.titleWrap}>
+        <h1 className={classes.title}>Exhibition Room</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
