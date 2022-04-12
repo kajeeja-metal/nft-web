@@ -51,7 +51,7 @@ export default function Profile004() {
           </div>
         </div>
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-sm-4">
               <div className={classes.userWrap}>
                 <div className={classes.profileImg}>

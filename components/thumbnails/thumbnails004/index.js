@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Assets004 from './assets';
 import Collections004 from './collections';
 import Exhibitions004 from './exhibitions';
@@ -8,13 +8,13 @@ const Thumbs004 = () => {
   return (
 	<>
 		<div className="tab-content">
-			<div className="tab-pane fade " id="collectionWrap">
+			<div className="tab-pane fade show active" id="collectionWrap">
 				<Collections004/>
 			</div>
 			<div className="tab-pane fade " id="spacesWrap">
 				<Exhibitions004 />
 			</div>
-			<div className="tab-pane fade show active" id="assetsAll">
+			<div className="tab-pane fade " id="assetsAll">
 				<Assets004 />
 			</div>
 		</div>

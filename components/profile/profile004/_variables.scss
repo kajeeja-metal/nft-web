@@ -130,24 +130,25 @@ $thumbWishSize:               24px;
 
 /* Assets Tab  Variables */
 
-$assetsPaddingT:              1rem;
-$assetsPaddingB:              1rem;
-$assetsItemGap:               1rem;
-$assetItemBgColor:            $white;
-$assetItemAlign:              center;         
-$assetsItemBorderColor:       $textColor;
-$assetsItemBorderBgColor:     #F5F5F5;
-$assetsItemBorderRadius:      4px;
-$assetItemImgPadding:         8px;
-$assetItemContentAlign:       center;
-$assetItemTitleColor:         $default;
-$assetItemTitleFontSize:      $font-large;
-$assetItemTitleLineHeight:    1.3;
-$assetItemDescPadding:        12px;
-$assetItemDescFontSize:       80px;
-$assetItemColor:              $default;
-$assetItemDescBgColor:        $white;
-$assetItemDescHeight:         80px;
+$assetThumblistMarginB:            1rem;
+$assetThumbInfoPadding:            1rem;
+$assetThumbInfoBg:                 $white;
+$assetThumbTitleColor:             $default-color;
+$assetThumbTitleSize:              20px;
+$assetThumbTitleMarginB:           1.5rem;
+$assetThumbTitleFontWeight:        700;
+$assetThumbAssetColor:             $default-color;
+$assetThumbAssetSize:              16px;
+$assetThumbDescColor:              $default-color;
+$assetThumbDescSize:               14px;
+$assetThumbDescMarginB:            .5rem;
+$assetThumbDateColor:              $default-color;
+$assetThumbDateSize:               14px;
+$assetThumbWishCountColor:         $default-color;
+$assetThumbWishCountSize:          16px;
+$assetThumbWishColor:              $white;
+$assetThumbWishSize:               24px;
+$assetThumbPlaySize:               20px;
 
 
 

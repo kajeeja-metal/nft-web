@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,10 +10,10 @@ import Thumb from '../../../../public/profile/profile004/images/thumb.png';
 import Thumb2 from '../../../../public/profile/profile004/images/thumb2.png';
 
 
-export default function Exhibitions002() {
+export default function Exhibitions004() {
       return (
 		<>
-			<div className={classes.collectionWraps}>
+			<div className={classes.exhibitionWraps}>
         <div className={classes.thumblist}>
           <div className={classes.thumbImg}>
             <Link className={classes.thumbsItem} href="#">

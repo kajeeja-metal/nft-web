@@ -1,68 +1,47 @@
 
 
-@import '../../../../components/profile/profile002/variables';
+@import '../../../../components/profile/profile004/variables';
 
 .assetsAll {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 -1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    .thumbsWrapAll {
-        flex: 0 0 150px;
-        max-width: 150px;
-        padding: 0.5rem 1rem;
-        text-align: center;
-        &:nth-child(4n + 1) {
-            display: block !important;
-            width: 100% !important;
+    
+}
+
+
+.thumbTitlewrap {
+    @include flexbox;
+    justify-content: space-between;  align-items: center;
+    h3 {
+        font-size: $assetThumbTitleSize; margin-bottom: .5rem;
+        font-weight: $assetThumbTitleFontWeight; color: $assetThumbTitleColor;
+        a {
+          color: $assetThumbTitleColor; 
         }
     }
-    // article {
-    //     border: 2px solid $textColor;
-    //     border-radius: 4px;
-    //     background-color: $assetsBgColor;
-    //     a {
-    //         padding: 8px;
-    //         display: inline-block
-    //     }
-    //     img {
-    //         border-radius: 4px;
-    //     }
-    // }
-    p {
+}
+.thumbInfo {
+    padding: $assetThumbInfoPadding;
+    background: $assetThumbInfoBg;
+    color: $assetThumbDescColor;
+    .thumbDesc {
+        font-size: $thumbDescSize;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $assetThumbDescColor;;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        height: 80px;
     }
 }
-.thumbsItem {
-    display: inline-block;
-    img {
-        display: block;
-        width: 100%;
-        object-fit: cover;
 
-    }
+.thumbImg {
+    position: relative;
 }
-.thumbsWrap {
-    background-color: #FFFF;
-    //@include box_shadow(1);
-    text-align: center;
-}
-.thumbsContent {
-    text-align: center;
-    h3 {
-        font-size: 24px;
-    }
-    p {
-        padding: 12px;
-        margin-bottom: 0;
-        background-color: #FFFF;
-        font-size: 0.875rem;
-    }
+.playIconColor {
+    position: absolute; bottom: 2px; right: 2px;
+    font-size: $assetThumbPlaySize;
 }
