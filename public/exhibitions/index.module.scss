@@ -1,5 +1,7 @@
 
-@import 'variables';
+// @import 'variables';
+
+@import '../../components/exhibitions/variables';
 
 .title {
     color: $title-color; font-weight: normal;
@@ -27,10 +29,6 @@
 	align-items: center;
 }
 .createClink {
-	/*border: 1px solid $create-link-border-color;
-	font-size: $create-link-font-size ;
-	border-radius: $create-link-border-radius;*/
-	/*padding: $create-link-padding;*/
 	svg, i {
 		margin-right: .2rem;
 	}
