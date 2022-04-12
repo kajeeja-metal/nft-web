@@ -5,7 +5,7 @@ import Link from 'next/link';
 import button from '../../../public/account/Buttons.module.scss';
 import form from '../../../public/account/Form.module.scss';
 import Pagination from '../../../components/common/paginationtotal.js';
-import style from '../../../public/collections/create/create.module.scss';
+import style from '../../../public/collections/edit/edit.module.scss';
 import classes from '../create/collectionassets.module.scss';
 
 import {Button, Modal} from 'react-bootstrap';

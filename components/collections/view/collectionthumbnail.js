@@ -2,7 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import nav from '../../../public/collections/tabnav.module.scss';
 import classes from '../view/collectionthumbnail.module.scss';
-import style from '../../../public/collections/create/create.module.scss';
+import style from '../../../public/collections/view/view.module.scss';
 
 import ThumbList from '../../../public/collections/images/thumblist.png';
 

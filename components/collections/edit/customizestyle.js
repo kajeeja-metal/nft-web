@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import button from '../../../public/account/Buttons.module.scss';
 import nav from '../../../public/collections/tabnav.module.scss';
 import Pagination from '../../../components/common/paginationtotal.js';
-import style from '../../../public/collections/create/create.module.scss';
+import style from '../../../public/collections/edit/edit.module.scss';
 import classes from '../create/customizestyle.module.scss';
 
 import {Button, Modal} from 'react-bootstrap';

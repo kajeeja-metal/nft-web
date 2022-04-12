@@ -1,6 +1,6 @@
 import React from 'react';
 
-import style from '../../../public/collections/create/create.module.scss';
+import style from '../../../public/collections/view/view.module.scss';
 import nav from '../../../public/collections/tabnav.module.scss';
 import classes from '../view/customizestyle.module.scss';
 
