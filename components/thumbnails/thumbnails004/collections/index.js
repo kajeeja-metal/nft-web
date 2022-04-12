@@ -68,7 +68,7 @@ export default function Collections004() {
 						<Link href="/"><a>Collection Name</a></Link>
 						</h3>						
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl malesuada id et a sed nulla. Dignissim augue venenatis non sed quis urna ac integer.</p>
+					<p  className={classes.thumbDesc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl malesuada id et a sed nulla. Dignissim augue venenatis non sed quis urna ac integer.</p>
 					<div className={classes.dateWish}>
 						<div className={classes.assetNum}><span className={classes.num}>32</span> Assets</div>
 						<div className={classes.wish}>

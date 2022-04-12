@@ -8,29 +8,53 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-
 .thumblist {
-    position: relative;
+    position: relative; 
+    &:hover {
+        .thumbInfo {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+    }
 }
 .thumbImg {
     position: relative;
-
     .wishLike {
         position: absolute; right: 16px; top: 15px;
         font-size: $thumbWishSize; color: $thumbWishColor;
     }
 }
-
 .thumbInfo { 
     position: absolute; bottom: 0;
     width: 100%; padding: 1rem;
+    opacity: 0; transition: ease-in-out 600ms;
+    transform: rotateY(25deg);
 }
 .thumbTitlewrap {
-  h3 {
-    font-size: $thumbTitleSize; margin-bottom: $thumbTitleMarginB;
-    font-weight: $thumbTitleFontWeight;
-    a {
-      color: $thumbTitleColor; 
+    @include flexbox;
+    justify-content: space-between;  align-items: center;
+    h3 {
+        font-size: $thumbTitleSize; margin-bottom: .5rem;
+        font-weight: $thumbTitleFontWeight;
+        a {
+          color: $thumbTitleColor; 
+        }
     }
-  }
+}
+.assetNum {
+    font-weight: bold;
+}
+.thumbDesc {
+    font-size: $thumbDescSize; color: $thumbDescColor;
+    margin-bottom: $thumbDescMarginB; line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.dateWish {
+    @include flexbox;
+    justify-content: space-between;
+    font-size: $font-small;
 }

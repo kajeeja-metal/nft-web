@@ -11,10 +11,10 @@ const Thumbs004 = () => {
 			<div className="tab-pane fade " id="collectionWrap">
 				<Collections004/>
 			</div>
-			<div className="tab-pane fade show active" id="spacesWrap">
+			<div className="tab-pane fade " id="spacesWrap">
 				<Exhibitions004 />
 			</div>
-			<div className="tab-pane fade" id="assetsAll">
+			<div className="tab-pane fade show active" id="assetsAll">
 				<Assets004 />
 			</div>
 		</div>

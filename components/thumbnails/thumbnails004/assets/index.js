@@ -5,7 +5,6 @@ import classes from './Assets002.module.scss';
 
 import Thumbs from '../../../../public/profile/profile002/images/thumbs.png';
 
-
 export default function Assets002() {
       return (
 		<>

@@ -34,16 +34,17 @@ export default function Exhibitions002() {
             <div className={classes.thumbTitlewrap}>
               <h3>
               <Link href="/"><a>#3330</a></Link>
-              </h3>						
+              </h3>	
+              <div className={classes.assetNum}>32 Assets</div>						
             </div>
             <p className={classes.thumbDesc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl malesuada id et a sed nulla. Dignissim augue venenatis non sed quis urna ac integer.</p>
-            <div className={classes.dateWish}>
-              <div className={classes.assetNum}><span className={classes.num}>32</span> Assets</div>
+            <div className={classes.dateWish}>              
+              <span className={classes.date} >Last Updated: 12/12/22</span>
               <div className={classes.wish}>
                 <span className={classes.num}>100 </span>
                 <FontAwesomeIcon icon={faHeart} className="wishicon"/>
               </div>						
-            </div>	
+            </div>		
           </div>
         </div>
         <div className={classes.thumblist}>
@@ -69,7 +70,7 @@ export default function Exhibitions002() {
               </h3>	
               <div className={classes.assetNum}>32 Assets</div>					
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl malesuada id et a sed nulla. Dignissim augue venenatis non sed quis urna ac integer.</p>
+            <p className={classes.thumbDesc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl malesuada id et a sed nulla. Dignissim augue venenatis non sed quis urna ac integer.</p>
             <div className={classes.dateWish}>              
               <span className={classes.date} >Last Updated: 12/12/22</span>
               <div className={classes.wish}>
