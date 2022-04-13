@@ -1,0 +1,44 @@
+
+
+@import '../../../../components/profile/profile004/variables';
+
+.assetsAll {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.thumbTitlewrap {
+    @include flexbox;
+    justify-content: space-between;  align-items: center;
+    h3 {
+        font-size: $assetThumbTitleSize; margin-bottom: .5rem;
+        font-weight: $assetThumbTitleFontWeight; color: $assetThumbTitleColor;
+        a {
+          color: $assetThumbTitleColor; 
+        }
+    }
+}
+.thumbInfo {
+    padding: $assetThumbInfoPadding;
+    background: $assetThumbInfoBg;
+    color: $assetThumbDescColor;
+    .thumbDesc {
+        font-size: $thumbDescSize;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $assetThumbDescColor;
+        margin-bottom: $assetThumbDescMarginB;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
+.thumbImg {
+    position: relative;
+}
+.playIconColor {
+    position: absolute; bottom: 2px; right: 2px;
+    font-size: $assetThumbPlaySize;
+}

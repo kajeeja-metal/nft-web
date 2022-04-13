@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { useEffect } from "react";
-
+import PagesAuth from '@/layout/PageAuth';
 import LeftSidebar from '../../components/account/layout/leftsidebar.js';
 import ThumbList from '../../components/collections/thumblist';
 
@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThLarge  } from '@fortawesome/free-solid-svg-icons';
 
 
-export default function Index() {
+export default function Index(props) {
 	useEffect(() => {
         if (typeof document !== undefined) {
           require("bootstrap/dist/js/bootstrap");
@@ -26,6 +26,7 @@ export default function Index() {
     });
   return ( 
     <>
+    <PagesAuth route={props.user}>
       <div className='userWrap'>
 		<div className='container'>
 			<div className='row'>
@@ -76,6 +77,7 @@ export default function Index() {
 			</div>
 		</div>
       </div>
+    </PagesAuth>
  
     </>
   );

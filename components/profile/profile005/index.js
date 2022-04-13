@@ -2,16 +2,15 @@ import React, { useState, useEffect } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Image from "next/image";
 import Link from "next/link";
-import classes from "../../../public/profile/profile004/Index.module.scss";
+import classes from "../../../public/profile/profile005/Index.module.scss";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClone, faImage, faFlag } from "@fortawesome/free-regular-svg-icons";
-import Thumbs004 from "../../../components/thumbnails/thumbnails004";
+import { faClone, faImage, faFlag, faAngleDoubleDown } from "@fortawesome/free-regular-svg-icons";
+import Thumbs004 from "../../../components/thumbnails/thumbnails005";
 
-import downArrow from '../../../public/profile/profile004/images/down-arrow.svg';
-
-import profileBG from "../../../public/profile/profile004/images/profilebg.png";
-import profileLogo from "../../../public/profile/profile004/images/profile.png";
+import downArrow from '../../../public/profile/profile005/images/down-arrow.svg';
+import profileBG from "../../../public/profile/profile005/images/profilebg.png";
+import profileLogo from "../../../public/profile/profile005/images/profile.png";
 
 library.add(faClone, faImage);
 
@@ -21,14 +20,14 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function Profile004() {
+export default function Profile005() {
   useEffect(() => {
     if (typeof document !== undefined) {
       require("bootstrap/dist/js/bootstrap");
     }
   }, []);
   useEffect(() => {
-    document.querySelector("body").classList.add("profile4");
+    document.querySelector("body").classList.add("profile5");
   });
   const [isCopied, setIsCopied] = useState(false);
   const onCopyText = () => {
@@ -50,7 +49,7 @@ export default function Profile004() {
             </button>
           </div>
         </div>
-        <div className={`container`+ ' ' +  classes.container}>
+        <div className="container">
           <div className="row align-items-center">
             <div className="col-sm-4">
               <div className={classes.userWrap}>
@@ -153,7 +152,14 @@ export default function Profile004() {
 
 
 	  <footer className={classes.footer}>
-			<div className={`container`+ ' ' +  classes.container}>
+			<div className='container'>
+        <div className={classes.footerRow}>
+          <div className='text-right'>
+            <span className={classes.backToTop}>
+              <FontAwesomeIcon icon={faAngleDoubleDown} size="lg" />
+            </span>
+          </div>
+        </div>
 				<div className={classes.footerRow}>
 					<div className={classes.copyright}>Copyright 2022 ©username. All rights reserved   | Powered by NFTIFY <Image src={downArrow} alt='Down Logo' width={50} height={30} /> </div>
 					<ul className={classes.socialContainer}>

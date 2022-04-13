@@ -9,14 +9,18 @@
 $fontArchivo:              'Archivo', sans-serif;
 $fontArchivoBold:          'Archivo Black', sans-serif;
 
-$color-primary-main:        #FF4755;
-$color-secondary-main:      #ECE8E1;
-$color-Button:              #FF4755;
-$color-title-main:          $white;
-$color-secondary-main:      #FBFBFB;
+
+
+$color-primary-main:        hsla(157, 100%, 50%, 1)hsla(180, 100%, 50%, 1)
+                            hsla(295, 100%, 57%, 1);
+$color-Button:              hsla(157, 100%, 50%, 1)hsla(180, 100%, 50%, 1)
+                            hsla(295, 100%, 57%, 1);
+$color-title-main:          hsla(157, 100%, 50%, 1)hsla(180, 100%, 50%, 1)
+                            hsla(295, 100%, 57%, 1);
+$color-secondary-main:      #F5F5F5;
 $default-color:             $default;
 
-$textColor:                 $default;
+$textColor:                 $default; 
 $textBgColor:               #FFD400;
 
 $boderColor:                $textColor;
@@ -25,20 +29,20 @@ $btnActiveBgColor:          $textBgColor;
 
 $profileThumbMarginB:       1.35rem;
 
-$profileH1FontSize:         36px;
+$profileH1FontSize:         48px;
 $profileH1FontColor:        $white;
 $profileH1FontFamily:       $fontArchivoBold;
 $profileH1MarginB:          .5rem;
 
-$profileH2FontSize:         24px;
+$profileH2FontSize:         36px;
 $profileH2FontColor:        $white;
 $profileH3FontWeight:       600;
 
-$profileH3FontSize:         18px;
+$profileH3FontSize:         32px;
 $profileH3FontColor:        $white;
 $profileH3FontWeight:       300;
 
-$profileH4FontSize:         16px;
+$profileH4FontSize:         24px;
 $profileH4FontColor:        $white;
 
 $userIdFontSize:            16px;

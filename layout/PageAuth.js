@@ -1,12 +1,15 @@
+import HeaderAccount from '@/components/account/layout/header';
+import FooterAccount from '@/components/account/layout/footer';
 import React from 'react';
 
-const pageAuth = ({children}) => {
+const PageAuth = (props) => {
   return (
     <>
-        {children}
-
+		<HeaderAccount route={props.route} />
+        	{props.children}
+		<FooterAccount route={props.route}/>
     </>
   );
 }
 
-export default pageAuth;
+export default PageAuth;

@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-import classes from './Assets004.module.scss';
+import classes from './Assets005.module.scss';
 
 import Thumb from '../../../../public/profile/profile004/images/asset-thumb.png';
 import Thumb2 from '../../../../public/profile/profile004/images/asset-thumb2.png';
 import Thumb3 from '../../../../public/profile/profile004/images/asset-thumb3.png';
 import Thumb4 from '../../../../public/profile/profile004/images/asset-thumb4.png';
 
-export default function Assets004() {
+export default function Assets005() {
       return (
 		<>
 			<div className={classes.assetsAll}>
