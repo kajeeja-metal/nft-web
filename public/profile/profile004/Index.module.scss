@@ -139,31 +139,36 @@
         position: relative;
         padding: 0 2rem;
         margin-bottom: $tabItemMarginB;
+        &:before , &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            left: 0;
+            height: calc(50% - 1px);
+            border: 1px solid $TabOutlineColor;
+            transition: all .15s ease;
+            opacity: 0;
+        }
+        &:before {
+            top: -18px;
+            border-bottom-width: 0;
+        }
+        &:after {
+            bottom: -18px;
+            border-top-width: 0;
+        }
         
-        &[aria-selected="true"] {
+        &[aria-selected="true"], &:hover {
             button {
                 background-color: $tabActiveBgColor;
                 border-color: $tabActiveBorderColor;
                 color: $tabActiveColor;
             }
             &:before , &:after {
-                content: "";
-                display: block;
-                position: absolute;
-                right: 0;
-                left: 0;
-                height: calc(50% - 1px);
-                border: 1px solid $TabOutlineColor;
-                transition: all .15s ease;
+                opacity: 1;
             }
-            &:before {
-                top: -20px;
-                border-bottom-width: 0;
-            }
-            &:after {
-                bottom: -20px;
-                border-top-width: 0;
-            }
+            
         }
     }
     button {

@@ -1,59 +1,104 @@
 
 @import '../../../components/profile/profile005/variables';
 
-@media all and (min-width: 1400px) {
-    .container {
-        max-width: 1370px;
+.tabToggleIcon {
+    font-size: $toggleIconFontSize; color: $toggleIconColor;
+    margin-bottom: $toggleIconMarginB; font-weight: $toggleIconFontWeight;
+    display: inline-block; cursor: pointer;
+    width: auto;
+}
+.navDropdown {
+    background: $navDropdownBg; padding: $navDropdownPadding;
+    min-width: 350px;
+    ul {
+        padding: 0; margin: 0;
+        display: block;
+    }
+    a {
+        color: $navDropdownItemColor; padding: $navDropdownItemPadding;
+        margin-bottom: $navDropdownItemMarginB;
+        display: block; cursor: pointer;
+        > span {
+            margin-right: .4rem; opacity: 0;
+        }
+        &[aria-selected="true"], &:hover {
+            > span {
+                opacity: 1;
+            }
+        }
     }
 }
 
-.bannerImg {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: $profile-banner-height;
-    text-align: center;
-    img {
-        width: 100%;
-        object-fit: cover;
+.userInfoWrap {
+    @include flexbox();
+    align-items: center;
+
+    .profileImg {
+        width: 18%;
+    }
+    .userInfo {
+        width: 27%; padding: 0 1.5%;
+    }
+    .userDesc {
+        width: 40%;
+    }
+    .likeWrap {
+        width: 15%;
+    }
+    a {
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+.textRight {
+    text-align: right;
+}
+.backToTop {
+    font-size: $backToTopFontSize; cursor: pointer;
+    color: $backToTopColor; margin-bottom: .25rem;
+    display: inline-block;
+    &:hover {
+        color: $primary;
     }
 }
 .profileImg {
     /*text-align: center;*/
     margin-bottom: $profileThumbMarginB;
+    margin-top: -90px;
     img {
         display: block; line-height: 1;
+        border-radius: $profileImgBorderRadius;
     }
 }
-.walletConnect {
-    position: absolute;
-    top: 24px; right: 24px;
+
+
+.userName {
+    font-size: $profileH1FontSize;
+    color: $profileH1FontColor;
+    font-family: $profileH1FontFamily;
+    margin-bottom: $profileH1MarginB;
+    white-space: nowrap; overflow: hidden;
+    text-overflow: ellipsis;
 }
-.userWrap {
-    max-width: 508px;
-    margin: 0px auto 0 auto;
-    .userName {
-        font-size: $profileH1FontSize;
-        color: $profileH1FontColor;
-        font-family: $profileH1FontFamily;
-        margin-bottom: $profileH1MarginB;
-    }
-    .userMore {
-        font-size: $profileH3FontSize;
-        color: $profileH2FontColor;
-        font-weight: $profileH3FontWeight;
-    }
-    .userDesc {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: $userDescFontSize;
-        color: $userDescFontColor;
-        margin-bottom: $userDescMarginB;
-    }
+.userMore {
+    font-size: $profileH3FontSize;
+    color: $profileH2FontColor;
+    font-weight: $profileH3FontWeight;
+    margin-bottom: .75rem;
 }
+.userDesc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: $userDescFontSize;
+    color: $userDescFontColor;
+    margin-bottom: $userDescMarginB;
+    line-height: 1.9;
+}
+
 .btnGroups {
 	.btn {
 
@@ -76,11 +121,11 @@
     > span {
         flex: 0 0 50%;
         font-size: 18px;
-        max-width: 50%; margin-bottom: 1rem;
+        max-width: 50%; margin-bottom: .25rem;
         font-size: $likeLableFontSize;
     }
     .num {
-        margin: 0 auto 5px auto;
+        margin: 0 auto 2px auto;
         display: block; font-weight: $likeNumFontWeight;
         font-size: $statusWrapFontSize;
     }
@@ -90,7 +135,7 @@
     display: inline-block;
     width: 100%;
     cursor: pointer;
-    margin-bottom: 8px;
+    margin-bottom: .75rem;
     font-size: $userIdFontSize;
     color: $userIdFontColor;
 }
@@ -100,34 +145,21 @@
         color: $socialIconsColor;
         font-size: $socialIconsFontSize;
         &:not(:last-child) {
-            margin-right: 1.5rem;
+            margin-right: 1rem;
+        }
+        &:hover {
+            color: $primary;
         }
     }
 }
 
 .copyTxt {
-    margin-left: 1rem;
-}
-.btnPrimary {
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    border: 2px solid $textColor;;
-    font-size: 1.5rem;
-    transition: all 0.5s;
-    margin-bottom: 2rem;
-    border-radius: 4px;
-    &:not(:last-child) {
-        margin-right: 1rem;
-    }
-    &:hover, &:active {
-        background-color: $textBgColor;
-    }
-    &.active {
-        background-color: $textBgColor;
-    }
+    margin-left: 1rem; 
 }
 
+
 // Tabs Dssign
+
 .collectionTabsWrapper {
     text-align: center;
 }
@@ -230,9 +262,10 @@
 
 // Footer 
 .footer {
-	padding-top: 1.5rem; 
-	padding-bottom: 1.5rem;
-    background-color: rgba(0, 0, 0, .6);
+	padding-top: $footerPaddingT; 
+	padding-bottom: $footerPaddingB;
+    background-color:$footerBgColor;
+    margin-top: $footerMarginT;
     & + div {
         display: none;
     }
@@ -257,7 +290,7 @@
 		margin-right: 1rem;
 	}
 	a {
-        color: #FFFFFF;
+        color: $white;
 		&:not(:last-child) {
 			margin-right: 35px;
 		}

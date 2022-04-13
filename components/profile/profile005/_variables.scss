@@ -10,39 +10,55 @@ $fontArchivo:              'Archivo', sans-serif;
 $fontArchivoBold:          'Archivo Black', sans-serif;
 
 
-
-$color-primary-main:        hsla(157, 100%, 50%, 1)hsla(180, 100%, 50%, 1)
-                            hsla(295, 100%, 57%, 1);
-$color-Button:              hsla(157, 100%, 50%, 1)hsla(180, 100%, 50%, 1)
-                            hsla(295, 100%, 57%, 1);
-$color-title-main:          hsla(157, 100%, 50%, 1)hsla(180, 100%, 50%, 1)
-                            hsla(295, 100%, 57%, 1);
+$colorPrimaryone:           #00FF9D;
+$colorPrimarytwo:           #00FFFF;
+$colorPrimarythree:         #EE25FF;
+$color-primary-main:        linear-gradient(101.12deg, $colorPrimaryone -25.01%, 
+                                                        $colorPrimarytwo 36.27%, 
+                                                        $colorPrimarythree 100.16%);
+$color-Button:              linear-gradient(101.12deg, #00FF9D -25.01%, #00FFFF 36.27%, #EE25FF 100.16%);
+$color-title-main:          linear-gradient(101.12deg, #00FF9D -25.01%, #00FFFF 36.27%, #EE25FF 100.16%);
 $color-secondary-main:      #F5F5F5;
 $default-color:             $default;
+
+
+$toggleIconFontSize:         $font-xlarge;
+$toggleIconColor:            $color-primary-main;
+$toggleIconFontWeight:       normal;
+$toggleIconMarginB:          40px;
+
+$navDropdownBg:              $color-Button;
+$navDropdownPadding:         .4rem 0;
+$navDropdownItemColor:       $default;
+$navDropdownItemPadding:     .8rem 1rem;
+$navDropdownItemMarginB:     .2rem; 
+
+$toggleTitleFontSize:        48px;
+$toggleTitleColor:           $color-primary-main;
+$toggleTitleFontWeight:      700;
+$toggleTitleMarginB:         35px;
 
 $textColor:                 $default; 
 $textBgColor:               #FFD400;
 
-$boderColor:                $textColor;
-$btnActiveColor:            $textColor;
-$btnActiveBgColor:          $textBgColor;
 
-$profileThumbMarginB:       1.35rem;
+$profileThumbMarginB:       .35rem;
+$profileImgBorderRadius:    10px;
 
-$profileH1FontSize:         48px;
+$profileH1FontSize:         32px;
 $profileH1FontColor:        $white;
 $profileH1FontFamily:       $fontArchivoBold;
-$profileH1MarginB:          .5rem;
+$profileH1MarginB:          .75rem;
 
-$profileH2FontSize:         36px;
+$profileH2FontSize:         18px;
 $profileH2FontColor:        $white;
 $profileH3FontWeight:       600;
 
-$profileH3FontSize:         32px;
+$profileH3FontSize:         18px;
 $profileH3FontColor:        $white;
 $profileH3FontWeight:       300;
 
-$profileH4FontSize:         24px;
+$profileH4FontSize:         14px;
 $profileH4FontColor:        $white;
 
 $userIdFontSize:            16px;
@@ -50,7 +66,7 @@ $userIdFontColor:           $white;
 
 $userDescFontSize:          14px;
 $userDescFontColor:         $white;
-$userDescMarginB:           1rem;
+$userDescMarginB:           .5rem;
 
 $buttonLFontSize:           16px;
 $buttonSFontSize:           14px;            
@@ -59,11 +75,14 @@ $socialListMarginBottom:    50px;
 $socialIconsColor:          $white;
 $socialIconsFontSize:       $font-medium;
 
-$likeWrapMarginB:           55px;
+$likeWrapMarginB:           .25rem;
 $statusWrapFontSize:        20px;
 $statusWrapColor:           $white;
 $likeLableFontSize:         12px;
 $likeNumFontWeight:         700;
+
+$backToTopFontSize:         18px;
+$backToTopColor:            $white;
 
 /*  Profile banner variable   */
 
@@ -90,9 +109,10 @@ $TabOutlineColor:           $white;
 
 $paginationMarginT:         40px; 
 $paginationMarginB:         40px;        
-$paginationColor:           $textColor;
-$paginationBgColor:         #FFFFFF;
-$paginationBorderColor:     $textColor;
+$paginationColor:           $white;
+$paginationBgColor:         rgba(255, 255, 255, 0.2);
+$paginationBorderColor:     rgba(0, 0, 0, 0.06);
+$paginationBorderRadius:    8px;
 $paginationLineHeight:      38px;
 $paginationActiveColor:     $textColor;
 $paginationActiveBgColor:   $textBgColor;
@@ -102,11 +122,13 @@ $paginationFontSize:        21px;
 /* Exhibition Tab Variables  */
 
 $exhibitionThumblistMarginB:     1rem;
+$exhibitionThumblistBorderRadius:8px;
+$exhibitionThumbImgBorderRadius: 8px;
 $exhibitionThumbInfoPadding:     1rem;
 $exhibitionThumbTitleColor:      $white;
-$exhibitionThumbTitleSize:       2rem;
-$exhibitionThumbTitleMarginB:    1.5rem;
-$exhibitionThumbTitleFontWeight: 700;
+$exhibitionThumbTitleSize:       1rem;
+$exhibitionThumbTitleMarginB:    .25rem;
+$exhibitionThumbTitleFontWeight: normal;
 $exhibitionThumbAssetColor:      $default-color;
 $exhibitionThumbAssetSize:       16px;
 $exhibitionThumbDescColor:       #fff;
@@ -142,15 +164,17 @@ $thumbWishSize:               24px;
 /* Assets Tab  Variables */
 
 $assetThumblistMarginB:            1rem;
-$assetThumbInfoPadding:            1rem;
-$assetThumbInfoBg:                 $white;
-$assetThumbTitleColor:             $default-color;
-$assetThumbTitleSize:              20px;
-$assetThumbTitleMarginB:           1.5rem;
-$assetThumbTitleFontWeight:        700;
+$assetThumblistBorderRadius:       8px;
+$assetThumbImgBorderRadius:        8px;
+$assetThumbInfoPadding:            .5rem;
+$assetThumbInfoBg:                 transparent;
+$assetThumbTitleColor:             #fff;
+$assetThumbTitleSize:              16px;
+$assetThumbTitleMarginB:           .25rem;
+$assetThumbTitleFontWeight:        normal;
 $assetThumbAssetColor:             $default-color;
 $assetThumbAssetSize:              16px;
-$assetThumbDescColor:              $default-color;
+$assetThumbDescColor:              #fff;
 $assetThumbDescSize:               14px;
 $assetThumbDescMarginB:            0;
 $assetThumbDateColor:              $default-color;
@@ -160,3 +184,24 @@ $assetThumbWishCountSize:          16px;
 $assetThumbWishColor:              $white;
 $assetThumbWishSize:               24px;
 $assetThumbPlaySize:               20px;
+
+
+
+/*  Footer variables  */
+
+$footerMarginT:                   75px;
+$footerPaddingT:                  .75rem;
+$footerPaddingB:                  1rem;
+$footerBgColor:                   #1B1B21;
+$footerColor:                     #fff;
+
+
+.primayTextColor {
+    background: $color-primary-main;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    width: auto;
+    display: inline-block;
+}

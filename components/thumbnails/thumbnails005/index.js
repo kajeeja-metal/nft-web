@@ -8,13 +8,13 @@ const Thumbs004 = () => {
   return (
 	<>
 		<div className="tab-content">
-			<div className="tab-pane fade show active" id="collectionWrap">
+			<div className="tab-pane fade " id="collectionWrap">
 				<Collections005/>
 			</div>
-			<div className="tab-pane fade " id="spacesWrap">
+			<div className="tab-pane fade " id="exhibitionWrap">
 				<Exhibitions005 />
 			</div>
-			<div className="tab-pane fade " id="assetsAll">
+			<div className="tab-pane fade show active" id="assetsWrap">
 				<Assets005 />
 			</div>
 		</div>

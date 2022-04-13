@@ -1,15 +1,22 @@
-@import '../../../../components/profile/profile004/variables';
+@import '../../../../components/profile/profile005/variables';
 
+.tabTitle {
+  font-size:$toggleTitleFontSize ; 
+  font-weight:$toggleTitleFontWeight ;
+  margin-bottom:$toggleTitleMarginB ;
+}
+.tabTitleInner {
+  @extend .primayTextColor;
+}
 
 .exhibitionWraps {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-    gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /*@include flexbox(); 
+    margin-left: -1rem; margin-right: -1rem;
+    justify-content: space-between;*/
 }
 .thumblist {
-    position: relative; 
+    position: relative; padding: 1rem;
+    width: 260px;
     &:hover {
         .thumbInfo {
             opacity: 1;
@@ -18,43 +25,51 @@
     }
 }
 .thumbImg {
-    position: relative;
+    position: relative; border: 1px solid $border;
+    border-radius: $exhibitionThumblistBorderRadius;
+
+    &:hover {
+        border-color: $primary;
+    }
     .wishLike {
         position: absolute; right: 16px; top: 15px;
         font-size: $exhibitionThumbWishSize; color: $exhibitionThumbWishColor;
     }
+    a {
+        display: block; line-height: 1;
+        img {
+            border-radius: $exhibitionThumbImgBorderRadius;
+        }
+    }
+
 }
 .thumbInfo { 
-    position: absolute; bottom: 0;
+    position: absolute; bottom: 15px;
+    left: 0;
     width: 100%; padding: 1rem;
     opacity: 0; transition: ease-in-out 600ms;
     transform: rotateY(25deg);
+    text-align: center;
 }
 .thumbTitlewrap {
     @include flexbox;
-    justify-content: space-between;  align-items: center;
+    justify-content: center;  align-items: center;
+    width: 100%;
     h3 {
-        font-size: $exhibitionThumbTitleSize; margin-bottom: .5rem;
+        font-size: $exhibitionThumbTitleSize; 
+        margin-bottom: $exhibitionThumbTitleMarginB;
         font-weight: $exhibitionThumbTitleFontWeight;
         a {
           color: $exhibitionThumbTitleColor; 
         }
     }
 }
-.assetNum {
-    font-weight: bold;
-}
-.thumbDesc {
-    font-size: $exhibitionThumbDescSize; color: $exhibitionThumbDescColor;
-    margin-bottom: $exhibitionThumbDescMarginB; line-height: 1.5;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-}
+
+
 .dateWish {
     @include flexbox;
     justify-content: space-between;
     font-size: $exhibitionThumbDateSize;
 }
+
+
