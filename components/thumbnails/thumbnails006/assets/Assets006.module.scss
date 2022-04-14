@@ -1,0 +1,131 @@
+
+
+@import '../../../../components/profile/profile006/variables';
+
+.assetsAll {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    gap: 1.5rem;
+}
+.tabTitle {
+  font-size:$toggleTitleFontSize ; 
+  font-weight:$toggleTitleFontWeight ;
+  margin-bottom:$toggleTitleMarginB ;
+}
+.tabTitleInner {
+  @extend .primayTextColor;
+}
+
+.thumbTitlewrap {
+    @include flexbox;
+    justify-content: center;  align-items: center;
+    width: 100%;
+    h3 {
+        font-size: $assetThumbTitleSize; 
+        margin-bottom: $assetThumbTitleMarginB;
+        font-weight: $assetThumbTitleFontWeight;
+        a {
+          color: $assetThumbTitleColor; 
+        }
+    }
+}
+
+.thumblist {
+    position: relative; 
+    /*width: 260px;*/
+    &:hover {
+        .thumbInfo {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+    }
+}
+.thumbImg {
+    position: relative; border: 1px solid $border;
+    border-radius: $assetThumblistBorderRadius;
+    text-align: center;
+
+    &:hover {
+        border-color: $primary;
+    }
+    a {
+        display: block; line-height: 1;
+        img {
+            border-radius: $assetThumbImgBorderRadius;
+        }
+    }
+}
+.thumbInfo { 
+    position: absolute; bottom: 15px;
+    left: 0;
+    width: 100%;  padding: $assetThumbInfoPadding;
+    background: $assetThumbInfoBg;
+    color: $assetThumbDescColor;
+    opacity: 0; transition: ease-in-out 600ms;
+    transform: rotateY(25deg);
+    text-align: center;
+}
+.thumbDesc {
+    font-size: $assetThumbDescSize; color: $assetThumbDescColor;
+    margin-bottom: $assetThumbDescMarginB; line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.paginationWrap {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    ul {
+        list-style: none;
+        margin: 0; padding: 0;
+    }
+    li {
+        border: none !important;
+        padding: 0 !important;
+        display: inline-block;
+        text-align: center;
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+        &:active, &.active {
+            a {
+                background-color: $paginationActiveBgColor;
+            }
+        }
+        &:hover, &.hover {
+            a {
+                background-color: $paginationActiveBgColor;
+            }
+        }
+        a {
+            display: inline-block;
+            width: 41px; height: 41px;
+            line-height: 41px;
+            border-radius: 4px;
+            border: 2px solid $paginationBorderColor;
+            color: $paginationColor;
+            background-color: $paginationBgColor;
+            font-size: $paginationFontSize;
+            border-radius: $paginationBorderRadius;
+        }
+        [aria-selected="true"] {
+            background-color: $paginationActiveBgColor;
+            a {
+                background-color: $paginationActiveBgColor;
+            }
+        }
+    } 
+}
+
+
+@media all and (max-width:550px) {
+
+    .assetsAll {
+        grid-template-columns: repeat(2, minmax(2rem, 2fr));
+        gap: 1rem;
+    }
+
+}

@@ -1,0 +1,61 @@
+
+@import '../../../../components/profile/profile006/variables';
+
+.tabTitle {
+  font-size:$toggleTitleFontSize ; 
+  font-weight:$toggleTitleFontWeight ;
+  margin-bottom:$toggleTitleMarginB ;
+}
+.tabTitleInner {
+  @extend .primayTextColor;
+}
+
+.thumblist {
+   margin-bottom: $thumblistMarginB;
+   margin-right: 1rem;
+
+}
+.thumbImg {
+  position: relative;
+  .wishLike {
+    font-size: $thumbWishSize; color: $thumbWishColor;
+    margin-bottom: 1rem; text-align: right;
+    position: absolute; right: 30px; top: 15px;
+  }
+}
+/*.thumbInfo {
+  width: 48%; padding: $thumbInfoPadding;
+  position: relative; padding-bottom: 50px;
+}
+
+.thumbTitlewrap {
+  h3 {
+    font-size: $thumbTitleSize; margin-bottom: $thumbTitleMarginB;
+    font-weight: $thumbTitleFontWeight;
+    a {
+      color: $thumbTitleColor; 
+    }
+  }
+}
+.thumbDesc {
+  font-size: $thumbDescSize; color: $thumbDescColor;
+  margin-bottom: $thumbDescMarginB; line-height: 1.5;
+}
+.dateWish {
+  @include flexbox; justify-content: space-between;
+  font-size: $thumbWishCountSize;
+  position: absolute; bottom: 10px; width: 100%;
+  .num {
+    font-weight: 700;
+  }
+}*/
+@media all and (max-width: 1199px) {
+    .thumblist {
+        padding: 0;
+        .thumbImg {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
