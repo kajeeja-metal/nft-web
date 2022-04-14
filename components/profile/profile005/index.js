@@ -48,23 +48,23 @@ export default function Profile005() {
                 <FontAwesomeIcon icon={faBars } />
               </span>
               <div className={`dropdown-menu` + ' ' + classes.navDropdown}>
-                <ul className="nav" role="tablist">             
-                  <a data-bs-toggle="pill" data-bs-target="#collectionWrap"
+                <div className="nav" role="tablist">             
+                  <a  data-bs-toggle="pill" data-bs-target="#collectionWrap"
                     aria-controls="v-pills-collection" role="tab" 
                     aria-selected="false"><span className={classes.navIcon}>
                     <FontAwesomeIcon icon={faDiamond } />
                     </span> 99 Collection</a>         
-                  <a data-bs-toggle="pill" data-bs-target="#exhibitionWrap"
+                  <a  data-bs-toggle="pill" data-bs-target="#exhibitionWrap"
                     aria-controls="v-pills-exhibition" role="tab" 
                     aria-selected="false"><span className={classes.navIcon}>
                       <FontAwesomeIcon icon={faDiamond } />
                       </span> 99 Exhibition</a>           
-                  <a data-bs-toggle="pill" data-bs-target="#assetsWrap"
+                  <a  data-bs-toggle="pill" data-bs-target="#assetsWrap"
                     aria-controls="v-pills-allAsset" role="tab" 
                     aria-selected="true"><span className={classes.navIcon}>
                     <FontAwesomeIcon icon={faDiamond } />
                     </span> 99 Assets</a>
-                </ul>
+                </div>
               </div>
             </div>
             

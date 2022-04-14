@@ -6,8 +6,7 @@ import form from '../../../public/account/Form.module.scss';
 import classes from '../create/collectionthumbnail.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faPlus } from '@fortawesome/free-regular-svg-icons';
-import { faPlus, faPray } from '@fortawesome/free-solid-svg-icons';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import ThumbList from '../../../public/collections/images/thumblist.png';
 import CoverList from '../../../public/collections/images/covercrop.png';
 import CoverList2 from '../../../public/collections/images/covercrop2.png';
@@ -222,8 +221,8 @@ const StepCollectionThumbnail = () => {
         </div>
       </div>
 
-      <div className={`btns-group mb-3 ${classes.textRight}` } style={{ "textAlign":"right"}}>
-          <button className={`btn ${button.btnOutlinePrimary}`} style={{"marginRight":8}}>Cancel</button>
+      <div className={classes.formGroup + ' ' + classes.btnsGroup + ' ' + classes.textRight }>
+          <button className={`btn ${button.btnOutlinePrimary}`}>Cancel</button>
           <button className={`btn ${button.btnPrimary}`}>Save Draft</button>
       </div>
 

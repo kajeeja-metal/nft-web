@@ -78,9 +78,17 @@
 		margin-right: .2rem;
 	}
 }
-.checkitem {
-	position: absolute; z-index: 1;
-	right: 45px; top:15px;
+.textRight {
+	text-align: right;
+}
+.btnsGroup {
+	button {		
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+}
+.checkitem {	
 	input[type="checkbox"] {
 		width: 100%; height: 100%;
 		opacity: 0;
@@ -89,8 +97,8 @@
 		}
 	}
 	.checkicon {
-		position: absolute; opacity: 1;
-		left: 10px; top: 0px; z-index: 2;
+		position: absolute; opacity: 0;
+		right: 15px; top: 15px; z-index: 2;
 	}
 	.faCheckCircle {
 		color: $checkitem-color; 

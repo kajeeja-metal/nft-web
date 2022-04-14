@@ -17,7 +17,8 @@
     a {
         color: $navDropdownItemColor; padding: $navDropdownItemPadding;
         margin-bottom: $navDropdownItemMarginB;
-        display: block; cursor: pointer;
+        cursor: pointer;
+        width: 100%;
         > span {
             margin-right: .4rem; opacity: 0;
         }

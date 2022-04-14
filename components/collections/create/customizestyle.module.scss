@@ -163,5 +163,11 @@ $preview-btn-color : #3A3A43;
 		min-width: 40%;
 	}
 }
-
+.btnsGroup {
+	button {		
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+}
 

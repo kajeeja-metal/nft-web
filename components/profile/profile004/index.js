@@ -42,14 +42,14 @@ export default function Profile004() {
   return (
     <>
       <div className={classes.bannerWrap}>
-        <div className={`d-none` + ' ' + classes.bannerImg}>
+        {/* <div className={`d-none` + ' ' + classes.bannerImg}>
           <Image src={profileBG} alt="Banner Image" width={2000} height={360} />
           <div className={classes.walletConnect}>
             <button type="button" className="btn btn-success btn-lg">
               Connect Wallet
             </button>
           </div>
-        </div>
+        </div> */}
         <div className={`container`+ ' ' +  classes.container}>
           <div className="row align-items-center">
             <div className="col-sm-4">

@@ -5,8 +5,7 @@ import Image from "next/image"
 import Pagination from '../../../components/common/pagination.js';
 import nav from '../../../public/collections/tabnav.module.scss';
 import button from '../../../public/account/Buttons.module.scss';
-
-import classes from '../../../components/collections/create/theme.module.scss';
+import classes from '@/components/collections/create/theme.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
@@ -52,14 +51,14 @@ const StepTheme = () => {
             <div className='col-6 col-md-4'> 
               <div className={classes.thumblist + ' ' + classes.active}>
                 <div className={classes.thumbImg}>
+                  <label className={classes.checkitem + ' ' + classes.customChk }>
                     <Image
                       src={Theme1}
                       height={376}
                       width={376}
                       alt="Thumbs"
-                    />
-                  <label className={classes.checkitem + ' ' + classes.customChk }>
-                    <input type="checkbox"/>
+                    />                  
+                    <input type="checkbox" defaultChecked={true} />
                     <span className={classes.checkicon}>                   
                     <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
                     </span>
@@ -86,12 +85,18 @@ const StepTheme = () => {
             <div className='col-6 col-md-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
+                  <label className={classes.checkitem + ' ' + classes.customChk }>
                     <Image
                       src={Theme2}
                       height={376}
                       width={376}
                       alt="Thumbs"
-                    />
+                    />                  
+                    <input type="checkbox" />
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </label>
                 </div>
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
@@ -114,12 +119,18 @@ const StepTheme = () => {
             <div className='col-6 col-md-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
-                  <Image
+                  <label className={classes.checkitem + ' ' + classes.customChk }>
+                    <Image
                       src={Theme3}
                       height={376}
                       width={376}
                       alt="Thumbs"
-                      />
+                    />                  
+                    <input type="checkbox" />
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </label>
                 </div>
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
@@ -142,12 +153,18 @@ const StepTheme = () => {
             <div className='col-6 col-md-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
-                  <Image
-                    src={Theme3}
-                    height={376}
-                    width={376}
-                    alt="Thumbs"
-                    />
+                  <label className={classes.checkitem + ' ' + classes.customChk }>
+                    <Image
+                      src={Theme3}
+                      height={376}
+                      width={376}
+                      alt="Thumbs"
+                    />                  
+                    <input type="checkbox" />
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </label>
                 </div>
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
@@ -170,12 +187,18 @@ const StepTheme = () => {
             <div className='col-6 col-md-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
-                  <Image
+                  <label className={classes.checkitem + ' ' + classes.customChk }>
+                    <Image
                       src={Theme1}
                       height={376}
                       width={376}
                       alt="Thumbs"
-                    />
+                    />                  
+                    <input type="checkbox" />
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </label>
                 </div>
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
@@ -198,12 +221,18 @@ const StepTheme = () => {
             <div className='col-6 col-md-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
-                  <Image
-                    src={Theme3}
-                    height={376}
-                    width={376}
-                    alt="Thumbs"
-                    />
+                  <label className={classes.checkitem + ' ' + classes.customChk }>
+                    <Image
+                      src={Theme3}
+                      height={376}
+                      width={376}
+                      alt="Thumbs"
+                    />                  
+                    <input type="checkbox" />
+                    <span className={classes.checkicon}>                   
+                    <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
+                    </span>
+                  </label>
                 </div>
                 <div className={classes.thumbInfo}>                 
                   <h3 className={classes.thumbTitle}>
@@ -227,13 +256,13 @@ const StepTheme = () => {
 
           <Pagination />
 
-          <div className='text-right'>
+         
             
-            <div className='btns-group mb-3' style={{ "textAlign":"right"}}>
-                <button className={`btn ${button.btnOutlinePrimary}`}>Cancel</button>
-                <button className={`btn ${button.btnPrimary}`}>Save</button>
-            </div>
+          <div className={classes.formGroup + ' ' + classes.btnsGroup + ' ' + classes.textRight }>
+            <button className={`btn ${button.btnOutlinePrimary}`}>Cancel</button>
+            <button className={`btn ${button.btnPrimary}`}>Save</button>
           </div>
+         
 
         </div>
 

@@ -36,7 +36,7 @@ const StepCustomizeStyle = () => {
           </div>
           <div className='col-md-4'>
               <div className={classes.formControl} variant="primary" onClick={handleShow}>
-                <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}>
+                <label className={'d-block' + ' ' + classes.modalLabel} style={{cursor:"pointer"}}>
                    Select font Family <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
                 </label>
               </div>
@@ -48,7 +48,7 @@ const StepCustomizeStyle = () => {
           </div>
           <div className='col-md-4'>
             <div className={classes.formControl} variant="primary" onClick={handleShow}>
-              <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}>
+              <label className={'d-block' + ' ' + classes.modalLabel} style={{cursor:"pointer"}}>
                   Select font Family <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
               </label>
             </div>
@@ -218,8 +218,8 @@ const StepCustomizeStyle = () => {
         <div className={classes.formGroup}>
           <div className='d-flex justify-content-between'>
             <a className={`btn ${button.btnTextDanger}`}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
-            <div>
-              <button className={`btn ${button.btnOutlinePrimary}`} style={{"margin-right":8}}>Cancel</button>
+            <div className={classes.btnsGroup}>
+              <button className={`btn ${button.btnOutlinePrimary}`}>Cancel</button>
               <button className={`btn ${button.btnPrimary}`}>Save Draft</button>
             </div>
           </div>
@@ -255,12 +255,12 @@ const StepCustomizeStyle = () => {
             <div className='row'>
               <div className='col-md-4'>
                 <div className={classes.fontItemList + ' ' + classes.active}>
-                  <div className={classes.checkitem}>
-                    <input type="checkbox" />
+                  <label className={classes.checkitem}>
+                    <input type="checkbox" defaultChecked={true}/>
                     <span className={classes.checkicon}>                   
                     <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
                     </span>
-                  </div>
+                  </label>
                   <div className={classes.fontNamePreview}>
                     <div className={classes.topFontStyle}>
                       <div className={classes.fLeft}>
