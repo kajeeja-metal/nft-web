@@ -2,15 +2,6 @@
 @import '../variables';
 
 
-$leftnum-color :#5F5F6D;
-$leftnum-font-size :12px;
-$imglist-border-color :#ABABBA;
-$imglist-active-border-color :#00CCA9;
-$imglist-active-bg-color :#E9F6F7;
-
-$border-color:#EAEAED;
-$form-border-radius:5px;
-
 .title {
     color: $title-color; font-weight: normal;
     font-size: $title-font-size ;
@@ -90,11 +81,6 @@ $form-border-radius:5px;
 }
 
 
-$default-color :#3A3A43;
-$td-color      :$default-color;
-$thead-bgcolor   :#F8F5FF;
-$td-link-color :#4726D9;
-$tr-row-bg-color  :#FAFAFC;
 
 /* table  */
 
@@ -155,9 +141,6 @@ $tr-row-bg-color  :#FAFAFC;
 
 /* Modal  */
 
-$icon-color : #5F5F6D;
-$border-active-color : #00CCA9;
-$preview-btn-color : #3A3A43;
 
 
 .modalLg {
@@ -235,11 +218,11 @@ $preview-btn-color : #3A3A43;
 	position: absolute; left:0; bottom: 0;
 	height: 100%; padding: 1rem;
 	background-color: rgba(0,0,0,.6);
-	color: #fff; display: flex;
+	color: $white; display: flex;
 	align-items: flex-end;
 	h3 {
 		a {
-			color: #fff; font-size: 16px;
+			color: $white; font-size: 16px;
 		}
 	}
 	.assetItemDesc{
