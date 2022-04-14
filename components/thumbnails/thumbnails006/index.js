@@ -4,7 +4,7 @@ import Collections006 from './collections';
 import Exhibitions006 from './exhibitions';
 // import classes from './Thumbs004.module.scss'
 
-const Thumbs004 = () => {
+const Thumbs006 = () => {
   return (
 	<>
 		<div className="tab-content">
@@ -29,4 +29,4 @@ const Thumbs004 = () => {
   );
 }
 
-export default Thumbs004;
+export default Thumbs006;

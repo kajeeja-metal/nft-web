@@ -7,13 +7,13 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
-import classes from './Exhibitions005.module.scss';
+import classes from './Exhibitions006.module.scss';
 
-import Thumb from '../../../../public/profile/profile005/images/thumbexhibition.png';
-import Thumb2 from '../../../../public/profile/profile005/images/thumbexhibition2.png';
+import Thumb from '../../../../public/profile/profile006/images/thumbexhibition.png';
+import Thumb2 from '../../../../public/profile/profile006/images/thumbexhibition2.png';
 
 
-export default function Exhibitions005() {
+export default function Exhibitions006() {
   const settings = {
 		dots: false,
     arrows:true,
