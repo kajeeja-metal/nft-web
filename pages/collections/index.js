@@ -6,9 +6,9 @@ import ThumbList from '@/components/collections/thumblist';
 
 import button from '../../public/account/Buttons.module.scss';
 import nav from '../../public/collections/tabnav.module.scss';
-import style from '../../public/collections/index.module.scss';
 
-//import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import classes from '../../public/collections/index.module.scss';
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThLarge  } from '@fortawesome/free-solid-svg-icons';
@@ -34,11 +34,11 @@ export default function Index(props) {
                     <LeftSidebar/>
 				</div>
 				<div className='col-md-9'>
-                    <div className={style.titleWrap}>
-                        <h1 className={style.title}>My Collections</h1>
+                    <div className={classes.titleWrap}>
+                        <h1 className={classes.title}>My Collections</h1>
                         <p>Personalise your profile’s colour, background, and theme.</p>
                     </div>
-                    <div className={style.navCreateWrap}>
+                    <div className={classes.navCreateWrap}>
                         <ul className="nav nav-tabs">
                             <li className="nav-item">
                                 <a className={nav.navLink + ' ' + nav.active} data-bs-toggle="tab" href="#allAssetTab">All Asserts</a>
@@ -54,7 +54,7 @@ export default function Index(props) {
                             </li>
                         </ul>
                         <Link href="/collections/create">
-                        <a className={`btn ${button.btnOutlinePrimary + ' ' + style.createClink}`}>                      
+                        <a className={`btn ${button.btnOutlinePrimary + ' ' + classes.createClink}`}>                      
                         <FontAwesomeIcon icon={faThLarge} className="faThLarge" size="lg" /> Create New Colllection</a></Link> 
                     </div>
 
