@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React, { useEffect } from "react";
 import PagesAuth from '@/layout/PageAuth';
-import LeftSidebar from '../../components/account/layout/leftsidebar.js';
-import ThumbList from '../../components/collections/thumblist';
+import LeftSidebar  from '@/components/account/layout/leftsidebar.js';
+import ThumbList from '@/components/collections/thumblist';
 
 import button from '../../public/account/Buttons.module.scss';
 import nav from '../../public/collections/tabnav.module.scss';
