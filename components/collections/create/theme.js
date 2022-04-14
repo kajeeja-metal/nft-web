@@ -48,7 +48,7 @@ const StepTheme = () => {
         <div className="tab-pane show active" id="category1">
           <div className='row'>
 
-            <div className='col-6 col-md-4'> 
+            <div className='col-6 col-lg-4'> 
               <div className={classes.thumblist + ' ' + classes.active}>
                 <div className={classes.thumbImg}>
                   <label className={classes.checkitem + ' ' + classes.customChk }>
@@ -82,7 +82,7 @@ const StepTheme = () => {
               </div>
             </div>
 
-            <div className='col-6 col-md-4'>
+            <div className='col-6 col-lg-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
                   <label className={classes.checkitem + ' ' + classes.customChk }>
@@ -116,7 +116,7 @@ const StepTheme = () => {
               </div>
             </div>
 
-            <div className='col-6 col-md-4'>
+            <div className='col-6 col-lg-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
                   <label className={classes.checkitem + ' ' + classes.customChk }>
@@ -150,7 +150,7 @@ const StepTheme = () => {
               </div>
             </div>
 
-            <div className='col-6 col-md-4'>
+            <div className='col-6 col-lg-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
                   <label className={classes.checkitem + ' ' + classes.customChk }>
@@ -184,7 +184,7 @@ const StepTheme = () => {
               </div>
             </div>
 
-            <div className='col-6 col-md-4'>
+            <div className='col-6 col-lg-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
                   <label className={classes.checkitem + ' ' + classes.customChk }>
@@ -218,7 +218,7 @@ const StepTheme = () => {
               </div>
             </div>
 
-            <div className='col-6 col-md-4'>
+            <div className='col-6 col-lg-4'>
               <div className={classes.thumblist}>
                 <div className={classes.thumbImg}>
                   <label className={classes.checkitem + ' ' + classes.customChk }>

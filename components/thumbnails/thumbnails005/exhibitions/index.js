@@ -16,14 +16,23 @@ import Thumb2 from '../../../../public/profile/profile005/images/thumbexhibition
 export default function Exhibitions005() {
   const settings = {
 		dots: false,
-		arrows:true,
-		autoplay:true,
-		lazyLoad: true,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		variableWidth: true
+    arrows:true,
+    autoplay:true,
+    lazyLoad: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    responsive: [
+    {
+        breakpoint: 1024,
+        settings: {
+        slidesToShow: 1,
+        variableWidth: false,
+        }
+    }
+    ]
   };
   return (
 		<>

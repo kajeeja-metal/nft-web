@@ -53,21 +53,21 @@ const StepCollectionAssets = () => {
           <div className='col-md-8'>
               <div className='row'>
                 <div className='col-md-4'>
-                  <div className={classes.formControl} variant="primary">
+                  <div className={classes.formControl + ' ' + classes.formGroup} variant="primary">
                     <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}> <FontAwesomeIcon icon={faSortAmountDown} className={classes.faAngleRight} /> &nbsp;
                     Channel <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
                     </label>
                   </div>
                 </div>
                 <div className='col-md-4'>
-                  <div className={classes.formControl} variant="primary">
+                  <div className={classes.formControl + ' ' + classes.formGroup} variant="primary">
                     <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}><FontAwesomeIcon icon={faSortAmountDown} className={classes.faAngleRight} /> &nbsp;
                     Contract <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
                     </label>
                   </div>
                 </div>
                 <div className='col-md-4'>
-                  <div className={classes.formControl} variant="primary">
+                  <div className={classes.formControl + ' ' + classes.formGroup} variant="primary">
                     <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}><FontAwesomeIcon icon={faSortAmountDown} className={classes.faAngleRight} /> &nbsp;
                     Sort by date  <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
                     </label>
@@ -78,11 +78,10 @@ const StepCollectionAssets = () => {
         </div>
       </div>
 
-      <div className={classes.tableWrapper}>
+      <div className={`table-responsive` + ' ' + classes.tableWrapper}>
         <table className={`table` + ' '  + classes.table}>
           <thead>
             <tr>
-              <th className={classes.dragTh}></th>
               <th className={classes.assetTh}>Asset</th>
               <th className={classes.chainnTh}>Chain</th>
               <th className={classes.orderTh}>Order</th>
@@ -92,183 +91,25 @@ const StepCollectionAssets = () => {
           <tbody>
             <tr>
               <td>
-                <span className={`dragable` + ' ' + classes.dragItem}>
-                  <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
-                </span>
-                <div className={classes.selectUser}>
-                  <input type="checkbox" />
-                  <span className={classes.checkSku}>0xceB945...</span>
-                </div>
-              </td>
-              <td>
-                <div className={classes.tdProduct}>
-                    <Link href="/"><a className={classes.name}>
-                      <Image
-                        src={User}
-                        height={55} width={55} alt="User"
-                      />
-                      <span>Name</span>
-                    </a></Link>
-                </div>
-              </td>
-              <td>
-                  BITKUB
-              </td>
-              <td>
-                  <select className={`form-select` + ' ' + form.selectDropArrow}>
-                    <option value={1}>1</option>
-                    <option value={2}>2</option>
-                    <option value={3}>3</option>
-                    <option value={4}>4</option>
-                    <option value={5}>5</option>
-                    <option value={6}>6</option>
-                    <option value={7}>7</option>
-                    <option value={8}>8</option>
-                  </select>
-              </td>
-              <td>
-              <span className={`btn` + ' ' + classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span className={`dragable` + ' ' + classes.dragItem}>
-                  <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
-                </span>
-                <div className={classes.selectUser}>
-                  <input type="checkbox" />
-                  <span className={classes.checkSku}>0xceB945...</span>
-                </div>
-              </td>
-              <td>
-                <div className={classes.tdProduct}>
-                  <Link href="/"><a className={classes.name}>
-                      <Image
-                        src={User2}
-                        height={55} width={55} alt="User"
-                      />
-                      <span>Name</span>
-                    </a></Link>
-                </div>
-              </td>
-              <td>
-              BIT
-              </td>
-              <td>
-                  <select className={`form-select` + ' ' + form.selectDropArrow}>
-                    <option value={1}>1</option>
-                    <option value={2}>2</option>
-                    <option value={3}>3</option>
-                    <option value={4}>4</option>
-                    <option value={5}>5</option>
-                    <option value={6}>6</option>
-                    <option value={7}>7</option>
-                    <option value={8}>8</option>
-                  </select>
-              </td>
-              <td>
-              <span className={`btn` + ' ' + classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span className={`dragable` + ' ' + classes.dragItem}>
-                  <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
-                </span>
-                <div className={classes.selectUser}>
-                  <input type="checkbox" />
-                  <span className={classes.checkSku}>0xceB945...</span>
-                </div>
-              </td>
-              <td>
-                <div className={classes.tdProduct}>
-                    <Link href="/"><a className={classes.name}>
-                      <Image
-                        src={User3}
-                        height={55} width={55} alt="User"
-                      />
-                      <span>Name</span>
-                    </a></Link>
-                </div>
-              </td>
-              <td>
-                OPENSES
-              </td>
-              <td>
-              <select className={`form-select` + ' ' + form.selectDropArrow}>
-                    <option value={1}>1</option>
-                    <option value={2}>2</option>
-                    <option value={3}>3</option>
-                    <option value={4}>4</option>
-                    <option value={5}>5</option>
-                    <option value={6}>6</option>
-                    <option value={7}>7</option>
-                    <option value={8}>8</option>
-                  </select>
-              </td>
-              <td>
-                <span className={classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span className={`dragable` + ' ' + classes.dragItem}>
-                  <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
-                </span>
-                <div className={classes.selectUser}>
-                  <input type="checkbox" />
-                  <span className={classes.checkSku}>0xceB945...</span>
-                </div>
-              </td>
-              <td>
-                <div className={classes.tdProduct}>
-                <Link href="/"><a className={classes.name}>
-                      <Image
-                        src={User4}
-                        height={55} width={55} alt="User"
-                      />
-                      <span>Name</span>
-                    </a></Link>
-                </div>
-              </td>
-              <td>
-              Chain
-              </td>
-              <td>
-                  <select className={`form-select` + ' ' + form.selectDropArrow}>
-                    <option value={1}>1</option>
-                    <option value={2}>2</option>
-                    <option value={3}>3</option>
-                    <option value={4}>4</option>
-                    <option value={5}>5</option>
-                    <option value={6}>6</option>
-                    <option value={7}>7</option>
-                    <option value={8}>8</option>
-                  </select>
-              </td>
-              <td>
-                <span className={classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span className={`dragable` + ' ' + classes.dragItem}>
-                  <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
-                </span>
-                <div className={classes.selectUser}>
-                  <input type="checkbox" />
-                  <span className={classes.checkSku}>0xceB945...</span>
-                </div>
-              </td>
-              <td>
-                <div className={classes.tdProduct}>
-                    <Link href="/"><a className={classes.name}>
-                      <Image
-                        src={User}
-                        height={55} width={55} alt="User"
-                      />
-                      <span>Name</span>
-                    </a></Link>
+                <div className={classes.prodNameGroup}>
+                  <span className={`dragable` + ' ' + classes.dragItem}>
+                    <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
+                  </span>
+                  <div className={classes.selectUser}>
+                    <label className={form.chkWrap}>
+                    <input type="checkbox" />
+                    <span className={classes.checkSku + ' ' + form.chkmark}>0xceB945...</span>
+                    </label>
+                  </div>
+                  <div className={classes.tdProduct}>
+                      <Link href="/"><a className={classes.name}>
+                        <Image
+                          src={User}
+                          height={55} width={55} alt="User"
+                        />
+                        <span>Name</span>
+                      </a></Link>
+                  </div>
                 </div>
               </td>
               <td>
@@ -292,23 +133,25 @@ const StepCollectionAssets = () => {
             </tr>
             <tr>
               <td>
-                <span className={`dragable` + ' ' + classes.dragItem}>
-                  <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
-                </span>
-                <div className={classes.selectUser}>
-                  <input type="checkbox" />
-                  <span className={classes.checkSku}>0xceB945...</span>
-                </div>
-              </td>
-              <td>
-                <div className={classes.tdProduct}>
-                  <Link href="/"><a className={classes.name}>
-                      <Image
-                        src={User2}
-                        height={55} width={55} alt="User"
-                      />
-                      <span>Name</span>
-                    </a></Link>
+                <div className={classes.prodNameGroup}>
+                  <span className={`dragable` + ' ' + classes.dragItem}>
+                    <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
+                  </span>
+                  <div className={classes.selectUser}>
+                    <label className={form.chkWrap}>
+                    <input type="checkbox" />
+                    <span className={classes.checkSku + ' ' + form.chkmark}>0xceB945...</span>
+                    </label>
+                  </div>
+                  <div className={classes.tdProduct}>
+                      <Link href="/"><a className={classes.name}>
+                        <Image
+                          src={User2}
+                          height={55} width={55} alt="User"
+                        />
+                        <span>Name</span>
+                      </a></Link>
+                  </div>
                 </div>
               </td>
               <td>
@@ -317,7 +160,7 @@ const StepCollectionAssets = () => {
               <td>
                   <select className={`form-select` + ' ' + form.selectDropArrow}>
                     <option value={1}>1</option>
-                    <option value={2} >2</option>
+                    <option value={2}>2</option>
                     <option value={3}>3</option>
                     <option value={4}>4</option>
                     <option value={5}>5</option>
@@ -327,28 +170,30 @@ const StepCollectionAssets = () => {
                   </select>
               </td>
               <td>
-                <span className={`btn` + ' ' + classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
+              <span className={`btn` + ' ' + classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
               </td>
             </tr>
             <tr>
               <td>
-                <span className={`dragable` + ' ' + classes.dragItem}>
-                  <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
-                </span>
-                <div className={classes.selectUser}>
-                  <input type="checkbox" />
-                  <span className={classes.checkSku}>0xceB945...</span>
-                </div>
-              </td>
-              <td>
-                <div className={classes.tdProduct}>
-                    <Link href="/"><a className={classes.name}>
-                      <Image
-                        src={User3}
-                        height={55} width={55} alt="User"
-                      />
-                      <span>Name</span>
-                    </a></Link>
+                <div className={classes.prodNameGroup}>
+                  <span className={`dragable` + ' ' + classes.dragItem}>
+                    <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
+                  </span>
+                  <div className={classes.selectUser}>
+                    <label className={form.chkWrap}>
+                    <input type="checkbox" />
+                    <span className={classes.checkSku + ' ' + form.chkmark}>0xceB945...</span>
+                    </label>
+                  </div>
+                  <div className={classes.tdProduct}>
+                      <Link href="/"><a className={classes.name}>
+                        <Image
+                          src={User3}
+                          height={55} width={55} alt="User"
+                        />
+                        <span>Name</span>
+                      </a></Link>
+                  </div>
                 </div>
               </td>
               <td>
@@ -358,7 +203,7 @@ const StepCollectionAssets = () => {
               <select className={`form-select` + ' ' + form.selectDropArrow}>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
-                    <option value={3} >3</option>
+                    <option value={3}>3</option>
                     <option value={4}>4</option>
                     <option value={5}>5</option>
                     <option value={6}>6</option>
@@ -372,23 +217,25 @@ const StepCollectionAssets = () => {
             </tr>
             <tr>
               <td>
-                <span className={`dragable` + ' ' + classes.dragItem}>
-                  <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
-                </span>
-                <div className={classes.selectUser}>
-                  <input type="checkbox" />
-                  <span className={classes.checkSku}>0xceB945...</span>
-                </div>
-              </td>
-              <td>
-                <div className={classes.tdProduct}>
-                <Link href="/"><a className={classes.name}>
-                      <Image
-                        src={User4}
-                        height={55} width={55} alt="User"
-                      />
-                      <span>Name</span>
-                    </a></Link>
+                <div className={classes.prodNameGroup}>
+                  <span className={`dragable` + ' ' + classes.dragItem}>
+                    <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
+                  </span>
+                  <div className={classes.selectUser}>
+                    <label className={form.chkWrap}>
+                    <input type="checkbox" />
+                    <span className={classes.checkSku + ' ' + form.chkmark}>0xceB945...</span>
+                    </label>
+                  </div>
+                  <div className={classes.tdProduct}>
+                      <Link href="/"><a className={classes.name}>
+                        <Image
+                          src={User4}
+                          height={55} width={55} alt="User"
+                        />
+                        <span>Name</span>
+                      </a></Link>
+                  </div>
                 </div>
               </td>
               <td>
@@ -399,7 +246,7 @@ const StepCollectionAssets = () => {
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>
-                    <option value={4} >4</option>
+                    <option value={4}>4</option>
                     <option value={5}>5</option>
                     <option value={6}>6</option>
                     <option value={7}>7</option>
@@ -407,7 +254,175 @@ const StepCollectionAssets = () => {
                   </select>
               </td>
               <td>
-                <span className={`btn` + ' ' + classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
+                <span className={classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div className={classes.prodNameGroup}>
+                  <span className={`dragable` + ' ' + classes.dragItem}>
+                    <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
+                  </span>
+                  <div className={classes.selectUser}>
+                    <label className={form.chkWrap}>
+                    <input type="checkbox" />
+                    <span className={classes.checkSku + ' ' + form.chkmark}>0xceB945...</span>
+                    </label>
+                  </div>
+                  <div className={classes.tdProduct}>
+                      <Link href="/"><a className={classes.name}>
+                        <Image
+                          src={User}
+                          height={55} width={55} alt="User"
+                        />
+                        <span>Name</span>
+                      </a></Link>
+                  </div>
+                </div>
+              </td>
+              <td>
+                  BITKUB
+              </td>
+              <td>
+                  <select className={`form-select` + ' ' + form.selectDropArrow}>
+                    <option value={1}>1</option>
+                    <option value={2}>2</option>
+                    <option value={3}>3</option>
+                    <option value={4}>4</option>
+                    <option value={5}>5</option>
+                    <option value={6}>6</option>
+                    <option value={7}>7</option>
+                    <option value={8}>8</option>
+                  </select>
+              </td>
+              <td>
+              <span className={`btn` + ' ' + classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div className={classes.prodNameGroup}>
+                  <span className={`dragable` + ' ' + classes.dragItem}>
+                    <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
+                  </span>
+                  <div className={classes.selectUser}>
+                    <label className={form.chkWrap}>
+                    <input type="checkbox" />
+                    <span className={classes.checkSku + ' ' + form.chkmark}>0xceB945...</span>
+                    </label>
+                  </div>
+                  <div className={classes.tdProduct}>
+                      <Link href="/"><a className={classes.name}>
+                        <Image
+                          src={User2}
+                          height={55} width={55} alt="User"
+                        />
+                        <span>Name</span>
+                      </a></Link>
+                  </div>
+                </div>
+              </td>
+              <td>
+              BIT
+              </td>
+              <td>
+                  <select className={`form-select` + ' ' + form.selectDropArrow}>
+                    <option value={1}>1</option>
+                    <option value={2}>2</option>
+                    <option value={3}>3</option>
+                    <option value={4}>4</option>
+                    <option value={5}>5</option>
+                    <option value={6}>6</option>
+                    <option value={7}>7</option>
+                    <option value={8}>8</option>
+                  </select>
+              </td>
+              <td>
+              <span className={`btn` + ' ' + classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div className={classes.prodNameGroup}>
+                  <span className={`dragable` + ' ' + classes.dragItem}>
+                    <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
+                  </span>
+                  <div className={classes.selectUser}>
+                    <label className={form.chkWrap}>
+                    <input type="checkbox" />
+                    <span className={classes.checkSku + ' ' + form.chkmark}>0xceB945...</span>
+                    </label>
+                  </div>
+                  <div className={classes.tdProduct}>
+                      <Link href="/"><a className={classes.name}>
+                        <Image
+                          src={User3}
+                          height={55} width={55} alt="User"
+                        />
+                        <span>Name</span>
+                      </a></Link>
+                  </div>
+                </div>
+              </td>
+              <td>
+                OPENSES
+              </td>
+              <td>
+              <select className={`form-select` + ' ' + form.selectDropArrow}>
+                    <option value={1}>1</option>
+                    <option value={2}>2</option>
+                    <option value={3}>3</option>
+                    <option value={4}>4</option>
+                    <option value={5}>5</option>
+                    <option value={6}>6</option>
+                    <option value={7}>7</option>
+                    <option value={8}>8</option>
+                  </select>
+              </td>
+              <td>
+                <span className={classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div className={classes.prodNameGroup}>
+                  <span className={`dragable` + ' ' + classes.dragItem}>
+                    <FontAwesomeIcon icon={faArrows} className={classes.faArrows} />
+                  </span>
+                  <div className={classes.selectUser}>
+                    <label className={form.chkWrap}>
+                    <input type="checkbox" />
+                    <span className={classes.checkSku + ' ' + form.chkmark}>0xceB945...</span>
+                    </label>
+                  </div>
+                  <div className={classes.tdProduct}>
+                      <Link href="/"><a className={classes.name}>
+                        <Image
+                          src={User4}
+                          height={55} width={55} alt="User"
+                        />
+                        <span>Name</span>
+                      </a></Link>
+                  </div>
+                </div>
+              </td>
+              <td>
+              Chain
+              </td>
+              <td>
+                  <select className={`form-select` + ' ' + form.selectDropArrow}>
+                    <option value={1}>1</option>
+                    <option value={2}>2</option>
+                    <option value={3}>3</option>
+                    <option value={4}>4</option>
+                    <option value={5}>5</option>
+                    <option value={6}>6</option>
+                    <option value={7}>7</option>
+                    <option value={8}>8</option>
+                  </select>
+              </td>
+              <td>
+                <span className={classes.deleteRow}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} /></span>
               </td>
             </tr>
           </tbody>
@@ -446,21 +461,21 @@ const StepCollectionAssets = () => {
               <div className='col-md-8'>
                   <div className='row'>
                     <div className='col-md-4'>
-                      <div className={classes.formControl} variant="primary">
+                      <div className={classes.formControl + ' ' + classes.formGroup} variant="primary">
                         <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}> <FontAwesomeIcon icon={faSortAmountDown} className={classes.faAngleRight} /> &nbsp;
                         Channel <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
                         </label>
                       </div>
                     </div>
                     <div className='col-md-4'>
-                      <div className={classes.formControl} variant="primary">
+                      <div className={classes.formControl + ' ' + classes.formGroup} variant="primary">
                         <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}><FontAwesomeIcon icon={faSortAmountDown} className={classes.faAngleRight} /> &nbsp;
                         Contract <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
                         </label>
                       </div>
                     </div>
                     <div className='col-md-4'>
-                      <div className={classes.formControl} variant="primary">
+                      <div className={classes.formControl + ' ' + classes.formGroup} variant="primary">
                         <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}><FontAwesomeIcon icon={faSortAmountDown} className={classes.faAngleRight} /> &nbsp;
                         Sort by date  <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
                         </label>

@@ -1,11 +1,6 @@
 
 @import '../variables';
 
-$progress-bg-color            : #F8F5FF;
-$progress-border-bg-color     : #ABABBA;
-$progress-border-radius       : 4px;
-$progressbar-bg-color         : #FAFAFC;
-$progress-active-bg-color     : #00CCA9;
 
 .progress {
     width: 100%; margin: 0 15px;
@@ -34,8 +29,6 @@ $progress-active-bg-color     : #00CCA9;
 
 }
 
-$border-color   : #EAEAED;
-$white          : #fff;
 
 .backThemename {
     display: inline-flex; align-items: center;
@@ -60,4 +53,18 @@ $white          : #fff;
     display: inline-block;
     border-right: 1px solid $border-color;  
     padding-right: 1rem;  
+}
+
+@media all and (max-width: 767px) {
+     .progressInner {
+        flex-wrap: wrap;
+    }
+    .backThemename {
+        width: 100%;
+    }
+    .headerBtnGroup {
+        button {
+            margin-top: .5rem;
+        }
+    }
 }

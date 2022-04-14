@@ -36,21 +36,21 @@ const StepCollectionAssets = () => {
           <div className='col-md-8'>
               <div className='row'>
                 <div className='col-md-4'>
-                  <div className={classes.formControl} variant="primary">
+                  <div className={classes.formControl + ' ' + classes.formGroup} variant="primary">
                     <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}> <FontAwesomeIcon icon={faSortAmountDown} className={classes.faAngleRight} /> &nbsp;
                     Channel <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
                     </label>
                   </div>
                 </div>
                 <div className='col-md-4'>
-                  <div className={classes.formControl} variant="primary">
+                  <div className={classes.formControl + ' ' + classes.formGroup} variant="primary">
                     <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}><FontAwesomeIcon icon={faSortAmountDown} className={classes.faAngleRight} /> &nbsp;
                     Contract <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
                     </label>
                   </div>
                 </div>
                 <div className='col-md-4'>
-                  <div className={classes.formControl} variant="primary">
+                  <div className={classes.formControl + ' ' + classes.formGroup} variant="primary">
                     <label className={'d-block' + ' ' +classes.modalLabel} style={{cursor:"pointer"}}><FontAwesomeIcon icon={faSortAmountDown} className={classes.faAngleRight} /> &nbsp;
                     Sort by date  <span style={{float:"right"}}><FontAwesomeIcon icon={faAngleRight} className={classes.faAngleRight} /></span>
                     </label>
@@ -61,7 +61,7 @@ const StepCollectionAssets = () => {
         </div>
       </div>
 
-      <div className={classes.tableWrapper}>
+      <div className={`table-responsive` + ' ' + classes.tableWrapper}>
         <table className={`table` + ' '  + classes.table}>
           <thead>
             <tr>

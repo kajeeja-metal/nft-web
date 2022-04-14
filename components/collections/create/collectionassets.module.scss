@@ -106,8 +106,11 @@
 			}
 		}
 	}
+	.prodNameGroup {
+		@include flex; align-items: center;;
+	}
 	td {
-		border: none;
+		border: none; vertical-align: middle;
 		&:last-child{
 			text-align: center;
 		}
@@ -120,8 +123,9 @@
 		}
 		.selectUser {
 			display: inline-flex; align-items: center;
+			margin-right: .5rem;
 			input {
-				margin-right: 5px;
+				
 			}
 		}
 		img {

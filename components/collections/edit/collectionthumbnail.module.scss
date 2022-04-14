@@ -66,3 +66,15 @@
     padding-bottom: 5px;
     align-items: center;
 }
+
+
+@media all and (max-width: 767px) {
+
+	.formGroup {
+		label {
+	    	margin-bottom: .25rem;
+	    }
+	}
+
+
+}

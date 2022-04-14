@@ -41,7 +41,14 @@
     padding: .75rem; border-radius: $form-border-radius;
 }
 
+@media all and (max-width: 990px) { 
 
+ 
+    .assetNum {
+        font-size: $font-mini;
+    }
+
+}
 
 @media all and (max-width: 767px) {
 

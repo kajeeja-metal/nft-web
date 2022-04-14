@@ -42,7 +42,7 @@
 			opacity: 0;
 		}
 		label {
-			display: block;
+			display: block; margin-bottom: 0;
 		}
 		&.active, &:hover {
 			background: $imglist-active-bg-color;
@@ -100,4 +100,23 @@
 .decideLbl {
 	font-size: $font-medium; color: $default-color;
 	font-weight: normal; margin-bottom: .75rem;
+}
+
+@media all and (max-width: 767px) {
+
+	.formGroup {
+		label {
+	    	margin-bottom: .25rem;
+	    }
+	}
+	.imgLIst {
+		list-style: none; padding-left: 0px;
+		li {
+			margin: 5px; padding: 5px;
+		}
+
+	}
+	.cropStyleImg {
+		margin-bottom: .75rem;
+	}
 }

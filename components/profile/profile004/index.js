@@ -52,7 +52,7 @@ export default function Profile004() {
         </div> */}
         <div className={`container`+ ' ' +  classes.container}>
           <div className="row align-items-center">
-            <div className="col-sm-4">
+            <div className="col-md-4">
               <div className={classes.userWrap}>
                 <div className={classes.profileImg}>
                   <Image
@@ -144,7 +144,7 @@ export default function Profile004() {
                 </li>
               </div>
             </div>
-            <div className="col-sm-7 offset-md-1">
+            <div className="col-md-7 offset-md-1">
 				      <Thumbs004 />
             </div>
           </div>

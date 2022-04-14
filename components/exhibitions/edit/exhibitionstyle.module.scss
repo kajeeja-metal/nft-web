@@ -26,6 +26,11 @@
 .btnGroup {
 	display: flex; flex-wrap: wrap;
 	justify-content: space-between;
+	button {
+		&:not(:last-child) {
+			margin-right: .75rem;
+		}
+	}
 	.btn {
 		min-width: 46%; position: relative;
 		input[type="radio"] {
@@ -144,3 +149,19 @@
 	}
 }
 
+@media all and (max-width: 767px) {
+
+	.formGroup {
+		label {
+	    	margin-bottom: .25rem;
+	    }
+	}
+	.imgLIst {
+		list-style: none; padding-left: 0px;
+		li {
+			margin: 5px; padding: 5px;
+		}
+
+	}
+
+}

@@ -124,7 +124,7 @@
 @media all and (max-width:550px) {
 
     .assetsAll {
-        grid-template-columns: repeat(2, minmax(12rem, 1fr));
+        grid-template-columns: repeat(2, minmax(2rem, 2fr));
         gap: 1rem;
     }
 

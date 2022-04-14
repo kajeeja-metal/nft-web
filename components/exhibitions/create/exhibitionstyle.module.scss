@@ -50,7 +50,7 @@
 			opacity: 0;
 		}
 		label {
-			display: block;
+			display: block; margin-bottom: 0;
 		}
 		&.active, &:hover {
 			background: $imglist-active-bg-color;
@@ -141,3 +141,17 @@
 	}
 }
 
+@media all and (max-width: 767px) {
+	.formGroup {
+		label {
+	    	margin-bottom: .25rem;
+	    }
+	}
+	.imgLIst {
+		list-style: none; padding-left: 0px;
+		li {
+			margin: 5px; padding: 5px;
+		}
+
+	}
+}

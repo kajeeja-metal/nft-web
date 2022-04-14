@@ -107,3 +107,27 @@
 	}
 }
 
+@media all and (max-width: 990px) {
+
+	.checkitem {
+		line-height: 1;
+	}
+	.thumbTitle {
+		font-size: $font-normal;
+	}
+	.btnGroup {
+		button {
+			&:not(:first-child) {
+				margin-top: .5rem;
+			}
+		}
+	}
+}
+@media all and (max-width: 767px) {
+
+	.btnGroup {
+		button {
+			width: 100%;
+		}
+	}
+}

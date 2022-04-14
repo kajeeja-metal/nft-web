@@ -22,7 +22,16 @@ export default function Collections005() {
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		variableWidth: true
+		variableWidth: true,
+		responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+			slidesToShow: 1,
+			variableWidth: false,
+			}
+		}
+		]
     };
     return (
 		<>

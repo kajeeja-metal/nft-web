@@ -37,3 +37,18 @@
     font-weight: 700;
   }
 }
+
+
+@media all and (max-width: 767px) {
+  .thumbTitlewrap {
+    h3 {
+      font-size: $font-large; margin-bottom: .75rem;
+    }
+  }
+  .dateWish {
+    position: static;
+  }
+  .thumbInfo, .thumbImg {
+    width: 100%;
+  }
+}

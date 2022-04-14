@@ -122,3 +122,24 @@
 		border-radius: 50%;
 	}
 }
+
+
+@media all and (max-width: 767px) {
+
+	.formGroup {
+		label {
+	    	margin-bottom: .25rem;
+	    }
+	}
+	.imgLIst {
+		list-style: none; padding-left: 0px;
+		li {
+			margin: 5px; padding: 5px;
+		}
+
+	}
+	.cropStyleImg {
+		margin-bottom: .5rem;
+	}
+
+}

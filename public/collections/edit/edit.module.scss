@@ -58,3 +58,17 @@
     }
 }
 
+
+@media all and (max-width: 767px) {
+    .progressInner {
+        flex-wrap: wrap;
+    }
+    .backThemename {
+        width: 100%;
+    }
+    .headerBtnGroup {
+        button {
+            margin-top: .5rem;
+        }
+    }
+}

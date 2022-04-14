@@ -1,11 +1,6 @@
 
 @import '../variables';
 
-$icon-color : #5F5F6D;
-$border-active-color : #00CCA9;
-$preview-btn-color : #3A3A43;
-
-
 .tab  {
 	margin-bottom: 1.5rem;
 }
@@ -171,3 +166,13 @@ $preview-btn-color : #3A3A43;
 	}
 }
 
+
+@media all and (max-width: 767px) {
+
+	.formGroup {
+		label {
+	    	margin-bottom: .25rem;
+	    }
+	}
+
+}

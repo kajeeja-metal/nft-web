@@ -83,7 +83,7 @@ const ExhibitionStyle = () => {
                     <div className="tab-pane show active" id="solid">
                       <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                           <span className={`form-control` + ' ' + nav.colorBg}></span>
-                          <input type="text" value="#05FF44" className="form-control" />                            
+                          <input type="text" placeholder="#05FF44" className="form-control" />                            
                       </div>
                     </div>
                     <div className="tab-pane fade" id="gredient">
@@ -115,7 +115,7 @@ const ExhibitionStyle = () => {
                   <div className="tab-pane show active" id="solid2">
                     <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                         <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                        <input type="text" value="#05FF44" className="form-control" />                            
+                        <input type="text" placeholder="#05FF44" className="form-control" />                            
                     </div>
                   </div>
                   <div className="tab-pane fade" id="gredient2">
@@ -148,7 +148,7 @@ const ExhibitionStyle = () => {
                       src={ThumbList}
                       height={90} width={90} alt="Thumbs"
                     />
-                    <input type="radio" name="selectcollectionbg" checked />
+                    <input type="radio" name="selectcollectionbg" defaultChecked={true} />
                   </label>
                 </li>
                 <li>
@@ -224,7 +224,7 @@ const ExhibitionStyle = () => {
               </ul>
               <div className={`row` + ' ' + classes.imageStyleSelect}>
                 <div className='col-md-6'>
-                  Image Adjustment
+                  <label>Image Adjustment</label>
                 </div>
                 <div className='col-md-6'>
                   <select className={`form-select` + ' ' +form.selectDropArrow}>
@@ -265,7 +265,7 @@ const ExhibitionStyle = () => {
                       <div className="tab-pane show active " id="solid22">
                         <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                             <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                            <input type="text" value="#05FF44" className="form-control" />                            
+                            <input type="text" placeholder="#05FF44" className="form-control" />                            
                         </div>
                       </div>
                       <div className="tab-pane fade" id="gredient22">

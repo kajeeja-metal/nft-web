@@ -57,7 +57,7 @@ const ExhibitionInfo = () => {
                           src={ThumbList}
                           height={90} width={90} alt="Thumbs"
                         />
-                        <input type="radio" name="selectcollectionbg" checked />
+                        <input type="radio" name="selectcollectionbg" defaultChecked={true} />
                       </label>
                     </li>
                     <li>

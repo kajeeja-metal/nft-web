@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Image from "next/image"
 
 import nav from '../../../public/exhibitions/tabnav.module.scss';
-import button from '../../../public/account/Buttons.module.scss'
+import button from '../../../public/account/Buttons.module.scss';
 import Form from '../../../public/account/Form.module.scss';
 import Pagination from '../../../components/common/paginationtotal.js';
 import classes from '../edit/exhibitionstyle.module.scss';
@@ -80,7 +80,7 @@ const ExhibitionStyle = () => {
                     <div className="tab-pane show active" id="solid">
                       <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                           <span className={`form-control` + ' ' + nav.colorBg}></span>
-                          <input type="text" value="#05FF44" className="form-control" />                            
+                          <input type="text" placeholder="#05FF44" className="form-control" />                            
                       </div>
                     </div>
                     <div className="tab-pane fade" id="gredient">
@@ -112,7 +112,7 @@ const ExhibitionStyle = () => {
                   <div className="tab-pane show active" id="solid2">
                     <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                         <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                        <input type="text" value="#05FF44" className="form-control" />                            
+                        <input type="text" placeholder="#05FF44" className="form-control" />                            
                     </div>
                   </div>
                   <div className="tab-pane fade" id="gredient2">
@@ -145,7 +145,7 @@ const ExhibitionStyle = () => {
                         src={ThumbList}
                         height={90} width={90} alt="Thumbs"
                       />
-                      <input type="radio" name="selectcollectionbg" checked />
+                      <input type="radio" name="selectcollectionbg" defaultChecked={true} />
                     </label>
                   </li>
                   <li>
@@ -221,10 +221,10 @@ const ExhibitionStyle = () => {
                 </ul>
                 <div className={`row` + ' ' + classes.imageStyleSelect}>
                   <div className='col-md-6'>
-                    Image Adjustment
+                    <label>Image Adjustment</label>
                   </div>
                   <div className='col-md-6'>
-                    <select className='form-control'>
+                    <select className={`form-select` + ' ' + Form.selectDropArrow}>
                       <option value="">Image Style</option>
                       <option value="50px 100px">Fill the frame vertically</option>
                       <option value="10% 40%">Fill the frame horizontally</option>
@@ -262,7 +262,7 @@ const ExhibitionStyle = () => {
                         <div className="tab-pane show active " id="solid22">
                           <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                               <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                              <input type="text" value="#05FF44" className="form-control" />                            
+                              <input type="text" placeholder="#05FF44" className="form-control" />                            
                           </div>
                         </div>
                         <div className="tab-pane fade" id="gredient22">
@@ -281,10 +281,10 @@ const ExhibitionStyle = () => {
       </div>
 
       <div className={classes.formGroup}>
-        <div className='d-flex justify-content-between'>
+        <div className='d-flex flex-wrap justify-content-between'>
           <a className={'btn' + ' ' + button.btnTextDanger}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
           <div className={classes.btnGroup}>
-            <button type="button" className={'btn' + ' ' + button.btnDanger}> Cancel</button> &nbsp;
+            <button type="button" className={'btn' + ' ' + button.btnDanger}> Cancel</button> 
             <button type="button" className={'btn' + ' ' + button.btnPrimary}>Save Draft</button>
           </div>
         </div>
@@ -322,7 +322,7 @@ const ExhibitionStyle = () => {
             <div className='col-md-4'>
               <div className={classes.fontItemList + ' ' + classes.active}>
                 <div className={classes.checkitem}>
-                  <input type="checkbox" />
+                  <input type="checkbox" defaultChecked={true} />
                   <span className={classes.checkicon}>                   
                   <FontAwesomeIcon icon={faCheckCircle} className={classes.faCheckCircle} />
                   </span>

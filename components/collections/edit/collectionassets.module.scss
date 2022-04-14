@@ -107,8 +107,11 @@
 			}
 		}
 	}
+	.prodNameGroup {
+		@include flex; align-items: center;;
+	}
 	td {
-		border: none;
+		border: none; vertical-align: middle;
 		&:last-child{
 			text-align: center;
 		}

@@ -73,7 +73,25 @@
 .collectionFilter {
 	margin-bottom: 1.5rem;
 }
-
+.assetBtnGroup {
+	text-align: center;
+	button {
+		margin-right: 10px; 
+		& + button {
+			min-width: 200px; margin-right: 0;
+		}
+	}
+}
+.searchModal {
+	position: relative;
+	input {
+		padding-left: 45px;
+	}
+	button {
+		position: absolute; color: $icon-color;
+		height: 100%;
+	}
+}
 
 /* table  */
 

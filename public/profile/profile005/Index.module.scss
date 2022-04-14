@@ -301,3 +301,38 @@
     display: flex;
     align-items: center
 }
+
+
+@media all and (max-width: 991px) {
+    
+    .footerRow {
+        flex-wrap: wrap;
+    }
+    .copyright {
+        width: 100%; 
+    }
+    .socialContainer {
+        @include flexbox; width: 100%;
+        li {
+            &:first-child {
+                width: 100%;
+            } 
+            margin-top: .75rem;
+        }
+    }
+
+    .userInfoWrap {
+        .profileImg, .userInfo, .userDesc, .likeWrap {
+            width: 100%; margin-bottom: .75rem;
+        }
+        .profileImg {
+            margin-top: 0;
+        }
+        .socialList {
+            margin-bottom: 0;
+        }
+    }
+
+
+
+}

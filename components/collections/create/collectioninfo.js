@@ -270,7 +270,7 @@ const StepCollectionInfo = () => {
                 </ul>
                 <div className={`row` + ' ' + classes.imageStyleSelect}>
                   <div className='col-md-6'>
-                    Image Adjustment
+                    <label>Image Adjustment</label>
                   </div>
                   <div className='col-md-6'>
                     <select className={`form-select` + ' ' +form.selectDropArrow}>

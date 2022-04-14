@@ -15,7 +15,7 @@
     text-align: center;
 }
 .formGroup {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;   
 }
 .formControl {
     border: 1px solid $border;
@@ -39,7 +39,7 @@
 			opacity: 0;
 		}
 		label {
-			display: block;
+			display: block; margin-bottom: 0;
 		}
 		&.active, &:hover {
 			background: $imglist-active-bg-color;
@@ -60,4 +60,25 @@
     padding-top: 10px; padding-left: 10px;
     padding-bottom: 5px;
     align-items: center;
+}
+
+
+@media all and (max-width: 767px) {
+
+	.formGroup {
+		label {
+	    	margin-bottom: .25rem;
+	    }
+	}
+	.imgLIst {
+		list-style: none; padding-left: 0px;
+		li {
+			margin: 5px; padding: 5px;
+		}
+
+	}
+	.imageStyleSelect {
+		padding-left: 0;
+	}
+
 }

@@ -142,8 +142,8 @@ const StepCollectionInfo = () => {
                   <div className="tab-content">
                     <div className="tab-pane show active " id="solid21">
                       <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
-                          <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                          <input type="text"  className="form-control" />                            
+                          <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}} ></span>
+                          <input type="text"  className="form-control" placeholder='#05FF44' />                            
                       </div>
                     </div>
                     <div className="tab-pane fade" id="gredient21">
@@ -271,7 +271,7 @@ const StepCollectionInfo = () => {
                 </ul>
                 <div className={`row` + ' ' + classes.imageStyleSelect}>
                   <div className='col-md-6'>
-                    Image Adjustment
+                    <label>Image Adjustment</label>
                   </div>
                   <div className='col-md-6'>
                     <select className={`form-select` + ' ' +form.selectDropArrow}>
@@ -312,7 +312,7 @@ const StepCollectionInfo = () => {
                         <div className="tab-pane show active " id="solid22">
                           <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                               <span className={`form-control` + ' ' + nav.colorBg} style={{background:"#2A&C6F"}}></span>
-                              <input type="text" value={`#2A&C6F`}  className="form-control" />                            
+                              <input type="text" placeholder="#2A&C6F"  className="form-control" />                            
                           </div>
                         </div>
                         <div className="tab-pane fade" id="gredient22">
@@ -331,7 +331,7 @@ const StepCollectionInfo = () => {
       </div>
 
 
-      <div className={ classes.btnGroup}>
+      <div className={ classes.btnGroup + ' ' + classes.formGroup}>
         <a className={`btn ${button.btnTextDanger}`}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
       </div>
 

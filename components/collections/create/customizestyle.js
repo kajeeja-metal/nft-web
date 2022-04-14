@@ -73,7 +73,7 @@ const StepCustomizeStyle = () => {
                       <div className="tab-pane show active" id="solid">
                         <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                             <span className={`form-control` + ' ' + nav.colorBg}></span>
-                            <input type="text" value="#05FF44" className="form-control" />                            
+                            <input type="text" placeholder="#05FF44" className="form-control" />                            
                         </div>
                       </div>
                       <div className="tab-pane fade" id="gredient">
@@ -105,7 +105,7 @@ const StepCustomizeStyle = () => {
                     <div className="tab-pane show active" id="solid2">
                       <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                           <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                          <input type="text" value="#05FF44" className="form-control" />                            
+                          <input type="text" placeholder="#05FF44" className="form-control" />                            
                       </div>
                     </div>
                     <div className="tab-pane fade" id="gredient2">
@@ -137,7 +137,7 @@ const StepCustomizeStyle = () => {
                 <div className="tab-pane fade " id="solid3">
                   <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                       <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                      <input type="text" value="#05FF44" className="form-control" />                            
+                      <input type="text" placeholder="#05FF44" className="form-control" />                            
                   </div>
                 </div>
                 <div className="tab-pane show active" id="gredient3">
@@ -169,7 +169,7 @@ const StepCustomizeStyle = () => {
                   <div className="tab-pane fade " id="solid4">
                     <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                         <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                        <input type="text" value="#05FF44" className="form-control" />                            
+                        <input type="text" placeholder="#05FF44" className="form-control" />                            
                     </div>
                   </div>
                   <div className="tab-pane show active" id="gredient4">
@@ -201,7 +201,7 @@ const StepCustomizeStyle = () => {
                   <div className="tab-pane fade " id="solid5">
                     <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                         <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                        <input type="text" value="#05FF44" className="form-control" />                            
+                        <input type="text" placeholder="#05FF44" className="form-control" />                            
                     </div>
                   </div>
                   <div className="tab-pane show active" id="gredient5">
@@ -216,7 +216,7 @@ const StepCustomizeStyle = () => {
         </div>
 
         <div className={classes.formGroup}>
-          <div className='d-flex justify-content-between'>
+          <div className='d-flex flex-wrap justify-content-between'>
             <a className={`btn ${button.btnTextDanger}`}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
             <div className={classes.btnsGroup}>
               <button className={`btn ${button.btnOutlinePrimary}`}>Cancel</button>

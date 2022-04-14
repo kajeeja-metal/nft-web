@@ -7,7 +7,7 @@ import form from '../../../public/account/Form.module.scss';
 import classes from '../../../components/exhibitions/edit/exhibitioninfo.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faTrash } from '@fortawesome/free-regular-svg-icons';
+import { faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 import ThumbList from '../../../public/exhibitions/images/thumb.png';
 import CoverList from '../../../public/exhibitions/images/covercrop.png';
@@ -57,7 +57,7 @@ const ExhibitionInfo = () => {
                       src={ThumbList}
                       height={90} width={90} alt="Thumbs"
                     />
-                    <input type="radio" name="selectcollectionbg" checked />
+                    <input type="radio" name="selectcollectionbg" defaultChecked={true} />
                   </label>
                 </li>
                 <li>
@@ -200,7 +200,7 @@ const ExhibitionInfo = () => {
                   <div className="tab-pane show active " id="solid22">
                     <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                         <span className={`form-control` + ' ' + nav.colorBg} style={{background:"#008F76"}}></span>
-                        <input type="text" value="#05FF44" className="form-control" />                            
+                        <input type="text" placeholder="#05FF44" className="form-control" />                            
                     </div>
                   </div>
                   <div className="tab-pane fade" id="gredient22">
@@ -225,14 +225,14 @@ const ExhibitionInfo = () => {
           <label>Description</label>
         </div>
         <div className='col-md-8'>
-            <textarea type="text" className={form.formElements} placeholder='Optional ... ' rows="6"  value="DeCreated by SoundMint
+            <textarea type="text" className={form.formElements} placeholder='Optional ... ' rows="6"  defaultValue="DeCreated by SoundMint
 KLOUD is the artistical embodiment of limitless creativity in anonymity. With this NFT drop, the collector enters the KLOUD, owning a unique visual & musical art piece derived from the generative algorithm that is KLOUD x HOOKER x COMPUTER. Holding one of these NFTs grants future access to  ....."></textarea>
             <p className={`text-right` + ' ' + classes.leftnumber}>15/80</p>
         </div>
       </div>  
 
       <div className={classes.formGroup}>
-        <div className='d-flex justify-content-between'>
+        <div className='d-flex flex-wrap justify-content-between'>
           <a className={'btn' + ' ' + button.btnTextDanger}><FontAwesomeIcon icon={faTrash} className={classes.faTrash} />  Delete this collection</a>
           <div className={classes.btnGroup}>
             <button type="button" className={'btn' + ' ' + button.btnDanger}> Cancel</button> &nbsp; 

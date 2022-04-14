@@ -49,3 +49,13 @@
     font-weight: 700;
   }
 }*/
+@media all and (max-width: 1199px) {
+    .thumblist {
+        padding: 0;
+        .thumbImg {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

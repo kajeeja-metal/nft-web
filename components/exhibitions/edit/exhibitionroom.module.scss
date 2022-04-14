@@ -91,6 +91,11 @@
 
 .btnGroup {
 	@include flexbox();
+    button {
+        &:not(:last-child) {
+            margin-right: .75rem;
+        }
+    }
 	.btn {
 		position: relative;
 		input[type="radio"] {
@@ -117,8 +122,9 @@
 		left: 10px; top: 10px; z-index: 2;
 	}
 	.faCheckCircle {
-		color: #00CCA9; background:#000; font-size: 22px;
-		border-radius: 50%;
-	}
+        color: $checkitem-color; 
+        font-size: $font-large;
+        border-radius: 50%;
+    }
 }
 

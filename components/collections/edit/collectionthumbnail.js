@@ -145,7 +145,7 @@ const StepCollectionThumbnail = () => {
                       <div className="tab-pane fade show active" id="solid31">
                         <div className={`input-group colorpicker-component colorpicker-element` + ' ' + nav.colorElement}>
                             <span className={`form-control` + ' ' + nav.colorBg} style={{background:"yellow"}}></span>
-                            <input type="text" value="#05FF44" className="form-control" />                            
+                            <input type="text" placeholder="#05FF44" className="form-control" />                            
                         </div>
                       </div>
                       <div className="tab-pane show" id="gredient31">
