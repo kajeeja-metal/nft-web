@@ -1,0 +1,118 @@
+
+
+@import '../../../public/account/variables/colors';
+@import '../../../public/account/variables/forms';
+@import '../../../public/account/variables/mixin';
+@import '../../../public/account/variables/text_link';
+
+$fontOxygen:           '';
+
+$default       : #3A3A43;
+$default-color : $default;
+$border        : #EAEAED;
+$border-color  : $border;
+$color-primary-main:   $default-color;
+
+/* Variable for Collection Thumb component  */
+
+$thumbListMarginB:            .1rem;
+$thumbListPadding:            0px;
+$thumbListBorderColor:        #fff;
+$thumbListHoverBorderColor:   transparent;
+$thumbListBorderRadius:       16px;
+
+$thumbImgMarginB:             0px;
+$thumbImgBorderRadius:        16px 16px 0 0;
+$thumbImgBorderColor:         transparent;
+$thumbImgBorderHoverColor:    transparent;
+
+$thumbInfoPadding:            .75rem 1rem;
+$thumbInfoColor:              $default-color;
+$thumbInfoBgColor:            #fff;
+$thumbInfoBgHoverColor:       $default-color;
+$thumbInfoBorderColor:        transparent;
+$thumbInfoHoverBorderColor:   transparent;
+
+$thumbTitleColor:             $default-color;
+$thumbTitleHoverColor:        $default-color;
+$thumbTitleSize:              20px;
+$thumbTitleMarginB:           .5rem;
+$thumbTitleFontWeight:        700;
+
+$thumbDescColor:              $default-color;
+$thumbDescSize:               14px;
+$thumbDescMarginB:            .5rem;
+$thumbDateColor:              $default-color;
+
+$thumbChainFontSize:          14px;
+$thumbChainFontColor:         $default-color;
+$thumbChainMarginB:           16px;
+
+/* Variable for Collection page   */
+
+$collectionH1FontSize:             48px;
+$collectionH1FontColor:            #fff;
+$collectionH1FontFamily:           $fontOxygen;
+$collectionH1FontWeight:           700;
+$collectionH1MarginB:              1.5rem;
+
+$collectionH2FontSize:             36px;
+$collectionH2FontColor:            $default-color;
+$collectionH2FontFamily:           $fontOxygen;
+$collectionH2FontWeight:           700;
+$collectionH2MarginB:              .25rem;
+
+$collectionH3FontSize:             36px;
+$collectionH3FontColor:            $default-color;
+$collectionH3FontFamily:           $fontOxygen;
+$collectionH3FontWeight:           700;
+$collectionH3MarginB:              .25rem;
+
+$collectionH4FontSize:             18px;
+$collectionH4FontColor:            $default-color;
+$collectionH4FontFamily:           $fontOxygen;
+$collectionH4FontWeight:           700;
+$collectionH4MarginB:              .25rem;
+
+$collectionH5FontSize:             36px;
+$collectionH5FontColor:            $default-color;
+$collectionH5FontFamily:           $fontOxygen;
+$collectionH5FontWeight:           700;
+$collectionH5MarginB:              .25rem;
+
+$collectionH6FontSize:             18px;
+$collectionH6FontColor:            #C4C4C4;
+$collectionH6FontFamily:           $fontOxygen;
+$collectionH6FontWeight:           normal;
+$collectionH6MarginB:              .25rem;
+
+$socialLabelFontSize:              14px;
+$socialIconColor:                  #fff;
+$socialIconHoverColor:             $primary;
+$socialFontSize:                   16px;
+
+$userDescFontSize:                 14px;
+$userDescColor:                    #fff;
+$userDescMarginB:                  14px;
+
+
+$userTitleFontSize:                14px;
+$userTitleColor:                   #fff;
+$userTitleFontWeight:              normal;
+$userTitleMarginB:                 .25rem;
+
+
+$footerPaddingT:                    15px;
+$footerPaddingB:                    20px;
+$footerMarginT:                     30px;
+$footerBgColor:                     rgba(0,0,0,.7);
+$footerColor:                       #fff;
+$footerFontSize:                    16px;
+ 
+
+
+.gredientTextColor {
+	background-clip: text;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

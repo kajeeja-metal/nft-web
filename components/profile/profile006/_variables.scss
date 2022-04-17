@@ -4,85 +4,71 @@
 @import '../../../public/account/variables/mixin';
 @import '../../../public/account/variables/text_link';
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;700;900&display=swap');
 
-$fontArchivo:              'Archivo', sans-serif;
-$fontArchivoBold:          'Archivo Black', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
+$fontOxygen:               'Oxygen', sans-serif;
+$fontOpenSans:             'Open Sans', sans-serif;
 
-$colorPrimaryone:           #00FF9D;
-$colorPrimarytwo:           #00FFFF;
-$colorPrimarythree:         #EE25FF;
-$color-primary-main:        linear-gradient(101.12deg, $colorPrimaryone -25.01%, 
-                                                        $colorPrimarytwo 36.27%, 
-                                                        $colorPrimarythree 100.16%);
-$color-Button:              linear-gradient(101.12deg, #00FF9D -25.01%, #00FFFF 36.27%, #EE25FF 100.16%);
-$color-title-main:          linear-gradient(101.12deg, #00FF9D -25.01%, #00FFFF 36.27%, #EE25FF 100.16%);
-$color-secondary-main:      #F5F5F5;
+$color-primary-main:        #3A3A43;
+$color-secondary-main:      #FFFFFF;
+$color-Button:              #3A3A43;
+$color-title-main:          #333646;
+
+$default:                   #3A3A43;
 $default-color:             $default;
-
-
-$toggleIconFontSize:         $font-xlarge;
-$toggleIconColor:            $color-primary-main;
-$toggleIconFontWeight:       normal;
-$toggleIconMarginB:          40px;
-
-$navDropdownBg:              $color-Button;
-$navDropdownPadding:         .4rem 0;
-$navDropdownItemColor:       $default;
-$navDropdownItemPadding:     .8rem 1rem;
-$navDropdownItemMarginB:     .2rem; 
-
-$toggleTitleFontSize:        48px;
-$toggleTitleColor:           $color-primary-main;
-$toggleTitleFontWeight:      700;
-$toggleTitleMarginB:         35px;
-
+$body-font :                $fontOpenSans;
 $textColor:                 $default; 
 $textBgColor:               #FFD400;
 
 
-$profileThumbMarginB:       .35rem;
-$profileImgBorderRadius:    10px;
+$profileThumbMarginB:       12px;
+$profileImgBorderRadius:    0px;
 
-$profileH1FontSize:         32px;
-$profileH1FontColor:        $white;
-$profileH1FontFamily:       $fontArchivoBold;
-$profileH1MarginB:          .75rem;
+$profileH1FontSize:         36px;
+$profileH1FontColor:        $default-color;
+$profileH1FontFamily:       $fontOxygen;
+$profileH1FontWeight:       700;
+$profileH1MarginB:          .25rem;
 
 $profileH2FontSize:         18px;
-$profileH2FontColor:        $white;
-$profileH3FontWeight:       600;
+$profileH2FontColor:        $default-color;
+$profileH2FontWeight:       600;
+$profileH1FontFamily:       $fontOxygen;
 
 $profileH3FontSize:         18px;
-$profileH3FontColor:        $white;
+$profileH3FontColor:        $default-color;
 $profileH3FontWeight:       300;
+$profileH3FontFamily:       $fontOxygen;
 
 $profileH4FontSize:         14px;
-$profileH4FontColor:        $white;
+$profileH4FontColor:        $default-color;
+$profileH4FontFamily:       $fontOxygen;
 
-$userIdFontSize:            16px;
-$userIdFontColor:           $white;
+
+$userIdFontSize:            13px;
+$userIdFontColor:           $default-color;
 
 $userDescFontSize:          14px;
-$userDescFontColor:         $white;
+$userDescFontColor:         $default-color;
 $userDescMarginB:           .5rem;
 
 $buttonLFontSize:           16px;
 $buttonSFontSize:           14px;            
           
-$socialListMarginBottom:    50px;     
-$socialIconsColor:          $white;
+$socialListMarginBottom:    10px;     
+$socialIconsColor:          $default-color;
 $socialIconsFontSize:       $font-medium;
 
 $likeWrapMarginB:           .25rem;
 $statusWrapFontSize:        20px;
-$statusWrapColor:           $white;
+$statusWrapColor:           $default-color;
 $likeLableFontSize:         12px;
 $likeNumFontWeight:         700;
 
 $backToTopFontSize:         18px;
-$backToTopColor:            $white;
+$backToTopColor:            $default-color;
 
 /*  Profile banner variable   */
 
@@ -90,11 +76,13 @@ $profile-banner-height       : 360px;
 
 /* Tab variables   */
 
-$tabItemColor:              $white;
-$tabItemFontSize:           20px;
+$tabItemColor:              $default-color;
+$tabItemFontSize:           18px;
+$tabBorderColor:            $color-primary-main;
+$tabMarginB:                1.75rem;
 $tabItemBorderColor:        $color-primary-main;
 $tabItemBgColor:            transparent;
-$tabItemBorderRadius:       4px;
+$tabItemBorderRadius:       16px 16px 0 0;
 $tabItemMarginB:            3rem;
 $tabItemHoverColor:         $white;
 $tabItemHoverBorderColor:   $color-primary-main;
@@ -102,58 +90,53 @@ $tabItemHoverBgColor:       $color-primary-main;
 $tabActiveColor:            $white;
 $tabActiveBgColor:          $color-primary-main;
 $tabActiveBorderColor:      $color-primary-main;
-$tabActiveFontWeight:       700; 
+$tabActiveFontWeight:       normal; 
 $TabOutlineColor:           $white;
 
 /* Pagination Variables  */ 
 
-$paginationMarginT:         40px; 
-$paginationMarginB:         40px;        
-$paginationColor:           $white;
+$paginationMarginT:         30px; 
+$paginationMarginB:         30px;        
+$paginationColor:           $default-color;
 $paginationBgColor:         rgba(255, 255, 255, 0.2);
 $paginationBorderColor:     rgba(0, 0, 0, 0.06);
 $paginationBorderRadius:    8px;
 $paginationLineHeight:      38px;
-$paginationActiveColor:     $textColor;
-$paginationActiveBgColor:   $textBgColor;
-$paginationActiveBorderColor: $textColor;
-$paginationFontSize:        21px;
+$paginationActiveColor:     $white;
+$paginationActiveBgColor:   $color-primary-main;
+$paginationActiveBorderColor: $color-primary-main;
+$paginationFontSize:        18px;
 
-/* Exhibition Tab Variables  */
-
-$exhibitionThumblistMarginB:     1rem;
-$exhibitionThumblistBorderRadius:8px;
-$exhibitionThumbImgBorderRadius: 8px;
-$exhibitionThumbInfoPadding:     1rem;
-$exhibitionThumbTitleColor:      $white;
-$exhibitionThumbTitleSize:       1rem;
-$exhibitionThumbTitleMarginB:    .25rem;
-$exhibitionThumbTitleFontWeight: normal;
-$exhibitionThumbAssetColor:      $default-color;
-$exhibitionThumbAssetSize:       16px;
-$exhibitionThumbDescColor:       #fff;
-$exhibitionThumbDescSize:        14px;
-$exhibitionThumbDescMarginB:     .5rem;
-$exhibitionThumbDateColor:        $default-color;
-$exhibitionThumbDateSize:         14px;
-$exhibitionThumbWishCountColor:   $default-color;
-$exhibitionThumbWishCountSize:    16px;
-$exhibitionThumbWishColor:        $white;
-$exhibitionThumbWishSize:         24px;
 
 /* Collection Tab  Variables */
 
-$thumblistMarginB:            1rem;
-$thumbInfoPadding:            1rem;
-$thumbTitleColor:             $white;
-$thumbTitleSize:              2rem;
-$thumbTitleMarginB:           1.5rem;
+$thumbListMarginB:           .1rem;
+$thumbListPadding:           0px;
+$thumbListBorderColor:       transparent;
+$thumbListHoverBorderColor:  transparent;
+$thumbListBorderRadius:      0px;
+
+$thumbImgMarginB:            0px;
+$thumbImgBorderRadius:       transparent;
+$thumbImgBorderColor:        transparent;
+$thumbImgBorderHoverColor:   transparent;
+
+$thumbInfoPadding:            .5rem;
+$thumbInfoBgColor:            #fff;
+$thumbInfoBgHoverColor:       $color-primary-main;
+$thumbInfoBorderColor:        transparent;
+$thumbInfoHoverBorderColor:   transparent;
+
+$thumbTitleColor:             $default-color;
+$thumbTitleHoverColor:        $default-color;
+$thumbTitleSize:              16px;
+$thumbTitleMarginB:           .5rem;
 $thumbTitleFontWeight:        700;
 $thumbAssetColor:             $default-color;
 $thumbAssetSize:              16px;
-$thumbDescColor:              #fff;
+$thumbDescColor:              $default-color;
 $thumbDescSize:               14px;
-$thumbDescMarginB:            .5rem;
+$thumbDescMarginB:            .1rem;
 $thumbDateColor:              $default-color;
 $thumbDateSize:               14px;
 $thumbWishCountColor:         $default-color;
@@ -161,22 +144,71 @@ $thumbWishCountSize:          16px;
 $thumbWishColor:              $white;
 $thumbWishSize:               24px;
 
+/* Exhibition Tab Variables  */
+
+$ExhibitionThumbListMarginB:           .1rem;
+$ExhibitionThumbListPadding:           0px;
+$ExhibitionThumbListBorderColor:       transparent;
+$ExhibitionThumbListHoverBorderColor:  transparent;
+$ExhibitionThumbListBorderRadius:      0px;
+
+$ExhibitionThumbImgMarginB:            0px;
+$ExhibitionThumbImgBorderRadius:       transparent;
+$ExhibitionThumbImgBorderColor:        transparent;
+$ExhibitionThumbImgBorderHoverColor:   transparent;
+
+$ExhibitionThumbInfoPadding:            .5rem;
+$ExhibitionThumbInfoBgColor:            #fff;
+$ExhibitionThumbInfoBgHoverColor:       $color-primary-main;
+$ExhibitionThumbInfoBorderColor:        transparent;
+$ExhibitionThumbInfoHoverBorderColor:   transparent;
+
+$ExhibitionThumbTitleColor:             $default-color;
+$ExhibitionThumbTitleHoverColor:        $default-color;
+$ExhibitionThumbTitleSize:              16px;
+$ExhibitionThumbTitleMarginB:           .5rem;
+$ExhibitionThumbTitleFontWeight:        700;
+$ExhibitionThumbAssetColor:             $default-color;
+$ExhibitionThumbAssetSize:              16px;
+$ExhibitionThumbDescColor:              $default-color;
+$ExhibitionThumbDescSize:               14px;
+$ExhibitionThumbDescMarginB:            .1rem;
+$ExhibitionThumbDateColor:              $default-color;
+$ExhibitionThumbDateSize:               14px;
+$ExhibitionThumbWishCountColor:         $default-color;
+$ExhibitionThumbWishCountSize:          16px;
+$ExhibitionThumbWishColor:              $white;
+$ExhibitionThumbWishSize:               24px;
+
 /* Assets Tab  Variables */
 
-$assetThumblistMarginB:            1rem;
-$assetThumblistBorderRadius:       8px;
-$assetThumbImgBorderRadius:        8px;
+$assetThumbListMarginB:           .1rem;
+$assetThumbListPadding:           0px;
+$assetThumbListBorderColor:       transparent;
+$assetThumbListHoverBorderColor:  transparent;
+$assetThumbListBorderRadius:      0px;
+
+$assetThumbImgMarginB:            0px;
+$assetThumbImgBorderRadius:       transparent;
+$assetThumbImgBorderColor:        transparent;
+$assetThumbImgBorderHoverColor:   transparent;
+
 $assetThumbInfoPadding:            .5rem;
-$assetThumbInfoBg:                 transparent;
-$assetThumbTitleColor:             #fff;
+$assetThumbInfoBgColor:            #fff;
+$assetThumbInfoBgHoverColor:       $color-primary-main;
+$assetThumbInfoBorderColor:        transparent;
+$assetThumbInfoHoverBorderColor:   transparent;
+
+$assetThumbTitleColor:             $default-color;
+$assetThumbTitleHoverColor:        $default-color;
 $assetThumbTitleSize:              16px;
-$assetThumbTitleMarginB:           .25rem;
-$assetThumbTitleFontWeight:        normal;
+$assetThumbTitleMarginB:           .5rem;
+$assetThumbTitleFontWeight:        700;
 $assetThumbAssetColor:             $default-color;
 $assetThumbAssetSize:              16px;
-$assetThumbDescColor:              #fff;
+$assetThumbDescColor:              $default-color;
 $assetThumbDescSize:               14px;
-$assetThumbDescMarginB:            0;
+$assetThumbDescMarginB:            .1rem;
 $assetThumbDateColor:              $default-color;
 $assetThumbDateSize:               14px;
 $assetThumbWishCountColor:         $default-color;
@@ -192,8 +224,9 @@ $assetThumbPlaySize:               20px;
 $footerMarginT:                   75px;
 $footerPaddingT:                  .75rem;
 $footerPaddingB:                  1rem;
-$footerBgColor:                   #1B1B21;
-$footerColor:                     #fff;
+$footerBgColor:                   #fff;
+$footerColor:                     $default-color;
+$footerFontSize:                  $font-small;
 
 
 .primayTextColor {

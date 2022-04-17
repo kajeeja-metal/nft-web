@@ -1,92 +1,41 @@
 
 @import '../../../components/profile/profile006/variables';
 
-.tabToggleIcon {
-    font-size: $toggleIconFontSize; color: $toggleIconColor;
-    margin-bottom: $toggleIconMarginB; font-weight: $toggleIconFontWeight;
-    display: inline-block; cursor: pointer;
-    width: auto;
-}
-.navDropdown {
-    background: $navDropdownBg; padding: $navDropdownPadding;
-    min-width: 350px;
-    ul {
-        padding: 0; margin: 0;
-        display: block;
-    }
-    a {
-        color: $navDropdownItemColor; padding: $navDropdownItemPadding;
-        margin-bottom: $navDropdownItemMarginB;
-        cursor: pointer;
-        width: 100%;
-        > span {
-            margin-right: .4rem; opacity: 0;
-        }
-        &[aria-selected="true"], &:hover {
-            > span {
-                opacity: 1;
-            }
-        }
-    }
-}
-
-.userInfoWrap {
-    @include flexbox();
-    align-items: center;
-
-    .profileImg {
-        width: 18%;
-    }
-    .userInfo {
-        width: 27%; padding: 0 1.5%;
-    }
-    .userDesc {
-        width: 40%;
-    }
-    .likeWrap {
-        width: 15%;
-    }
-    a {
-        &:hover {
-            color: $primary;
-        }
-    }
+.container {
+    font-family: $body-font; 
+    padding-top: 3rem;
 }
 .textRight {
     text-align: right;
 }
-.backToTop {
-    font-size: $backToTopFontSize; cursor: pointer;
-    color: $backToTopColor; margin-bottom: .25rem;
-    display: inline-block;
-    &:hover {
-        color: $primary;
-    }
+.bannerImg {
+    margin-bottom: 1.5rem;
 }
 .profileImg {
-    /*text-align: center;*/
     margin-bottom: $profileThumbMarginB;
-    margin-top: -90px;
     img {
+        border: 3px solid $default-color !important;
         display: block; line-height: 1;
         border-radius: $profileImgBorderRadius;
     }
 }
-
-
+.userWrap {
+    margin-bottom: 1.5rem;
+}
 .userName {
     font-size: $profileH1FontSize;
     color: $profileH1FontColor;
     font-family: $profileH1FontFamily;
     margin-bottom: $profileH1MarginB;
+    font-weight: 700;
     white-space: nowrap; overflow: hidden;
     text-overflow: ellipsis;
 }
 .userMore {
     font-size: $profileH3FontSize;
-    color: $profileH2FontColor;
+    color: $profileH3FontColor;
     font-weight: $profileH3FontWeight;
-    margin-bottom: .75rem;
+    margin-bottom: .25rem;
 }
 .userDesc {
     display: -webkit-box;
@@ -97,26 +46,19 @@
     font-size: $userDescFontSize;
     color: $userDescFontColor;
     margin-bottom: $userDescMarginB;
-    line-height: 1.9;
+    line-height: 1.5;
 }
-
-.btnGroups {
-	.btn {
-
-		font-size: 1.5rem;
-		&:not(:last-child) {
-			margin-right: 32px;
-		}
-	}
+.likeSocialWrap {
+    @include flexbox; align-items: center;
+    justify-content: space-between;
 }
-
 .likeWrap {
     margin-bottom: $likeWrapMarginB;
+    min-width: 60%;
 }
 .statusWrap {
     font-size: $statusWrapFontSize;
     color: $statusWrapColor;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     > span {
@@ -124,6 +66,7 @@
         font-size: 18px;
         max-width: 50%; margin-bottom: .25rem;
         font-size: $likeLableFontSize;
+        /*margin-right: .75rem;*/
     }
     .num {
         margin: 0 auto 2px auto;
@@ -136,9 +79,12 @@
     display: inline-block;
     width: 100%;
     cursor: pointer;
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
     font-size: $userIdFontSize;
     color: $userIdFontColor;
+}
+.copyIcon {
+    margin-right: .5rem;
 }
 .socialList {
     margin-bottom: $socialListMarginBottom;
@@ -153,7 +99,6 @@
         }
     }
 }
-
 .copyTxt {
     margin-left: 1rem; 
 }
@@ -166,49 +111,22 @@
 }
 
 .nav {
-    flex-direction: column;
-    
-    li {
-        position: relative;
-        padding: 0 2rem;
-        margin-bottom: $tabItemMarginB;
-        
-        &[aria-selected="true"] {
-            button {
-                background-color: $tabActiveBgColor;
-                border-color: $tabActiveBorderColor;
-                color: $tabActiveColor;
-            }
-            &:before , &:after {
-                content: "";
-                display: block;
-                position: absolute;
-                right: 0;
-                left: 0;
-                height: calc(50% - 1px);
-                border: 1px solid $TabOutlineColor;
-                transition: all .15s ease;
-            }
-            &:before {
-                top: -20px;
-                border-bottom-width: 0;
-            }
-            &:after {
-                bottom: -20px;
-                border-top-width: 0;
-            }
-        }
-    }
-    button {
-        width: 100%;
+    border-bottom: 4px solid $tabBorderColor;
+    margin-bottom: $tabMarginB;
+    a {
         background-color: $tabItemBgColor;
         border-color: $tabItemBorderColor;
         color: $tabItemColor;
-        font-size: $tabItemFontSize;
-        
+        font-size: $tabItemFontSize;        
         font-weight: $tabActiveFontWeight;
+        border-radius: $tabItemBorderRadius;
+        margin-right: .5rem; min-width: 16%;
+        text-align: center;
+        padding:13px 10px 10px 10px; 
+        display: inline-block;
+        text-transform: uppercase;
     
-        &:hover {
+        &:hover,  &[aria-selected="true"]  {
             background-color: $tabItemHoverBgColor;
             border-color: $tabItemHoverBorderColor;
             color: $tabItemHoverColor;
@@ -217,7 +135,7 @@
     }
 }
 
-.paginationWrap {
+/*.paginationWrap {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -259,7 +177,7 @@
             }
         }
     } 
-}
+}*/
 
 // Footer 
 .footer {
@@ -267,8 +185,10 @@
 	padding-bottom: $footerPaddingB;
     background-color:$footerBgColor;
     margin-top: $footerMarginT;
-    & + div {
-        display: none;
+    font-size: $footerFontSize;
+
+    svg {
+        font-size: $footerFontSize;
     }
 }
 .footerRow {
@@ -291,10 +211,13 @@
 		margin-right: 1rem;
 	}
 	a {
-        color: $white;
+        color: $default-color;
 		&:not(:last-child) {
 			margin-right: 35px;
 		}
+        &:hover {
+            color: $primary;
+        }
 	}
 }
 .copyright {
@@ -321,18 +244,20 @@
         }
     }
 
-    .userInfoWrap {
-        .profileImg, .userInfo, .userDesc, .likeWrap {
-            width: 100%; margin-bottom: .75rem;
-        }
-        .profileImg {
-            margin-top: 0;
-        }
-        .socialList {
-            margin-bottom: 0;
-        }
+
+
+
+
+}
+
+
+@media all and (max-width: 767px) {
+
+    .likeSocialWrap {
+        flex-wrap: wrap; 
     }
-
-
-
+    .likeWrap {
+        width: 100%;
+    }
+    
 }

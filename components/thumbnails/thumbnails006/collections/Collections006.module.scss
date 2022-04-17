@@ -1,33 +1,47 @@
 
 @import '../../../../components/profile/profile006/variables';
 
-.tabTitle {
-  font-size:$toggleTitleFontSize ; 
-  font-weight:$toggleTitleFontWeight ;
-  margin-bottom:$toggleTitleMarginB ;
-}
-.tabTitleInner {
-  @extend .primayTextColor;
+.collectionWraps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(12rem, 1fr));
+  gap: 1.5rem;
 }
 
 .thumblist {
-   margin-bottom: $thumblistMarginB;
-   margin-right: 1rem;
+  margin-bottom: $thumbListMarginB;
+  transition: all 0.5s ease-in-out;
 
+  &:hover {
+    box-shadow: 0 0 5px $color-primary-main;   
+    .thumbImg img {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+    }
+    .wishLike {
+      font-weight: bold;
+    }
+  }
 }
 .thumbImg {
-  position: relative;
+  position: relative; overflow: hidden;
+  a {
+    span {
+      vertical-align: top;
+    }
+    img {
+      transition: all 0.4s ease-in-out;
+    }
+  }
   .wishLike {
     font-size: $thumbWishSize; color: $thumbWishColor;
     margin-bottom: 1rem; text-align: right;
-    position: absolute; right: 30px; top: 15px;
+    position: absolute; right: 30px; top: 20px;
   }
 }
-/*.thumbInfo {
-  width: 48%; padding: $thumbInfoPadding;
-  position: relative; padding-bottom: 50px;
-}
 
+.thumbInfo {
+  padding: $thumbInfoPadding; background-color: $thumbInfoBgColor;
+}
 .thumbTitlewrap {
   h3 {
     font-size: $thumbTitleSize; margin-bottom: $thumbTitleMarginB;
@@ -48,14 +62,20 @@
   .num {
     font-weight: 700;
   }
-}*/
+}
+
+.descWishWrap {
+  @include flex; justify-content: space-between;
+  .wish {
+    width: 70px; text-align: right; color: $default-color;
+  }
+}
+
+
+
 @media all and (max-width: 1199px) {
-    .thumblist {
-        padding: 0;
-        .thumbImg {
-            img {
-                max-width: 100%;
-            }
-        }
-    }
+  .collectionWraps {
+    grid-template-columns: repeat(2, minmax(12rem, 1fr));
+    gap: 1rem;
+  }
 }

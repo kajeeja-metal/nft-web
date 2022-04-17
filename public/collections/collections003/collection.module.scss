@@ -2,7 +2,7 @@
 // @import '../../main_theme/component/mixin';
 
 .collectionWrap {
-    background-color: #FFD400;
+    background: linear-gradient(0deg, rgba(53, 79, 102, 0.82), rgba(53, 79, 102, 0.82)), #FFFFFF;
     padding-top: 22px;
     padding-bottom: 22px;
 }
@@ -19,26 +19,24 @@
     }
     span {
         margin-left: 32px;
-        color: #8D8D8D;
-    }
+     }
 }
 .collectionContent {
     padding-top: 48px;
     padding-bottom: 100px;
-    max-width: 512px;
 }
 
 .assetsAll {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(14rem,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
     gap: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     article {
         transition: all 0.5s;
-        border: 2px solid #3A3A43;
         border-radius: 4px;
-        background-color: #f5f5f5;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #5F5F6D;
+        border: 2px solid #000000;
         a {
             padding: 8px;
             display: inline-block
@@ -48,11 +46,12 @@
         }
         p {
             transition: all 0.5s;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #5F5F6D;
         }
         &:hover {
-            background-color: #FFD400;
+            background: linear-gradient(0deg, rgba(53, 79, 102, 0.82), rgba(53, 79, 102, 0.82)), #FFFFFF;
             p {
-                background-color: #FFD400;
+                background: linear-gradient(0deg, rgba(53, 79, 102, 0.82), rgba(53, 79, 102, 0.82)), #FFFFFF;
             } 
         }
     }
@@ -85,10 +84,27 @@
         padding: 12px;
         margin-bottom: 0;
         background-color: #FFFFFF;
-        font-size: 0.85rem;
+        font-size: 0.875rem;
     }
 }
 
+
+.arrowIcons {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #000000;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    &:first-child {
+        margin-right: 32px;
+    }
+    &:hover {
+        border-color: #FFFFFF;
+        color: #FFFFFF;
+        background: linear-gradient(0deg, rgba(53, 79, 102, 0.82), rgba(53, 79, 102, 0.82)), #FFFFFF;
+    }
+}
 .seeMore {
     text-align: center;
     margin-top: 80px;

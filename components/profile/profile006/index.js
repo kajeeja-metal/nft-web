@@ -11,6 +11,7 @@ import Thumbs006 from "../../../components/thumbnails/thumbnails006";
 
 import downArrow from '../../../public/profile/profile006/images/down-arrow.svg';
 import profileLogo from "../../../public/profile/profile006/images/profile.png";
+import bannerImg from "../../../public/profile/profile006/images/banner.png";
 
 library.add(faClone, faImage);
 
@@ -27,7 +28,7 @@ export default function Profile006() {
     }
   }, []);
   useEffect(() => {
-    document.querySelector("body").classList.add("profile5");
+    document.querySelector("body").classList.add("profile6");
   });
   const [isCopied, setIsCopied] = useState(false);
   const onCopyText = () => {
@@ -41,84 +42,47 @@ export default function Profile006() {
 
   return (
     <>
-      <div className="container">
-        <div className={classes.tabNavWrap}>
-          <div className="dropdown">
-              <span className={classes.tabToggleIcon} data-bs-toggle="dropdown">
-                <FontAwesomeIcon icon={faBars } />
-              </span>
-              <div className={`dropdown-menu` + ' ' + classes.navDropdown}>
-                <div className="nav" role="tablist">             
-                  <a  data-bs-toggle="pill" data-bs-target="#collectionWrap"
-                    aria-controls="v-pills-collection" role="tab" 
-                    aria-selected="false"><span className={classes.navIcon}>
-                    <FontAwesomeIcon icon={faDiamond } />
-                    </span> 99 Collection</a>         
-                  <a  data-bs-toggle="pill" data-bs-target="#exhibitionWrap"
-                    aria-controls="v-pills-exhibition" role="tab" 
-                    aria-selected="false"><span className={classes.navIcon}>
-                      <FontAwesomeIcon icon={faDiamond } />
-                      </span> 99 Exhibition</a>           
-                  <a  data-bs-toggle="pill" data-bs-target="#assetsWrap"
-                    aria-controls="v-pills-allAsset" role="tab" 
-                    aria-selected="true"><span className={classes.navIcon}>
-                    <FontAwesomeIcon icon={faDiamond } />
-                    </span> 99 Assets</a>
-                </div>
-              </div>
-            </div>
-            
-            <div className="tab-content" >              
-              <Thumbs006 />            
-            </div>
-        </div>
-      </div>
-
-	  <footer className={classes.footer}>
-			<div className='container'>
-        <div className={classes.footerFloat}>
-          <div className={classes.textRight}>
-            <span className={classes.backToTop} onClick={()=>setShow(!show)}>
-              {
-                !show &&
-                <FontAwesomeIcon icon={faAngleDoubleUp} />
-              }
-              {
-                show &&
-                <FontAwesomeIcon icon={faAngleDoubleDown}  />
-              }
-            </span>
-          </div>
-          {
-            show &&
-            <div className={classes.userInfoWrap}>
-              <div className={classes.profileImg}>
-                <Image
+      <div className={`container` + ' ' + classes.container}>
+        <div className={`row` + ' ' + classes.profileBanner}>
+          <div className={`col-md-3` + ' ' + classes.userWrap}>
+            <div className={classes.profileImg}>
+              <Image
                 className={classes.profilePicture}
                 src={profileLogo}
-                height={255}
-                width={255}
+                width={150} height={150}              
                 alt="Thumbs"
-                />
+              />
+            </div>
+            <div className={classes.userInfo}>
+              <h1 className={classes.userName}>SoundMint</h1>
+              <h2 className={classes.userMore}>@username</h2>
+              <div className={classes.userId}>
+                <CopyToClipboard text={codeSnitted} onCopy={onCopyText}>
+                  <div className={classes.copyWrap}>
+                  <span className={classes.copyIcon}><FontAwesomeIcon icon={faDiamond} /></span> 
+                    {codeSnitted}                    
+                    <span className={classes.copyTxt}>                      
+                      {isCopied ? (
+                        <span>0xcf9144523f1a...</span>
+                      ) : (
+                        <FontAwesomeIcon icon={faClone} />
+                      )}
+                    </span>
+                  </div>
+                </CopyToClipboard>
               </div>
-              <div className={classes.userInfo}>
-                <h1 className={classes.userName}>Squid Game 🏆</h1>
-                <h2 className={classes.userMore}>@Squidgame</h2>
-                <div className={classes.userId}>
-                  <CopyToClipboard text={codeSnitted} onCopy={onCopyText}>
-                    <div className={classes.copyWrap}>
-                      {codeSnitted}
-                      <span className={classes.copyTxt}>
-                        {isCopied ? (
-                          <span>0xcf9144523f1a...!</span>
-                        ) : (
-                          <FontAwesomeIcon icon={faClone} />
-                        )}
-                      </span>
-                    </div>
-                  </CopyToClipboard>
+              <p className={classes.userDesc}>
+                SoundMint curated NFTs are generative music collectibles that combine generative visuals with generative music by pairing stems to visual layers; allowing ... 
+              </p>
+              <div className={classes.likeSocialWrap}>
+                <div className={classes.likeWrap }>
+                  <p className={classes.statusWrap}>
+                    <span><span className={classes.num}>9.99k</span> Collection Likes</span>
+                    <span><span className={classes.num}>9.99k</span> Exhibition Likes</span>
+                    {/* <span><span className={classes.num}>99K</span> Likes</span> */}
+                  </p>
                 </div>
-                <p className={classes.socialList}>
+                <div className={classes.socialList}>
                   <Link href="#"><a>
                     <FontAwesomeIcon icon={faTwitter} size="lg" />
                   </a>
@@ -131,22 +95,55 @@ export default function Profile006() {
                     <FontAwesomeIcon icon={faFacebook} size="lg" />
                   </a>
                   </Link>
-                </p>
-              </div>
-              <p className={classes.userDesc}>
-                SoundMint curated NFTs are generative music collectibles that combine generative visuals with generative music by pairing stems to visual layers; allowing ... 
-              </p>
-              <div className={classes.likeWrap }>
-                <p className={classes.statusWrap}>
-                  <span><span className={classes.num}>400</span> Collection Likes</span>
-                  <span><span className={classes.num}>400</span> Exhibition Likes</span>
-                  {/* <span><span className={classes.num}>99K</span> Likes</span> */}
-                </p>                    
+                </div>
               </div>
             </div>
-          }
-
+          </div>
+          <div className={`col-md-9` + ' ' + classes.banner}>
+            <div className={`` + ' ' + classes.bannerImg}>
+              <Image src={bannerImg} alt="Banner Image" width={1192} height={500} />
+            </div>
+          </div>
         </div>
+        <div className={classes.tabWrap}>
+          <div className={`nav` + ' ' + classes.nav} 
+            role="tablist"
+            aria-orientation="vertical" >
+     
+              <a className={`nav-link active`} data-bs-toggle="pill" data-bs-target="#collectionWrap"
+              aria-controls="v-pills-messages"
+              role="tab" aria-selected="false"
+              type="button">                  
+              Collections (24)
+              </a>
+      
+              <a className={`nav-link` } data-bs-toggle="pill"
+              data-bs-target="#exhibitionWrap"
+              aria-controls="v-pills-messages"
+              role="tab" aria-selected="false" 
+              type="button">
+              Exhibitions (8)
+              </a>
+
+              <a className={`nav-link` }  data-bs-toggle="pill"
+              data-bs-target="#assetsWrap"
+              aria-controls="v-pills-messages"
+              role="tab" aria-selected="true"                     
+              type="button">
+              All ASSETS (100)
+              </a>
+       
+          </div>
+        </div>
+
+        <Thumbs006 />
+      </div>
+
+
+      
+
+	  <footer className={classes.footer}>
+			<div className='container'>
 				<div className={classes.footerRow}>
 					<div className={classes.copyright}>Copyright 2022 ©username. All rights reserved   | Powered by NFTIFY <Image src={downArrow} alt='Down Logo' width={50} height={30} /> </div>
 					<ul className={classes.socialContainer}>

@@ -1,0 +1,13 @@
+@import './variables/global';
+
+
+
+.profileOne {
+    color: #FFFFFF;
+    background: #000000 url(../public/profile/profile005/images/body.png) center center;
+    font-family: 'Archivo', sans-serif;
+    padding-top: 50px;
+    a {
+      color: #FFFFFF;
+    }
+}

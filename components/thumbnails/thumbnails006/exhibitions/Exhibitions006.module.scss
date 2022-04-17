@@ -1,86 +1,64 @@
-@import '../../../../components/profile/profile005/variables';
+@import '../../../../components/profile/profile006/variables';
 
-.tabTitle {
-  font-size:$toggleTitleFontSize ; 
-  font-weight:$toggleTitleFontWeight ;
-  margin-bottom:$toggleTitleMarginB ;
-}
-.tabTitleInner {
-  @extend .primayTextColor;
-}
 
 .exhibitionWraps {
-    /*@include flexbox(); 
-    margin-left: -1rem; margin-right: -1rem;
-    justify-content: space-between;*/
+    display: grid;
+    grid-template-columns: repeat(3, minmax(12rem, 1fr));
+    gap: 1.5rem;
 }
+
 .thumblist {
-    position: relative; padding: 1rem;
-    width: 260px;
-    &:hover {
-        .thumbInfo {
-            opacity: 1;
-            transform: rotateY(0deg);
-        }
+  margin-bottom: $ExhibitionThumbListMarginB;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 5px $color-primary-main;   
+    .thumbImg img {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
     }
+  }
 }
 .thumbImg {
-    position: relative; border: 1px solid $border;
-    border-radius: $exhibitionThumblistBorderRadius;
-
-    &:hover {
-        border-color: $primary;
+  position: relative; overflow: hidden;
+  a {
+    span {
+      vertical-align: top;
     }
-    .wishLike {
-        position: absolute; right: 16px; top: 15px;
-        font-size: $exhibitionThumbWishSize; color: $exhibitionThumbWishColor;
+    img {
+      transition: all 0.4s ease-in-out;
     }
-    a {
-        display: block; line-height: 1;
-        img {
-            border-radius: $exhibitionThumbImgBorderRadius;
-        }
-    }
-
+  }
+  /*.wishLike {
+    font-size: $thumbWishSize; color: $thumbWishColor;
+    margin-bottom: 1rem; text-align: right;
+    position: absolute; right: 30px; top: 15px;
+  }*/
 }
-.thumbInfo { 
-    position: absolute; bottom: 15px;
-    left: 0;
-    width: 100%; padding: 1rem;
-    opacity: 0; transition: ease-in-out 600ms;
-    transform: rotateY(25deg);
-    text-align: center;
+
+.thumbInfo {
+  padding: $ExhibitionThumbInfoPadding; background-color: $ExhibitionThumbInfoBgColor;
 }
 .thumbTitlewrap {
-    @include flexbox;
-    justify-content: center;  align-items: center;
-    width: 100%;
-    h3 {
-        font-size: $exhibitionThumbTitleSize; 
-        margin-bottom: $exhibitionThumbTitleMarginB;
-        font-weight: $exhibitionThumbTitleFontWeight;
-        a {
-          color: $exhibitionThumbTitleColor; 
-        }
+  h3 {
+    font-size: $ExhibitionThumbTitleSize; margin-bottom: $ExhibitionThumbTitleMarginB;
+    font-weight: $ExhibitionThumbTitleFontWeight;
+    a {
+      color: $ExhibitionThumbTitleColor; 
     }
+  }
 }
-
-
-.dateWish {
-    @include flexbox;
-    justify-content: space-between;
-    font-size: $exhibitionThumbDateSize;
+.thumbDesc {
+  font-size: $ExhibitionThumbDescSize; color: $ExhibitionThumbDescColor;
+  margin-bottom: $ExhibitionThumbDescMarginB; line-height: 1.5;
 }
 
 
 
 @media all and (max-width: 1199px) {
-    .thumblist {
-        padding: 0;
-        .thumbImg {
-            img {
-                max-width: 100%;
-            }
-        }
+
+    .exhibitionWraps {
+        grid-template-columns: repeat(2, minmax(2rem, 2fr));
+        gap: 1rem;
     }
 }

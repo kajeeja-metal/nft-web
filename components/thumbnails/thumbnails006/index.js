@@ -1,8 +1,9 @@
 import React from 'react';
+import Link from "next/link";
 import Assets006 from './assets';
 import Collections006 from './collections';
 import Exhibitions006 from './exhibitions';
-// import classes from './Thumbs004.module.scss'
+import classes from './Thumbs006.module.scss'
 
 const Thumbs006 = () => {
   return (
@@ -18,13 +19,7 @@ const Thumbs006 = () => {
 				<Assets006 />
 			</div>
 		</div>
-		{/* <div className={classes.paginationWrap}>
-			<ul>
-				<li className={classes.active}><Link href="/" ><a>1</a></Link></li>
-				<li><Link href="/" ><a>2</a></Link></li>
-				<li><Link href="/" ><a>3</a></Link></li>
-			</ul>
-		</div>	 */}
+	
 	</>
   );
 }

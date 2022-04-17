@@ -1,130 +1,137 @@
-// @import '../../main_theme/component/groupvariable';
-// @import '../../main_theme/component/mixin';
+
+
+@import '../collections001/variables';
+
+.collectionAll {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(12rem, 1fr));
+    gap: 1.5rem;
+}
+
+.textCenter {
+    text-align: center;
+}
 
 .collectionWrap {
-    background-color: #FFD400;
+    /*background-color: #FFD400;*/
     padding-top: 22px;
     padding-bottom: 22px;
 }
-.collectionTop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.headSocial {
+    text-align: right;
+    margin-bottom: 3rem;
+    a {
+        margin: 0 .75rem .5rem 0;
+        font-size: $socialFontSize;
+        color: $socialIconColor;
+    }
+}
+.socialLabel {
+    font-size: $socialLabelFontSize;
+    margin-right: .75rem;
 }
 .headWrap {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: $collectionH1MarginB;
+
     h1 {
-        font-weight: bold;
+        font-size: $collectionH1FontSize; color: $collectionH1FontColor;
+        font-weight: $collectionH1FontWeight; margin-right: .75rem;
     }
+    h6 {
+        color: $collectionH6FontColor;
+        font-size: $collectionH6FontSize;
+    }
+}
+
+.userDesc {
+    font-size: $userDescFontSize; color: $userDescColor;
+    margin-bottom: $userDescMarginB;
+}
+
+
+.thumbList {
+  margin-bottom: $thumbListMarginB;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid $thumbListBorderColor;
+  border-radius: $thumbListBorderRadius;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 0 5px $color-primary-main;   
+    .thumbImg img {
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+    }
+  }
+}
+.thumbImg {
+  position: relative; overflow: hidden;
+  a {
     span {
-        margin-left: 32px;
-        color: #8D8D8D;
+      vertical-align: top;
     }
-}
-.collectionContent {
-    padding-top: 48px;
-    padding-bottom: 100px;
-    max-width: 512px;
-}
-
-.assetsAll {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(14rem,1fr));
-    gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    article {
-        transition: all 0.5s;
-        border: 2px solid #3A3A43;
-        border-radius: 4px;
-        background-color: #f5f5f5;
-        a {
-            padding: 8px;
-            display: inline-block
-        }
-        img {
-            border-radius: 4px;
-        }
-        p {
-            transition: all 0.5s;
-        }
-        &:hover {
-            background-color: #FFD400;
-            p {
-                background-color: #FFD400;
-            } 
-        }
-    }
-    p {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        height: 80px;
-    }
-}
-.thumbsItem {
-    display: inline-block;
     img {
-        display: block;
-        width: 100%;
-        object-fit: cover;
+      transition: all 0.4s ease-in-out;
+      border-radius: $thumbImgBorderRadius;
+    }
+  }
+}
+.thumbInfo {
+  padding: $thumbInfoPadding; 
+  background-color: $thumbInfoBgColor;
+  color: $thumbInfoColor;
+}
+.thumbTitle {
+    font-size: $thumbTitleSize; margin-bottom: $thumbTitleMarginB;
+    font-weight: $thumbTitleFontWeight;
+    a {
+      color: $thumbTitleColor; 
+    }
+}
+.thumbDesc {
+  font-size: $thumbDescSize; color: $thumbDescColor;
+  margin-bottom: $thumbDescMarginB; line-height: 1.5;
+}
 
-    }
-}
-.thumbsWrap {
-    background-color: #FFFFFF;
-    //@include box_shadow(1);
-    text-align: center;
-}
-.thumbsContent {
-    text-align: center;
-    p {
-        padding: 12px;
-        margin-bottom: 0;
-        background-color: #FFFFFF;
-        font-size: 0.85rem;
-    }
+
+
+
+/* Footer  */
+
+.footer {
+    padding-bottom: $footerPaddingB; padding-top: $footerPaddingT;
+    background-color: $footerBgColor; color: $footerColor;
+    margin-top: $footerMarginT;
 }
 
-.seeMore {
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    font-size: 19px;
-    transition: all 0.5s;
-    cursor: pointer;
-    color: #000000;
-    &:hover {
-        color: #354F66;
-    }
-}
 .profileWrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-
 .userImg {
-    margin-right: 8px;
+    margin-right: 1rem;
     .profileImg {
-        border-radius: 12px;
+        border-radius: 0; 
+    }
+    img {
+        line-height: 1;
     }
 }
 .userLogged {
-    display: flex;
+    display: flex; align-items: center;
 }
 .likesCount {
     text-align: center;
 }
 .userInfo {
     h4 {
-        font-size: 14px;
-        margin: 0;
-        font-weight: bold;
+        font-size: $userTitleFontSize; color: $userTitleColor;
+        margin-bottom: $userTitleMarginB;
+        font-weight: $userTitleFontWeight;
     }
     .textMini {
         font-size: 13px;
@@ -132,15 +139,36 @@
 }
 
 .profileLike {
-    margin-top: 89px;
-    margin-bottom: 137px;
-}
-.footer {
-    padding-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.copyrightLogo {
+    margin-left: .5rem;
+}
+
+@media all and (max-width: 767px) {
+
+    .collectionAll {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(2rem, 1fr));
+        gap: 1.5rem;
+    }
+
+}
+
+
+@media all and (max-width: 767px) {
+
+    .collectionAll {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(2rem, 1fr));
+        gap: 1.5rem;
+    }
+
 }

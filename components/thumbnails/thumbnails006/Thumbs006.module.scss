@@ -1,9 +1,9 @@
 
-@import '../../../components/profile/profile005/variables'; 
+@import '../../../components/profile/profile006/variables'; 
 
 .paginationWrap {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: $paginationMarginT;
+    margin-bottom: $paginationMarginB;
     text-align: center;
     ul {
         list-style: none;
@@ -20,17 +20,19 @@
         &:active, &.active {
             a {
                 background-color: $paginationActiveBgColor;
+                color: $paginationActiveColor;
             }
         }
         &:hover, &.hover {
             a {
                 background-color: $paginationActiveBgColor;
+                color: $paginationActiveColor;
             }
         }
         a {
             display: inline-block;
             width: 41px; height: 41px;
-            line-height: 41px;
+            line-height: 39px;
             border-radius: 4px;
             border: 2px solid $paginationColor;
             color: $paginationColor;
@@ -41,6 +43,7 @@
             background-color: $paginationActiveBgColor;
             a {
                 background-color: $paginationActiveBgColor;
+                color: $paginationActiveColor;
             }
         }
     } 
