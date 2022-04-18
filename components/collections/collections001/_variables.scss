@@ -5,13 +5,23 @@
 @import '../../../public/account/variables/mixin';
 @import '../../../public/account/variables/text_link';
 
-$fontOxygen:           '';
+$fontHeading:             "Archivo", sans-serif;
+$fontBody:                "Archivo", sans-serif;
+
 
 $default       : #3A3A43;
 $default-color : $default;
 $border        : #EAEAED;
 $border-color  : $border;
 $color-primary-main:   $default-color;
+
+/*  Setting Varible  */
+$headingFontFamily:            $fontHeading; 
+$bodyFontFamily:               $fontBody;
+$buttonBgColor:                #000;
+$buttoncolor:                  #fff;
+$buttonBgGredientColor:        #000;      
+$buttongGredientColor:         #fff;    
 
 /* Variable for Collection Thumb component  */
 
@@ -50,39 +60,42 @@ $thumbChainMarginB:           16px;
 
 /* Variable for Collection page   */
 
+$pageContentPaddingT:               30px;
+$pageContentPaddingB:               30px;
+
 $collectionH1FontSize:             48px;
 $collectionH1FontColor:            #fff;
-$collectionH1FontFamily:           $fontOxygen;
+$collectionH1FontFamily:           $headingFontFamily;
 $collectionH1FontWeight:           700;
 $collectionH1MarginB:              1.5rem;
 
 $collectionH2FontSize:             36px;
 $collectionH2FontColor:            $default-color;
-$collectionH2FontFamily:           $fontOxygen;
+$collectionH2FontFamily:           $headingFontFamily;
 $collectionH2FontWeight:           700;
 $collectionH2MarginB:              .25rem;
 
 $collectionH3FontSize:             36px;
 $collectionH3FontColor:            $default-color;
-$collectionH3FontFamily:           $fontOxygen;
+$collectionH3FontFamily:           $headingFontFamily;
 $collectionH3FontWeight:           700;
 $collectionH3MarginB:              .25rem;
 
 $collectionH4FontSize:             18px;
 $collectionH4FontColor:            $default-color;
-$collectionH4FontFamily:           $fontOxygen;
+$collectionH4FontFamily:           $headingFontFamily;
 $collectionH4FontWeight:           700;
 $collectionH4MarginB:              .25rem;
 
 $collectionH5FontSize:             36px;
 $collectionH5FontColor:            $default-color;
-$collectionH5FontFamily:           $fontOxygen;
+$collectionH5FontFamily:           $headingFontFamily;
 $collectionH5FontWeight:           700;
 $collectionH5MarginB:              .25rem;
 
 $collectionH6FontSize:             18px;
 $collectionH6FontColor:            #C4C4C4;
-$collectionH6FontFamily:           $fontOxygen;
+$collectionH6FontFamily:           $headingFontFamily;
 $collectionH6FontWeight:           normal;
 $collectionH6MarginB:              .25rem;
 
@@ -95,12 +108,14 @@ $userDescFontSize:                 14px;
 $userDescColor:                    #fff;
 $userDescMarginB:                  14px;
 
-
 $userTitleFontSize:                14px;
 $userTitleColor:                   #fff;
 $userTitleFontWeight:              normal;
 $userTitleMarginB:                 .25rem;
 
+$userImgBorderRadius:               0px;
+$viewLinkFontSize:                  13px;
+$viewLinkColor:                     #fff;
 
 $footerPaddingT:                    15px;
 $footerPaddingB:                    20px;

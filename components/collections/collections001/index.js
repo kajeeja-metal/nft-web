@@ -17,7 +17,7 @@ library.add( faArrowRight, faShareNodes, faHeart, faTwitter, faFacebook, faLink,
 
 export default function Collection001() {
     useEffect(() => {
-        document.querySelector("body").classList.add("profileOne");
+        document.querySelector("body").classList.add("collectionOne");
     });
 	
 
@@ -277,7 +277,7 @@ export default function Collection001() {
 								</div>
 								<div className={classes.userInfo}>
 									<h4>@Hatboy</h4>
-									<div className={classes.textMini}>
+									<div className={classes.viewLink}>
 										<Link href="">
 										<a>view profile <FontAwesomeIcon icon={faArrowRight} size="lg" /></a>
 										</Link>

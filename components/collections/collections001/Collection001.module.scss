@@ -2,20 +2,22 @@
 
 @import '../collections001/variables';
 
+.collectionOne {
+    background: red;
+}
+
 .collectionAll {
     display: grid;
     grid-template-columns: repeat(4, minmax(12rem, 1fr));
     gap: 1.5rem;
 }
-
 .textCenter {
     text-align: center;
 }
-
 .collectionWrap {
     /*background-color: #FFD400;*/
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: $pageContentPaddingT;
+    padding-bottom: $pageContentPaddingB;
 }
 .headSocial {
     text-align: right;
@@ -86,7 +88,7 @@
 }
 .thumbTitle {
     font-size: $thumbTitleSize; margin-bottom: $thumbTitleMarginB;
-    font-weight: $thumbTitleFontWeight;
+    font-weight: $thumbTitleFontWeight; color: $thumbTitleColor;
     a {
       color: $thumbTitleColor; 
     }
@@ -115,7 +117,7 @@
 .userImg {
     margin-right: 1rem;
     .profileImg {
-        border-radius: 0; 
+        border-radius: $userImgBorderRadius; 
     }
     img {
         line-height: 1;
@@ -133,8 +135,12 @@
         margin-bottom: $userTitleMarginB;
         font-weight: $userTitleFontWeight;
     }
-    .textMini {
-        font-size: 13px;
+    
+}
+.viewLink {
+    font-size: $viewLinkFontSize; color: $viewLinkColor;
+    a {
+        color:$viewLinkColor;
     }
 }
 

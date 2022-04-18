@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import '../public/global.scss';
+import '../public/style.scss';
 
 // import PageMain from '../layout/PageMain'
 // import HeaderAccount from '../components/account/layout/header.js';

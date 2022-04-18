@@ -1,13 +1,12 @@
 @import './variables/global';
 
 
-
-.profileOne {
-    color: #FFFFFF;
-    background: #000000 url(../public/profile/profile005/images/body.png) center center;
-    font-family: 'Archivo', sans-serif;
-    padding-top: 50px;
-    a {
-      color: #FFFFFF;
-    }
+.collectionOne {
+  color: $collectionOneColor;
+  background: $collectionOneBgFillColor url(../public/collections/collections001/images/body.png) center center;
+  background-repeat: repeat;
+  background-size: $collectionOneBgAdjustment;
+  background-color: $collectionOneBgColor;
+  font-family: $collectionOneFontFamily;
 }
+
