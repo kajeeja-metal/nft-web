@@ -6,6 +6,9 @@ import classes from './Collection001.module.scss';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Thumbs from '../../../public/collections/collections001/images/thumb.png';
+import Thumbs2 from '../../../public/collections/collections001/images/thumb2.png';
+import Thumbs3 from '../../../public/collections/collections001/images/thumb3.png';
+import Thumbs4 from '../../../public/collections/collections001/images/thumb4.png';
 import Profile from '../../../public/collections/collections001/images/profile.png';
 import downArrow from '../../../public/collections/collections001/images/down-arrow.png';
 
@@ -88,7 +91,7 @@ export default function Collection001() {
 							<Link className={classes.thumbsItem} href="/">
 								<a>
 								<Image
-									src={Thumbs}
+									src={Thumbs2}
 									height={512} width={512} 
 									alt="Thumbs"
 								/>
@@ -113,7 +116,7 @@ export default function Collection001() {
 							<Link className={classes.thumbsItem} href="/">
 								<a>
 								<Image
-									src={Thumbs}
+									src={Thumbs3}
 									height={512} width={512} 
 									alt="Thumbs"
 								/>
@@ -138,7 +141,7 @@ export default function Collection001() {
 							<Link className={classes.thumbsItem} href="/">
 								<a>
 								<Image
-									src={Thumbs}
+									src={Thumbs4}
 									height={512} width={512} 
 									alt="Thumbs"
 								/>
@@ -187,10 +190,10 @@ export default function Collection001() {
 					</article>
 					<article className={classes.thumbList}>
 						<div className={classes.thumbImg}>
-							<Link className={classes.thumbsItem} href="#">
+							<Link className={classes.thumbsItem} href="/">
 								<a>
 								<Image
-									src={Thumbs}
+									src={Thumbs2}
 									height={512} width={512} 
 									alt="Thumbs"
 								/>
@@ -210,38 +213,12 @@ export default function Collection001() {
 							
 						</div>
 					</article>
-					<article className={classes.thumbList}>
-						<div className={classes.thumbImg}>
-							<Link className={classes.thumbsItem} href="#">
-								<a>
-								<Image
-									src={Thumbs}
-									height={512} width={512} 
-									alt="Thumbs"
-								/>
-								</a>
-							</Link>
-						</div>
-						<div className={classes.thumbInfo}>
-							<h5 className={classes.thumbTitle}><Link href="#"><a>NFT Name</a></Link></h5>
-							<p className={classes.thumbDesc}>
-							Lorem ipsum dolor sit amet, consectetur ist at...
-							</p>
-							<div className={classes.chainName}>
-							NFT Chain 
-							</div>
-						</div>
-						<div className={classes.thumbsContent}>
-							
-						</div>
-					</article>
-					
 					<article className={classes.thumbList}>
 						<div className={classes.thumbImg}>
 							<Link className={classes.thumbsItem} href="/">
 								<a>
 								<Image
-									src={Thumbs}
+									src={Thumbs3}
 									height={512} width={512} 
 									alt="Thumbs"
 								/>
@@ -250,6 +227,33 @@ export default function Collection001() {
 						</div>
 						<div className={classes.thumbInfo}>
 							<h5 className={classes.thumbTitle}><Link href="#"><a>NFT Name</a></Link></h5>
+							<p className={classes.thumbDesc}>
+							Lorem ipsum dolor sit amet, consectetur ist at...
+							</p>
+							<div className={classes.chainName}>
+							NFT Chain 
+							</div>
+						</div>
+						<div className={classes.thumbsContent}>
+							
+						</div>
+					</article>
+					<article className={classes.thumbList}>
+						<div className={classes.thumbImg}>
+							<Link className={classes.thumbsItem} href="/">
+								<a>
+								<Image
+									src={Thumbs4}
+									height={512} width={512} 
+									alt="Thumbs"
+								/>
+								</a>
+							</Link>
+						</div>
+						<div className={classes.thumbInfo}>
+							<h5 className={classes.thumbTitle}>
+								<Link href="#"><a>NFT Name</a></Link>
+							</h5>
 							<p className={classes.thumbDesc}>
 							Lorem ipsum dolor sit amet, consectetur ist at...
 							</p>

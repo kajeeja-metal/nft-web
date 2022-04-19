@@ -1,0 +1,275 @@
+
+@import './variables';
+
+.title {
+    color: $title-color; font-weight: $title-font-weight;
+    font-size: $title-font-size;
+}
+.titleWrap {
+    margin-bottom: 2.5rem;
+    p {
+        font-size: $title-desc-font-size; color: $title-desc-color ;
+    }
+}
+.textCenter {
+    text-align: center;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+.formControl {
+    border: 1px solid $border;
+    padding: .75rem; border-radius: $form-border-radius;
+    .toggleContent {
+        margin-top: .4rem;
+    }
+}
+.link {
+    color: $link-color ;
+}
+.cursor {
+    cursor: pointer;
+}
+.sectionGroup {
+    border-top: 1px solid $border; padding-top: 1rem;
+}
+
+.imgLIst {
+    list-style: none; padding-left: 10px;
+    padding-top: 5px;
+    display: flex; flex-wrap: wrap;
+    border-top: 1px solid $imglist-border-color;
+    li {
+        position: relative; margin: 7px;
+        border: 2px solid $imglist-border-color;
+        border-radius: 8px; padding: 5px;
+        cursor: pointer;
+        input[type="radio"], input[type="file"] {
+            position: absolute; left: 0;
+            opacity: 0; max-width: 100%;
+            cursor: pointer;
+        }
+        label {
+            display: block; margin-bottom: 0;
+        }
+        &.active, &:hover {
+            background: $imglist-active-bg-color;
+            border-color: $imglist-active-border-color;
+        }
+    }
+    .addImg {
+        font-size: 40px; line-height: 90px; font-weight: 100;
+        min-width: 80px; text-align: center;
+    }
+}
+.leftnumber{
+    font-size: $leftnum-font-size; color: $leftnum-color;
+    text-align: right; margin-top: .25rem;
+}
+.imageStyleSelect {
+    border-top: 1px solid $border;
+    padding-top: 10px; padding-left: 10px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+
+.thumblist {
+    margin-bottom: 2.25rem;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease-in-out;
+    &.active, &:hover {
+        border-color: $active-theme-border-color;
+    }
+    &:hover {
+        .thumbImg {
+            img {
+                opacity: .8;
+            }
+        }
+    }
+}
+.thumblistView {
+    .thumbCurrent {
+        font-weight:normal; font-size: 16px;
+    }
+    &.active, &:hover {
+        border-color: transparent;
+    }
+}
+.thumbImg {
+    position: relative;
+    a {
+        img {
+            border-radius: $theme-img-border-radius;
+            transition: all 0.4s ease-in-out;
+        }
+    }
+}
+
+.thumbInfo {
+    padding: .5rem .75rem;
+}
+.thumbTitle {
+    font-size: $theme-thumb-title-size;
+    color: $theme-thumb-title-color;
+    margin-bottom: .75rem;
+    a {
+        color: $theme-thumb-title-color;
+        &:hover {
+            color: $link-hover-color;
+        }
+    }
+}
+
+
+
+.colWrap {
+    @include flexbox();
+    .cols {
+        text-align: center;
+        padding: 1rem;
+    }
+    h3 {
+        font-size: $font-medium;
+    }
+}
+.colThumb {
+    border: 1px solid $border;
+    width: 88px;
+    height: 88px;
+    border-radius: 24px;
+    display: inline-block;
+
+}
+.colorPrimaryMain {
+    background: $color-primary-main;
+}
+.colorSecondaryMain {
+    background: $color-secondary-main;
+}
+.colorButton {
+    background: $color-button;
+}
+.titleTextColor {
+    background: $title-text-color;
+}
+.bodyTextColor {
+    background: $body-text-color;
+}
+
+
+.btnsGroup {
+    button{
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.checkitem {
+    position: absolute; z-index: 1;
+    width: 100%; height: 100%;
+    right: 0;
+    text-align: right;
+
+    input[type="checkbox"] {
+        width: 100%; height: 100%;
+        opacity: 0;
+        &:checked + .checkicon {
+            opacity: 1;
+        }
+    }
+    .checkicon {
+        position: absolute; opacity: 0;
+        right: 10px; top: 10px; z-index: 2;
+        /*background: $white;*/ border-radius: 50%;
+        line-height: 1;
+    }
+    .faCheckCircle {
+        color: $checkitem-color; 
+        font-size: $font-large;
+        border-radius: 50%;
+    }
+}
+
+
+
+.modalLg {
+    > div {
+        max-width: 990px;
+    }
+}
+
+.searchModal {
+    position: relative;
+    input {
+        padding-left: 45px;
+    }
+    button {
+        position: absolute; color: $icon-color;
+    }
+}
+
+.fontItemList {
+    border: 2px solid $border; border-radius: 16px;
+    margin-bottom: 1.5rem; position: relative;
+    transition: all 0.4s ease-in-out;
+    input[type="radio"] {
+        position: absolute; opacity: 0;
+    }
+    &.active, &:hover {
+        border-color: $border-active-color;
+    }
+}
+.fontNamePreview {
+    padding: .75rem; 
+}
+.topFontStyle {
+    display: flex;  justify-content: space-between;
+    width: 100%; font-size: 12px;
+    margin-bottom: .75rem;
+}
+.fLeft {
+    h3 {
+        font-size:18px; margin-bottom: .1rem;
+    }
+}
+.fontBtnSelect {
+    border-top: 1px solid $border;
+    padding: .75rem; color: $preview-btn-color;
+    h3  {
+        font-size: 18px;
+    }
+}
+.btnsRow {
+    display: flex; justify-content: space-between;
+    button {
+        min-width: 40%;
+    }
+}
+
+
+@media all and (max-width: 990px) { 
+
+ 
+
+}
+
+@media all and (max-width: 767px) {
+
+
+    .formGroup {
+        label{
+            margin-bottom: .5rem;
+            &.chkWrap {
+                margin-bottom: 0rem;
+            }
+        }
+    }
+   
+
+
+}

@@ -1,0 +1,183 @@
+
+
+@import '../collections004/variables';
+
+.collectionFour {
+    background: red;
+}
+
+.collectionAll {
+    /*display: grid;
+    grid-template-columns: repeat(4, minmax(12rem, 1fr));
+    gap: 1.5rem;*/
+}
+.textCenter {
+    text-align: center;
+}
+.collectionWrap {
+    /*background-color: #FFD400;*/
+    padding-top: $pageContentPaddingT;
+    padding-bottom: $pageContentPaddingB;
+}
+.collectionTop {
+    border-bottom: 1px solid $collectionTopBorderColor;
+    padding-bottom: $collectionBootomPaddingB;
+    margin-bottom: $collectionBootomMarginB;
+}
+.headSocial {
+    text-align: right;
+    a {
+        margin: 0 .75rem .5rem 0;
+        font-size: $socialFontSize;
+        color: $socialIconColor;
+    }
+}
+.socialLabel {
+    font-size: $socialLabelFontSize;
+    margin-right: .75rem;
+}
+.headWrap {
+    margin-bottom: $collectionHeadWrapMarginB;
+
+    h1 {
+        font-size: $collectionH1FontSize; color: $collectionH1FontColor;
+        font-weight: $collectionH1FontWeight; margin-bottom: $collectionH1MarginB;
+    }
+    h6 {
+        color: $collectionH6FontColor;
+        font-size: $collectionH6FontSize;
+    }
+}
+.userImg {
+    margin-bottom: $userImgMarginB;
+    .profileImg {
+        border-radius: $userImgBorderRadius; 
+    }
+    img {
+        line-height: 1;
+    }
+}
+.userDesc {
+    font-size: $userDescFontSize; color: $userDescColor;
+    margin-bottom: $userDescMarginB;
+}
+
+
+.thumbList {
+  margin-bottom: $thumbListMarginB;
+  transition: all 0.5s ease-in-out;
+  /*border: 1px solid $thumbListBorderColor;
+  border-radius: $thumbListBorderRadius;*/
+  overflow: hidden;
+  padding: 10px;
+  &:hover {
+    /*box-shadow: 0 0 5px $color-primary-main;   */
+    .thumbImg img {
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+    }
+  }
+}
+.thumbImg {
+  position: relative; overflow: hidden;
+  a {
+    span {
+      vertical-align: top;
+    }
+    img {
+      transition: all 0.4s ease-in-out;
+      border-radius: $thumbImgBorderRadius;
+    }
+  }
+}
+.thumbInfo {
+  padding: $thumbInfoPadding; 
+  background-color: $thumbInfoBgColor;
+  color: $thumbInfoColor;
+}
+.thumbTitle {
+    font-size: $thumbTitleSize; margin-bottom: $thumbTitleMarginB;
+    font-weight: $thumbTitleFontWeight; color: $thumbTitleColor;
+    a {
+      color: $thumbTitleColor; 
+    }
+}
+.thumbDesc {
+  font-size: $thumbDescSize; color: $thumbDescColor;
+  margin-bottom: $thumbDescMarginB; line-height: 1.5;
+}
+
+
+
+
+/* Footer  */
+
+.footer {
+    padding-bottom: $footerPaddingB; padding-top: $footerPaddingT;
+    background-color: $footerBgColor; color: $footerColor;
+    margin-top: $footerMarginT;
+}
+
+.profileWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userLogged {
+    display: flex; align-items: center;
+}
+.likesCount {
+    text-align: center;
+}
+.userInfo {
+    h4 {
+        font-size: $userTitleFontSize; color: $userTitleColor;
+        margin-bottom: $userTitleMarginB;
+        font-weight: $userTitleFontWeight;
+    }
+    
+}
+.viewLink {
+    font-size: $viewLinkFontSize; color: $viewLinkColor;
+    a {
+        color:$viewLinkColor;
+    }
+}
+
+.profileLike {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyrightLogo {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    display: inline-block;
+}
+
+@media all and (max-width: 767px) {
+
+    .collectionAll {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(2rem, 1fr));
+        gap: 1.5rem;
+    }
+
+}
+
+
+@media all and (max-width: 767px) {
+
+    .collectionAll {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(2rem, 1fr));
+        gap: 1.5rem;
+    }
+
+}

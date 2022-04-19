@@ -3,10 +3,19 @@
 
 .collectionOne {
   color: $collectionOneColor;
-  background: $collectionOneBgFillColor url(../public/collections/collections001/images/body.png) center center;
+  background: $collectionOneBgFillColor url(../public/collections/collections004/images/body.svg) center center;
   background-repeat: repeat;
   background-size: $collectionOneBgAdjustment;
   background-color: $collectionOneBgColor;
   font-family: $collectionOneFontFamily;
+}
+
+.collectionFour {
+  color: $collectionFourColor;
+  background: $collectionFourBgFillColor url(../public/collections/collections004/images/body.svg) center center;
+  background-repeat: repeat;
+  background-size: $collectionFourBgAdjustment;
+  background-color: $collectionFourBgColor;
+  font-family: $collectionFourFontFamily;
 }
 

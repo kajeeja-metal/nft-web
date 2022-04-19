@@ -1,39 +1,80 @@
-$textColor:                 #3A3A43;
-$textBgColor:               #FFD400;
 
-$profileH1FontSize:         38px;
-$profileH1FontColor:        $textColor;
+@import '../variables/colors';
+@import '../variables/text_link';
+@import '../variables/mixin';
 
-$profileH2FontSize:         21px;
-$profileH2FontColor:        $textColor;
+$default       : #3A3A43;
+$default-color : $default;
+$border        : #EAEAED;
+$form-border-radius:5px;
 
-$profileH3FontSize:         23px;
-$profileH3FontColor:        $textColor;
+$border-color :  $border;
 
-$profileH4FontSize:         14px;
-$profileH4FontColor:        $textColor;
+$link-hover-color :#4400CD;
 
-$socialIconsColor:          $textColor;
-$socialIconsFontSize:       $textColor;
+/* main title and title Link */
 
-$statusWrapFontSize:        23px;
-$statusWrapColor:           $textColor;
+$title-font-size          : 2rem;
+$title-font-weight        : normal;
+$title-color              : $default-color;
+$title-desc-font-size     : 14px;
+$title-desc-color         : #5F5F6D;
 
-$TabsColor:                 $textColor;
-$TabsFontSize:              21px;
+$link-color               : #4726D9;
 
-$PaginationColor:           $textColor;
-$PaginationBgColor:         #FFFFFF;
-$PaginationActiveColor:     $textColor;
-$PaginationActiveBGColor:   $textBgColor;
-$PaginationFontSize:        21px;
+/* 1)  Tab variable  */
 
-$boderColor:                $textColor;
+$tab-parent-border-color  : #EAEAED;
+$tab-font-size            : 18px;
+$tab-color                : #ABABBA;
+$tab-active-color         : #4400CD;
+$tab-bg-color             : #fff;
+$tab-active-bg            : #F8F5FF;
+$tab-border-color         : #EAEAED;
+$tab-border-active-color  : #4400CD;
+$tab-border-radius        : 4px 4px 0px 0px;
+$tab-padding              : 9px 16px 9px 16px;
+$tab-active-font-weight   : 700;
 
-$btnActiveColor:            $textColor;
-$btnActiveBgColor:          $textBgColor;
+$color-picker-default-bg  : #008F76;
+
+
+$theme-thumb-title-color   : $default-color;
+$theme-thumb-title-size    : 20px;
+$theme-img-border-radius   : 16px 16px 0px 0px;
+$theme-border-color        : #fff;
+$active-theme-border-color : #00CCA9;
+
+$checkitem-bg-color        : #fff;
+$checkitem-color           : #00CCA9;
+
+
+$leftnum-color             : #5F5F6D;
+$leftnum-font-size         : 12px;
+$imglist-border-color      : $border;
+$imglist-active-border-color :#00CCA9;
+$imglist-active-bg-color   : #E9F6F7;
+
+
+$imglist-border-active-color : #00CCA9;
+$imgCrop-title-font-size : 18px;
+$imgCrop-title-color     : #5F5F6D;
+
+$form-border-radius        : 5px;
+$border                    : #EAEAED;
 
 
 
-// Thumbs Style assets
-$assetsBgColor:             #F5F5F5;
+$icon-color : #5F5F6D;
+$border-active-color : #00CCA9;
+$preview-btn-color : #3A3A43;
+
+
+/* color */
+
+$color-primary-main:                    #4400CD;
+$color-secondary-main:                  #00CCA9;
+$color-button:                          #4400CD;
+$title-text-color:                      #3A3A43;
+$body-text-color:                       #5F5F6D;
+
