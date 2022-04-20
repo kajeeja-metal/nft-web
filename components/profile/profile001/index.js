@@ -106,37 +106,37 @@ export default function Profile001() {
             </div>
           </div>
         </div>
-		<Thumbs001 />
-		<footer className={classes.footer}>
-			<div className='container'>
-				<div className={classes.footerRow}>
-					<div className={classes.copyright}>Powered by NFTIFY <Image src={downArrow} alt='Down Logo' width={50} height={30} /> </div>
-					<ul className={classes.socialContainer}>
-						<li>
-							Joined:  November 2021
-						</li>
-						<li><FontAwesomeIcon icon={faFlag} size="lg" /> Report</li>
-						<li>
-							<span>Social Follow :</span>
-							<Link href='/'><a>
-								<FontAwesomeIcon icon={faTwitter} size="lg" />
-							</a></Link>
-						</li>
-						<li>
-							<Link href='/'><a>
-								<FontAwesomeIcon icon={faFacebook} size="lg" />
-							</a></Link>
-						</li>
-						<li>
-							<Link href='/'><a>
-								<FontAwesomeIcon icon={faInstagram} size="lg" />
-							</a></Link>
-						</li>
-					</ul>
+        <Thumbs001 />
+        <footer className={classes.footer}>
+          <div className='container'>
+            <div className={classes.footerRow}>
+              <div className={classes.copyright}>Powered by NFTIFY <Image src={downArrow} alt='Down Logo' width={50} height={30} /> </div>
+              <ul className={classes.socialContainer}>
+                <li>
+                  Joined:  November 2021
+                </li>
+                <li><FontAwesomeIcon icon={faFlag} size="lg" /> Report</li>
+                <li>
+                  <span>Social Follow :</span>
+                  <Link href='/'><a>
+                    <FontAwesomeIcon icon={faTwitter} size="lg" />
+                  </a></Link>
+                </li>
+                <li>
+                  <Link href='/'><a>
+                    <FontAwesomeIcon icon={faFacebook} size="lg" />
+                  </a></Link>
+                </li>
+                <li>
+                  <Link href='/'><a>
+                    <FontAwesomeIcon icon={faInstagram} size="lg" />
+                  </a></Link>
+                </li>
+              </ul>
 
-				</div>
-			</div>
-		</footer>
+            </div>
+          </div>
+        </footer>
 	</>
   )
 }
